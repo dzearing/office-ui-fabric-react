@@ -1,8 +1,9 @@
-import { fontFace } from './fontFace';
 import {
-  Stylesheet,
-  InjectionMode
+  InjectionMode,
+  Stylesheet
 } from './Stylesheet';
+
+import { fontFace } from './fontFace';
 
 const _stylesheet: Stylesheet = Stylesheet.getInstance();
 
@@ -16,4 +17,14 @@ describe('fontFace', () => {
     });
     expect(_stylesheet.getRules()).toEqual('@font-face{font-family:Segoe UI;src:url("foo");}');
   });
+
+  it('asdfdsfs', () => {
+    expect(true).toEqual(true);
+  });
+
+  it('asdfdsaf', () => {
+    debugger;
+    expect(false).toEqual('asdfdsafds');
+  });
+
 });

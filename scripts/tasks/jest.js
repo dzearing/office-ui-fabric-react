@@ -20,11 +20,11 @@ module.exports = function (options) {
       // In production builds, produce coverage information.
       options.isProduction && '--coverage',
 
-      // Pass in custom arguments.
-      options.args
+      // Update snapshots
+      options.argv.indexOf('-u' >= 0) && '-u'
     ].filter(arg => !!arg).join(' ');
 
-    const command = `node ${jestPath} ${args} ${customArgs}`;
+    const command = `node ${jestPath} ${args}`;
 
     execSync(command, undefined, path.dirname(jestConfigPath));
   }

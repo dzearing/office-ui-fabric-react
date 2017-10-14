@@ -72,7 +72,8 @@ export class FabricPerformance {
   }
 
   public static setPeriodicReset(): void {
-    FabricPerformance._timeoutId = setTimeout(() => FabricPerformance.reset(), RESET_INTERVAL);
+    // tslint:disable-next-line:no-any
+    FabricPerformance._timeoutId = setTimeout(() => FabricPerformance.reset(), RESET_INTERVAL) as any;
   }
 }
 
