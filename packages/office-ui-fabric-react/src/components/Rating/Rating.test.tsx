@@ -7,7 +7,6 @@ import * as ReactTestUtils from 'react-dom/test-utils';
 import * as renderer from 'react-test-renderer';
 
 import { Rating } from './Rating';
-import { RatingBase } from './Rating.base';
 import { getStyles } from './Rating.styles';
 
 describe('Rating', () => {
@@ -23,9 +22,9 @@ describe('Rating', () => {
     let rating;
     try {
       rating = ReactTestUtils.renderIntoDocument(
-        <RatingBase
+        <Rating
           getStyles={ getStyles }
-          rating={ 2 }
+          value={ 2 }
         />
       );
     } catch (e) {
@@ -65,9 +64,9 @@ describe('Rating', () => {
     let rating;
     try {
       rating = ReactTestUtils.renderIntoDocument(
-        <RatingBase
+        <Rating
           getStyles={ getStyles }
-          rating={ 10 }
+          value={ 10 }
         />
       );
     } catch (e) {
@@ -100,10 +99,10 @@ describe('Rating', () => {
     let threwException = false;
     let rating;
     try {
-      rating = ReactTestUtils.renderIntoDocument<RatingBase>(
-        <RatingBase
+      rating = ReactTestUtils.renderIntoDocument<typeof Rating>(
+        <Rating
           getStyles={ getStyles }
-          rating={ 2.5 }
+          value={ 2.5 }
         />
       );
     } catch (e) {
@@ -133,9 +132,10 @@ describe('Rating', () => {
     let exception;
     let threwException = false;
     let choiceGroup;
+
     try {
-      choiceGroup = ReactTestUtils.renderIntoDocument<RatingBase>(
-        <RatingBase
+      choiceGroup = ReactTestUtils.renderIntoDocument<typeof Rating>(
+        <Rating
           getStyles={ getStyles }
           disabled={ true }
         />
@@ -161,11 +161,11 @@ describe('Rating', () => {
     let threwException = false;
     let choiceGroup;
     try {
-      choiceGroup = ReactTestUtils.renderIntoDocument<RatingBase>(
-        <RatingBase
+      choiceGroup = ReactTestUtils.renderIntoDocument<typeof Rating>(
+        <Rating
           getStyles={ getStyles }
           readOnly={ true }
-          rating={ 2 }
+          value={ 2 }
         />
       );
     } catch (e) {

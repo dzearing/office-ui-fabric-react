@@ -3,12 +3,15 @@ import {
   hiddenContentStyle,
   HighContrastSelector,
 } from '../../Styling';
-import { RatingSize, IRatingStyleProps, IRatingStyles } from './Rating.types';
+import { IRatingViewProps, IRatingStyles } from './Rating.view';
+import { IPropsWithTheme } from '../../utilities/createComponent';
 
-export function getStyles(props: IRatingStyleProps): IRatingStyles {
+export function getStyles(props: IPropsWithTheme<IRatingViewProps>): IRatingStyles {
   const {
+    className,
     disabled,
-    theme
+    theme,
+    large
   } = props;
 
   const {
@@ -16,97 +19,36 @@ export function getStyles(props: IRatingStyleProps): IRatingStyles {
     palette
   } = theme;
 
-  const ratingSmallIconSize = '16px';
-  const ratingLargeIconSize = '20px';
+  const ratingSmallIconSize = 16;
+  const ratingLargeIconSize = 20;
 
   return {
-    ratingStar: [
-      'ms-RatingStar-container',
+    root: [
+      'ms-Rating',
+      className
+    ],
+    starButton: [
+      'ms-Rating-button',
+      getFocusStyle(theme, 0),
       {
         display: 'inline-block',
-        position: 'relative'
-      }
-    ],
-    ratingStarBack: [
-      'ms-RatingStar-back',
-      {
-        // TODO: Use a proper semantic color for this
-        color: palette.neutralTertiary,
-        width: '100%'
-      },
-      disabled && {
-        color: semanticColors.disabledBodyText,
-        selectors: {
-          [HighContrastSelector]: {
-            color: 'GrayText'
-          }
-        }
-      }
-    ],
-    ratingStarFront: [
-      'ms-RatingStar-front',
-      {
-        position: 'absolute',
-        height: '100 %',
-        left: '0',
-        top: '0',
-        textAlign: 'center',
-        verticalAlign: 'middle',
-        overflow: 'hidden',
-        color: semanticColors.bodyTextChecked,
-        selectors: {
-          [HighContrastSelector]: {
-            'color': 'Highlight'
-          }
-        }
-      }
-    ],
-    ratingButton: [
-      getFocusStyle(theme, 0),
-      'ms-Rating-button',
-      {
+        position: 'relative',
         background: 'none',
-        margin: '3px 3px 0px 0px',
-        padding: '0px',
-        border: 'none',
         cursor: 'pointer',
+        fontSize: ratingSmallIconSize,
+        lineHeight: ratingSmallIconSize,
+
         selectors: {
-          '&:disabled': {
-            cursor: 'default'
-          },
           '&[disabled]': {
             cursor: 'default'
           }
         }
       },
-      disabled && {
-        cursor: 'default'
-      },
-    ],
-    rootIsSmall: [
-      'ms-Rating--small',
-      {
-        fontSize: ratingSmallIconSize,
-        lineHeight: ratingSmallIconSize
-      }
-    ],
-    rootIsLarge: [
-      'ms-Rating--large',
-      {
+      large && {
         fontSize: ratingLargeIconSize,
         lineHeight: ratingLargeIconSize
       }
-    ],
-    labelText: [
-      'ms-Rating-labelText',
-      hiddenContentStyle
-    ],
-    ratingFocusZone: [
-      'ms-Rating-focuszone',
-      {
-        display: 'inline-block',
-        paddingBottom: '1px'
-      }
     ]
   };
+
 }

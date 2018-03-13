@@ -10,8 +10,6 @@ import {
   ITheme
 } from '../../../Styling';
 
-import './Rating.Basic.Example.scss';
-
 export class RatingBasicExample extends React.Component<{}, {
   rating?: number;
   largeStarRating?: number;
