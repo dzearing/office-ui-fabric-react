@@ -9,7 +9,7 @@ module.exports = resources.createConfig(
   true,
   {
     entry: {
-      [BUNDLE_NAME]: './lib/index.js'
+      [BUNDLE_NAME]: './lib-es2015/index.js'
     },
 
     output: {

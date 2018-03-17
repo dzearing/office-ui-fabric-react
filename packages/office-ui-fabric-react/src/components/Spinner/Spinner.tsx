@@ -14,8 +14,6 @@ export class Spinner extends BaseComponent<ISpinnerProps, any> {
     const { type, size, label, className, ariaLive, ariaLabel } = this.props; // TODO remove deprecated type property at >= 2.0.0
     const statusMessage = ariaLabel || label;
 
-    const classNames = getClassNames(getStyles, {});
-
     return (
       <div className={ css('ms-Spinner', styles.root, className) }>
         <div
