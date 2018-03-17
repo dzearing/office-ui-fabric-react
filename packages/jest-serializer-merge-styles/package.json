@@ -3,6 +3,7 @@
   "version": "5.1.0",
   "description": "Jest serializer for merge-styles.",
   "main": "lib/index.js",
+  "module": "lib-es2015/index.js",
   "typings": "lib/index.d.ts",
   "repository": {
     "type": "git",

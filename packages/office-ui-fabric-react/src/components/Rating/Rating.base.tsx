@@ -9,7 +9,7 @@ import {
 } from '../../Utilities';
 import {
   IClassNames
-} from '@uifabric/utilities/lib/IClassNames';
+} from '@uifabric/utilities';
 import { Icon } from '../../Icon';
 import { FocusZone, FocusZoneDirection } from '../../FocusZone';
 import { IRatingProps, RatingSize, IRatingStyleProps, IRatingStyles } from './Rating.types';
@@ -120,7 +120,7 @@ export class RatingBase extends BaseComponent<IRatingProps, IRatingState> {
           type='button'
         >
           { this._getLabel(i) }
-          <RatingStar key={ i + 'rating' }  {...ratingStarProps} />
+          <RatingStar key={ i + 'rating' }  { ...ratingStarProps } />
         </button>
       );
     }
