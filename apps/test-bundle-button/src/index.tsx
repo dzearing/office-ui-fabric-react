@@ -1,14 +1,17 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { DefaultButton } from 'office-ui-fabric-react';
+// import { initializeIcons } from '@uifabric/icons';
 
 function start(): void {
+  // initializeIcons();
+
   const div: HTMLElement = document.createElement('div');
 
   document.body.appendChild(div);
   ReactDOM.render((
     <DefaultButton
-      iconProps={ { iconName: 'Snow' } }
+      iconProps={ { iconName: 'Add' } }
       text='hi'
       menuProps={ {
         items: [

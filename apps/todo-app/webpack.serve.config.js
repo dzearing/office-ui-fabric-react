@@ -4,9 +4,8 @@ const isProduction = process.argv.indexOf('--production') > -1;
 const PACKAGE_NAME = 'todo-app';
 
 module.exports = resources.createServeConfig({
-  entry: './src/index.tsx',
-  output: {
-    filename: 'todo-app.js'
+  entry: {
+    [PACKAGE_NAME]: './src/index.tsx'
   },
 
   externals: {

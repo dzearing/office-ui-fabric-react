@@ -58,9 +58,15 @@ module.exports = {
           filename: `[name].min.js`,
           path: path.resolve(process.cwd(), 'dist')
         },
+
+        optimization: {
+          concatenateModules: true,
+          minimize: true
+        },
+
         resolveLoader,
         module,
-        stats,
+        // stats,
         devtool,
         plugins: getPlugins(packageName, true)
       }, customConfig));
@@ -105,7 +111,7 @@ module.exports = {
             },
             {
               test: [/\.tsx?$/],
-              use: 'awesome-typescript-loader',
+              use: 'ts-loader',
               exclude: [
                 /node_modules/,
                 /\.scss.ts$/
@@ -167,6 +173,7 @@ function getPlugins(
   const plugins = [];
 
   if (isProduction) {
+
     plugins.push(
       new BundleAnalyzerPlugin({
         analyzerMode: 'static',

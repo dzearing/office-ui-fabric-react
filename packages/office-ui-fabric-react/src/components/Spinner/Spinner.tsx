@@ -4,7 +4,7 @@ import { ISpinnerProps, SpinnerType, SpinnerSize } from './Spinner.types';
 import * as stylesImport from './Spinner.scss';
 const styles: any = stylesImport;
 
-export class Spinner extends BaseComponent<ISpinnerProps, any> {
+export class Spinner extends BaseComponent<ISpinnerProps> {
   public static defaultProps: ISpinnerProps = {
     size: SpinnerSize.medium,
     ariaLive: 'polite'

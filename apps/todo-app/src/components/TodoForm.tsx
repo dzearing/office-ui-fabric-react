@@ -1,7 +1,13 @@
 import * as React from 'react';
-import { autobind, BaseComponent, IBaseProps, createRef } from 'office-ui-fabric-react/lib/Utilities';
-import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
-import { TextField, ITextField } from 'office-ui-fabric-react/lib/TextField';
+import {
+  BaseComponent,
+  IBaseProps,
+  ITextField,
+  PrimaryButton,
+  TextField,
+  autobind,
+  createRef,
+} from 'office-ui-fabric-react';
 import * as stylesImport from './Todo.scss';
 const styles: any = stylesImport;
 import strings from './../strings';

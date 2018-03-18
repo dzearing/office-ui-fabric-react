@@ -26,7 +26,7 @@ module.exports = function (argv) {
     isProductionArg,
     {
       entry: {
-        [entryPointName]: './lib/root.js'
+        [entryPointName]: './lib-es2015/root.js'
       },
 
       output: {

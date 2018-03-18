@@ -9,19 +9,12 @@ module.exports = resources.createConfig(
   IS_PRODUCTION,
   {
     entry: {
-      [BUNDLE_NAME]: './lib/index.js'
-    },
-
-    output: {
-      libraryTarget: 'var',
-      library: 'Fabric'
+      [BUNDLE_NAME]: './lib-es2015/index.js'
     },
 
     externals: [
       {
         'react': 'React',
-      },
-      {
         'react-dom': 'ReactDOM'
       }
     ]

@@ -9,7 +9,7 @@ module.exports = resources.createConfig(
   IS_PRODUCTION,
   {
     entry: {
-      [BUNDLE_NAME]: './lib/index.js'
+      [BUNDLE_NAME]: './lib-es6/index.js'
     },
 
     output: {
