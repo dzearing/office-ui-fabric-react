@@ -6,7 +6,7 @@ import * as renderer from 'react-test-renderer';
 
 import { IBaseFloatingPickerProps } from './BaseFloatingPicker.types';
 import { BaseFloatingPicker } from './BaseFloatingPicker';
-import { SuggestionsController } from 'office-ui-fabric-react/lib/Pickers';
+import { SuggestionsController } from 'office-ui-fabric-react/lib-es2015/Pickers';
 
 function onResolveSuggestions(text: string): ISimple[] {
   return [

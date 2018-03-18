@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Autofill } from 'office-ui-fabric-react/lib/Autofill';
-import { IInputProps } from 'office-ui-fabric-react/lib/Pickers';
+import { Autofill } from 'office-ui-fabric-react/lib-es2015/Autofill';
+import { IInputProps } from 'office-ui-fabric-react/lib-es2015/Pickers';
 import { IBaseFloatingPickerProps } from '../../FloatingPicker';
 import { IBaseSelectedItemsListProps } from '../../SelectedItemsList';
 

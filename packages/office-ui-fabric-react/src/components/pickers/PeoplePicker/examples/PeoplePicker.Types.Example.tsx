@@ -18,7 +18,7 @@ import {
   ValidationState
 } from 'office-ui-fabric-react/lib/Pickers';
 import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
-import { IPersonaWithMenu } from 'office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePickerItems/PeoplePickerItem.types';
+import { IPersonaWithMenuProps } from 'office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePickerItems/PeoplePickerItem.types';
 import { people, mru } from './PeoplePickerExampleData';
 import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
 import { Promise } from 'es6-promise';
@@ -55,9 +55,9 @@ export class PeoplePickerTypesExample extends BaseComponent<any, IPeoplePickerEx
 
   constructor(props: {}) {
     super(props);
-    const peopleList: IPersonaWithMenu[] = [];
+    const peopleList: IPersonaWithMenuProps[] = [];
     people.forEach((persona: IPersonaProps) => {
-      const target: IPersonaWithMenu = {};
+      const target: IPersonaWithMenuProps = {};
 
       assign(target, persona);
       peopleList.push(target);

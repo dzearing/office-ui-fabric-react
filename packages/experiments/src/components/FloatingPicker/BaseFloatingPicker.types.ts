@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { ISuggestionModel, IBasePickerSuggestionsProps, SuggestionsController } from 'office-ui-fabric-react/lib/Pickers';
-import { IPersonaProps } from 'office-ui-fabric-react/lib/Persona';
+import { ISuggestionModel, IBasePickerSuggestionsProps, SuggestionsController } from 'office-ui-fabric-react/lib-es2015/Pickers';
+import { IPersonaProps } from 'office-ui-fabric-react/lib-es2015/Persona';
 
 export interface IBaseFloatingPicker {
   /** Whether the suggestions are shown */

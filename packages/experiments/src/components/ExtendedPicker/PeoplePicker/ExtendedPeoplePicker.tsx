@@ -1,9 +1,9 @@
 /* tslint:disable */
-import { IPickerItemProps } from 'office-ui-fabric-react/lib/Pickers';
+import { IPickerItemProps } from 'office-ui-fabric-react/lib-es2015/Pickers';
 /* tslint:enable */
 
 import { IExtendedPersonaProps } from '../../../SelectedItemsList';
-import { IPersonaProps } from 'office-ui-fabric-react/lib/Persona';
+import { IPersonaProps } from 'office-ui-fabric-react/lib-es2015/Persona';
 import './ExtendedPeoplePicker.scss';
 import { BaseExtendedPicker } from '../BaseExtendedPicker';
 import { IBaseExtendedPickerProps } from '../BaseExtendedPicker.types';

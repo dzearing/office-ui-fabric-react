@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { VirtualizedList } from '../VirtualizedList';
 import { ScrollContainer } from '../../../utilities/scrolling/ScrollContainer';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 
 import * as VirtualizedListExampleStylesModule from './VirtualizedList.Example.scss';
 

@@ -1,5 +1,5 @@
 import { IFormBaseInputProps } from '../../FormBaseInput';
-import { ICheckboxProps } from 'office-ui-fabric-react/lib/Checkbox';
+import { ICheckboxProps } from 'office-ui-fabric-react/lib-es2015/Checkbox';
 export { ICheckboxProps };
 
 export interface IFormCheckBoxProps extends IFormBaseInputProps<boolean> {

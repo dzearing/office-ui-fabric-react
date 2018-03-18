@@ -1,12 +1,12 @@
 
 import * as React from 'react';
 import { LayoutGroup } from '../LayoutGroup';
-import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
-import { Dropdown } from 'office-ui-fabric-react/lib/Dropdown';
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
-import { ChoiceGroup } from 'office-ui-fabric-react/lib/ChoiceGroup';
-import { Checkbox } from 'office-ui-fabric-react/lib/Checkbox';
-import { Label } from 'office-ui-fabric-react/lib/Label';
+import { PrimaryButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { Dropdown } from 'office-ui-fabric-react/lib-es2015/Dropdown';
+import { TextField } from 'office-ui-fabric-react/lib-es2015/TextField';
+import { ChoiceGroup } from 'office-ui-fabric-react/lib-es2015/ChoiceGroup';
+import { Checkbox } from 'office-ui-fabric-react/lib-es2015/Checkbox';
+import { Label } from 'office-ui-fabric-react/lib-es2015/Label';
 
 export class LayoutGroupBasicExample extends React.Component<{}, {}> {
   public render(): JSX.Element {

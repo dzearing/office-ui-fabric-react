@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from 'office-ui-fabric-react/lib/Link';
+import { Link } from 'office-ui-fabric-react/lib-es2015/Link';
 import {
   ExampleCard,
   IComponentDemoPageProps,
@@ -10,18 +10,18 @@ import {
 /* tslint:disable:max-line-length */
 import { TilesListBasicExample } from './examples/TilesList.Basic.Example';
 const TilesListBasicExampleCode = require(
-  '!raw-loader!experiments/src/components/TilesList/examples/TilesList.Basic.Example.tsx'
+  '!raw-loader!@uifabric/experiments/src/components/TilesList/examples/TilesList.Basic.Example.tsx'
 ) as string;
 
 import { TilesListDocumentExample } from './examples/TilesList.Document.Example';
 const TilesListDocumentExampleCode = require(
-  '!raw-loader!experiments/src/components/TilesList/examples/TilesList.Document.Example.tsx'
+  '!raw-loader!@uifabric/experiments/src/components/TilesList/examples/TilesList.Document.Example.tsx'
 ) as string;
 
 import { TilesListMediaExample } from './examples/TilesList.Media.Example';
 
 const TilesListMediaExampleCode = require(
-  '!raw-loader!experiments/src/components/TilesList/examples/TilesList.Media.Example.tsx'
+  '!raw-loader!@uifabric/experiments/src/components/TilesList/examples/TilesList.Media.Example.tsx'
 ) as string;
 
 export class TilesListPage extends React.Component<IComponentDemoPageProps, {}> {
@@ -46,7 +46,7 @@ export class TilesListPage extends React.Component<IComponentDemoPageProps, {}> 
         propertiesTables={
           <PropertiesTableSet
             sources={ [
-              require<string>('!raw-loader!experiments/src/components/TilesList/TilesList.types.ts')
+              require<string>('!raw-loader!@uifabric/experiments/src/components/TilesList/TilesList.types.ts')
             ] }
           />
         }

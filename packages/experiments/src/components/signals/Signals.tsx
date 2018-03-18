@@ -1,7 +1,7 @@
 
 import * as React from 'react';
-import { Icon } from 'office-ui-fabric-react/lib/Icon';
-import { css } from 'office-ui-fabric-react/lib/Utilities';
+import { Icon } from 'office-ui-fabric-react/lib-es2015/Icon';
+import { css } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import { Signal, ISignalProps } from './Signal';
 import * as SignalsStylesModule from './Signals.scss';
 import * as SignalStylesModule from './Signal.scss';

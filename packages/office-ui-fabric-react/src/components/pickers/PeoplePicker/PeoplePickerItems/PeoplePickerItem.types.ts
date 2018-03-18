@@ -5,10 +5,10 @@ import { ValidationState } from '../../BasePicker.types';
 export interface IPeoplePickerItemProps extends IPickerItemProps<IPersonaProps & { ValidationState: ValidationState }> {
 }
 
-export interface IPeoplePickerItemWithMenuProps extends IPickerItemProps<IPersonaWithMenu> {
-  item: IPersonaWithMenu;
+export interface IPeoplePickerItemWithMenuProps extends IPickerItemProps<IPersonaWithMenuProps> {
+  item: IPersonaWithMenuProps;
 }
 
-export interface IPersonaWithMenu extends IPersonaProps {
+export interface IPersonaWithMenuProps extends IPersonaProps {
   menuItems?: IContextualMenuItem[];
 }

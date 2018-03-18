@@ -7,13 +7,13 @@ import * as React from 'react';
 
 // Components
 import { IFormDatePickerProps } from './FormDatePicker.types';
-import { DatePicker, IDatePickerProps } from 'office-ui-fabric-react/lib/DatePicker';
-import { Icon } from 'office-ui-fabric-react/lib/Icon';
+import { DatePicker, IDatePickerProps } from 'office-ui-fabric-react/lib-es2015/DatePicker';
+import { Icon } from 'office-ui-fabric-react/lib-es2015/Icon';
 import { FormBaseInput, IFormBaseInputState } from '../../FormBaseInput';
 import { IFormContext } from '../../Form';
 
 // Utilities
-import { autobind, css } from 'office-ui-fabric-react/lib/Utilities';
+import { css } from 'office-ui-fabric-react/lib-es2015/Utilities';
 
 /**
  * DatePicker input for Form
@@ -38,7 +38,7 @@ export class FormDatePicker extends FormBaseInput<Date, IFormDatePickerProps, IF
     return (
       <div className={ css('form-date-picker', DatePickerStyles.formDatePicker) }>
         <DatePicker
-          {...this.props.datePickerProps}
+          { ...this.props.datePickerProps }
           // These props cannot be overridden
           key={ this.props.inputKey }
           value={ this.state.currentValue }
@@ -58,8 +58,7 @@ export class FormDatePicker extends FormBaseInput<Date, IFormDatePickerProps, IF
     );
   }
 
-  @autobind
-  private _onDateChanged(date: Date): void {
+  private _onDateChanged = (date: Date): void => {
     this.setValue(date);
   }
 

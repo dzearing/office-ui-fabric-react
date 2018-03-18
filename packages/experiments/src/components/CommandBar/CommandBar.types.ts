@@ -1,8 +1,8 @@
 
 import * as React from 'react';
-import { IContextualMenuItem, IContextualMenuProps } from 'office-ui-fabric-react/lib/ContextualMenu';
-import { IButtonStyles } from 'office-ui-fabric-react/lib/Button';
-import { IIconProps } from 'office-ui-fabric-react/lib/Icon';
+import { IContextualMenuItem, IContextualMenuProps } from 'office-ui-fabric-react/lib-es2015/ContextualMenu';
+import { IButtonStyles } from 'office-ui-fabric-react/lib-es2015/Button';
+import { IIconProps } from 'office-ui-fabric-react/lib-es2015/Icon';
 import { ICommandBarData } from './CommandBar.base';
 import { IStyle, ITheme } from '../../Styling';
 import { IStyleFunction } from '../../Utilities';

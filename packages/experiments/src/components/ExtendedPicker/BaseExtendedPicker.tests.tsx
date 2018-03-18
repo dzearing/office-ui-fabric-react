@@ -7,7 +7,7 @@ import * as renderer from 'react-test-renderer';
 
 import { IBaseExtendedPickerProps } from './BaseExtendedPicker.types';
 import { BaseExtendedPicker } from './BaseExtendedPicker';
-import { SuggestionsController } from 'office-ui-fabric-react/lib/Pickers';
+import { SuggestionsController } from 'office-ui-fabric-react/lib-es2015/Pickers';
 import { IBaseFloatingPickerProps, BaseFloatingPicker } from '../FloatingPicker';
 import { IBaseSelectedItemsListProps, ISelectedItemProps, BaseSelectedItemsList } from '../SelectedItemsList';
 import { KeyCodes } from '../../Utilities';

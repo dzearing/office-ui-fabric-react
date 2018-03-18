@@ -1,9 +1,9 @@
 
 import * as React from 'react';
 import { ITilesListProps, ITilesGridItem, ITilesGridSegment, TilesGridMode, ITileSize } from './TilesList.types';
-import { List, IPageProps } from 'office-ui-fabric-react/lib/List';
-import { FocusZone, FocusZoneDirection } from 'office-ui-fabric-react/lib/FocusZone';
-import { autobind, css, IRenderFunction, IRectangle } from 'office-ui-fabric-react/lib/Utilities';
+import { List, IPageProps } from 'office-ui-fabric-react/lib-es2015/List';
+import { FocusZone, FocusZoneDirection } from 'office-ui-fabric-react/lib-es2015/FocusZone';
+import { css, IRenderFunction, IRectangle } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import * as TilesListStylesModule from './TilesList.scss';
 
 // tslint:disable-next-line:no-any
@@ -167,8 +167,7 @@ export class TilesList<TItem> extends React.Component<ITilesListProps<TItem>, IT
     );
   }
 
-  @autobind
-  private _onRenderPage(pageProps: IPageProps, defaultRender?: IRenderFunction<IPageProps>): JSX.Element {
+  private _onRenderPage = (pageProps: IPageProps, defaultRender?: IRenderFunction<IPageProps>): JSX.Element => {
     const {
       page,
       className: pageClassName,
@@ -288,11 +287,10 @@ export class TilesList<TItem> extends React.Component<ITilesListProps<TItem>, IT
     );
   }
 
-  @autobind
-  private _getPageSpecification(startIndex: number, bounds: IRectangle): {
+  private _getPageSpecification = (startIndex: number, bounds: IRectangle): {
     itemCount: number;
     data: IPageData<TItem>;
-  } {
+  } => {
     if (this._pageSpecificationCache) {
       if (this._pageSpecificationCache.width !== bounds.width) {
         this._pageSpecificationCache = undefined;
@@ -428,18 +426,15 @@ export class TilesList<TItem> extends React.Component<ITilesListProps<TItem>, IT
     return pageSpecification;
   }
 
-  @autobind
-  private _onGetCellClassName(): string {
+  private _onGetCellClassName = (): string => {
     return TilesListStyles.listCell;
   }
 
-  @autobind
-  private _onGetPageClassName(): string {
+  private _onGetPageClassName = (): string => {
     return TilesListStyles.listPage;
   }
 
-  @autobind
-  private _onGetCellStyle(item: ITileCell<TItem>, currentRow?: IRowData): React.CSSProperties {
+  private _onGetCellStyle = (item: ITileCell<TItem>, currentRow?: IRowData): React.CSSProperties => {
     const {
       grid: {
         mode: gridMode,

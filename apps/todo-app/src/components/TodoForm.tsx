@@ -5,7 +5,6 @@ import {
   ITextField,
   PrimaryButton,
   TextField,
-  autobind,
   createRef,
 } from 'office-ui-fabric-react';
 import * as stylesImport from './Todo.scss';
@@ -84,8 +83,7 @@ export default class TodoForm extends BaseComponent<ITodoFormProps, ITodoFormSta
     );
   }
 
-  @autobind
-  private _onSubmit(event: React.FormEvent<HTMLElement>): void {
+  private _onSubmit = (event: React.FormEvent<HTMLElement>): void => {
     event.preventDefault();
 
     const { value: textField } = this._textField;

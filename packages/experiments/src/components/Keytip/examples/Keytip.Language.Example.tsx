@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { IKeytipProps, Keytip } from '../../Keytip';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
 import { convertSequencesToKeytipID } from '../../../utilities/keysequence/IKeySequence';
 import { IKeytipExampleState, onKeytipButtonClick } from './Keytip.Basic.Example';
 

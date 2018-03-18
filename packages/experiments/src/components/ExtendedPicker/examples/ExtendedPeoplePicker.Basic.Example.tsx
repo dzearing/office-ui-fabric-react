@@ -3,19 +3,25 @@ import * as React from 'react';
 /* tslint:enable */
 import {
   BaseComponent,
+  IBasePickerSuggestionsProps,
+  IPersonaProps,
+  IPersonaWithMenuProps,
+  PrimaryButton,
+  SuggestionsController,
   assign,
-  autobind
-} from 'office-ui-fabric-react/lib/Utilities';
-import { IPersonaProps } from 'office-ui-fabric-react/lib/Persona';
-import { IBasePickerSuggestionsProps, SuggestionsController } from 'office-ui-fabric-react/lib/Pickers';
-import { ExtendedPeoplePicker } from '../PeoplePicker/ExtendedPeoplePicker';
-import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
-import { IPersonaWithMenu } from 'office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePickerItems/PeoplePickerItem.types';
+  autobind,
+} from 'office-ui-fabric-react';
+import {
+  ExtendedPeoplePicker,
+  FloatingPeoplePicker,
+  IBaseFloatingPickerProps,
+  IBaseSelectedItemsListProps,
+  IExtendedPersonaProps,
+  ISelectedPeopleProps,
+  SelectedPeopleList
+} from '@uifabric/experiments';
 import { people, mru, groupOne, groupTwo } from './PeopleExampleData';
 import './ExtendedPeoplePicker.Basic.Example.scss';
-import { FloatingPeoplePicker, IBaseFloatingPickerProps } from '../../FloatingPicker';
-import { IBaseSelectedItemsListProps, ISelectedPeopleProps, SelectedPeopleList, IExtendedPersonaProps }
-  from '../../SelectedItemsList';
 
 export interface IPeoplePickerExampleState {
   peopleList: IPersonaProps[];
@@ -31,9 +37,9 @@ export class ExtendedPeoplePickerTypesExample extends BaseComponent<{}, IPeopleP
 
   constructor(props: {}) {
     super(props);
-    let peopleList: IPersonaWithMenu[] = [];
+    let peopleList: IPersonaWithMenuProps[] = [];
     people.forEach((persona: IPersonaProps) => {
-      let target: IPersonaWithMenu = {};
+      let target: IPersonaWithMenuProps = {};
 
       assign(target, persona);
       peopleList.push(target);

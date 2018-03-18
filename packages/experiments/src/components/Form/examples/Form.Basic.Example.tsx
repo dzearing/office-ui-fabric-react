@@ -1,7 +1,7 @@
 /* tslint:disable:no-any */
 import * as React from 'react';
-import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+import { PrimaryButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import { Form, FormTextInput } from '../../Form';
 
 export interface IFormBasicExampleState {

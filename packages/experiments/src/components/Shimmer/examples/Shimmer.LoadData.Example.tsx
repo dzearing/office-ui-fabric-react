@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Shimmer } from 'experiments/lib/Shimmer';
-import { Toggle } from 'office-ui-fabric-react/lib/Toggle';
+import { Toggle } from 'office-ui-fabric-react';
+import { Shimmer } from '@uifabric/experiments';
 
 export interface IShimmerLoadDataExample {
   isDataLoaded?: boolean;

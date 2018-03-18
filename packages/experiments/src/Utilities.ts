@@ -1,1 +1,1 @@
-export * from 'office-ui-fabric-react/lib/Utilities';
+export * from 'office-ui-fabric-react/lib-es2015/Utilities';

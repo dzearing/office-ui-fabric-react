@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "module": "lib-es2015/index.js",
   "sideEffects": false,
-  "typings": "lib/index.d.ts",
+  "typings": "lib-es2015/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/OfficeDev/office-ui-fabric-react"

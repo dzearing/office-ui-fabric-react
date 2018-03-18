@@ -1,6 +1,6 @@
 
 import { IFormBaseInputProps } from '../../FormBaseInput';
-import { ITextFieldProps } from 'office-ui-fabric-react/lib/TextField';
+import { ITextFieldProps } from 'office-ui-fabric-react/lib-es2015/TextField';
 
 export { ITextFieldProps };
 

@@ -3,17 +3,19 @@ import * as React from 'react';
 /* tslint:enable */
 import {
   BaseComponent,
+  IBasePickerSuggestionsProps,
+  IPersonaProps,
+  IPersonaWithMenuProps,
+  SearchBox,
+  SuggestionsController,
   assign,
   autobind
-} from 'office-ui-fabric-react/lib/Utilities';
-import { IPersonaProps } from 'office-ui-fabric-react/lib/Persona';
-import { IBasePickerSuggestionsProps, SuggestionsController } from 'office-ui-fabric-react/lib/Pickers';
+} from 'office-ui-fabric-react';
+import { } from 'office-ui-fabric-react/lib-es2015/Pickers';
 import { IBaseFloatingPicker } from '../../BaseFloatingPicker.types';
 import { FloatingPeoplePicker } from '../FloatingPeoplePicker';
-import { IPersonaWithMenu } from 'office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePickerItems/PeoplePickerItem.types';
 import { people, mru } from '../../../ExtendedPicker';
 import './FloatingPeoplePicker.Basic.Example.scss';
-import { SearchBox } from 'office-ui-fabric-react/lib/SearchBox';
 
 export interface IPeoplePickerExampleState {
   currentPicker?: number | string;
@@ -39,9 +41,9 @@ export class FloatingPeoplePickerTypesExample extends BaseComponent<{}, IPeopleP
 
   constructor(props: {}) {
     super(props);
-    let peopleList: IPersonaWithMenu[] = [];
+    let peopleList: IPersonaWithMenuProps[] = [];
     people.forEach((persona: IPersonaProps) => {
-      let target: IPersonaWithMenu = {};
+      let target: IPersonaWithMenuProps = {};
 
       assign(target, persona);
       peopleList.push(target);

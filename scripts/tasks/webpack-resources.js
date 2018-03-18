@@ -114,7 +114,8 @@ module.exports = {
               use: 'ts-loader',
               exclude: [
                 /node_modules/,
-                /\.scss.ts$/
+                /\.scss.ts$/,
+                /\.test.tsx?$/
               ]
             },
             {
@@ -155,7 +156,11 @@ module.exports = {
         },
 
         plugins: [
-          new WebpackNotifierPlugin()
+          new WebpackNotifierPlugin(),
+          new webpack.WatchIgnorePlugin([
+            /\.js$/,
+            /\.d\.ts$/
+          ])
         ]
       },
       customConfig

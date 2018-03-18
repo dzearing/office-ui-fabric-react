@@ -8,9 +8,9 @@ import {
 import { ShimmerBasicExample } from './examples/Shimmer.Basic.Example';
 import { ShimmerLoadDataExample } from './examples/Shimmer.LoadData.Example';
 
-const ShimmerBasicExampleCode = require('!raw-loader!experiments/src/components/Shimmer/examples/Shimmer.Basic.Example.tsx') as string;
+const ShimmerBasicExampleCode = require('!raw-loader!@uifabric/experiments/src/components/Shimmer/examples/Shimmer.Basic.Example.tsx') as string;
 // tslint:disable-next-line:max-line-length
-const ShimmerLoadDataExampleCode = require('!raw-loader!experiments/src/components/Shimmer/examples/Shimmer.LoadData.Example.tsx') as string;
+const ShimmerLoadDataExampleCode = require('!raw-loader!@uifabric/experiments/src/components/Shimmer/examples/Shimmer.LoadData.Example.tsx') as string;
 
 export class ShimmerPage extends React.Component<IComponentDemoPageProps, {}> {
   public render(): JSX.Element {
@@ -37,7 +37,7 @@ export class ShimmerPage extends React.Component<IComponentDemoPageProps, {}> {
         propertiesTables={
           <PropertiesTableSet
             sources={ [
-              require<string>('!raw-loader!experiments/src/components/Shimmer/Shimmer.types.ts')
+              require<string>('!raw-loader!@uifabric/experiments/src/components/Shimmer/Shimmer.types.ts')
             ] }
           />
         }
