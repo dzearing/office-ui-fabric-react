@@ -44,10 +44,6 @@ export class CommandBar extends BaseComponent<ICommandBarProps, ICommandBarState
     farItems: []
   };
 
-  public refs: {
-    [key: string]: React.ReactInstance;
-  };
-
   private _searchSurface = createRef<HTMLDivElement>();
   private _commandSurface = createRef<HTMLDivElement>();
   private _commandBarRegion = createRef<HTMLDivElement>();

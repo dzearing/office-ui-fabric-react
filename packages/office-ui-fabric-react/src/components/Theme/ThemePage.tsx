@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { loadTheme, FontClassNames, IPalette } from 'office-ui-fabric-react/lib/Styling';
+import { loadTheme, FontClassNames, IPalette } from 'office-ui-fabric-react/lib-es2015/Styling';
 import { IComponentDemoPageProps, Highlight } from '@uifabric/example-app-base';
 import { defaultTheme } from './defaultTheme';
-import { Callout } from 'office-ui-fabric-react/lib/Callout';
-import { DetailsList, DetailsListLayoutMode as LayoutMode } from 'office-ui-fabric-react/lib/DetailsList';
-import { SelectionMode } from 'office-ui-fabric-react/lib/Selection';
-import { ColorPicker } from 'office-ui-fabric-react/lib/ColorPicker';
+import { Callout } from 'office-ui-fabric-react/lib-es2015/Callout';
+import { DetailsList, DetailsListLayoutMode as LayoutMode } from 'office-ui-fabric-react/lib-es2015/DetailsList';
+import { SelectionMode } from 'office-ui-fabric-react/lib-es2015/Selection';
+import { ColorPicker } from 'office-ui-fabric-react/lib-es2015/ColorPicker';
 import './ThemePage.scss';
 const ThemeCodeExample = require('!raw-loader!office-ui-fabric-react/src/components/Theme/examples/ThemeCode.Example.tsx');
 

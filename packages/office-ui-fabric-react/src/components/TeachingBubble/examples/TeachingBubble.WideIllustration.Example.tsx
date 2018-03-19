@@ -2,10 +2,10 @@
 import * as React from 'react';
 /* tslint:enable:no-unused-variable */
 
-import { IImageProps } from 'office-ui-fabric-react/lib/Image';
-import { DefaultButton, IButtonProps } from 'office-ui-fabric-react/lib/Button';
-import { TeachingBubble } from 'office-ui-fabric-react/lib/TeachingBubble';
-import { DirectionalHint } from 'office-ui-fabric-react/lib/common/DirectionalHint';
+import { IImageProps } from 'office-ui-fabric-react/lib-es2015/Image';
+import { DefaultButton, IButtonProps } from 'office-ui-fabric-react/lib-es2015/Button';
+import { TeachingBubble } from 'office-ui-fabric-react/lib-es2015/TeachingBubble';
+import { DirectionalHint } from 'office-ui-fabric-react/lib-es2015/common/DirectionalHint';
 
 export interface ITeachingBubbleWideIllustrationExampleState {
   isTeachingBubbleVisible?: boolean;

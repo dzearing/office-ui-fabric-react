@@ -1,11 +1,11 @@
 
 import * as React from 'react';
 import { ILayoutGroupProps } from './LayoutGroup.types';
-import { IRawStyle, mergeStyles } from 'office-ui-fabric-react/lib-es2015/Styling';
+import { IRawStyle, mergeStyles } from 'office-ui-fabric-react';
 import {
   getNativeProps,
   divProperties
-} from 'office-ui-fabric-react/lib-es2015/Utilities';
+} from 'office-ui-fabric-react';
 
 export class LayoutGroup extends React.Component<ILayoutGroupProps, {}> {
 

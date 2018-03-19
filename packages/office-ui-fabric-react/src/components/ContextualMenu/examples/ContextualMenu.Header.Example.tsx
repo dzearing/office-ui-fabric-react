@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
 import './ContextualMenuExample.scss';
 
 export class ContextualMenuHeaderExample extends React.Component<{}, {}> {

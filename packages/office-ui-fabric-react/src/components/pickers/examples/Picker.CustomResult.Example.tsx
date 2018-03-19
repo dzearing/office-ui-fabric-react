@@ -12,19 +12,19 @@ import {
   DocumentCardLocation,
   DocumentCardPreview,
   DocumentCardTitle
-} from 'office-ui-fabric-react/lib/DocumentCard';
-import { ImageFit } from 'office-ui-fabric-react/lib/Image';
-import { Persona, PersonaSize } from 'office-ui-fabric-react/lib/Persona';
-import { Checkbox } from 'office-ui-fabric-react/lib/Checkbox';
+} from 'office-ui-fabric-react/lib-es2015/DocumentCard';
+import { ImageFit } from 'office-ui-fabric-react/lib-es2015/Image';
+import { Persona, PersonaSize } from 'office-ui-fabric-react/lib-es2015/Persona';
+import { Checkbox } from 'office-ui-fabric-react/lib-es2015/Checkbox';
 import {
   IBasePickerProps,
   BasePickerListBelow,
   IPickerItemProps,
   ISuggestionItemProps
-} from 'office-ui-fabric-react/lib/Pickers';
+} from 'office-ui-fabric-react/lib-es2015/Pickers';
 
 import { TestImages } from '../../../common/TestImages';
-import { IButtonProps } from 'office-ui-fabric-react/lib/Button';
+import { IButtonProps } from 'office-ui-fabric-react/lib-es2015/Button';
 import './Picker.CustomResult.Example.scss';
 import * as exampleStylesImport from '../../../common/_exampleStyles.scss';
 const exampleStyles: any = exampleStylesImport;

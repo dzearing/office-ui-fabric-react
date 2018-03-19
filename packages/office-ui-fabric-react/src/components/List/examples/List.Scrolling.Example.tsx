@@ -2,14 +2,14 @@ import * as React from 'react';
 import {
   css,
   autobind
-} from 'office-ui-fabric-react/lib/Utilities';
+} from 'office-ui-fabric-react/lib-es2015/Utilities';
 import {
   FocusZone,
   FocusZoneDirection
-} from 'office-ui-fabric-react/lib/FocusZone';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { List } from 'office-ui-fabric-react/lib/List';
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
+} from 'office-ui-fabric-react/lib-es2015/FocusZone';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { List } from 'office-ui-fabric-react/lib-es2015/List';
+import { TextField } from 'office-ui-fabric-react/lib-es2015/TextField';
 import './List.Scrolling.Example.scss';
 
 export interface IListScrollingExampleProps {

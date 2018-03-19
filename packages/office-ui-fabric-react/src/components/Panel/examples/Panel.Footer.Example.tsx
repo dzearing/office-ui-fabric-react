@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
-import { PrimaryButton, DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { Panel, PanelType } from 'office-ui-fabric-react/lib/Panel';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { PrimaryButton, DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { Panel, PanelType } from 'office-ui-fabric-react/lib-es2015/Panel';
 
 export class PanelFooterExample extends React.Component<{}, {
   showPanel: boolean;

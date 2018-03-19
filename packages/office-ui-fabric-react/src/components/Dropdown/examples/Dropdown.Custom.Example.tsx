@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Dropdown } from 'office-ui-fabric-react/lib/Dropdown';
+import { Dropdown } from 'office-ui-fabric-react/lib-es2015/Dropdown';
 import './Dropdown.Basic.Example.scss';
 import { DropdownMenuItemType, IDropdownOption, IDropdownProps } from './../Dropdown.types';
 import { Icon } from '../../Icon';

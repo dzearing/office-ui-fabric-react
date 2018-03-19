@@ -1,5 +1,5 @@
-import { memoizeFunction } from 'office-ui-fabric-react/lib/Utilities';
-import { IButtonStyles } from 'office-ui-fabric-react/lib/Button';
+import { memoizeFunction } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { IButtonStyles } from 'office-ui-fabric-react/lib-es2015/Button';
 import { HighContrastSelector } from '../../../Styling';
 
 export const getCustomSplitButtonStyles = memoizeFunction((): IButtonStyles => {

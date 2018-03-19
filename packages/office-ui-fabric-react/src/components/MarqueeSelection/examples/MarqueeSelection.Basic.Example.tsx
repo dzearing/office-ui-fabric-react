@@ -6,9 +6,9 @@ import {
   autobind,
   css,
   createArray
-} from 'office-ui-fabric-react/lib/Utilities';
-import { Checkbox } from 'office-ui-fabric-react/lib/Checkbox';
-import { MarqueeSelection, Selection, IObjectWithKey } from 'office-ui-fabric-react/lib/MarqueeSelection';
+} from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { Checkbox } from 'office-ui-fabric-react/lib-es2015/Checkbox';
+import { MarqueeSelection, Selection, IObjectWithKey } from 'office-ui-fabric-react/lib-es2015/MarqueeSelection';
 import './MarqueeSelection.Basic.Example.scss';
 import * as exampleStylesImport from '../../../common/_exampleStyles.scss';
 const exampleStyles: any = exampleStylesImport;

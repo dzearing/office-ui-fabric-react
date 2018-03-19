@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SpinButton } from 'office-ui-fabric-react/lib/SpinButton';
+import { SpinButton } from 'office-ui-fabric-react/lib-es2015/SpinButton';
 
 // tslint:disable:jsx-no-lambda
 export class SpinButtonStatefulExample extends React.Component<any, any> {

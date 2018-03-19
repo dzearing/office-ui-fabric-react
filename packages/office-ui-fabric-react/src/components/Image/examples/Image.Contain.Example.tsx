@@ -3,8 +3,8 @@ import {
   Image,
   IImageProps,
   ImageFit
-} from 'office-ui-fabric-react/lib/Image';
-import { Label } from 'office-ui-fabric-react/lib/Label';
+} from 'office-ui-fabric-react/lib-es2015/Image';
+import { Label } from 'office-ui-fabric-react/lib-es2015/Label';
 
 export class ImageContainExample extends React.Component<any, any> {
   public render() {

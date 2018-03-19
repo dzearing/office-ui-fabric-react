@@ -1,7 +1,7 @@
 /* tslint:disable:jsx-no-multiline-js */
 
 import * as React from 'react';
-import { Link } from 'office-ui-fabric-react/lib/Link';
+import { Link } from 'office-ui-fabric-react/lib-es2015/Link';
 import './GettingStartedPage.scss';
 import { Highlight } from '@uifabric/example-app-base';
 
@@ -49,8 +49,8 @@ export class GettingStartedPage extends React.Component<any, any> {
           <Highlight className='typescript'>{
             `import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { Fabric } from 'office-ui-fabric-react/lib-es2015/Fabric';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
 
 const MyPage = () => (<Fabric><DefaultButton>I am a button.</DefaultButton></Fabric>);
 
@@ -71,9 +71,9 @@ ReactDOM.render(<MyPage />, document.body.firstChild);`
 
         <div className='ms-GettingStartedPage-code'>
           <Highlight className='typescript'>{
-            `import { Button } from 'office-ui-fabric-react/lib/Button';
-import { Dropdown } from 'office-ui-fabric-react/lib/Dropdown';
-import { List } from 'office-ui-fabric-react/lib/List';`
+            `import { Button } from 'office-ui-fabric-react/lib-es2015/Button';
+import { Dropdown } from 'office-ui-fabric-react/lib-es2015/Dropdown';
+import { List } from 'office-ui-fabric-react/lib-es2015/List';`
           }</Highlight>
         </div>
 

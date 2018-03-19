@@ -6,13 +6,13 @@ import {
   ContextualMenu,
   DirectionalHint,
   IContextualMenuItem
-} from 'office-ui-fabric-react/lib/ContextualMenu';
-import { FocusZone, FocusZoneDirection } from 'office-ui-fabric-react/lib/FocusZone';
-import { ResponsiveMode, withResponsiveMode } from 'office-ui-fabric-react/lib/utilities/decorators/withResponsiveMode';
-import { getRTL, setRTL } from 'office-ui-fabric-react/lib/Utilities';
+} from 'office-ui-fabric-react/lib-es2015/ContextualMenu';
+import { FocusZone, FocusZoneDirection } from 'office-ui-fabric-react/lib-es2015/FocusZone';
+import { ResponsiveMode, withResponsiveMode } from 'office-ui-fabric-react/lib-es2015/utilities/decorators/withResponsiveMode';
+import { getRTL, setRTL } from 'office-ui-fabric-react/lib-es2015/Utilities';
 
-import { FontClassNames } from 'office-ui-fabric-react/lib/Styling';
-import { Icon } from 'office-ui-fabric-react/lib/Icon';
+import { FontClassNames } from 'office-ui-fabric-react/lib-es2015/Styling';
+import { Icon } from 'office-ui-fabric-react/lib-es2015/Icon';
 
 export interface IHeaderProps {
   title: string;

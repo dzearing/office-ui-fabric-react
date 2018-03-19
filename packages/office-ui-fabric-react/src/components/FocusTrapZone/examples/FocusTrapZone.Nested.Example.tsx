@@ -4,10 +4,10 @@ import * as React from 'react';
 
 /* tslint:disable:no-string-literal */
 
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { FocusTrapZone } from 'office-ui-fabric-react/lib/FocusTrapZone';
-import { Toggle } from 'office-ui-fabric-react/lib/Toggle';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { FocusTrapZone } from 'office-ui-fabric-react/lib-es2015/FocusTrapZone';
+import { Toggle } from 'office-ui-fabric-react/lib-es2015/Toggle';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import './FocusTrapZone.Box.Example.scss';
 
 interface IFocusTrapComponentProps {

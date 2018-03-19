@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import {
   IPersonaProps,
   Persona,
   PersonaSize,
   PersonaPresence
-} from 'office-ui-fabric-react/lib/Persona';
+} from 'office-ui-fabric-react/lib-es2015/Persona';
 import { TestImages } from '../../../common/TestImages';
 import './PersonaExample.scss';
 import * as exampleStylesImport from '../../../common/_exampleStyles.scss';

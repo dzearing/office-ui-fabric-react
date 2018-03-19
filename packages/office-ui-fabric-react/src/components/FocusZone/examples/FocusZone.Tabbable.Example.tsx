@@ -2,9 +2,9 @@
 import * as React from 'react';
 /* tslint:enable:no-unused-variable */
 
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { FocusZone, FocusZoneDirection, FocusZoneTabbableElements } from 'office-ui-fabric-react/lib/FocusZone';
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { FocusZone, FocusZoneDirection, FocusZoneTabbableElements } from 'office-ui-fabric-react/lib-es2015/FocusZone';
+import { TextField } from 'office-ui-fabric-react/lib-es2015/TextField';
 import './FocusZone.Tabbable.Example.scss';
 
 export const FocusZoneTabbableExample = () => (

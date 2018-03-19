@@ -1,4 +1,4 @@
-import { IGroup } from 'office-ui-fabric-react/lib/DetailsList';
+import { IGroup } from 'office-ui-fabric-react/lib-es2015/DetailsList';
 
 const LOREM_IPSUM = ('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ' +
   'labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut ' +

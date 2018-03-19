@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { css } from 'office-ui-fabric-react/lib/Utilities';
+import { css } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import * as stylesImport from './Interstitials.module.scss';
 const styles: any = stylesImport;
 const pageStyles: any = require('../PageStyles.module.scss');

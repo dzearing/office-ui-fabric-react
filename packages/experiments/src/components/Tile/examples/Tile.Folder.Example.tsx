@@ -1,7 +1,7 @@
 
 import * as React from 'react';
 import { Tile } from '../Tile';
-import { Checkbox } from 'office-ui-fabric-react/lib-es2015/Checkbox';
+import { Checkbox } from 'office-ui-fabric-react';
 import {
   SignalField,
   NewSignal,

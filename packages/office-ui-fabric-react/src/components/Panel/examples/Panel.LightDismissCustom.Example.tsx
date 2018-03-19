@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
-import { Dialog, DialogType, DialogFooter } from 'office-ui-fabric-react/lib/Dialog';
-import { PrimaryButton, DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { Panel } from 'office-ui-fabric-react/lib/Panel';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { Dialog, DialogType, DialogFooter } from 'office-ui-fabric-react/lib-es2015/Dialog';
+import { PrimaryButton, DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { Panel } from 'office-ui-fabric-react/lib-es2015/Panel';
 
 export class PanelLightDismissCustomExample extends React.Component<{}, {
   showPanel: boolean;

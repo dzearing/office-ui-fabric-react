@@ -3,10 +3,10 @@ import {
   IPositioningContainerTypes
 } from './PositioningContainer.types';
 import { getClassNames } from './PositioningContainer.styles';
-import { Layer } from 'office-ui-fabric-react/lib/Layer';
+import { Layer } from 'office-ui-fabric-react/lib-es2015/Layer';
 
 // Utilites/Helpers
-import { DirectionalHint } from 'office-ui-fabric-react/lib/common/DirectionalHint';
+import { DirectionalHint } from 'office-ui-fabric-react/lib-es2015/common/DirectionalHint';
 import {
   BaseComponent,
   IPoint,
@@ -27,7 +27,7 @@ import {
   positionElement,
   IPositionedData,
   RectangleEdge
-} from 'office-ui-fabric-react/lib/utilities/positioning';
+} from 'office-ui-fabric-react/lib-es2015/utilities/positioning';
 
 import { AnimationClassNames, mergeStyles } from '../../../Styling';
 

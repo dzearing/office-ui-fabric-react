@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { DetailsList, IColumn } from 'office-ui-fabric-react/lib/DetailsList';
-import { Link } from 'office-ui-fabric-react/lib/Link';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+import { DetailsList, IColumn } from 'office-ui-fabric-react/lib-es2015/DetailsList';
+import { Link } from 'office-ui-fabric-react/lib-es2015/Link';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import './DetailsListExample.scss';
 
 export interface IDetailsListNavigatingFocusExampleState {

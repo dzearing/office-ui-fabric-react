@@ -4,7 +4,7 @@ import {
   IStyleFunction,
   classNamesFunction
 } from '../../../Utilities';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
 
 import { Overlay } from '../Overlay';
 

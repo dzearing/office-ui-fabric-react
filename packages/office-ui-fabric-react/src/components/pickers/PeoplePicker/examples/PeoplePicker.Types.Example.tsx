@@ -5,10 +5,10 @@ import {
   BaseComponent,
   assign,
   autobind
-} from 'office-ui-fabric-react/lib/Utilities';
-import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
-import { Toggle } from 'office-ui-fabric-react/lib/Toggle';
-import { IPersonaProps, Persona } from 'office-ui-fabric-react/lib/Persona';
+} from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib-es2015/Dropdown';
+import { Toggle } from 'office-ui-fabric-react/lib-es2015/Toggle';
+import { IPersonaProps, Persona } from 'office-ui-fabric-react/lib-es2015/Persona';
 import {
   CompactPeoplePicker,
   IBasePickerSuggestionsProps,
@@ -16,11 +16,11 @@ import {
   ListPeoplePicker,
   NormalPeoplePicker,
   ValidationState
-} from 'office-ui-fabric-react/lib/Pickers';
-import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
-import { IPersonaWithMenuProps } from 'office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePickerItems/PeoplePickerItem.types';
+} from 'office-ui-fabric-react/lib-es2015/Pickers';
+import { PrimaryButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { IPersonaWithMenuProps } from 'office-ui-fabric-react/lib-es2015/components/pickers/PeoplePicker/PeoplePickerItems/PeoplePickerItem.types';
 import { people, mru } from './PeoplePickerExampleData';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
 import { Promise } from 'es6-promise';
 import './PeoplePicker.Types.Example.scss';
 

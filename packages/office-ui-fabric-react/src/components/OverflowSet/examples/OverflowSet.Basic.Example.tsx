@@ -1,13 +1,13 @@
 /* tslint:disable:no-unused-variable */
 import * as React from 'react';
 /* tslint:enable:no-unused-variable */
-import { BaseComponent, css } from 'office-ui-fabric-react/lib/Utilities';
-import { IconButton } from 'office-ui-fabric-react/lib/Button';
-import { Link } from 'office-ui-fabric-react/lib/Link';
+import { BaseComponent, css } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { IconButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { Link } from 'office-ui-fabric-react/lib-es2015/Link';
 import {
   IOverflowSetItemProps,
   OverflowSet
-} from 'office-ui-fabric-react/lib/OverflowSet';
+} from 'office-ui-fabric-react/lib-es2015/OverflowSet';
 
 import * as stylesImport from './OverflowSet.Example.scss';
 const styles: any = stylesImport;

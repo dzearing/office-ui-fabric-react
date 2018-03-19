@@ -4,7 +4,7 @@ import * as React from 'react';
 import { IFormTextInputProps } from './FormTextInput.types';
 import { FormBaseInput, IFormBaseInputState } from '../../FormBaseInput';
 import { IFormContext } from '../../Form';
-import { TextField, ITextFieldProps } from 'office-ui-fabric-react/lib-es2015/TextField';
+import { TextField, ITextFieldProps } from 'office-ui-fabric-react';
 
 /**
  * TextBox input for the Form.

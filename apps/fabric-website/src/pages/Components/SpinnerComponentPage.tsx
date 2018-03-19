@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SpinnerPage } from 'office-ui-fabric-react/lib/components/Spinner/SpinnerPage';
+import { SpinnerPage } from 'office-ui-fabric-react/lib-es2015/components/Spinner/SpinnerPage';
 import { PageHeader } from '../../components/PageHeader/PageHeader';
 import { ComponentPage } from '../../components/ComponentPage/ComponentPage';
 const pageStyles: any = require('../PageStyles.module.scss');

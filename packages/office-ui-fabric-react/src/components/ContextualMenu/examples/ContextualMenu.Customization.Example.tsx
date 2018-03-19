@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { DirectionalHint, ContextualMenuItemType } from 'office-ui-fabric-react/lib/ContextualMenu';
-import { DefaultButton, IconButton } from 'office-ui-fabric-react/lib/Button';
-import { FocusZoneDirection } from 'office-ui-fabric-react/lib/FocusZone';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+import { DirectionalHint, ContextualMenuItemType } from 'office-ui-fabric-react/lib-es2015/ContextualMenu';
+import { DefaultButton, IconButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { FocusZoneDirection } from 'office-ui-fabric-react/lib-es2015/FocusZone';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import './ContextualMenuExample.scss';
 
 export class ContextualMenuCustomizationExample extends React.Component<{}, {}> {

@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { Label } from 'office-ui-fabric-react/lib/Label';
-import { Icon } from 'office-ui-fabric-react/lib/Icon';
+import { Label } from 'office-ui-fabric-react/lib-es2015/Label';
+import { Icon } from 'office-ui-fabric-react/lib-es2015/Icon';
 import {
   PivotItem,
   IPivotItemProps,
   Pivot
-} from 'office-ui-fabric-react/lib/Pivot';
+} from 'office-ui-fabric-react/lib-es2015/Pivot';
 
 export class PivotIconCountExample extends React.Component<any, any> {
   public render() {

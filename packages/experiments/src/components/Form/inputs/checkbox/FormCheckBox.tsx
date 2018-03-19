@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // Components
-import { Checkbox, ICheckboxProps } from 'office-ui-fabric-react/lib-es2015/Checkbox';
+import { Checkbox, ICheckboxProps } from 'office-ui-fabric-react';
 import { IFormCheckBoxProps } from './FormCheckBox.types';
 import { FormBaseInput, IFormBaseInputState } from '../../FormBaseInput';
 import { IFormContext } from '../../Form';

@@ -19,7 +19,7 @@ import {
   SharedSignal
 } from '../Signals';
 import { ChoiceGroup, IChoiceGroupOption, Checkbox } from 'office-ui-fabric-react';
-import { css, autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { css, autobind } from 'office-ui-fabric-react';
 import { lorem } from '@uifabric/example-app-base';
 import * as SignalStylesModule from '../Signal.scss';
 import * as SignalsExampleStylesModule from './Signals.Example.scss';

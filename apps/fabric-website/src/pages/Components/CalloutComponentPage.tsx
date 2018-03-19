@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CalloutPage } from 'office-ui-fabric-react/lib/components/Callout/CalloutPage';
+import { CalloutPage } from 'office-ui-fabric-react/lib-es2015/components/Callout/CalloutPage';
 import { PageHeader } from '../../components/PageHeader/PageHeader';
 import { ComponentPage } from '../../components/ComponentPage/ComponentPage';
 const pageStyles: any = require('../PageStyles.module.scss');

@@ -1,28 +1,28 @@
 /* tslint:disable:no-unused-variable */
 import * as React from 'react';
 /* tslint:enable:no-unused-variable */
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
+import { TextField } from 'office-ui-fabric-react/lib-es2015/TextField';
 import {
   DetailsList,
   DetailsListLayoutMode,
   IDetailsHeaderProps,
   Selection,
   IColumn
-} from 'office-ui-fabric-react/lib/DetailsList';
+} from 'office-ui-fabric-react/lib-es2015/DetailsList';
 import {
   IRenderFunction
-} from 'office-ui-fabric-react/lib/Utilities';
+} from 'office-ui-fabric-react/lib-es2015/Utilities';
 import {
   TooltipHost,
   ITooltipHostProps
-} from 'office-ui-fabric-react/lib/Tooltip';
+} from 'office-ui-fabric-react/lib-es2015/Tooltip';
 import {
   ScrollablePane
-} from 'office-ui-fabric-react/lib/ScrollablePane';
+} from 'office-ui-fabric-react/lib-es2015/ScrollablePane';
 import {
   Sticky
-} from 'office-ui-fabric-react/lib/Sticky';
-import { MarqueeSelection } from 'office-ui-fabric-react/lib/MarqueeSelection';
+} from 'office-ui-fabric-react/lib-es2015/Sticky';
+import { MarqueeSelection } from 'office-ui-fabric-react/lib-es2015/MarqueeSelection';
 
 const _items: {
   key: number,

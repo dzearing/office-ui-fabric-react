@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { TextField, ITextFieldProps } from 'office-ui-fabric-react/lib/TextField';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
-import { IconButton } from 'office-ui-fabric-react/lib/Button';
-import { Callout } from 'office-ui-fabric-react/lib/Callout';
+import { TextField, ITextFieldProps } from 'office-ui-fabric-react/lib-es2015/TextField';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { IconButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { Callout } from 'office-ui-fabric-react/lib-es2015/Callout';
 import './TextField.Examples.scss';
 
 export class TextFieldCustomRenderExample extends React.Component<{}, {

@@ -4,15 +4,15 @@ import * as React from 'react';
 import {
   BaseComponent,
   autobind
-} from 'office-ui-fabric-react/lib-es2015/Utilities';
-import { PrimaryButton } from 'office-ui-fabric-react/lib-es2015/Button';
+} from 'office-ui-fabric-react';
+import { PrimaryButton } from 'office-ui-fabric-react';
 import { people, groupOne, groupTwo } from '../../ExtendedPicker';
 import 'office-ui-fabric-react/lib-es2015/components/Pickers/PeoplePicker/examples/PeoplePicker.Types.Example.scss';
 import { IExtendedPersonaProps, SelectedPeopleList, ISelectedPeopleItemProps } from '../SelectedPeopleList/SelectedPeopleList';
 import { ExtendedSelectedItem } from '../SelectedPeopleList/Items/ExtendedSelectedItem';
-import { Selection } from 'office-ui-fabric-react/lib-es2015/Selection';
-import { IPersonaProps } from 'office-ui-fabric-react/lib-es2015/Persona';
-import { Icon } from 'office-ui-fabric-react/lib-es2015/Icon';
+import { Selection } from 'office-ui-fabric-react';
+import { IPersonaProps } from 'office-ui-fabric-react';
+import { Icon } from 'office-ui-fabric-react';
 
 import * as styles from './SelectedPeopleList.Basic.Example.scss';
 

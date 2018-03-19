@@ -3,11 +3,11 @@ import * as React from 'react';
 /* tslint:enable:no-unused-variable */
 
 import { autobind } from '../../../Utilities';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { FocusTrapZone } from 'office-ui-fabric-react/lib/FocusTrapZone';
-import { Link } from 'office-ui-fabric-react/lib/Link';
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
-import { Toggle, IToggle } from 'office-ui-fabric-react/lib/Toggle';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { FocusTrapZone } from 'office-ui-fabric-react/lib-es2015/FocusTrapZone';
+import { Link } from 'office-ui-fabric-react/lib-es2015/Link';
+import { TextField } from 'office-ui-fabric-react/lib-es2015/TextField';
+import { Toggle, IToggle } from 'office-ui-fabric-react/lib-es2015/Toggle';
 import './FocusTrapZone.Box.Example.scss';
 
 export interface IBoxExampleExampleState {

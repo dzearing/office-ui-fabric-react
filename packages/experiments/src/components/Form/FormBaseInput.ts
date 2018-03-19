@@ -11,7 +11,7 @@ export { IFormBaseInputProps };
 import {
   BaseComponent,
   ICancelable
-} from 'office-ui-fabric-react/lib-es2015/Utilities';
+} from 'office-ui-fabric-react';
 
 export const DEFAULT_DEBOUNCE = 250;
 

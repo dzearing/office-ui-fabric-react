@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-import { css } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { css } from 'office-ui-fabric-react';
 import * as SignalFieldStylesModule from './SignalField.scss';
 
 // tslint:disable-next-line:no-any

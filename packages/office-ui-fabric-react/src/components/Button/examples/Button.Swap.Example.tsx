@@ -6,7 +6,7 @@ import {
   IButtonBasicExampleStyleProps,
   IButtonBasicExampleStyles
 } from './Button.Basic.Example.styles';
-import { DefaultButton, PrimaryButton, IButtonProps } from 'office-ui-fabric-react/lib/Button';
+import { DefaultButton, PrimaryButton, IButtonProps } from 'office-ui-fabric-react/lib-es2015/Button';
 
 export interface IButtonSwapExampleState {
   isPrimary: boolean;

@@ -1,4 +1,4 @@
-import { IDatePickerProps } from 'office-ui-fabric-react/lib-es2015/DatePicker';
+import { IDatePickerProps } from 'office-ui-fabric-react';
 import { IFormBaseInputProps } from '../../FormBaseInput';
 export { IDatePickerProps };
 

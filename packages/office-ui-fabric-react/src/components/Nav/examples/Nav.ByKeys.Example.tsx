@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Nav } from 'office-ui-fabric-react/lib/Nav';
+import { Nav } from 'office-ui-fabric-react/lib-es2015/Nav';
 
 export class NavByKeysExample extends React.Component<any, any> {
   public render() {

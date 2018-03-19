@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { OverlayPage } from 'office-ui-fabric-react/lib/components/Overlay/OverlayPage';
+import { OverlayPage } from 'office-ui-fabric-react/lib-es2015/components/Overlay/OverlayPage';
 import { PageHeader } from '../../components/PageHeader/PageHeader';
 import { ComponentPage } from '../../components/ComponentPage/ComponentPage';
 const pageStyles: any = require('../PageStyles.module.scss');

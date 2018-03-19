@@ -1,12 +1,12 @@
 import * as React from 'react';
 import {
   css
-} from 'office-ui-fabric-react/lib/Utilities';
-import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
-import { Panel, PanelType } from 'office-ui-fabric-react/lib/Panel';
-import { Nav } from 'office-ui-fabric-react/lib/Nav';
-import { withResponsiveMode, ResponsiveMode } from 'office-ui-fabric-react/lib/utilities/decorators/withResponsiveMode';
-import { INavLink, INavLinkGroup } from 'office-ui-fabric-react/lib/Nav';
+} from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { Fabric } from 'office-ui-fabric-react/lib-es2015/Fabric';
+import { Panel, PanelType } from 'office-ui-fabric-react/lib-es2015/Panel';
+import { Nav } from 'office-ui-fabric-react/lib-es2015/Nav';
+import { withResponsiveMode, ResponsiveMode } from 'office-ui-fabric-react/lib-es2015/utilities/decorators/withResponsiveMode';
+import { INavLink, INavLinkGroup } from 'office-ui-fabric-react/lib-es2015/Nav';
 import { Header } from '../Header/Header';
 import './App.scss';
 

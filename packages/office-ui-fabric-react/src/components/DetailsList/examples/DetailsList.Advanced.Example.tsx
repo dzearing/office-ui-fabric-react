@@ -1,14 +1,14 @@
 import * as React from 'react';
-import { Link } from 'office-ui-fabric-react/lib/Link';
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
-import { CommandBar } from 'office-ui-fabric-react/lib/CommandBar';
+import { Link } from 'office-ui-fabric-react/lib-es2015/Link';
+import { TextField } from 'office-ui-fabric-react/lib-es2015/TextField';
+import { CommandBar } from 'office-ui-fabric-react/lib-es2015/CommandBar';
 import {
   IContextualMenuProps,
   IContextualMenuItem,
   DirectionalHint,
   ContextualMenu,
-} from 'office-ui-fabric-react/lib/ContextualMenu';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+} from 'office-ui-fabric-react/lib-es2015/ContextualMenu';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import {
   CheckboxVisibility,
   ColumnActionsMode,
@@ -20,7 +20,7 @@ import {
   Selection,
   SelectionMode,
   buildColumns
-} from 'office-ui-fabric-react/lib/DetailsList';
+} from 'office-ui-fabric-react/lib-es2015/DetailsList';
 import { createListItems, isGroupable } from '@uifabric/example-app-base';
 import './DetailsList.Advanced.Example.scss';
 

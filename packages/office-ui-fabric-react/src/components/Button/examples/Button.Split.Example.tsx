@@ -5,8 +5,8 @@ import {
   IButtonBasicExampleStyleProps,
   IButtonBasicExampleStyles
 } from './Button.Basic.Example.styles';
-import { DefaultButton, IconButton, IButtonProps } from 'office-ui-fabric-react/lib/Button';
-import { Label } from 'office-ui-fabric-react/lib/Label';
+import { DefaultButton, IconButton, IButtonProps } from 'office-ui-fabric-react/lib-es2015/Button';
+import { Label } from 'office-ui-fabric-react/lib-es2015/Label';
 import { getCustomSplitButtonStyles } from './Button.Split.Example.styles';
 
 const alertClicked = (): void => {

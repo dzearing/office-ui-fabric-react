@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {
   ComboBox
-} from 'office-ui-fabric-react/lib/ComboBox';
+} from 'office-ui-fabric-react/lib-es2015/ComboBox';
 import './ComboBox.Basic.Example.scss';
 
 export class ComboBoxCustomStyledExample extends React.Component<any, any> {

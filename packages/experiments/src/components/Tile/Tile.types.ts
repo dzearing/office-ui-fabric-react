@@ -1,8 +1,8 @@
 /* tslint:disable:no-unused-variable */
 
 import * as React from 'react';
-import { IBaseProps, ISize } from 'office-ui-fabric-react/lib-es2015/Utilities';
-import { ISelection } from 'office-ui-fabric-react/lib-es2015/Selection';
+import { IBaseProps, ISize } from 'office-ui-fabric-react';
+import { ISelection } from 'office-ui-fabric-react';
 
 export type TileSize = keyof {
   small: 'small',

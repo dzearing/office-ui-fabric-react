@@ -6,7 +6,7 @@ import {
   DocumentCardTitle,
   IDocumentCardPreviewProps,
   DocumentCardType
-} from 'office-ui-fabric-react/lib/DocumentCard';
+} from 'office-ui-fabric-react/lib-es2015/DocumentCard';
 import { TestImages } from '../../../common/TestImages';
 
 export class DocumentCardCompactExample extends React.Component<any, any> {

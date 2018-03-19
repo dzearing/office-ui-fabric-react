@@ -3,12 +3,12 @@ import {
   Checkbox,
   ICheckboxStyles,
   ICheckboxProps
-} from 'office-ui-fabric-react/lib/Checkbox';
+} from 'office-ui-fabric-react/lib-es2015/Checkbox';
 import {
   Persona,
   PersonaSize
-} from 'office-ui-fabric-react/lib/Persona';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+} from 'office-ui-fabric-react/lib-es2015/Persona';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 
 export interface ICheckboxBasicExampleState {
   isChecked: boolean;

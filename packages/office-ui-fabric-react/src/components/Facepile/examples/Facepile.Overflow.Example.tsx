@@ -3,10 +3,10 @@ import {
   IFacepileProps,
   Facepile,
   OverflowButtonType,
-} from 'office-ui-fabric-react/lib/Facepile';
-import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
-import { Slider } from 'office-ui-fabric-react/lib/Slider';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+} from 'office-ui-fabric-react/lib-es2015/Facepile';
+import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib-es2015/Dropdown';
+import { Slider } from 'office-ui-fabric-react/lib-es2015/Slider';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import { facepilePersonas } from './FacepileExampleData';
 import './Facepile.Examples.scss';
 

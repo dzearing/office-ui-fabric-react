@@ -1,8 +1,8 @@
 /* tslint:disable:no-unused-variable */
 import * as React from 'react';
 /* tslint:enable:no-unused-variable */
-import { Link } from 'office-ui-fabric-react/lib/Link';
-import { DetailsList, IGroup, IGroupDividerProps } from 'office-ui-fabric-react/lib/DetailsList';
+import { Link } from 'office-ui-fabric-react/lib-es2015/Link';
+import { DetailsList, IGroup, IGroupDividerProps } from 'office-ui-fabric-react/lib-es2015/DetailsList';
 import { createListItems, createGroups } from '@uifabric/example-app-base';
 import './DetailsListExample.scss';
 

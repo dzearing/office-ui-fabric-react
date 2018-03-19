@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { autobind } from '../../../Utilities';
-import { Dialog, DialogType, DialogFooter } from 'office-ui-fabric-react/lib/Dialog';
-import { PrimaryButton, DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { Dialog, DialogType, DialogFooter } from 'office-ui-fabric-react/lib-es2015/Dialog';
+import { PrimaryButton, DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
 
 export class DialogBlockingExample extends React.Component<{}, {
   hideDialog: boolean;

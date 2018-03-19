@@ -5,7 +5,7 @@ import {
   IButtonBasicExampleStyleProps,
   IButtonBasicExampleStyles
 } from './Button.Basic.Example.styles';
-import { PrimaryButton, IButtonProps } from 'office-ui-fabric-react/lib/Button';
+import { PrimaryButton, IButtonProps } from 'office-ui-fabric-react/lib-es2015/Button';
 
 export class ButtonScreenReaderExample extends React.Component<IButtonProps, {}> {
   public render() {

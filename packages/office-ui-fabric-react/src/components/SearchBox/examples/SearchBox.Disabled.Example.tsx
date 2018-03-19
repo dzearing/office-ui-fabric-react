@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SearchBox } from 'office-ui-fabric-react/lib/SearchBox';
+import { SearchBox } from 'office-ui-fabric-react/lib-es2015/SearchBox';
 import './SearchBox.Examples.scss';
 
 // tslint:disable:jsx-no-lambda

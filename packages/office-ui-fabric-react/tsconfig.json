@@ -1,9 +1,6 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "lib",
-    "target": "es5",
-    "module": "commonjs",
     "jsx": "react",
     "declaration": true,
     "sourceMap": true,
@@ -24,7 +21,7 @@
       "webpack-env"
     ],
     "paths": {
-      "office-ui-fabric-react/lib/*": [
+      "office-ui-fabric-react/lib-es2015/*": [
         "./src/*"
       ]
     }

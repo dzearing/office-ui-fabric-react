@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { PositioningContainer } from './PositioningContainer';
-import { DirectionalHint } from 'office-ui-fabric-react/lib/common/DirectionalHint';
+import { DirectionalHint } from 'office-ui-fabric-react/lib-es2015/common/DirectionalHint';
 import {
   IPoint,
   IRectangle
 } from '../../../Utilities';
-import { ICalloutPositon } from 'office-ui-fabric-react/lib/utilities/positioning';
+import { ICalloutPositon } from 'office-ui-fabric-react/lib-es2015/utilities/positioning';
 
 export interface IPositioningContainer {
 }

@@ -7,8 +7,8 @@ import {
   DocumentCardPreview,
   DocumentCardTitle,
   IDocumentCardPreviewProps
-} from 'office-ui-fabric-react/lib/DocumentCard';
-import { ImageFit } from 'office-ui-fabric-react/lib/Image';
+} from 'office-ui-fabric-react/lib-es2015/DocumentCard';
+import { ImageFit } from 'office-ui-fabric-react/lib-es2015/Image';
 import { TestImages } from '../../../common/TestImages';
 
 export class DocumentCardCompleteExample extends React.Component<any, any> {

@@ -1,6 +1,6 @@
 
 import * as React from 'react';
-import { IBaseProps } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { IBaseProps } from 'office-ui-fabric-react';
 import { LayoutGroup } from './LayoutGroup';
 
 export interface ILayoutGroupProps extends IBaseProps, React.HTMLAttributes<LayoutGroup | HTMLDivElement> {

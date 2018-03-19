@@ -3,11 +3,11 @@ import * as React from 'react';
 /* tslint:enable:no-unused-variable */
 import {
   Breadcrumb, IBreadcrumbItem
-} from 'office-ui-fabric-react/lib/Breadcrumb';
+} from 'office-ui-fabric-react/lib-es2015/Breadcrumb';
 import {
   autobind
 } from '../../../Utilities';
-import { Label } from 'office-ui-fabric-react/lib/Label';
+import { Label } from 'office-ui-fabric-react/lib-es2015/Label';
 import * as exampleStylesImport from '../../../common/_exampleStyles.scss';
 const exampleStyles: any = exampleStylesImport;
 

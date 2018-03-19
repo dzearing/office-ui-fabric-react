@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ChoiceGroup, IChoiceGroupOption } from 'office-ui-fabric-react/lib/ChoiceGroup';
+import { ChoiceGroup, IChoiceGroupOption } from 'office-ui-fabric-react/lib-es2015/ChoiceGroup';
 import { TestImages } from '../../../common/TestImages';
 
 /**

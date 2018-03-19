@@ -2,7 +2,7 @@
 import * as React from 'react';
 /* tslint:enable:no-unused-variable */
 
-import { Icon } from 'office-ui-fabric-react/lib/Icon';
+import { Icon } from 'office-ui-fabric-react/lib-es2015/Icon';
 import './IconExample.scss';
 
 export class IconColorExample extends React.Component<any, any> {

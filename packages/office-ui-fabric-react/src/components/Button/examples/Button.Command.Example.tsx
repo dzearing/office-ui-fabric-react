@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { CommandButton, IButtonProps } from 'office-ui-fabric-react/lib/Button';
+import { CommandButton, IButtonProps } from 'office-ui-fabric-react/lib-es2015/Button';
 
 export class ButtonCommandExample extends React.Component<IButtonProps, {}> {
   public render() {

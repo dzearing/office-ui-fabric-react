@@ -7,13 +7,13 @@ import * as React from 'react';
 
 // Components
 import { IFormDatePickerProps } from './FormDatePicker.types';
-import { DatePicker, IDatePickerProps } from 'office-ui-fabric-react/lib-es2015/DatePicker';
-import { Icon } from 'office-ui-fabric-react/lib-es2015/Icon';
+import { DatePicker, IDatePickerProps } from 'office-ui-fabric-react';
+import { Icon } from 'office-ui-fabric-react';
 import { FormBaseInput, IFormBaseInputState } from '../../FormBaseInput';
 import { IFormContext } from '../../Form';
 
 // Utilities
-import { css } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { css } from 'office-ui-fabric-react';
 
 /**
  * DatePicker input for Form

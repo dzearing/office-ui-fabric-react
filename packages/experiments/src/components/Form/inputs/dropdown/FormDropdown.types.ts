@@ -1,4 +1,4 @@
-import { IDropdownProps } from 'office-ui-fabric-react/lib-es2015/Dropdown';
+import { IDropdownProps } from 'office-ui-fabric-react';
 import { IFormBaseInputProps } from '../../FormBaseInput';
 export { IDropdownProps };
 

@@ -3,7 +3,7 @@ import {
   DatePicker,
   DayOfWeek,
   IDatePickerStrings
-} from 'office-ui-fabric-react/lib/DatePicker';
+} from 'office-ui-fabric-react/lib-es2015/DatePicker';
 
 const DayPickerStrings: IDatePickerStrings = {
   months: [

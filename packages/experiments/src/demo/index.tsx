@@ -6,10 +6,10 @@ import { App, AppDefinition } from './AppDefinition';
 import { IAppLink, IAppLinkGroup } from '@uifabric/example-app-base';
 import { Router, Route } from 'office-ui-fabric-react/lib-es2015/utilities/router/index';
 import { GettingStartedPage } from './GettingStartedPage';
-import { setBaseUrl } from 'office-ui-fabric-react/lib-es2015/Utilities';
-import { Fabric } from 'office-ui-fabric-react/lib-es2015/Fabric';
-import { initializeIcons } from 'office-ui-fabric-react/lib-es2015/Icons';
-import { initializeFileTypeIcons } from '@uifabric/file-type-icons/src/index';
+import { setBaseUrl } from 'office-ui-fabric-react';
+import { Fabric } from 'office-ui-fabric-react';
+import { initializeIcons } from '@uifabric/icons';
+import { initializeFileTypeIcons } from '@uifabric/file-type-icons';
 
 import './index.scss';
 import './ColorStyles.scss';

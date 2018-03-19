@@ -8,7 +8,7 @@ import {
 import {
   ActionButton,
   IButtonProps
-} from 'office-ui-fabric-react/lib/Button';
+} from 'office-ui-fabric-react/lib-es2015/Button';
 
 export class ButtonActionExample extends React.Component<IButtonProps> {
   public constructor(props: {}) {

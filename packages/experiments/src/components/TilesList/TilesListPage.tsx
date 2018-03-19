@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from 'office-ui-fabric-react/lib-es2015/Link';
+import { Link } from 'office-ui-fabric-react';
 import {
   ExampleCard,
   IComponentDemoPageProps,

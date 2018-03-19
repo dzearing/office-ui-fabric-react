@@ -1,17 +1,17 @@
 /* tslint:disable:no-unused-variable */
 import * as React from 'react';
 /* tslint:enable:no-unused-variable */
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
-import { Toggle } from 'office-ui-fabric-react/lib/Toggle';
+import { TextField } from 'office-ui-fabric-react/lib-es2015/TextField';
+import { Toggle } from 'office-ui-fabric-react/lib-es2015/Toggle';
 import {
   DetailsList,
   DetailsListLayoutMode,
   Selection,
   SelectionMode,
   IColumn
-} from 'office-ui-fabric-react/lib/DetailsList';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
-import { MarqueeSelection } from 'office-ui-fabric-react/lib/MarqueeSelection';
+} from 'office-ui-fabric-react/lib-es2015/DetailsList';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { MarqueeSelection } from 'office-ui-fabric-react/lib-es2015/MarqueeSelection';
 import { lorem } from '@uifabric/example-app-base';
 import './DetailsListExample.scss';
 

@@ -3,9 +3,9 @@ import {
   GroupedList,
   IGroup,
   IGroupDividerProps
-} from 'office-ui-fabric-react/lib/components/GroupedList/index';
-import { css } from 'office-ui-fabric-react/lib/Utilities';
-import { Link } from 'office-ui-fabric-react/lib/Link';
+} from 'office-ui-fabric-react/lib-es2015/components/GroupedList/index';
+import { css } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { Link } from 'office-ui-fabric-react/lib-es2015/Link';
 import { createListItems, createGroups } from '@uifabric/example-app-base';
 import { FontClassNames } from '../../../Styling';
 import './GroupedList.Custom.Example.scss';

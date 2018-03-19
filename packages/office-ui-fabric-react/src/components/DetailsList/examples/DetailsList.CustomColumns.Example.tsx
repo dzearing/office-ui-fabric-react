@@ -3,13 +3,13 @@ import * as React from 'react';
 /* tslint:enable:no-unused-variable */
 import { createListItems } from '@uifabric/example-app-base';
 import { autobind } from '../../../Utilities';
-import { Link } from 'office-ui-fabric-react/lib/Link';
-import { Image, ImageFit } from 'office-ui-fabric-react/lib/Image';
+import { Link } from 'office-ui-fabric-react/lib-es2015/Link';
+import { Image, ImageFit } from 'office-ui-fabric-react/lib-es2015/Image';
 import {
   DetailsList,
   buildColumns,
   IColumn
-} from 'office-ui-fabric-react/lib/DetailsList';
+} from 'office-ui-fabric-react/lib-es2015/DetailsList';
 
 let _items: any[];
 

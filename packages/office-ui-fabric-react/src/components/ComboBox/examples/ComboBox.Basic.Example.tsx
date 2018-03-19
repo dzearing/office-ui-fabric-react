@@ -3,13 +3,13 @@ import {
   ComboBox,
   IComboBoxOption,
   VirtualizedComboBox
-} from 'office-ui-fabric-react/lib/ComboBox';
+} from 'office-ui-fabric-react/lib-es2015/ComboBox';
 import './ComboBox.Basic.Example.scss';
 import {
   assign,
   autobind
-} from 'office-ui-fabric-react/lib/Utilities';
-import { SelectableOptionMenuItemType } from 'office-ui-fabric-react/lib/utilities/selectableOption/SelectableOption.types';
+} from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { SelectableOptionMenuItemType } from 'office-ui-fabric-react/lib-es2015/utilities/selectableOption/SelectableOption.types';
 import { IComboBox } from '../ComboBox.types';
 import { PrimaryButton } from '../../../Button';
 
@@ -19,20 +19,20 @@ export class ComboBoxBasicExample extends React.Component<{}, {
   value?: string;
 }> {
   private _testOptions =
-  [{ key: 'Header', text: 'Theme Fonts', itemType: SelectableOptionMenuItemType.Header },
-  { key: 'A', text: 'Arial Black' },
-  { key: 'B', text: 'Times New Roman' },
-  { key: 'C', text: 'Comic Sans MS' },
-  { key: 'divider_2', text: '-', itemType: SelectableOptionMenuItemType.Divider },
-  { key: 'Header1', text: 'Other Options', itemType: SelectableOptionMenuItemType.Header },
-  { key: 'D', text: 'Option d' },
-  { key: 'E', text: 'Option e' },
-  { key: 'F', text: 'Option f' },
-  { key: 'G', text: 'Option g' },
-  { key: 'H', text: 'Option h' },
-  { key: 'I', text: 'Option i' },
-  { key: 'J', text: 'Option j', disabled: true },
-  ];
+    [{ key: 'Header', text: 'Theme Fonts', itemType: SelectableOptionMenuItemType.Header },
+    { key: 'A', text: 'Arial Black' },
+    { key: 'B', text: 'Times New Roman' },
+    { key: 'C', text: 'Comic Sans MS' },
+    { key: 'divider_2', text: '-', itemType: SelectableOptionMenuItemType.Divider },
+    { key: 'Header1', text: 'Other Options', itemType: SelectableOptionMenuItemType.Header },
+    { key: 'D', text: 'Option d' },
+    { key: 'E', text: 'Option e' },
+    { key: 'F', text: 'Option f' },
+    { key: 'G', text: 'Option g' },
+    { key: 'H', text: 'Option h' },
+    { key: 'I', text: 'Option i' },
+    { key: 'J', text: 'Option j', disabled: true },
+    ];
 
   private _fontMapping: { [key: string]: string } = {
     ['Arial Black']: '"Arial Black", "Arial Black_MSFontService", sans-serif',

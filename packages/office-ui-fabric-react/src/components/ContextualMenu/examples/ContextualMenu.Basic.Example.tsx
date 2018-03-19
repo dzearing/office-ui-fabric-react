@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { ContextualMenuItemType } from 'office-ui-fabric-react/lib/ContextualMenu';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { ContextualMenuItemType } from 'office-ui-fabric-react/lib-es2015/ContextualMenu';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
 import './ContextualMenuExample.scss';
 
 export class ContextualMenuBasicExample extends React.Component {

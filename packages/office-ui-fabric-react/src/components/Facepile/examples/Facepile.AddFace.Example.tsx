@@ -3,7 +3,7 @@ import {
   Facepile,
   IFacepileProps,
   OverflowButtonType
-} from 'office-ui-fabric-react/lib/Facepile';
+} from 'office-ui-fabric-react/lib-es2015/Facepile';
 import { facepilePersonas } from './FacepileExampleData';
 
 export interface IFacepileAddFaceExampleState {

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
+import { TextField } from 'office-ui-fabric-react/lib-es2015/TextField';
 import './TextField.Examples.scss';
 
 export class TextFieldBasicExample extends React.Component<any, any> {

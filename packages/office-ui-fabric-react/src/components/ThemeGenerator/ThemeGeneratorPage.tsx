@@ -1,17 +1,17 @@
 import * as React from 'react';
 import './ThemeGeneratorPage.scss';
-import { BaseComponent } from 'office-ui-fabric-react/lib/Utilities';
+import { BaseComponent } from 'office-ui-fabric-react/lib-es2015/Utilities';
 
 import {
   loadTheme
-} from 'office-ui-fabric-react/lib/Styling';
+} from 'office-ui-fabric-react/lib-es2015/Styling';
 import {
   IColor,
   getContrastRatio,
   updateA,
   isDark,
   getColorFromString
-} from 'office-ui-fabric-react/lib/utilities/color/index';
+} from 'office-ui-fabric-react/lib-es2015/utilities/color/index';
 
 import {
   ThemeGenerator,
@@ -20,12 +20,12 @@ import {
   FabricSlots,
   IThemeSlotRule,
   IThemeRules
-} from 'office-ui-fabric-react/lib/ThemeGenerator';
+} from 'office-ui-fabric-react/lib-es2015/ThemeGenerator';
 
-import { Callout } from 'office-ui-fabric-react/lib/Callout';
-import { ColorPicker } from 'office-ui-fabric-react/lib/ColorPicker';
+import { Callout } from 'office-ui-fabric-react/lib-es2015/Callout';
+import { ColorPicker } from 'office-ui-fabric-react/lib-es2015/ColorPicker';
 
-import { ChoiceGroup } from 'office-ui-fabric-react/lib/ChoiceGroup';
+import { ChoiceGroup } from 'office-ui-fabric-react/lib-es2015/ChoiceGroup';
 import { TeachingBubbleBasicExample } from '../../components/TeachingBubble/examples/TeachingBubble.Basic.Example';
 import { TextFieldBasicExample } from '../TextField/examples/TextField.Basic.Example';
 import { ToggleBasicExample } from '../../components/Toggle/examples/Toggle.Basic.Example';

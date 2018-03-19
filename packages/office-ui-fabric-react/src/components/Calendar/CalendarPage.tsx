@@ -5,7 +5,7 @@ import {
   IComponentDemoPageProps,
   PropertiesTableSet
 } from '@uifabric/example-app-base';
-import { DateRangeType, DayOfWeek } from 'office-ui-fabric-react/lib/Calendar';
+import { DateRangeType, DayOfWeek } from 'office-ui-fabric-react/lib-es2015/Calendar';
 import { CalendarButtonExample } from './examples/Calendar.Button.Example';
 import { CalendarInlineExample } from './examples/Calendar.Inline.Example';
 import { ComponentStatus } from '../../demo/ComponentStatus/ComponentStatus';

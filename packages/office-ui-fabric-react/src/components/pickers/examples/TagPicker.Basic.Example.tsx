@@ -3,9 +3,9 @@ import {
   autobind,
   BaseComponent
 } from '../../../Utilities';
-import { TagPicker } from 'office-ui-fabric-react/lib/components/pickers/TagPicker/TagPicker';
-import { Checkbox } from 'office-ui-fabric-react/lib/Checkbox';
-import { ITagPickerDemoPageState } from 'office-ui-fabric-react/lib/components/pickers/examples/ITagPickerDemoPageState';
+import { TagPicker } from 'office-ui-fabric-react/lib-es2015/components/pickers/TagPicker/TagPicker';
+import { Checkbox } from 'office-ui-fabric-react/lib-es2015/Checkbox';
+import { ITagPickerDemoPageState } from 'office-ui-fabric-react/lib-es2015/components/pickers/examples/ITagPickerDemoPageState';
 import * as exampleStylesImport from '../../../common/_exampleStyles.scss';
 const exampleStyles: any = exampleStylesImport;
 

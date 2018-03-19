@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { Callout, DirectionalHint } from 'office-ui-fabric-react/lib/Callout';
-import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
-import { Checkbox } from 'office-ui-fabric-react/lib/Checkbox';
-import { Slider } from 'office-ui-fabric-react/lib/Slider';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { Callout, DirectionalHint } from 'office-ui-fabric-react/lib-es2015/Callout';
+import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib-es2015/Dropdown';
+import { Checkbox } from 'office-ui-fabric-react/lib-es2015/Checkbox';
+import { Slider } from 'office-ui-fabric-react/lib-es2015/Slider';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import './CalloutExample.scss';
 
 import * as exampleStylesImport from '../../../common/_exampleStyles.scss';

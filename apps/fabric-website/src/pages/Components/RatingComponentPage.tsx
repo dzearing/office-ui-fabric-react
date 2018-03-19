@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { RatingPage } from 'office-ui-fabric-react/lib/components/Rating/RatingPage';
+import { RatingPage } from 'office-ui-fabric-react/lib-es2015/components/Rating/RatingPage';
 import { PageHeader } from '../../components/PageHeader/PageHeader';
 import { ComponentPage } from '../../components/ComponentPage/ComponentPage';
 const pageStyles: any = require('../PageStyles.module.scss');

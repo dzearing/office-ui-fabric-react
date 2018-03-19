@@ -3,11 +3,11 @@ import {
   KeyCodes,
   createArray,
   getRTLSafeKeyCode
-} from 'office-ui-fabric-react/lib/Utilities';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { Link } from 'office-ui-fabric-react/lib/Link';
-import { FocusZone, FocusZoneDirection } from 'office-ui-fabric-react/lib/FocusZone';
-import { DetailsRow, IColumn, Selection, SelectionMode } from 'office-ui-fabric-react/lib/DetailsList';
+} from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { Link } from 'office-ui-fabric-react/lib-es2015/Link';
+import { FocusZone, FocusZoneDirection } from 'office-ui-fabric-react/lib-es2015/FocusZone';
+import { DetailsRow, IColumn, Selection, SelectionMode } from 'office-ui-fabric-react/lib-es2015/DetailsList';
 import './FocusZone.List.Example.scss';
 
 const ITEMS = createArray(10, (index) => ({

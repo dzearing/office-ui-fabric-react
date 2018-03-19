@@ -1,6 +1,6 @@
 
-import { IBaseProps } from 'office-ui-fabric-react/lib-es2015/Utilities';
-import { IButtonProps } from 'office-ui-fabric-react/lib-es2015/Button';
+import { IBaseProps } from 'office-ui-fabric-react';
+import { IButtonProps } from 'office-ui-fabric-react';
 
 export { IButtonProps };
 

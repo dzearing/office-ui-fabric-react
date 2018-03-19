@@ -1,7 +1,7 @@
 /* tslint:disable:no-unused-variable */
 import * as React from 'react';
 /* tslint:enable:no-unused-variable */
-import { Toggle } from 'office-ui-fabric-react/lib/Toggle';
+import { Toggle } from 'office-ui-fabric-react/lib-es2015/Toggle';
 
 // tslint:disable:jsx-no-lambda
 export const ToggleAriaLabelExample = () => (

@@ -2,9 +2,9 @@
 /* tslint:disable:no-unused-variable */
 import * as React from 'react';
 /* tslint:enable:no-unused-variable */
-import { Icon } from 'office-ui-fabric-react/lib/Icon';
+import { Icon } from 'office-ui-fabric-react/lib-es2015/Icon';
 import './IconExample.scss';
-import { mergeStyles, registerIcons } from 'office-ui-fabric-react/lib/Styling';
+import { mergeStyles, registerIcons } from 'office-ui-fabric-react/lib-es2015/Styling';
 
 /**
  * Use the registerIcons api from the styling package to register custom svg icons so that they

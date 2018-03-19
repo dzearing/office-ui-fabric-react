@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
+import { TextField } from 'office-ui-fabric-react/lib-es2015/TextField';
 import './TextField.Examples.scss';
 import { lorem } from '@uifabric/example-app-base';
 

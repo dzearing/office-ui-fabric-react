@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { DirectionalHint } from 'office-ui-fabric-react/lib/ContextualMenu';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { DirectionalHint } from 'office-ui-fabric-react/lib-es2015/ContextualMenu';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
 import './ContextualMenuExample.scss';
 
 export class ContextualMenuWithScrollBarExample extends React.Component<{}, {

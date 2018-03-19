@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { BreadcrumbPage } from 'office-ui-fabric-react/lib/components/Breadcrumb/BreadcrumbPage';
+import { BreadcrumbPage } from 'office-ui-fabric-react/lib-es2015/components/Breadcrumb/BreadcrumbPage';
 import { PageHeader } from '../../components/PageHeader/PageHeader';
 import { ComponentPage } from '../../components/ComponentPage/ComponentPage';
 const pageStyles: any = require('../PageStyles.module.scss');

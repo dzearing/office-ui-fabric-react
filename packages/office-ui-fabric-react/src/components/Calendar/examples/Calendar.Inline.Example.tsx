@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { addDays, getDateRangeArray } from 'office-ui-fabric-react/lib/utilities/dateMath/DateMath';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { addDays, getDateRangeArray } from 'office-ui-fabric-react/lib-es2015/utilities/dateMath/DateMath';
 import {
   Calendar,
   DayOfWeek
-} from 'office-ui-fabric-react/lib/Calendar';
-import { DateRangeType } from 'office-ui-fabric-react/lib/Calendar';
+} from 'office-ui-fabric-react/lib-es2015/Calendar';
+import { DateRangeType } from 'office-ui-fabric-react/lib-es2015/Calendar';
 
 const DayPickerStrings = {
   months: [

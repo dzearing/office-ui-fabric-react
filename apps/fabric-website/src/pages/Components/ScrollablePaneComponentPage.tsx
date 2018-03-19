@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ScrollablePanePage } from 'office-ui-fabric-react/lib/components/ScrollablePane/ScrollablePanePage';
+import { ScrollablePanePage } from 'office-ui-fabric-react/lib-es2015/components/ScrollablePane/ScrollablePanePage';
 import { PageHeader } from '../../components/PageHeader/PageHeader';
 import { ComponentPage } from '../../components/ComponentPage/ComponentPage';
 const pageStyles: any = require('../PageStyles.module.scss');

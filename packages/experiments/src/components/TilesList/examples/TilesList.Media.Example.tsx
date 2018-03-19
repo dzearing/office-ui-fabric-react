@@ -7,11 +7,11 @@ import {
   ITilesGridSegment
 } from '../../TilesList';
 import { Tile, getTileLayout, renderTileWithLayout } from '../../../Tile';
-import { Toggle } from 'office-ui-fabric-react/lib-es2015/Toggle';
-import { Selection, SelectionZone } from 'office-ui-fabric-react/lib-es2015/Selection';
-import { MarqueeSelection } from 'office-ui-fabric-react/lib-es2015/MarqueeSelection';
-import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
-import { AnimationClassNames } from 'office-ui-fabric-react/lib-es2015/Styling';
+import { Toggle } from 'office-ui-fabric-react';
+import { Selection, SelectionZone } from 'office-ui-fabric-react';
+import { MarqueeSelection } from 'office-ui-fabric-react';
+import { autobind } from 'office-ui-fabric-react';
+import { AnimationClassNames } from 'office-ui-fabric-react';
 import { IExampleGroup, IExampleItem, createGroup, createMediaItems, getTileCells } from './ExampleHelpers';
 import * as TilesListExampleStylesModule from './TilesList.Example.scss';
 

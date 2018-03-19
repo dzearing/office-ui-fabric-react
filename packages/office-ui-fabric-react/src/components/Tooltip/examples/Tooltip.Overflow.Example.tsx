@@ -1,12 +1,12 @@
 /* tslint:disable:no-unused-variable */
 import * as React from 'react';
 /* tslint:enable:no-unused-variable */
-import { BaseComponent, getId } from 'office-ui-fabric-react/lib/Utilities';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { BaseComponent, getId } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
 import {
   TooltipHost,
   TooltipOverflowMode
-} from 'office-ui-fabric-react/lib/Tooltip';
+} from 'office-ui-fabric-react/lib-es2015/Tooltip';
 
 export interface ITooltipOverflowExampleState {
   overflow: boolean;

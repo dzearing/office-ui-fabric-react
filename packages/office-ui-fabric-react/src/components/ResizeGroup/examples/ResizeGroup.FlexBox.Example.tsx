@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { BaseComponent, memoizeFunction } from 'office-ui-fabric-react/lib/Utilities';
-import { mergeStyles } from 'office-ui-fabric-react/lib/Styling';
-import { ResizeGroup } from 'office-ui-fabric-react/lib/ResizeGroup';
+import { BaseComponent, memoizeFunction } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { mergeStyles } from 'office-ui-fabric-react/lib-es2015/Styling';
+import { ResizeGroup } from 'office-ui-fabric-react/lib-es2015/ResizeGroup';
 
 const leftRightBoxClassName =
   mergeStyles({

@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
 import {
   DatePicker,
   DayOfWeek,
   IDatePickerStrings
-} from 'office-ui-fabric-react/lib/DatePicker';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+} from 'office-ui-fabric-react/lib-es2015/DatePicker';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 
 const DayPickerStrings: IDatePickerStrings = {
   months: [

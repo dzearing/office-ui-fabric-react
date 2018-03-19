@@ -1,8 +1,8 @@
 import * as React from 'react';
 import {
   ProgressIndicator
-} from 'office-ui-fabric-react/lib/ProgressIndicator';
-import { Async } from 'office-ui-fabric-react/lib/Utilities';
+} from 'office-ui-fabric-react/lib-es2015/ProgressIndicator';
+import { Async } from 'office-ui-fabric-react/lib-es2015/Utilities';
 
 export interface IProgressIndicatorBasicExampleState {
   percentComplete: number;

@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Pivot, PivotItem } from 'office-ui-fabric-react/lib/Pivot';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+import { Pivot, PivotItem } from 'office-ui-fabric-react/lib-es2015/Pivot';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 
 export class PivotSeparateExample extends React.Component<any, any> {
   public state = { selectedKey: 'rectangleRed' };

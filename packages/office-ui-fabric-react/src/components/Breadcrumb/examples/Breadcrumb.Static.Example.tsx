@@ -3,7 +3,7 @@ import * as React from 'react';
 /* tslint:enable:no-unused-variable */
 import {
   Breadcrumb, IBreadcrumbItem
-} from 'office-ui-fabric-react/lib/Breadcrumb';
+} from 'office-ui-fabric-react/lib-es2015/Breadcrumb';
 
 import {
   autobind

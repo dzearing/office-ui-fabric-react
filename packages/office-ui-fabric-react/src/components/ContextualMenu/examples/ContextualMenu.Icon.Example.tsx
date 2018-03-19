@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { ContextualMenuItemType } from 'office-ui-fabric-react/lib/ContextualMenu';
-import { Callout } from 'office-ui-fabric-react/lib/Callout';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { ContextualMenuItemType } from 'office-ui-fabric-react/lib-es2015/ContextualMenu';
+import { Callout } from 'office-ui-fabric-react/lib-es2015/Callout';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
 import './ContextualMenuExample.scss';
 
 export class ContextualMenuIconExample extends React.Component<{}, { showCallout: boolean }> {

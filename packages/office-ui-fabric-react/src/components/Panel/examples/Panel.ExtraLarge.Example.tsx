@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { Panel, PanelType } from 'office-ui-fabric-react/lib/Panel';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { Panel, PanelType } from 'office-ui-fabric-react/lib-es2015/Panel';
 
 export class PanelExtraLargeExample extends React.Component<{}, {
   showPanel: boolean;

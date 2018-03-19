@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { LinkPage } from 'office-ui-fabric-react/lib/components/Link/LinkPage';
+import { LinkPage } from 'office-ui-fabric-react/lib-es2015/components/Link/LinkPage';
 import { PageHeader } from '../../components/PageHeader/PageHeader';
 import { ComponentPage } from '../../components/ComponentPage/ComponentPage';
 const pageStyles: any = require('../PageStyles.module.scss');

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { autobind } from '../../../Utilities';
-import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
-import { DatePicker, DayOfWeek, IDatePickerStrings } from 'office-ui-fabric-react/lib/DatePicker';
+import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib-es2015/Dropdown';
+import { DatePicker, DayOfWeek, IDatePickerStrings } from 'office-ui-fabric-react/lib-es2015/DatePicker';
 
 const DayPickerStrings: IDatePickerStrings = {
   months: [

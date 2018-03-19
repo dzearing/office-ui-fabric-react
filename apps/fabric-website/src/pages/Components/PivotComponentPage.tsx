@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { PivotPage } from 'office-ui-fabric-react/lib/components/Pivot/PivotPage';
+import { PivotPage } from 'office-ui-fabric-react/lib-es2015/components/Pivot/PivotPage';
 import { PageHeader } from '../../components/PageHeader/PageHeader';
 import { ComponentPage } from '../../components/ComponentPage/ComponentPage';
 const pageStyles: any = require('../PageStyles.module.scss');

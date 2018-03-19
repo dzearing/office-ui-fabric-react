@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
+import { PrimaryButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { TextField } from 'office-ui-fabric-react/lib-es2015/TextField';
 import './TextField.Examples.scss';
 
 export class TextFieldAutoCompleteExample extends React.Component<any, any> {

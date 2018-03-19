@@ -2,9 +2,9 @@ import * as React from 'react';
 import {
   FocusZone,
   FocusZoneDirection
-} from 'office-ui-fabric-react/lib/FocusZone';
-import { List } from 'office-ui-fabric-react/lib/List';
-import { Image, ImageFit } from 'office-ui-fabric-react/lib/Image';
+} from 'office-ui-fabric-react/lib-es2015/FocusZone';
+import { List } from 'office-ui-fabric-react/lib-es2015/List';
+import { Image, ImageFit } from 'office-ui-fabric-react/lib-es2015/Image';
 import './List.Ghosting.Example.scss';
 
 export interface IListGhostingExampleProps {

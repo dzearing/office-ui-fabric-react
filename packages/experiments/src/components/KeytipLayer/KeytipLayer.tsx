@@ -4,7 +4,7 @@ import { Keytip, IKeytipProps, KeytipTransitionModifier } from '../Keytip';
 import {
   BaseComponent
 } from '../../Utilities';
-import { Layer } from 'office-ui-fabric-react/lib-es2015/Layer';
+import { Layer } from 'office-ui-fabric-react';
 import { KeyCodes, findIndex } from '../../Utilities';
 import { convertSequencesToKeytipID, fullKeySequencesAreEqual } from '../../utilities/keysequence/IKeySequence';
 import { IKeytipTransitionKey } from '../../utilities/keysequence/IKeytipTransitionKey';

@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { VerticalDivider, IVerticalDividerClassNames } from 'office-ui-fabric-react/lib/components/Divider';
-import { getDividerClassNames } from 'office-ui-fabric-react/lib/components/Divider/VerticalDivider.classNames';
-import { mergeStyleSets, ITheme } from 'office-ui-fabric-react/lib/Styling';
-import { memoizeFunction } from 'office-ui-fabric-react/lib/Utilities';
+import { VerticalDivider, IVerticalDividerClassNames } from 'office-ui-fabric-react/lib-es2015/components/Divider';
+import { getDividerClassNames } from 'office-ui-fabric-react/lib-es2015/components/Divider/VerticalDivider.classNames';
+import { mergeStyleSets, ITheme } from 'office-ui-fabric-react/lib-es2015/Styling';
+import { memoizeFunction } from 'office-ui-fabric-react/lib-es2015/Utilities';
 
 interface ICustomDividerExampleClassNames {
   wrapper: string;

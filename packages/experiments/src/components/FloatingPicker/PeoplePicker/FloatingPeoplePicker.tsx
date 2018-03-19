@@ -2,9 +2,9 @@ import { getRTL, getInitials } from '../../../Utilities';
 import { BaseFloatingPicker } from '../BaseFloatingPicker';
 import { IBaseFloatingPickerProps } from '../BaseFloatingPicker.types';
 import { SuggestionItemNormal } from './PeoplePickerItems/SuggestionItemDefault';
-import { IPersonaProps } from 'office-ui-fabric-react/lib-es2015/Persona';
+import { IPersonaProps } from 'office-ui-fabric-react';
 import './PeoplePicker.scss';
-import { IBasePickerSuggestionsProps, ISuggestionModel } from 'office-ui-fabric-react/lib-es2015/Pickers';
+import { IBasePickerSuggestionsProps, ISuggestionModel } from 'office-ui-fabric-react';
 
 export interface IPeopleFloatingPickerProps extends IBaseFloatingPickerProps<IPersonaProps> {
 }

@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { ChoiceGroup, IChoiceGroupOption } from 'office-ui-fabric-react/lib/ChoiceGroup';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+import { ChoiceGroup, IChoiceGroupOption } from 'office-ui-fabric-react/lib-es2015/ChoiceGroup';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 
 /**
  * Interface for ChoiceGroupBasicExample state.

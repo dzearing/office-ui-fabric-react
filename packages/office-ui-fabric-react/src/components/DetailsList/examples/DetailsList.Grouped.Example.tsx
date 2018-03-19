@@ -4,10 +4,10 @@ import * as React from 'react';
 import {
   BaseComponent,
   autobind
-} from 'office-ui-fabric-react/lib/Utilities';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
-import { DetailsList, IColumn } from 'office-ui-fabric-react/lib/DetailsList';
+} from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { Fabric } from 'office-ui-fabric-react/lib-es2015/Fabric';
+import { DetailsList, IColumn } from 'office-ui-fabric-react/lib-es2015/DetailsList';
 import './DetailsList.Grouped.Example.scss';
 
 const _columns = [

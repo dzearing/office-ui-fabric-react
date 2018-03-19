@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { ScrollablePane } from 'office-ui-fabric-react/lib/ScrollablePane';
-import { Sticky, StickyPositionType } from 'office-ui-fabric-react/lib/Sticky';
+import { ScrollablePane } from 'office-ui-fabric-react/lib-es2015/ScrollablePane';
+import { Sticky, StickyPositionType } from 'office-ui-fabric-react/lib-es2015/Sticky';
 import { lorem } from '@uifabric/example-app-base';
 import './ScrollablePane.Example.scss';
 

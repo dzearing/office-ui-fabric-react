@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { autobind } from '../../../Utilities';
-import { Modal } from 'office-ui-fabric-react/lib/Modal';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { Modal } from 'office-ui-fabric-react/lib-es2015/Modal';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
 import './Modal.Basic.Example.scss';
 
 export class ModalBasicExample extends React.Component<{}, {

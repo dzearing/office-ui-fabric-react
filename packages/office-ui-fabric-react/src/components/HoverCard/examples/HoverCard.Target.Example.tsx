@@ -2,14 +2,14 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 /* tslint:enable:no-unused-variable */
-import { BaseComponent } from 'office-ui-fabric-react/lib/Utilities';
+import { BaseComponent } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import {
   HoverCard,
   IExpandingCardProps
-} from 'office-ui-fabric-react/lib/HoverCard';
-import { DetailsList, buildColumns, IColumn } from 'office-ui-fabric-react/lib/DetailsList';
-import { DirectionalHint } from 'office-ui-fabric-react/lib/common/DirectionalHint';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+} from 'office-ui-fabric-react/lib-es2015/HoverCard';
+import { DetailsList, buildColumns, IColumn } from 'office-ui-fabric-react/lib-es2015/DetailsList';
+import { DirectionalHint } from 'office-ui-fabric-react/lib-es2015/common/DirectionalHint';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import { createListItems } from '@uifabric/example-app-base';
 import './HoverCard.Example.scss';
 

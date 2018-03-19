@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SwatchColorPicker } from 'office-ui-fabric-react/lib/SwatchColorPicker';
+import { SwatchColorPicker } from 'office-ui-fabric-react/lib-es2015/SwatchColorPicker';
 
 export interface IBasicSwatchColorPickerExampleState {
   color: string | undefined;

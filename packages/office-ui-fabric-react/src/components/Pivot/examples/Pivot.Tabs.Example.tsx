@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Label } from 'office-ui-fabric-react/lib/Label';
+import { Label } from 'office-ui-fabric-react/lib-es2015/Label';
 import {
   Pivot,
   PivotItem,
   PivotLinkFormat
-} from 'office-ui-fabric-react/lib/Pivot';
+} from 'office-ui-fabric-react/lib-es2015/Pivot';
 
 export class PivotTabsExample extends React.Component<any, any> {
   public render() {

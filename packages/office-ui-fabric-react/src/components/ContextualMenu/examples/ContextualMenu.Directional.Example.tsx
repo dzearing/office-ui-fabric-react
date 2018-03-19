@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { Checkbox } from 'office-ui-fabric-react/lib/Checkbox';
-import { DirectionalHint, ContextualMenuItemType } from 'office-ui-fabric-react/lib/ContextualMenu';
-import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
-import { autobind, getRTL } from 'office-ui-fabric-react/lib/Utilities';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { Checkbox } from 'office-ui-fabric-react/lib-es2015/Checkbox';
+import { DirectionalHint, ContextualMenuItemType } from 'office-ui-fabric-react/lib-es2015/ContextualMenu';
+import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib-es2015/Dropdown';
+import { autobind, getRTL } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import './ContextualMenuExample.scss';
 import * as exampleStylesImport from '../../../common/_exampleStyles.scss';
 const exampleStyles: any = exampleStylesImport;

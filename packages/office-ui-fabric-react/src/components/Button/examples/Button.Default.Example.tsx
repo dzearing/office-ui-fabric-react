@@ -5,8 +5,8 @@ import {
   IButtonBasicExampleStyleProps,
   IButtonBasicExampleStyles
 } from './Button.Basic.Example.styles';
-import { DefaultButton, IButtonProps } from 'office-ui-fabric-react/lib/Button';
-import { Label } from 'office-ui-fabric-react/lib/Label';
+import { DefaultButton, IButtonProps } from 'office-ui-fabric-react/lib-es2015/Button';
+import { Label } from 'office-ui-fabric-react/lib-es2015/Label';
 
 export class ButtonDefaultExample extends React.Component<IButtonProps, {}> {
   public render() {

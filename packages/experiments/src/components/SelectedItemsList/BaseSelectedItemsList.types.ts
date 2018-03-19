@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { IPickerItemProps, ISuggestionModel, ValidationState } from 'office-ui-fabric-react/lib-es2015/Pickers';
-import { Selection } from 'office-ui-fabric-react/lib-es2015/Selection';
+import { IPickerItemProps, ISuggestionModel, ValidationState } from 'office-ui-fabric-react';
+import { Selection } from 'office-ui-fabric-react';
 
 export interface IBaseSelectedItemsList<T> {
   /** Gets the current value of the input. */

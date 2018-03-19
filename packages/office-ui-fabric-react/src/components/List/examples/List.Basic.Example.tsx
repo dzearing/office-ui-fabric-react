@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { getRTL } from 'office-ui-fabric-react/lib/Utilities';
-import { FocusZone, FocusZoneDirection } from 'office-ui-fabric-react/lib/FocusZone';
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
-import { Image, ImageFit } from 'office-ui-fabric-react/lib/Image';
-import { Icon } from 'office-ui-fabric-react/lib/Icon';
-import { List } from 'office-ui-fabric-react/lib/List';
+import { getRTL } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { FocusZone, FocusZoneDirection } from 'office-ui-fabric-react/lib-es2015/FocusZone';
+import { TextField } from 'office-ui-fabric-react/lib-es2015/TextField';
+import { Image, ImageFit } from 'office-ui-fabric-react/lib-es2015/Image';
+import { Icon } from 'office-ui-fabric-react/lib-es2015/Icon';
+import { List } from 'office-ui-fabric-react/lib-es2015/List';
 import './List.Basic.Example.scss';
 
 export interface IListBasicExampleProps {

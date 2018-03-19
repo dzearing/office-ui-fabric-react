@@ -4,10 +4,10 @@ import { IKeytipTransitionKey } from '../../../utilities/keysequence/IKeytipTran
 import { registerKeytip, addKeytipSequence } from '../../../utilities/keytip/KeytipUtils';
 import { KeytipLayer } from '../KeytipLayer';
 import { IKeytipProps, KeytipTransitionModifier } from '../../Keytip';
-import { DefaultButton, ActionButton } from 'office-ui-fabric-react/lib-es2015/Button';
-import { CommandBar } from 'office-ui-fabric-react/lib-es2015/CommandBar';
-import { Modal } from 'office-ui-fabric-react/lib-es2015/Modal';
-import { MessageBar, MessageBarType } from 'office-ui-fabric-react/lib-es2015/MessageBar';
+import { DefaultButton, ActionButton } from 'office-ui-fabric-react';
+import { CommandBar } from 'office-ui-fabric-react';
+import { Modal } from 'office-ui-fabric-react';
+import { MessageBar, MessageBarType } from 'office-ui-fabric-react';
 import { autobind } from '../../../Utilities';
 
 export interface IKeytipLayerBasicExampleState {

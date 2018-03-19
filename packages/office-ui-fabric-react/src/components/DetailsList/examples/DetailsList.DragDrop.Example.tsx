@@ -1,14 +1,14 @@
 /* tslint:disable:no-unused-variable */
 import * as React from 'react';
 /* tslint:enable:no-unused-variable */
-import { Link } from 'office-ui-fabric-react/lib/Link';
-import { DetailsList, Selection } from 'office-ui-fabric-react/lib/DetailsList';
-import { IColumn } from 'office-ui-fabric-react/lib/DetailsList';
-import { MarqueeSelection } from 'office-ui-fabric-react/lib/MarqueeSelection';
+import { Link } from 'office-ui-fabric-react/lib-es2015/Link';
+import { DetailsList, Selection } from 'office-ui-fabric-react/lib-es2015/DetailsList';
+import { IColumn } from 'office-ui-fabric-react/lib-es2015/DetailsList';
+import { MarqueeSelection } from 'office-ui-fabric-react/lib-es2015/MarqueeSelection';
 import {
   IDragDropEvents,
   IDragDropContext
-} from 'office-ui-fabric-react/lib/utilities/dragdrop/interfaces';
+} from 'office-ui-fabric-react/lib-es2015/utilities/dragdrop/interfaces';
 import { createListItems } from '@uifabric/example-app-base';
 import './DetailsList.DragDrop.Example.scss';
 

@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { Coachmark } from '../Coachmark';
-import { TeachingBubbleContent } from 'office-ui-fabric-react/lib/TeachingBubble';
-import { ICalloutProps } from 'office-ui-fabric-react/lib/Callout';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { TeachingBubbleContent } from 'office-ui-fabric-react/lib-es2015/TeachingBubble';
+import { ICalloutProps } from 'office-ui-fabric-react/lib-es2015/Callout';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
 import { IStyle } from '../../../Styling';
 import {
   BaseComponent,
   classNamesFunction,
   createRef
-} from 'office-ui-fabric-react/lib/Utilities';
+} from 'office-ui-fabric-react/lib-es2015/Utilities';
 
 export interface ICoachmarkBasicExampleState {
   isVisible?: boolean;

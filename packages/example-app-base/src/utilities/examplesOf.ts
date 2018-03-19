@@ -1,4 +1,4 @@
-import { getId } from 'office-ui-fabric-react/lib/Utilities';
+import { getId } from 'office-ui-fabric-react/lib-es2015/Utilities';
 
 export interface IExample {
   key: string;

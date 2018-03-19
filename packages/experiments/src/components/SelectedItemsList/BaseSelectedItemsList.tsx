@@ -3,7 +3,7 @@ import {
   BaseComponent,
   KeyCodes
 } from '../../Utilities';
-import { Selection } from 'office-ui-fabric-react/lib-es2015/Selection';
+import { Selection } from 'office-ui-fabric-react';
 
 import { IBaseSelectedItemsList, IBaseSelectedItemsListProps, ISelectedItemProps } from './BaseSelectedItemsList.types';
 

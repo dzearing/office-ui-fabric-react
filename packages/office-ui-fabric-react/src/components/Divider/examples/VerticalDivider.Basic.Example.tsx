@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { VerticalDivider } from 'office-ui-fabric-react/lib/Divider';
-import { mergeStyleSets } from 'office-ui-fabric-react/lib/Styling';
-import { memoizeFunction } from 'office-ui-fabric-react/lib/Utilities';
+import { VerticalDivider } from 'office-ui-fabric-react/lib-es2015/Divider';
+import { mergeStyleSets } from 'office-ui-fabric-react/lib-es2015/Styling';
+import { memoizeFunction } from 'office-ui-fabric-react/lib-es2015/Utilities';
 
 interface IBasicDividerExampleClassNames {
   wrapper: string;

@@ -3,8 +3,8 @@ import * as PropTypes from 'prop-types';
 
 // Components
 import { IFormConditionalSubmitButtonProps } from './FormConditionalSubmitButton.types';
-import { BaseComponent } from 'office-ui-fabric-react/lib-es2015/Utilities';
-import { PrimaryButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { BaseComponent } from 'office-ui-fabric-react';
+import { PrimaryButton } from 'office-ui-fabric-react';
 import { IFormContext } from '../../Form';
 
 /**

@@ -1,33 +1,35 @@
 'use strict';
 
-import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
-
-initializeIcons('dist/');
-
 // Configure load-themed-styles to avoid registering styles.
-let themeLoader = require('@microsoft/load-themed-styles');
+const themeLoader = require('@microsoft/load-themed-styles');
+
+
 themeLoader.configureLoadStyles((styles) => {
   // noop
 });
 
+const { initializeIcons } = require('office-ui-fabric-react/lib-es2015/Icons');
+initializeIcons('dist/');
+
+
 // Set ssr mode to true, and rtl to false.
-let library = require('office-ui-fabric-react/lib/Utilities');
+const library = require('office-ui-fabric-react/lib-es2015/Utilities');
 library.setSSR(true);
 library.setRTL(false);
 
 // Assume a large screen.
-let responsiveLib = require('office-ui-fabric-react/lib/utilities/decorators/withResponsiveMode');
-responsiveLib.setResponsiveMode(responsiveLib.ResponsiveMode.large);
+const { setResponsiveMode, ResponsiveMode } = require('office-ui-fabric-react/lib-es2015/utilities/decorators/withResponsiveMode');
+setResponsiveMode(ResponsiveMode.large);
 
-let React = require('react');
-let ReactDOMServer = require('react-dom/server');
-let AppDefinition = require('office-ui-fabric-react/lib/demo/AppDefinition').AppDefinition;
+const React = require('react');
+const ReactDOMServer = require('react-dom/server');
+const AppDefinition = require('office-ui-fabric-react/lib-es2015/demo/AppDefinition').AppDefinition;
 
 describe('Fabric components', () => {
   for (let i = 0; i < AppDefinition.examplePages.length; i++) {
-    let links = AppDefinition.examplePages[i].links;
+    const links = AppDefinition.examplePages[i].links;
     for (let j = 0; j < links.length; j++) {
-      let { key, component } = links[j];
+      const { key, component } = links[j];
 
       testRender(key, component);
     }
@@ -37,7 +39,7 @@ describe('Fabric components', () => {
 
 function testRender(componentName, component) {
   it(`${componentName} can render in a server environment`, (done) => {
-    let elem = React.createElement(component);
+    const elem = React.createElement(component);
 
     try {
       ReactDOMServer.renderToString(elem);

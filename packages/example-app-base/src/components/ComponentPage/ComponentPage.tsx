@@ -2,11 +2,11 @@ import * as React from 'react';
 import {
   css,
   getDocument
-} from 'office-ui-fabric-react/lib/Utilities';
+} from 'office-ui-fabric-react/lib-es2015/Utilities';
 import {
   Link
-} from 'office-ui-fabric-react/lib/Link';
-import { MessageBar } from 'office-ui-fabric-react/lib/MessageBar';
+} from 'office-ui-fabric-react/lib-es2015/Link';
+import { MessageBar } from 'office-ui-fabric-react/lib-es2015/MessageBar';
 import './ComponentPage.scss';
 
 export interface IComponentPageSection {

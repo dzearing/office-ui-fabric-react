@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { PageHeader } from '../../../components/PageHeader/PageHeader';
-import { ThemeGeneratorPage } from 'office-ui-fabric-react/lib/components/ThemeGenerator/ThemeGeneratorPage';
+import { ThemeGeneratorPage } from 'office-ui-fabric-react/lib-es2015/components/ThemeGenerator/ThemeGeneratorPage';
 const pageStyles: any = require('../../PageStyles.module.scss');
 
 export class ThemeGeneratorToolPage extends React.Component<any, any> {

@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Checkbox } from 'office-ui-fabric-react/lib/Checkbox';
-import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
-import { Facepile, IFacepilePersona, IFacepileProps } from 'office-ui-fabric-react/lib/Facepile';
-import { PersonaSize } from 'office-ui-fabric-react/lib/Persona';
-import { Slider } from 'office-ui-fabric-react/lib/Slider';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+import { Checkbox } from 'office-ui-fabric-react/lib-es2015/Checkbox';
+import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib-es2015/Dropdown';
+import { Facepile, IFacepilePersona, IFacepileProps } from 'office-ui-fabric-react/lib-es2015/Facepile';
+import { PersonaSize } from 'office-ui-fabric-react/lib-es2015/Persona';
+import { Slider } from 'office-ui-fabric-react/lib-es2015/Slider';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import { facepilePersonas } from './FacepileExampleData';
 import './Facepile.Examples.scss';
 import * as exampleStylesImport from '../../../common/_exampleStyles.scss';

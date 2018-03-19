@@ -1,10 +1,10 @@
 /* tslint:disable:no-unused-variable */
 import * as React from 'react';
 /* tslint:enable:no-unused-variable */
-import { MessageBarButton } from 'office-ui-fabric-react/lib/Button';
-import { Link } from 'office-ui-fabric-react/lib/Link';
-import { Label } from 'office-ui-fabric-react/lib/Label';
-import { MessageBar, MessageBarType } from 'office-ui-fabric-react/lib/MessageBar';
+import { MessageBarButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { Link } from 'office-ui-fabric-react/lib-es2015/Link';
+import { Label } from 'office-ui-fabric-react/lib-es2015/Label';
+import { MessageBar, MessageBarType } from 'office-ui-fabric-react/lib-es2015/MessageBar';
 import './MessageBar.Basic.Example.scss';
 
 const log = (text: string): () => void =>

@@ -1,9 +1,9 @@
 
 import * as React from 'react';
 import { ITilesListProps, ITilesGridItem, ITilesGridSegment, TilesGridMode, ITileSize } from './TilesList.types';
-import { List, IPageProps } from 'office-ui-fabric-react/lib-es2015/List';
-import { FocusZone, FocusZoneDirection } from 'office-ui-fabric-react/lib-es2015/FocusZone';
-import { css, IRenderFunction, IRectangle } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { List, IPageProps } from 'office-ui-fabric-react';
+import { FocusZone, FocusZoneDirection } from 'office-ui-fabric-react';
+import { css, IRenderFunction, IRectangle } from 'office-ui-fabric-react';
 import * as TilesListStylesModule from './TilesList.scss';
 
 // tslint:disable-next-line:no-any

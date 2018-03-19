@@ -6,9 +6,9 @@ import {
   getRTL,
   createRef
 } from '../../Utilities';
-import { Callout, DirectionalHint } from 'office-ui-fabric-react/lib-es2015/Callout';
+import { Callout, DirectionalHint } from 'office-ui-fabric-react';
 import { Suggestions, ISuggestionsProps, SuggestionsController, IBasePickerSuggestionsProps, ISuggestionModel }
-  from 'office-ui-fabric-react/lib-es2015/Pickers';
+  from 'office-ui-fabric-react';
 import { IBaseFloatingPicker, IBaseFloatingPickerProps } from './BaseFloatingPicker.types';
 import * as stylesImport from './BaseFloatingPicker.scss';
 // tslint:disable-next-line:no-any

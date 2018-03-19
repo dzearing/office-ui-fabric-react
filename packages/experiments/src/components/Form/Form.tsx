@@ -12,7 +12,7 @@ import {
   BaseComponent,
   getNativeProps,
   divProperties
-} from 'office-ui-fabric-react/lib-es2015/Utilities';
+} from 'office-ui-fabric-react';
 
 /**
  * Validation result for a simple form input. All calls to validate return this type

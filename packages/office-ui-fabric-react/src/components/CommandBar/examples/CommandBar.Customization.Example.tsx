@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { CommandButton } from 'office-ui-fabric-react/lib/Button';
-import { CommandBar } from 'office-ui-fabric-react/lib/CommandBar';
-import { css, autobind, } from 'office-ui-fabric-react/lib/Utilities';
+import { CommandButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { CommandBar } from 'office-ui-fabric-react/lib-es2015/CommandBar';
+import { css, autobind, } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import * as styles from './CommandBar.Example.scss';
 import { IContextualMenuItem } from '../../ContextualMenu';
 

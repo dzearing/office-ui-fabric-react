@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { FocusZone } from 'office-ui-fabric-react/lib/FocusZone';
-import { List } from 'office-ui-fabric-react/lib/List';
+import { FocusZone } from 'office-ui-fabric-react/lib-es2015/FocusZone';
+import { List } from 'office-ui-fabric-react/lib-es2015/List';
 import './List.Grid.Example.scss';
 import { IRectangle } from '../../../Utilities';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 
 export interface IListGridExampleProps {
   items: any[];

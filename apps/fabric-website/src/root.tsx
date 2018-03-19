@@ -5,13 +5,13 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { App } from './components/App/App';
 import { AppState } from './components/App/AppState';
-import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
-import { Route, Router } from 'office-ui-fabric-react/lib/utilities/router/index';
-import { setBaseUrl } from 'office-ui-fabric-react/lib/Utilities';
+import { Fabric } from 'office-ui-fabric-react/lib-es2015/Fabric';
+import { Route, Router } from 'office-ui-fabric-react/lib-es2015/utilities/router/index';
+import { setBaseUrl } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import { HomePage } from './pages/HomePage/HomePage';
 import WindowWidthUtility from './utilities/WindowWidthUtility';
 import './styles/styles.scss';
-import { initializeIcons } from 'office-ui-fabric-react/lib/Icons';
+import { initializeIcons } from 'office-ui-fabric-react/lib-es2015/Icons';
 const corePackageData = require('../node_modules/office-ui-fabric-core/package.json');
 const corePackageVersion: string = corePackageData && corePackageData.version || '9.2.0';
 

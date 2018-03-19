@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { css, BaseComponent, IBaseProps } from 'office-ui-fabric-react/lib/Utilities';
+import { css, BaseComponent, IBaseProps } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import * as stylesImport from './PageHeader.module.scss';
 const styles: any = stylesImport;
 import AttachedScrollUtility from '../../utilities/AttachedScrollUtility';
 import { getPathMinusLastHash } from '../../utilities/pageroute';
 import { PageHeaderLink } from '../../components/PageHeaderLink/PageHeaderLink';
-import { FocusZone } from 'office-ui-fabric-react/lib/FocusZone';
+import { FocusZone } from 'office-ui-fabric-react/lib-es2015/FocusZone';
 
 export interface IPageHeaderProps extends IBaseProps {
 

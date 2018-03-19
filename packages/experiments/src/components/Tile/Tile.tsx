@@ -1,8 +1,8 @@
 
 import * as React from 'react';
 import { ITileProps, TileSize } from './Tile.types';
-import { Check } from 'office-ui-fabric-react/lib-es2015/Check';
-import { SELECTION_CHANGE } from 'office-ui-fabric-react/lib-es2015/Selection';
+import { Check } from 'office-ui-fabric-react';
+import { SELECTION_CHANGE } from 'office-ui-fabric-react';
 import { ISize, css, BaseComponent, getId } from '../../Utilities';
 import * as TileStylesModule from './Tile.scss';
 import * as SignalStylesModule from '../signals/Signal.scss';

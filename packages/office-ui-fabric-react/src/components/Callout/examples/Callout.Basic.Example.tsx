@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { Callout } from 'office-ui-fabric-react/lib/Callout';
-import { Link } from 'office-ui-fabric-react/lib/Link';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { Callout } from 'office-ui-fabric-react/lib-es2015/Callout';
+import { Link } from 'office-ui-fabric-react/lib-es2015/Link';
 import './CalloutExample.scss';
 
 export interface ICalloutBaiscExampleState {

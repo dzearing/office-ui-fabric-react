@@ -2,7 +2,7 @@ import * as React from 'react';
 import {
   Persona,
   PersonaInitialsColor,
-} from 'office-ui-fabric-react/lib/Persona';
+} from 'office-ui-fabric-react/lib-es2015/Persona';
 import './PersonaExample.scss';
 
 const examplePersona = {

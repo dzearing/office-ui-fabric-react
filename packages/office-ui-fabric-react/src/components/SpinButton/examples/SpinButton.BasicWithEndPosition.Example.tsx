@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { SpinButton } from 'office-ui-fabric-react/lib/SpinButton';
-import { Position } from 'office-ui-fabric-react/lib/utilities/positioning';
+import { SpinButton } from 'office-ui-fabric-react/lib-es2015/SpinButton';
+import { Position } from 'office-ui-fabric-react/lib-es2015/utilities/positioning';
 
 export class SpinButtonBasicWithEndPositionExample extends React.Component<any, any> {
   public render() {

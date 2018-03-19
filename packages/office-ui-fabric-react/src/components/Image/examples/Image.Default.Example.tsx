@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Image } from 'office-ui-fabric-react/lib/Image';
-import { Label } from 'office-ui-fabric-react/lib/Label';
+import { Image } from 'office-ui-fabric-react/lib-es2015/Image';
+import { Label } from 'office-ui-fabric-react/lib-es2015/Label';
 
 export class ImageDefaultExample extends React.Component<any, any> {
   public render() {

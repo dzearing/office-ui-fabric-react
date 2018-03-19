@@ -4,8 +4,8 @@ import {
   PivotItem,
   PivotLinkFormat,
   PivotLinkSize
-} from 'office-ui-fabric-react/lib/Pivot';
-import { Label } from 'office-ui-fabric-react/lib/Label';
+} from 'office-ui-fabric-react/lib-es2015/Pivot';
+import { Label } from 'office-ui-fabric-react/lib-es2015/Label';
 
 export class PivotTabsLargeExample extends React.Component<any, any> {
   public render() {

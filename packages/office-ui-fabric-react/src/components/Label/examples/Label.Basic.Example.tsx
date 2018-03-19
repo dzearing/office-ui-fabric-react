@@ -2,7 +2,7 @@
 import * as React from 'react';
 /* tslint:enable:no-unused-variable */
 
-import { Label } from 'office-ui-fabric-react/lib/Label';
+import { Label } from 'office-ui-fabric-react/lib-es2015/Label';
 
 export const LabelBasicExample = () => (
   <div>

@@ -8,7 +8,7 @@ import {
 import {
   IButtonProps,
   DefaultButton
-} from 'office-ui-fabric-react/lib/Button';
+} from 'office-ui-fabric-react/lib-es2015/Button';
 
 export class ButtonAnchorExample extends React.Component<IButtonProps> {
   public render() {

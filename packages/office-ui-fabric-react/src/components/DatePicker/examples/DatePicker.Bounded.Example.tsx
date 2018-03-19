@@ -3,7 +3,7 @@ import {
   DatePicker,
   DayOfWeek,
   IDatePickerStrings
-} from 'office-ui-fabric-react/lib/DatePicker';
+} from 'office-ui-fabric-react/lib-es2015/DatePicker';
 import { addMonths, addYears } from '../../../utilities/dateMath/DateMath';
 
 const today: Date = new Date(Date.now());

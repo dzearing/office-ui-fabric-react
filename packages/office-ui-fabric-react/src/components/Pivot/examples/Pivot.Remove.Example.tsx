@@ -5,9 +5,9 @@ import {
   PivotLinkFormat,
   PivotLinkSize,
   IPivotItemProps
-} from 'office-ui-fabric-react/lib/Pivot';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { Label } from 'office-ui-fabric-react/lib/Label';
+} from 'office-ui-fabric-react/lib-es2015/Pivot';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { Label } from 'office-ui-fabric-react/lib-es2015/Label';
 
 export interface IPivotOnChangeExampleState {
   shouldShowFirstPivotItem: boolean;

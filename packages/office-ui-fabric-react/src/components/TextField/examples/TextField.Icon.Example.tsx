@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+import { TextField } from 'office-ui-fabric-react/lib-es2015/TextField';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import './TextField.Examples.scss';
 
 export class TextFieldIconExample extends React.Component<any, any> {

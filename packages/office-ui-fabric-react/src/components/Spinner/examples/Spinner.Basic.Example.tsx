@@ -2,8 +2,8 @@ import * as React from 'react';
 import {
   Spinner,
   SpinnerSize
-} from 'office-ui-fabric-react/lib/Spinner';
-import { Label } from 'office-ui-fabric-react/lib/Label';
+} from 'office-ui-fabric-react/lib-es2015/Spinner';
+import { Label } from 'office-ui-fabric-react/lib-es2015/Label';
 import './Spinner.Basic.Example.scss';
 
 export class SpinnerBasicExample extends React.Component<any, any> {

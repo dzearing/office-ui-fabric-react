@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { BaseComponent } from '../../Utilities';
-import { Callout } from 'office-ui-fabric-react/lib-es2015/Callout';
-import { DirectionalHint } from 'office-ui-fabric-react/lib-es2015/ContextualMenu';
+import { Callout } from 'office-ui-fabric-react';
+import { DirectionalHint } from 'office-ui-fabric-react';
 import { IKeytip, IKeytipProps } from './Keytip.types';
 import { KeytipContent } from './KeytipContent';
 import { getCalloutStyles } from './Keytip.styles';

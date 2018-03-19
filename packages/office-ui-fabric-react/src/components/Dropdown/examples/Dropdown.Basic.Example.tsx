@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
-import { Dropdown, IDropdown, DropdownMenuItemType, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
+import { PrimaryButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { Dropdown, IDropdown, DropdownMenuItemType, IDropdownOption } from 'office-ui-fabric-react/lib-es2015/Dropdown';
 import { autobind, BaseComponent } from '../../../Utilities';
 import './Dropdown.Basic.Example.scss';
 

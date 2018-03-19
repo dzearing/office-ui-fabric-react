@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { BaseComponent, autobind } from 'office-ui-fabric-react/lib/Utilities';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { ResizeGroup } from 'office-ui-fabric-react/lib/ResizeGroup';
+import { BaseComponent, autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { ResizeGroup } from 'office-ui-fabric-react/lib-es2015/ResizeGroup';
 import { OverflowSet } from '../../OverflowSet';
-import { Checkbox } from 'office-ui-fabric-react/lib/Checkbox';
-import { IContextualMenuItem } from 'office-ui-fabric-react/lib/ContextualMenu';
-import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
+import { Checkbox } from 'office-ui-fabric-react/lib-es2015/Checkbox';
+import { IContextualMenuItem } from 'office-ui-fabric-react/lib-es2015/ContextualMenu';
+import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib-es2015/Dropdown';
 
 import * as stylesImport from './ResizeGroup.Example.scss';
 const styles: any = stylesImport;

@@ -1,14 +1,14 @@
 import * as React from 'react';
-import { assign } from 'office-ui-fabric-react/lib/Utilities';
-import { DetailsList, DetailsListLayoutMode, IColumn, IGroup } from 'office-ui-fabric-react/lib/DetailsList';
-import { SelectionMode } from 'office-ui-fabric-react/lib/Selection';
+import { assign } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { DetailsList, DetailsListLayoutMode, IColumn, IGroup } from 'office-ui-fabric-react/lib-es2015/DetailsList';
+import { SelectionMode } from 'office-ui-fabric-react/lib-es2015/Selection';
 import './PropertiesTable.scss';
 import {
   IInterfaceProperty,
   IEnumProperty,
   InterfacePropertyType
 } from '../../utilities/parser/index';
-import { FontClassNames } from 'office-ui-fabric-react/lib/Styling';
+import { FontClassNames } from 'office-ui-fabric-react/lib-es2015/Styling';
 
 export interface IPropertiesTableProps {
   title?: string;

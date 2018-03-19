@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { CodeBlock } from '../../components/CodeBlock/CodeBlock';
-import { css } from 'office-ui-fabric-react/lib/Utilities';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { css } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
 import { PageHeader } from '../../components/PageHeader/PageHeader';
 
 const diagramStyles: any = require('./GetStartedPage.diagram.module.scss');
@@ -130,8 +130,8 @@ export class GetStartedPage extends React.Component<any, any> {
                 {
                   `import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { Fabric } from 'office-ui-fabric-react/lib-es2015/Fabric';
+import { DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
 
 const MyPage = () => (
   <Fabric>

@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { css } from 'office-ui-fabric-react/lib/Utilities';
-import { FocusZone } from 'office-ui-fabric-react/lib/FocusZone';
+import { css } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { FocusZone } from 'office-ui-fabric-react/lib-es2015/FocusZone';
 import { getPathMinusLastHash } from '../../utilities/pageroute';
 import * as stylesImport from './Nav.module.scss';
 const styles: any = stylesImport;

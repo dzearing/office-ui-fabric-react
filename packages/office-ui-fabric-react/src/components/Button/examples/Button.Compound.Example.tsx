@@ -8,8 +8,8 @@ import {
 import {
   CompoundButton,
   IButtonProps
-} from 'office-ui-fabric-react/lib/Button';
-import { Label } from 'office-ui-fabric-react/lib/Label';
+} from 'office-ui-fabric-react/lib-es2015/Button';
+import { Label } from 'office-ui-fabric-react/lib-es2015/Label';
 
 export class ButtonCompoundExample extends React.Component<IButtonProps> {
   public constructor(props: {}) {

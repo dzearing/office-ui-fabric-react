@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SwatchColorPickerPage } from 'office-ui-fabric-react/lib/components/SwatchColorPicker/SwatchColorPickerPage';
+import { SwatchColorPickerPage } from 'office-ui-fabric-react/lib-es2015/components/SwatchColorPicker/SwatchColorPickerPage';
 import { PageHeader } from '../../components/PageHeader/PageHeader';
 import { ComponentPage } from '../../components/ComponentPage/ComponentPage';
 const pageStyles: any = require('../PageStyles.module.scss');

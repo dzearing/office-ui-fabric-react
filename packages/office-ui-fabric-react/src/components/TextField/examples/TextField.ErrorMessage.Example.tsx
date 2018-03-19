@@ -1,6 +1,6 @@
 import { Promise } from 'es6-promise';
 import * as React from 'react';
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
+import { TextField } from 'office-ui-fabric-react/lib-es2015/TextField';
 import { NumberTextField } from './NumberTextField';
 import './TextField.Examples.scss';
 

@@ -1,15 +1,15 @@
 /* tslint:disable:no-unused-variable */
 import * as React from 'react';
 /* tslint:enable:no-unused-variable */
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
+import { TextField } from 'office-ui-fabric-react/lib-es2015/TextField';
 import {
   DetailsList,
   DetailsListLayoutMode,
   Selection,
   IColumn
-} from 'office-ui-fabric-react/lib/DetailsList';
-import { MarqueeSelection } from 'office-ui-fabric-react/lib/MarqueeSelection';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+} from 'office-ui-fabric-react/lib-es2015/DetailsList';
+import { MarqueeSelection } from 'office-ui-fabric-react/lib-es2015/MarqueeSelection';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 
 const _items: any[] = [];
 

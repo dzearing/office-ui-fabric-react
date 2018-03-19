@@ -1,14 +1,14 @@
 /* tslint:disable:no-unused-variable */
 import * as React from 'react';
 /* tslint:enable:no-unused-variable */
-import { BaseComponent } from 'office-ui-fabric-react/lib/Utilities';
-import { CommandBarButton } from 'office-ui-fabric-react/lib/Button';
-import { TooltipHost } from 'office-ui-fabric-react/lib/Tooltip';
-import { DirectionalHint } from 'office-ui-fabric-react/lib/common/DirectionalHint';
+import { BaseComponent } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { CommandBarButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { TooltipHost } from 'office-ui-fabric-react/lib-es2015/Tooltip';
+import { DirectionalHint } from 'office-ui-fabric-react/lib-es2015/common/DirectionalHint';
 import {
   IOverflowSetItemProps,
   OverflowSet
-} from 'office-ui-fabric-react/lib/OverflowSet';
+} from 'office-ui-fabric-react/lib-es2015/OverflowSet';
 /* tslint:disable-next-line:no-unused-variable */
 import * as stylesImport from './OverflowSet.Example.scss';
 

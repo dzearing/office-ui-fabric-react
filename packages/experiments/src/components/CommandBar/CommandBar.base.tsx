@@ -3,7 +3,7 @@ import {
   BaseComponent,
   css,
   customizable
-} from 'office-ui-fabric-react/lib-es2015/Utilities';
+} from 'office-ui-fabric-react';
 import {
   ICommandBar,
   ICommandBarProps,
@@ -11,10 +11,10 @@ import {
   ICommandBarStyleProps,
   ICommandBarStyles
 } from './CommandBar.types';
-import { CommandBarButton } from 'office-ui-fabric-react/lib-es2015/Button';
-import { OverflowSet, IOverflowSet } from 'office-ui-fabric-react/lib-es2015/OverflowSet';
-import { ResizeGroup, IResizeGroup } from 'office-ui-fabric-react/lib-es2015/ResizeGroup';
-import { TooltipHost } from 'office-ui-fabric-react/lib-es2015/Tooltip';
+import { CommandBarButton } from 'office-ui-fabric-react';
+import { OverflowSet, IOverflowSet } from 'office-ui-fabric-react';
+import { ResizeGroup, IResizeGroup } from 'office-ui-fabric-react';
+import { TooltipHost } from 'office-ui-fabric-react';
 import {
   classNamesFunction,
   createRef

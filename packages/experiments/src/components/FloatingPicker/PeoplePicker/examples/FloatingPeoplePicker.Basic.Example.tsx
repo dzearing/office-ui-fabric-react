@@ -11,7 +11,7 @@ import {
   assign,
   autobind
 } from 'office-ui-fabric-react';
-import { } from 'office-ui-fabric-react/lib-es2015/Pickers';
+import { } from 'office-ui-fabric-react';
 import { IBaseFloatingPicker } from '../../BaseFloatingPicker.types';
 import { FloatingPeoplePicker } from '../FloatingPeoplePicker';
 import { people, mru } from '../../../ExtendedPicker';

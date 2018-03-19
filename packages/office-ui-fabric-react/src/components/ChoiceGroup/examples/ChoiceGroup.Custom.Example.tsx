@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { ChoiceGroup } from 'office-ui-fabric-react/lib/ChoiceGroup';
-import { autobind, css } from 'office-ui-fabric-react/lib/Utilities';
-import { Dropdown } from 'office-ui-fabric-react/lib/Dropdown';
+import { ChoiceGroup } from 'office-ui-fabric-react/lib-es2015/ChoiceGroup';
+import { autobind, css } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { Dropdown } from 'office-ui-fabric-react/lib-es2015/Dropdown';
 
 import * as stylesImport from './ChoiceGroup.Custom.Example.scss';
 const styles: any = stylesImport;

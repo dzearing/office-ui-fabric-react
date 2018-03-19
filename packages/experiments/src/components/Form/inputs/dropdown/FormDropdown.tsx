@@ -2,7 +2,7 @@ import * as React from 'react';
 
 // Components
 import { IFormDropdownProps } from './FormDropdown.types';
-import { Dropdown, IDropdownOption, IDropdownProps } from 'office-ui-fabric-react/lib-es2015/Dropdown';
+import { Dropdown, IDropdownOption, IDropdownProps } from 'office-ui-fabric-react';
 import { FormBaseInput, IFormBaseInputState } from '../../FormBaseInput';
 import { IFormContext } from '../../Form';
 

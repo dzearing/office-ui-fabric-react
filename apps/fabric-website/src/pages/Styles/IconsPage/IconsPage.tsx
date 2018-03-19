@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { CodeBlock } from '../../../components/CodeBlock/CodeBlock';
-import { css } from 'office-ui-fabric-react/lib/Utilities';
+import { css } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import { IconGrid } from '../../../components/IconGrid/IconGrid';
 import { PageHeader } from '../../../components/PageHeader/PageHeader';
 import * as stylesImport from './IconsPage.module.scss';

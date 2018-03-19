@@ -2,7 +2,7 @@ import * as React from 'react';
 import './App.scss';
 import { AppState } from './AppState';
 import AttachedScrollUtility from '../../utilities/AttachedScrollUtility';
-import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
+import { Fabric } from 'office-ui-fabric-react/lib-es2015/Fabric';
 import { Nav } from '../Nav/Nav';
 
 export interface IAppProps extends React.Props<App> {

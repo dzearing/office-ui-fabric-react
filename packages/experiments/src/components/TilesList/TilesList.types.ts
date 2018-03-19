@@ -1,8 +1,8 @@
 
 import * as React from 'react';
-import { IBaseProps, ISize } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { IBaseProps, ISize } from 'office-ui-fabric-react';
 import { TilesList } from './TilesList';
-import { IFocusZone } from 'office-ui-fabric-react/lib-es2015/FocusZone';
+import { IFocusZone } from 'office-ui-fabric-react';
 
 export interface ITilesGridItem<TItem> {
   /**

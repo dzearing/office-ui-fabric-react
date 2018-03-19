@@ -1,5 +1,5 @@
 import { IKeytipStyleProps, IKeytipStyles } from './Keytip.types';
-import { ICalloutContentStyleProps, ICalloutContentStyles } from 'office-ui-fabric-react/lib-es2015/Callout';
+import { ICalloutContentStyleProps, ICalloutContentStyles } from 'office-ui-fabric-react';
 
 export const getStyles = (props: IKeytipStyleProps): IKeytipStyles => {
   const { theme, disabled, visible } = props;

@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
-import { PrimaryButton, DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { ChoiceGroup } from 'office-ui-fabric-react/lib/ChoiceGroup';
-import { Panel, PanelType } from 'office-ui-fabric-react/lib/Panel';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { PrimaryButton, DefaultButton } from 'office-ui-fabric-react/lib-es2015/Button';
+import { ChoiceGroup } from 'office-ui-fabric-react/lib-es2015/ChoiceGroup';
+import { Panel, PanelType } from 'office-ui-fabric-react/lib-es2015/Panel';
 
 export class PanelSmallRightExample extends React.Component<{}, {
   showPanel: boolean;

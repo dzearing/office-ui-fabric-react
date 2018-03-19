@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ChoiceGroup } from 'office-ui-fabric-react/lib/ChoiceGroup';
+import { ChoiceGroup } from 'office-ui-fabric-react/lib-es2015/ChoiceGroup';
 
 export class ChoiceGroupIconExample extends React.Component<any, any> {
   public render() {

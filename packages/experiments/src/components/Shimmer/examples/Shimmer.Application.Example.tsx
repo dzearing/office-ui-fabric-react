@@ -1,13 +1,13 @@
 /* tslint:disable:no-unused-variable */
 import * as React from 'react';
 /* tslint:enable:no-unused-variable */
-import { BaseComponent } from 'office-ui-fabric-react/lib-es2015/Utilities';
+import { BaseComponent } from 'office-ui-fabric-react';
 import {
   HoverCard,
   IExpandingCardProps
-} from 'office-ui-fabric-react/lib-es2015/HoverCard';
-import { DetailsList, buildColumns, IColumn } from 'office-ui-fabric-react/lib-es2015/DetailsList';
-import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
+} from 'office-ui-fabric-react';
+import { DetailsList, buildColumns, IColumn } from 'office-ui-fabric-react';
+import { autobind } from 'office-ui-fabric-react';
 import { createListItems } from '@uifabric/example-app-base';
 import './Shimmer.Example.scss';
 

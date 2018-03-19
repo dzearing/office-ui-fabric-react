@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ContextualMenuPage } from 'office-ui-fabric-react/lib/components/ContextualMenu/ContextualMenuPage';
+import { ContextualMenuPage } from 'office-ui-fabric-react/lib-es2015/components/ContextualMenu/ContextualMenuPage';
 import { PageHeader } from '../../components/PageHeader/PageHeader';
 import { ComponentPage } from '../../components/ComponentPage/ComponentPage';
 const pageStyles: any = require('../PageStyles.module.scss');

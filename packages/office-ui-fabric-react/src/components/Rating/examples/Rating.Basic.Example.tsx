@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { autobind } from 'office-ui-fabric-react/lib/Utilities';
+import { autobind } from 'office-ui-fabric-react/lib-es2015/Utilities';
 import {
   Rating,
   RatingSize
-} from 'office-ui-fabric-react/lib/Rating';
+} from 'office-ui-fabric-react/lib-es2015/Rating';
 import {
   getTheme,
   createTheme,
