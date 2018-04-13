@@ -83,7 +83,11 @@ export class Stylesheet {
       injectionMode: InjectionMode.insertNode,
       defaultPrefix: 'css',
       ...config
+<<<<<<< HEAD
     } as IStyleSheetConfig;
+=======
+    };
+>>>>>>> 547c418585c4b78e6047a61eb78955aaba1cdf91
   }
 
   /**
