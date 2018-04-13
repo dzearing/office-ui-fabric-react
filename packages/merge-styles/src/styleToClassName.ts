@@ -296,11 +296,11 @@ export function insertRules(registrations: IRegistration[], classNames: { [key: 
       const className = classNames[registration.displayName];
       const rulesToInsert = [];
 
-      for (let selector of registration.ruleSet.order) {
+      for (const selector of registration.ruleSet.order) {
         const rules = registration.ruleSet.selectors[selector];
 
         // Replace & or ${name} variables in selector.
-        selector = selector.replace(/(&)|\$([\w-]+)\b/g, (match: string, amp: string, cn: string): string => {
+        const mappedSelector = selector.replace(/(&)|\$([\w-]+)\b/g, (match: string, amp: string, cn: string): string => {
           if (amp) {
             return '.' + className;
           } else if (cn) {
@@ -315,7 +315,7 @@ export function insertRules(registrations: IRegistration[], classNames: { [key: 
         rulesToInsert.push(selector, serializedRules);
 
         if (serializedRules) {
-          const processedRule = `${selector}{${serializedRules}}${(selector.indexOf('@media') === 0) ? '}' : ''}`;
+          const processedRule = `${mappedSelector}{${serializedRules}}${(mappedSelector.indexOf('@media') === 0) ? '}' : ''}`;
           stylesheet.insertRule(processedRule);
         }
       }
