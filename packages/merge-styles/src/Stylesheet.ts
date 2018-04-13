@@ -30,12 +30,12 @@ export interface IStyleSheetConfig {
   /**
    * Injection mode for how rules are inserted.
    */
-  injectionMode?: InjectionMode;
+  injectionMode: InjectionMode;
   /**
    * Falls back to "css".
    */
-  defaultPrefix?: string;
-  onInsertRule?: (rule: string) => void;
+  defaultPrefix: string;
+  onInsertRule: (rule: string) => void;
 }
 
 const STYLESHEET_SETTING = '__stylesheet__';
@@ -78,22 +78,26 @@ export class Stylesheet {
     return _stylesheet;
   }
 
-  constructor(config?: IStyleSheetConfig) {
+  constructor(config?: Partial<IStyleSheetConfig>) {
     this._config = {
       injectionMode: InjectionMode.insertNode,
       defaultPrefix: 'css',
       ...config
-    };
+    } as IStyleSheetConfig;
   }
 
   /**
    * Configures the stylesheet.
    */
-  public setConfig(config?: IStyleSheetConfig): void {
+  public setConfig(config: Partial<IStyleSheetConfig>): void {
     this._config = {
       ...this._config,
       ...config
     };
+  }
+
+  public getDefaultPrefix(): string {
+    return this._config.defaultPrefix;
   }
 
   /**
@@ -128,8 +132,8 @@ export class Stylesheet {
    * Gets the appropriate classname given a key which was previously
    * registered using cacheClassName.
    */
-  public classNameFromKey(key: string): string | undefined {
-    return this._keyToClassName[key];
+  public classNameFromKey(key?: string): string | undefined {
+    return this._keyToClassName[key!];
   }
 
   /**

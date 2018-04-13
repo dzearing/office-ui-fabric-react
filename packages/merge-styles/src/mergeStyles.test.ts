@@ -106,4 +106,33 @@ describe('mergeStyles', () => {
     );
   });
 
+  it('can register duplicate selectors', () => {
+    mergeStyles({
+      selectors: {
+        ':hover .foo': {
+          background: 'red'
+        }
+      }
+    });
+
+    expect(_stylesheet.getRules()).toEqual(
+      '.css-0:hover .foo{background:red;}'
+    );
+
+    mergeStyles({
+      selectors: {
+        ':hover': {
+          selectors: {
+            '.foo': {
+              background: 'red'
+            }
+          }
+        }
+      }
+    });
+
+    expect(_stylesheet.getRules()).toEqual(
+      '.css-0:hover .foo{background:red;}'
+    );
+  });
 });

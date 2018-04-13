@@ -125,7 +125,7 @@ describe('mergeStyleSets', () => {
     const styles: ITestClasses = mergeStyleSets({ root: { background: 'red' } });
     const styles2: ITestClasses = mergeStyleSets({ root: [{ background: 'purple' }, styles.root] });
 
-    expect(styles.root).toEqual(styles2.root);
+    expect(styles2.root).toEqual('root-0');
 
     expect(_stylesheet.getRules()).toEqual(
       '.root-0{background:red;}'
@@ -172,6 +172,107 @@ describe('mergeStyleSets', () => {
     expect(_stylesheet.getRules()).toEqual(
       '.root-0{background:red;}' +
       '.root-1{background:green;}'
+    );
+  });
+
+  it('can resolve selectors', () => {
+    mergeStyleSets({
+      root: {
+        background: 'red',
+        selectors: {
+          ':hover $child': {
+            color: 'white'
+          }
+        }
+      },
+      child: {
+        color: 'green'
+      }
+
+    });
+
+    expect(_stylesheet.getRules()).toEqual(
+      '.root-0{background:red;}' +
+      '.root-0:hover .child-1{color:white;}' +
+      '.child-1{color:green;}'
+    );
+
+    mergeStyleSets({
+      root: {
+        background: 'red',
+        selectors: {
+          ':hover $child': {
+            color: 'white'
+          }
+        }
+      },
+      child: {
+        color: 'red'
+      }
+    });
+
+    expect(_stylesheet.getRules()).toEqual(
+      '.root-0{background:red;}' +
+      '.root-0:hover .child-1{color:white;}' +
+      '.child-1{color:green;}' +
+      '.root-2{background:red;}' +
+      '.root-2:hover .child-3{color:white;}' +
+      '.child-3{color:red;}'
+    );
+  });
+
+  it('can handle looping dependencies', () => {
+    let result;
+    // registering the same set twice should result in the same registrations.
+    for (let i = 0; i < 2; i++) {
+      result = mergeStyleSets({
+        root: {
+          selectors: {
+            ':hover $icon': {
+              background: 'red'
+            }
+          }
+        },
+        icon: {
+          selectors: {
+            '$root:hover &': {
+              background: 'green'
+            }
+          }
+        }
+      });
+      expect(result.root).toEqual('root-0');
+      expect(result.icon).toEqual('icon-1');
+      expect(_stylesheet.getRules()).toEqual(
+        '.root-0:hover .icon-1{background:red;}' +
+        '.root-0:hover .icon-1{background:green;}'
+      );
+    }
+
+    // Registering a different icon should reset both.
+    result = mergeStyleSets({
+      root: {
+        selectors: {
+          ':hover $icon': {
+            background: 'red'
+          }
+        }
+      },
+      icon: {
+        selectors: {
+          '$root:hover &': {
+            background: 'blue'
+          }
+        }
+      }
+    });
+    expect(result.root).toEqual('root-2');
+    expect(result.icon).toEqual('icon-3');
+    expect(_stylesheet.getRules()).toEqual(
+      '.root-0:hover .icon-1{background:red;}' +
+      '.root-0:hover .icon-1{background:green;}' +
+      '.root-2:hover .icon-3{background:red;}' +
+      '.root-2:hover .icon-3{background:blue;}'
     );
   });
 
