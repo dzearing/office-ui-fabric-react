@@ -18,7 +18,7 @@ export function mergeStyleSets<TStyles extends string>(
   if (cssSet) {
     for (const prop in cssSet) {
       if (cssSet.hasOwnProperty(prop)) {
-        const registration = styleToRegistration({ displayName: prop }, cssSet[prop]);
+        const registration = styleToRegistration(cssSet[prop], { displayName: prop });
 
         if (registration) {
           registrations.push(registration);

@@ -162,12 +162,12 @@ export class Stylesheet {
   public insertRule(
     rule: string
   ): void {
-    const element = this._getElement();
+    const element = _createStyleElement();
     const injectionMode = element ? this._config.injectionMode : InjectionMode.none;
 
     switch (injectionMode) {
       case InjectionMode.insertNode:
-        const { sheet } = element!;
+        const { sheet } = element;
 
         try {
           // tslint:disable-next-line:no-any

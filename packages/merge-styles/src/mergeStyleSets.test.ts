@@ -276,4 +276,31 @@ describe('mergeStyleSets', () => {
     );
   });
 
+  it('does not inherit display names', () => {
+    const styles = mergeStyleSets({
+      root: [
+        'a',
+        {
+          background: 'red'
+        }
+      ]
+    });
+
+    expect(styles.root).toEqual('a root-0');
+
+    const styles2 = mergeStyleSets({
+      stuff: [
+        styles.root,
+        {
+          background: 'red'
+        }
+      ]
+    });
+
+    expect(styles2.stuff).toEqual('a stuff-1');
+    expect(_stylesheet.getRules()).toEqual(
+      '.root-0{background:red;}' +
+      '.stuff-1{background:red;}'
+    );
+  });
 });

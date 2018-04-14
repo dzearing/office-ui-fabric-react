@@ -135,4 +135,5 @@ describe('mergeStyles', () => {
       '.css-0:hover .foo{background:red;}'
     );
   });
+
 });
