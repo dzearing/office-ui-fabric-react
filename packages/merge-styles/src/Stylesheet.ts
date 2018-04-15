@@ -1,4 +1,9 @@
 import { IStyle } from './IStyle';
+import { convertNumber } from './convertNumber';
+
+const CharMap = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+
 /**
  * Injection mode for the stylesheet.
  *
@@ -50,7 +55,7 @@ let _stylesheet: Stylesheet;
  * @public
  */
 export class Stylesheet {
-  private _styleElement?: HTMLStyleElement;
+  // private _styleElement?: HTMLStyleElement;
   private _rules: string[] = [];
   private _config: IStyleSheetConfig;
   private _rulesToInsert: string[] = [];
@@ -80,7 +85,7 @@ export class Stylesheet {
 
   constructor(config?: Partial<IStyleSheetConfig>) {
     this._config = {
-      injectionMode: InjectionMode.insertNode,
+      injectionMode: InjectionMode.appendChild,
       defaultPrefix: 'css',
       ...config
     } as IStyleSheetConfig;
@@ -109,6 +114,10 @@ export class Stylesheet {
     const prefix = displayName || this._config.defaultPrefix;
 
     return `${prefix}-${this._counter++}`;
+  }
+
+  public getAtomicClassName(): string {
+    return convertNumber(this._counter++, CharMap);
   }
 
   /**
@@ -216,12 +225,12 @@ export class Stylesheet {
     this._keyToClassName = {};
   }
 
-  private _getElement(): HTMLStyleElement | undefined {
-    if (!this._styleElement && typeof document !== 'undefined') {
-      this._styleElement = _createStyleElement();
-    }
-    return this._styleElement;
-  }
+  //   private _getElement(): HTMLStyleElement | undefined {
+  //     if (!this._styleElement && typeof document !== 'undefined') {
+  //       this._styleElement = _createStyleElement();
+  //     }
+  //     return this._styleElement;
+  //   }
 }
 
 function _createStyleElement(content?: string): HTMLStyleElement {

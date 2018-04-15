@@ -38,7 +38,7 @@ function getDisplayName(ruleSet: IRuleSet): string | undefined {
  * an IRuleSet structure (which contains a selector-> style map as well as static class
  * names and ordering information.)
  */
-function extractRuleSet(
+export function extractRuleSet(
   args: IStyle[],
   ruleSet: IRuleSet = { order: [], classNames: [], dependsOn: {}, selectors: {} },
   currentSelector: string = '&'
@@ -48,7 +48,9 @@ function extractRuleSet(
   for (const arg of args) {
     // If the arg is a string, we need to look up the class map and merge.
     if (typeof arg === 'string') {
-      arg.split(' ').forEach((stringArg: string) => {
+      const splitArg = arg.split(' ');
+
+      for (const stringArg of splitArg) {
         const expandedRules = stylesheet.argsFromClassName(stringArg);
 
         if (expandedRules) {
@@ -58,7 +60,7 @@ function extractRuleSet(
             ruleSet.classNames.push(stringArg);
           }
         }
-      });
+      }
 
       // Else if the arg is an array, we need to recurse in.
     } else if (Array.isArray(arg)) {

@@ -14,11 +14,11 @@ export {
 
 export {
   mergeStyles
-} from './mergeStyles';
+} from './atomicMerge';
 
 export {
   mergeStyleSets
-} from './mergeStyleSets';
+} from './atomicMerge';
 
 export {
   concatStyleSets
