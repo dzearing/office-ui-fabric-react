@@ -55,7 +55,7 @@ let _stylesheet: Stylesheet;
  * @public
  */
 export class Stylesheet {
-  // private _styleElement?: HTMLStyleElement;
+  private _styleElement?: HTMLStyleElement;
   private _rules: string[] = [];
   private _config: IStyleSheetConfig;
   private _rulesToInsert: string[] = [];
@@ -171,12 +171,12 @@ export class Stylesheet {
   public insertRule(
     rule: string
   ): void {
-    const element = _createStyleElement();
+    const element = this._getElement();
     const injectionMode = element ? this._config.injectionMode : InjectionMode.none;
 
     switch (injectionMode) {
       case InjectionMode.insertNode:
-        const { sheet } = element;
+        const { sheet } = element!;
 
         try {
           // tslint:disable-next-line:no-any
@@ -225,12 +225,16 @@ export class Stylesheet {
     this._keyToClassName = {};
   }
 
-  //   private _getElement(): HTMLStyleElement | undefined {
-  //     if (!this._styleElement && typeof document !== 'undefined') {
-  //       this._styleElement = _createStyleElement();
-  //     }
-  //     return this._styleElement;
-  //   }
+  public resetElement(): void {
+    this._styleElement = undefined;
+  }
+
+  private _getElement(): HTMLStyleElement | undefined {
+    if (!this._styleElement && typeof document !== 'undefined') {
+      this._styleElement = _createStyleElement();
+    }
+    return this._styleElement;
+  }
 }
 
 function _createStyleElement(content?: string): HTMLStyleElement {

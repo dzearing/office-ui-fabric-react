@@ -14,12 +14,14 @@ import { convertNumber } from './convertNumber';
  * @public
  */
 export function mergeStyleSets<TStyles>(
-  ...partSets: Partial<TStyles>[]
+  ...partSets: (Partial<TStyles> | false | null | undefined)[]
 ): { [P in keyof TStyles]: string } {
   const partSet: any = (partSets.length > 1) ? concatStyleSets(partSets) : partSets[0];
   const result: Partial<{ [key: string]: string }> = {};
 
   if (partSet) {
+    Stylesheet.getInstance().resetElement();
+
     for (const partName in partSet) {
       const partValue: IStyle = partSet[partName];
       const ruleSet: IRuleSet = extractRuleSet([partValue as any]);
@@ -94,7 +96,7 @@ export function getClassForRule(selector: string, name: string, value: string) {
 
     // rtlify(rule);
     // provideUnits(rule);
-    // kebab(rule);  
+    // kebab(rule);
     value = provideUnits(name, value);
     name = kebab(name);
 

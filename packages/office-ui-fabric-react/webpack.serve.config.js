@@ -13,6 +13,10 @@ module.exports = resources.createServeConfig({
     'react-dom': 'ReactDOM'
   },
 
+  devServer: {
+    port: 3333
+  },
+
   resolve: {
     alias: {
       'office-ui-fabric-react/src': path.join(__dirname, 'src'),
