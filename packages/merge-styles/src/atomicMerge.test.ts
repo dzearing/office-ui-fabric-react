@@ -1,4 +1,4 @@
-import { mergeStyleSets, getClassForRule } from './atomicMerge';
+import { mergeStyleSets } from './atomicMerge';
 import { Stylesheet, InjectionMode } from './Stylesheet';
 
 const _stylesheet: Stylesheet = Stylesheet.getInstance();
@@ -52,6 +52,5 @@ describe('mergeStyleSets', () => {
 
     expect(result.root).toEqual('a');
   });
-
 
 });

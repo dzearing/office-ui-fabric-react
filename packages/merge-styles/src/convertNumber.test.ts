@@ -1,4 +1,4 @@
-import { convertNumber } from "./convertNumber";
+import { convertNumber } from './convertNumber';
 
 describe('convertNumber', () => {
   it('works with basic map set', () => {

@@ -3,7 +3,6 @@ import { convertNumber } from './convertNumber';
 
 const CharMap = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
-
 /**
  * Injection mode for the stylesheet.
  *
@@ -225,13 +224,12 @@ export class Stylesheet {
     this._keyToClassName = {};
   }
 
-  public resetElement(): void {
-    this._styleElement = undefined;
-  }
-
   private _getElement(): HTMLStyleElement | undefined {
     if (!this._styleElement && typeof document !== 'undefined') {
       this._styleElement = _createStyleElement();
+      window.requestAnimationFrame(() => {
+        this._styleElement = undefined;
+      });
     }
     return this._styleElement;
   }

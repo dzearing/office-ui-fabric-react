@@ -3,10 +3,9 @@ import { IStyle } from './IStyle';
 import { styleToRegistration, applyRegistrations, IRegistration } from './styleToClassName';
 import { extractRuleSet, IRuleSet } from './styleToClassName';
 import { Stylesheet } from './Stylesheet';
-import { applyTransforms } from './newTransforms/applyTransforms';
 import { provideUnits } from './provideUnits';
 import { kebab } from './kebab';
-import { convertNumber } from './convertNumber';
+
 /**
  * Allows you to pass in 1 or more sets of areas which will return a merged
  * set of classes.
@@ -16,18 +15,20 @@ import { convertNumber } from './convertNumber';
 export function mergeStyleSets<TStyles>(
   ...partSets: (Partial<TStyles> | false | null | undefined)[]
 ): { [P in keyof TStyles]: string } {
+  // tslint:disable-next-line:no-any
   const partSet: any = (partSets.length > 1) ? concatStyleSets(partSets) : partSets[0];
   const result: Partial<{ [key: string]: string }> = {};
 
   if (partSet) {
-    Stylesheet.getInstance().resetElement();
-
     for (const partName in partSet) {
-      const partValue: IStyle = partSet[partName];
-      const ruleSet: IRuleSet = extractRuleSet([partValue as any]);
-      result[partName] = processRuleSet(ruleSet);
+      if (partSet.hasOwnProperty(partName)) {
+        const partValue: IStyle = partSet[partName];
+        const ruleSet: IRuleSet = extractRuleSet([partValue]);
+        result[partName] = processRuleSet(ruleSet);
+      }
     }
   }
+
   return result as { [P in keyof TStyles]: string };
 }
 
@@ -43,12 +44,13 @@ export interface IIndividualRule {
 
 export function processRuleSet(ruleSet: IRuleSet): string {
   const classNames = ruleSet.classNames;
+  const { selectors } = ruleSet;
 
-  for (let selector in ruleSet.selectors) {
+  for (const selector in selectors) {
     if (ruleSet.selectors.hasOwnProperty(selector)) {
       const properties = ruleSet.selectors[selector];
 
-      for (let propName in properties) {
+      for (const propName in properties) {
         if (properties.hasOwnProperty(propName)) {
           classNames.push(getClassForRule(selector, propName, properties[propName]));
         }
@@ -58,7 +60,6 @@ export function processRuleSet(ruleSet: IRuleSet): string {
 
   return classNames.join(' ');
 }
-
 
 export function adjustSelector(selector: string, className: string, classNames?: { [key: string]: string }): string {
   return selector.replace(/(&)|\$([\w-]+)\b/g, (match: string, amp: string, cn: string): string => {
@@ -71,7 +72,7 @@ export function adjustSelector(selector: string, className: string, classNames?:
   });
 }
 
-export function getClassForRule(selector: string, name: string, value: string) {
+export function getClassForRule(selector: string, name: string, value: string): string {
   const stylesheet = Stylesheet.getInstance();
   const key = [selector, name, value].join('|');
   let className = stylesheet.classNameFromKey(key);
