@@ -227,6 +227,8 @@ export class Stylesheet {
   private _getElement(): HTMLStyleElement | undefined {
     if (!this._styleElement && typeof document !== 'undefined') {
       this._styleElement = _createStyleElement();
+
+      // Reset the style element on the next frame.
       window.requestAnimationFrame(() => {
         this._styleElement = undefined;
       });
