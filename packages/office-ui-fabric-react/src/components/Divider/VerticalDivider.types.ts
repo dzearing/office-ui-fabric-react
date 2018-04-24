@@ -1,4 +1,5 @@
-import { ITheme } from '../../Styling';
+import { ITheme, IStyle } from '../../Styling';
+import { IClassNames } from '../../Utilities';
 
 export interface IVerticalDividerProps {
   /**
@@ -7,7 +8,13 @@ export interface IVerticalDividerProps {
   getClassNames?: (theme: ITheme) => IVerticalDividerClassNames;
 }
 
-export interface IVerticalDividerClassNames {
-  wrapper: string;
-  divider: string;
+export interface IVerticalDividerStyleProps {
+  theme: ITheme;
 }
+
+export interface IVerticalDividerStyles {
+  wrapper: IStyle;
+  divider: IStyle;
+}
+
+export type IVerticalDividerClassNames = IClassNames<IVerticalDividerStyles>;
