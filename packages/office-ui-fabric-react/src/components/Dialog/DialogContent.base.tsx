@@ -16,7 +16,7 @@ import { withResponsiveMode } from '../../utilities/decorators/withResponsiveMod
 
 const getClassNames = classNamesFunction<IDialogContentStyleProps, IDialogContentStyles>();
 
-@customizable('DialogContent', ['theme'])
+@customizable('DialogContent', ['theme', 'showCloseButton'])
 @withResponsiveMode
 export class DialogContentBase extends BaseComponent<IDialogContentProps, {}> {
 
