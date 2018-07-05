@@ -686,21 +686,7 @@ export class FocusZone extends BaseComponent<IFocusZoneProps, {}> implements IFo
       this._moveFocus(
         getRTL(),
         (activeRect: ClientRect, targetRect: ClientRect) => {
-          let distance = -1;
-
-          if (
-            targetRect.bottom > activeRect.top &&
-            targetRect.right <= activeRect.right &&
-            this.props.direction !== FocusZoneDirection.vertical
-          ) {
-            distance = activeRect.right - targetRect.right;
-          } else {
-            if (!shouldWrap) {
-              distance = LARGE_NEGATIVE_DISTANCE_FROM_CENTER;
-            }
-          }
-
-          return distance;
+          return -1; // distance;
         },
         undefined /*ev*/,
         shouldWrap
@@ -719,19 +705,7 @@ export class FocusZone extends BaseComponent<IFocusZoneProps, {}> implements IFo
       this._moveFocus(
         !getRTL(),
         (activeRect: ClientRect, targetRect: ClientRect) => {
-          let distance = -1;
-
-          if (
-            targetRect.top < activeRect.bottom &&
-            targetRect.left >= activeRect.left &&
-            this.props.direction !== FocusZoneDirection.vertical
-          ) {
-            distance = targetRect.left - activeRect.left;
-          } else if (!shouldWrap) {
-            distance = LARGE_NEGATIVE_DISTANCE_FROM_CENTER;
-          }
-
-          return distance;
+          return -1;
         },
         undefined /*ev*/,
         shouldWrap
