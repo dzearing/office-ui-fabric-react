@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@uifabric/fabric-website-resources",
+      "comment": "Making minor adjustments to config settings to make the oufr package resolvable from examples.",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@uifabric/fabric-website-resources",
+  "email": "dzearing@microsoft.com"
+}
