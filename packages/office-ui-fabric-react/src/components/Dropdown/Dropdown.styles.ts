@@ -297,7 +297,6 @@ export const getStyles: IStyleFunction<IDropdownStyleProps, IDropdownStyles> = p
         userSelect: 'none',
         textAlign: 'left'
       }
-    ],
-    subComponentStyles: { label: { root: { display: 'inline-block', marginBottom: 8 } } }
+    ]
   };
 };

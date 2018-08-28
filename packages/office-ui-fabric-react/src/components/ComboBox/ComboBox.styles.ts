@@ -254,10 +254,6 @@ export const getStyles = memoizeFunction(
           textOverflow: 'ellipsis',
           boxSizing: 'border-box', // Border-box matches Dropdown and TextField
           selectors: {
-            '.ms-Label': {
-              display: 'inline-block',
-              marginBottom: '8px'
-            },
             input: {
               selectors: {
                 '::-ms-clear': {
