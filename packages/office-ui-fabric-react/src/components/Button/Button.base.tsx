@@ -10,20 +10,22 @@ import {
   KeyCodes,
   createRef,
   css,
+  classNamesFunction,
   mergeAriaAttributeValues
 } from '../../Utilities';
-import { Icon } from '../../Icon';
+import { Icon } from '../Icon';
 import { DirectionalHint } from '../../common/DirectionalHint';
-import { ContextualMenu, IContextualMenuProps } from '../../ContextualMenu';
-import { IButtonProps, IButton } from './Button.types';
-import { IButtonClassNames, getBaseButtonClassNames } from './BaseButton.classNames';
+import { ContextualMenu, IContextualMenuProps } from '../ContextualMenu';
+import { IButtonProps, IButton, IButtonStyleProps, IButtonStyles } from './Button.types';
+import { IButtonClassNames } from './BaseButton.classNames';
+import { getBaseButtonClassNames } from './BaseButton.classNames';
 import {
   getClassNames as getBaseSplitButtonClassNames,
   ISplitButtonClassNames
 } from './SplitButton/SplitButton.classNames';
 import { KeytipData } from '../../KeytipData';
 
-export interface IBaseButtonProps extends IButtonProps {
+export interface IButtonBaseProps extends IButtonProps {
   baseClassName?: string;
   variantClassName?: string;
 }
@@ -34,7 +36,9 @@ export interface IBaseButtonState {
 
 const TouchIdleDelay = 500; /* ms */
 
-export class BaseButton extends BaseComponent<IBaseButtonProps, IBaseButtonState> implements IButton {
+// const getClassNames = classNamesFunction<IButtonStyleProps, IButtonStyles>();
+
+export class ButtonBase extends BaseComponent<IButtonBaseProps, IBaseButtonState> implements IButton {
   private get _isSplitButton(): boolean {
     return !!this.props.menuProps && !!this.props.onClick && this.props.split === true;
   }
@@ -46,7 +50,7 @@ export class BaseButton extends BaseComponent<IBaseButtonProps, IBaseButtonState
     return !!this.state.menuProps;
   }
 
-  public static defaultProps: Partial<IBaseButtonProps> = {
+  public static defaultProps: Partial<IButtonBaseProps> = {
     baseClassName: 'ms-Button',
     styles: {},
     split: false
@@ -61,7 +65,7 @@ export class BaseButton extends BaseComponent<IBaseButtonProps, IBaseButtonState
   private _processingTouch: boolean;
   private _lastTouchTimeoutId: number | undefined;
 
-  constructor(props: IBaseButtonProps, rootClassName: string) {
+  constructor(props: IButtonBaseProps, rootClassName: string) {
     super(props);
 
     this._warnConditionallyRequiredProps(['menuProps', 'onClick'], 'split', this.props.split!);
@@ -98,10 +102,10 @@ export class BaseButton extends BaseComponent<IBaseButtonProps, IBaseButtonState
       menuIconProps,
       styles,
       checked,
+      getClassNames,
       variantClassName,
       theme,
-      toggle,
-      getClassNames
+      toggle
     } = this.props;
 
     const { menuProps } = this.state;
@@ -228,7 +232,7 @@ export class BaseButton extends BaseComponent<IBaseButtonProps, IBaseButtonState
     }
   }
 
-  public componentDidUpdate(prevProps: IBaseButtonProps, prevState: IBaseButtonState) {
+  public componentDidUpdate(prevProps: IButtonBaseProps, prevState: IBaseButtonState) {
     // If Button's menu was closed, run onAfterMenuDismiss
     if (this.props.onAfterMenuDismiss && prevState.menuProps && !this.state.menuProps) {
       this.props.onAfterMenuDismiss();
@@ -484,7 +488,7 @@ export class BaseButton extends BaseComponent<IBaseButtonProps, IBaseButtonState
 
     const classNames = getSplitButtonClassNames
       ? getSplitButtonClassNames(!!disabled, !!this.state.menuProps, !!checked, !!allowDisabledFocus)
-      : styles && getBaseSplitButtonClassNames(styles!, !!disabled, !!this.state.menuProps, !!checked);
+      : styles && getBaseSplitButtonClassNames(styles! as IButtonStyles, !!disabled, !!this.state.menuProps, !!checked);
 
     assign(buttonProps, {
       onClick: undefined,
@@ -590,7 +594,7 @@ export class BaseButton extends BaseComponent<IBaseButtonProps, IBaseButtonState
 
     // Add data-ktp-execute-target to the split button if the keytip is defined
     return (
-      <BaseButton
+      <ButtonBase
         {...splitButtonProps}
         data-ktp-execute-target={keytipAttributes['data-ktp-execute-target']}
         onMouseDown={this._onMouseDown}

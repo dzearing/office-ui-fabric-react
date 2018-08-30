@@ -8,7 +8,6 @@ import { ButtonCommandBarExample } from './examples/Button.CommandBar.Example';
 import { ButtonIconExample } from './examples/Button.Icon.Example';
 import { ButtonAnchorExample } from './examples/Button.Anchor.Example';
 import { ButtonScreenReaderExample } from './examples/Button.ScreenReader.Example';
-import { ButtonSwapExample } from './examples/Button.Swap.Example';
 import { ButtonSplitExample, ButtonSplitCustomExample } from './examples/Button.Split.Example';
 import { ButtonToggleExample } from './examples/Button.Toggle.Example';
 import { IDocPageProps, ChecklistStatus } from '../../common/DocPage.types';
@@ -22,7 +21,6 @@ const ButtonIconExampleCode = require('!raw-loader!office-ui-fabric-react/src/co
 const ButtonAnchorExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Button/examples/Button.Anchor.Example.tsx') as string;
 const ButtonScreenReaderExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Button/examples/Button.ScreenReader.Example.tsx') as string;
 const ButtonContextualMenuExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Button/examples/Button.ContextualMenu.Example.tsx') as string;
-const ButtonSwapExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Button/examples/Button.Swap.Example.tsx') as string;
 const ButtonSplitExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Button/examples/Button.Split.Example.tsx') as string;
 const ButtonToggleExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Button/examples/Button.Toggle.Example.tsx') as string;
 
@@ -88,11 +86,6 @@ export const ButtonPageProps = (props: IButtonDocPageProps): IDocPageProps => ({
       title: 'Button with Aria Description for Screen Reader',
       code: ButtonScreenReaderExampleCode,
       view: <ButtonScreenReaderExample disabled={props.areButtonsDisabled} checked={props.areButtonsChecked} />
-    },
-    {
-      title: 'Button Swap with Focus State',
-      code: ButtonSwapExampleCode,
-      view: <ButtonSwapExample disabled={props.areButtonsDisabled} checked={props.areButtonsChecked} />
     },
     {
       title: 'Custom Split Button',
