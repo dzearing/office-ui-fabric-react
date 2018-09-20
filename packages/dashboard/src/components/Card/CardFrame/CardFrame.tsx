@@ -38,15 +38,30 @@ export class CardFrame extends React.Component<ICardFrameProps, {}> {
       });
     }
     const href = this.props.href === undefined ? '#' : this.props.href;
+    const target = this.props.target === undefined ? '_self' : this.props.target;
     return (
       <div className={classNames.root}>
         <div className={classNames.cardTitleBox}>
           <div className={classNames.cardTitle}>
             <Link
               styles={{
-                root: { fontFamily: 'Segoe UI', fontWeight: '600', fontSize: '14px !important', lineHeight: '16px' }
+                root: {
+                  fontFamily: 'Segoe UI',
+                  fontWeight: '600',
+                  fontSize: '14px !important',
+                  lineHeight: '19px',
+                  selectors: {
+                    ':hover': {
+                      color: '#0078D4'
+                    },
+                    ':active': {
+                      color: '#004578 !important'
+                    }
+                  }
+                }
               }}
               href={href}
+              target={target}
               disabled={href === '#'}
             >
               {cardTitle}

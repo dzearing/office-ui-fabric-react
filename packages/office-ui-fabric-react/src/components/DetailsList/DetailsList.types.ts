@@ -11,6 +11,7 @@ import { IWithViewportProps, IViewport } from '../../utilities/decorators/withVi
 import { IList, IListProps, ScrollToMode } from '../List/index';
 import { ITheme, IStyle } from '../../Styling';
 import { ICellStyleProps, IDetailsItemProps } from './DetailsRow.types';
+import { IDetailsColumnProps } from './DetailsColumn';
 
 export { IDetailsHeaderProps, IDetailsRowBaseProps, IDetailsHeaderBaseProps, IDetailsFooterBaseProps };
 
@@ -150,7 +151,10 @@ export interface IDetailsListProps extends IBaseProps<IDetailsList>, IWithViewpo
   /** Callback for when a given row has been invoked (by pressing enter while it is selected.) */
   onItemInvoked?: (item?: any, index?: number, ev?: Event) => void;
 
-  /** Callback for when the context menu of an item has been accessed. If undefined or false are returned, ev.preventDefault() will be called.*/
+  /**
+   * Callback for when the context menu of an item has been accessed.
+   * If undefined or false are returned, ev.preventDefault() will be called.
+   */
   onItemContextMenu?: (item?: any, index?: number, ev?: Event) => void | boolean;
 
   /**
@@ -387,6 +391,11 @@ export interface IColumn {
    * If provided uses this method to render custom cell content, rather than the default text rendering.
    */
   onRender?: (item?: any, index?: number, column?: IColumn) => any;
+
+  /**
+   * If provider, can be used to render a custom column header divider
+   */
+  onRenderDivider?: IRenderFunction<IDetailsColumnProps>;
 
   /**
    * Determines if the column is filtered, and if so shows a filter icon.

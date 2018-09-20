@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { DonutChart, IDonutChartProps, IChartProps, IChartDataPoint } from '@uifabric/charting/lib/DonutChart';
+import { DonutChart, IDonutChartProps, IChartProps, IChartDataPoint } from '@uifabric/charting';
 import { DefaultPalette } from 'office-ui-fabric-react/lib/Styling';
 import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
 
@@ -9,13 +9,7 @@ export interface IExampleState {
 
 export class DonutChartDynamicExample extends React.Component<IDonutChartProps, IExampleState> {
   private _colors = [
-    [
-      DefaultPalette.blueLight,
-      DefaultPalette.blue,
-      DefaultPalette.tealLight,
-      DefaultPalette.teal,
-      DefaultPalette.greenLight
-    ],
+    [DefaultPalette.blueLight, DefaultPalette.blue, DefaultPalette.tealLight, DefaultPalette.teal, DefaultPalette.greenLight],
     [DefaultPalette.purpleLight, DefaultPalette.purple, DefaultPalette.magentaLight, DefaultPalette.magenta],
     [DefaultPalette.yellowLight, DefaultPalette.yellow, DefaultPalette.orangeLighter, DefaultPalette.orangeLight],
     [DefaultPalette.neutralTertiary, DefaultPalette.neutralSecondary, DefaultPalette.neutralPrimary]
