@@ -202,7 +202,8 @@ function _makeSemanticColorsFromPalette(p: IPalette, isInverted: boolean, depCom
     buttonBackgroundChecked: p.neutralTertiaryAlt,
     buttonBackgroundHovered: p.neutralLight,
     buttonBackgroundCheckedHovered: p.neutralLight,
-    buttonBackgroundPressed: p.neutralLight,
+    buttonBackgroundPressed: p.neutralTertiaryAlt,
+    buttonBackgroundDisabled: p.neutralLighter,
     buttonBorder: 'transparent',
     buttonText: p.neutralPrimary,
     buttonTextHovered: p.black,
@@ -211,13 +212,17 @@ function _makeSemanticColorsFromPalette(p: IPalette, isInverted: boolean, depCom
     buttonTextPressed: p.neutralDark,
     buttonTextDisabled: p.neutralQuaternary,
     buttonBorderDisabled: 'transparent',
+
     primaryButtonBackground: p.themePrimary,
     primaryButtonBackgroundHovered: p.themeDarkAlt,
     primaryButtonBackgroundPressed: p.themeDark,
+    primaryButtonBackgroundDisabled: p.neutralLighter,
     primaryButtonBorder: 'transparent',
+
     primaryButtonText: p.white,
     primaryButtonTextHovered: p.white,
     primaryButtonTextPressed: p.white,
+    primaryButtonTextDisabled: p.neutralQuaternary,
 
     menuItemBackgroundHovered: p.neutralLighter,
     menuIcon: p.themePrimary,

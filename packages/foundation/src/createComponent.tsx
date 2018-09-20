@@ -66,6 +66,7 @@ export interface IComponentOptions<TViewProps, TStyleSet, TProcessedStyledSet, T
   styles: IStylesProp<TViewProps, TStyleSet>;
   view: (props: IViewComponentProps<TViewProps, TProcessedStyledSet>) => JSX.Element;
   statics?: TStatics;
+  customizableProps?: (keyof TViewProps)[];
 }
 
 /**

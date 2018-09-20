@@ -105,6 +105,6 @@ export function createComponent<
 function getCustomizations(displayName: string, context: IContextCustomization): any {
   // TODO: do we want field props? should fields be part of IComponentOptions and used here?
   // TODO: should we centrally define DefaultFields? (not exported from styling)
-  const DefaultFields = ['theme', 'styles'];
+  const DefaultFields = ['theme', 'styles', 'styleVariables'];
   return Customizations.getSettings(DefaultFields, displayName, context.customizations);
 }

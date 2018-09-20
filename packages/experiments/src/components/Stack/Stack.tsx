@@ -5,6 +5,7 @@ import { IStackItemProps, IStackItemStyles } from './StackItem/StackItem.types';
 import { IStackProps, IStackStyles } from './Stack.types';
 import { styles } from './Stack.styles';
 import { mergeStyles } from 'office-ui-fabric-react/lib/Styling';
+import { getNativeProps, htmlElementProperties } from '../../Utilities';
 
 const StackItemType = (<StackItem /> as React.ReactElement<IStackItemProps> &
   IStyleableComponent<IStackItemProps, IStackItemStyles>).type;
@@ -22,6 +23,8 @@ const view = (props: IViewComponentProps<IStackProps, IStackStyles>) => {
     ...rest
   } = props;
 
+  const nativeHTMLProps = getNativeProps(rest, htmlElementProperties);
+  let firstChild = true;
   const stackChildren: (React.ReactChild | null)[] = React.Children.map(
     props.children,
     (child: React.ReactElement<IStackItemProps>, index: number) => {
@@ -30,11 +33,13 @@ const view = (props: IViewComponentProps<IStackProps, IStackStyles>) => {
       }
 
       const defaultItemProps: IStackItemProps = {
-        gap: index > 0 ? gap : 0,
+        gap: firstChild ? 0 : gap,
         horizontal,
         shrink: shrinkItems,
         className: child.props ? child.props.className : undefined
       };
+
+      firstChild = false;
 
       if (child.type === StackItemType) {
         // If child is a StackItem, we need to pass down the className of ITS first child to the StackItem for mergeStylesSet to work
@@ -60,7 +65,7 @@ const view = (props: IViewComponentProps<IStackProps, IStackStyles>) => {
   );
 
   return (
-    <RootType {...rest} className={classNames.root}>
+    <RootType {...nativeHTMLProps} className={classNames.root}>
       {stackChildren}
     </RootType>
   );

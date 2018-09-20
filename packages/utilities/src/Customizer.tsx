@@ -92,8 +92,8 @@ export class Customizer extends BaseComponent<ICustomizerProps, ICustomizerConte
     this.setState(this._getCustomizations(newProps, newContext));
   }
 
-  public render(): React.ReactElement<{}> {
-    return React.Children.only(this.props.children);
+  public render(): React.ReactNode {
+    return this.props.children;
   }
 
   private _getCustomizations(props: ICustomizerProps, context: ICustomizerContext): ICustomizerContext {

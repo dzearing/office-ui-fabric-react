@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { css, classNamesFunction } from 'office-ui-fabric-react/lib/Utilities';
+import { css, classNamesFunction, Customizer } from 'office-ui-fabric-react/lib/Utilities';
 import { getStyles, IButtonBasicExampleStyleProps, IButtonBasicExampleStyles } from './Button.Basic.Example.styles';
 import { DefaultButton, IButtonProps } from 'office-ui-fabric-react/lib/Button';
 import { Label } from 'office-ui-fabric-react/lib/Label';
+import { TeamsCustomizations } from '../../../customizations/TeamsCustomizations';
 
 export class ButtonDefaultExample extends React.Component<IButtonProps, {}> {
   public render(): JSX.Element {
@@ -12,31 +13,33 @@ export class ButtonDefaultExample extends React.Component<IButtonProps, {}> {
     const classNames = getClassNames(getStyles, {});
 
     return (
-      <div className={css(classNames.twoup)}>
-        <div>
-          <Label>Standard</Label>
-          <DefaultButton
-            data-automation-id="test"
-            allowDisabledFocus={true}
-            disabled={disabled}
-            checked={checked}
-            text="Button"
-            onClick={this._alertClicked}
-          />
+      <Customizer {...TeamsCustomizations}>
+        <div className={css(classNames.twoup)}>
+          <div>
+            <Label>Standard</Label>
+            <DefaultButton
+              data-automation-id="test"
+              allowDisabledFocus={true}
+              disabled={disabled}
+              checked={checked}
+              text="Button 1"
+              onClick={this._alertClicked}
+            />
+          </div>
+          <div>
+            <Label>Primary</Label>
+            <DefaultButton
+              primary={true}
+              data-automation-id="test"
+              disabled={disabled}
+              checked={checked}
+              text="Button 2"
+              onClick={this._alertClicked}
+              allowDisabledFocus={true}
+            />
+          </div>
         </div>
-        <div>
-          <Label>Primary</Label>
-          <DefaultButton
-            primary={true}
-            data-automation-id="test"
-            disabled={disabled}
-            checked={checked}
-            text="Button"
-            onClick={this._alertClicked}
-            allowDisabledFocus={true}
-          />
-        </div>
-      </div>
+      </Customizer>
     );
   }
 

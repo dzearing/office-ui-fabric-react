@@ -1,6 +1,6 @@
 import { ICustomizerProps } from '../Utilities';
 import { ITheme, createTheme } from '../Styling';
-import { IButtonStyles } from '../Button';
+import { IButtonStyles, IButtonProps } from '../Button';
 
 /**
  * To consume a customization set, use the Customizer component and wrap your app:
@@ -44,24 +44,18 @@ export const TeamsCustomizations: ICustomizerProps = {
   },
 
   scopedSettings: {
-    PrimaryButton: {
-      styles: {
-        root: {
-          borderRadius: 3
-        } as IButtonStyles
-      }
-    },
     DefaultButton: {
-      styles: {
-        root: {
-          background: 'transparent',
-          border: '2px solid #BDBDBD',
-          borderRadius: 3
-        },
-        rootHovered: {
-          background: 'transparent'
-        }
-      } as IButtonStyles
+      styles: (props: IButtonProps) =>
+        ({
+          root: {
+            background: props.primary ? props.theme!.palette.themePrimary : 'transparent',
+            border: '2px solid #BDBDBD',
+            borderRadius: 3
+          },
+          rootHovered: {
+            background: 'transparent'
+          }
+        } as IButtonStyles)
     }
   }
 };
