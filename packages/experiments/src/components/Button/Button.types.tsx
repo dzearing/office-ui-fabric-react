@@ -1,4 +1,4 @@
-import { IThemedProps, IStyleableComponent } from '../../Foundation';
+import { IThemedProps, IStyleableComponentProps } from '../../Foundation';
 import { IStyle } from '../../Styling';
 import { IIconProps, IContextualMenuProps, IFontWeight } from 'office-ui-fabric-react';
 
@@ -9,7 +9,7 @@ export type IButtonVariants = 'baseVariant' | 'primary' | 'circular';
 
 export type IButtonSlots = 'root' | 'stack' | 'text' | 'icon' | 'menuIcon';
 
-export interface IButtonProps extends IStyleableComponent<IButtonProps, IButtonStyles> {
+export interface IButtonProps extends IStyleableComponentProps<IButtonProps, IButtonStyles> {
   as?: keyof JSX.IntrinsicElements;
   className?: string;
   href?: string;

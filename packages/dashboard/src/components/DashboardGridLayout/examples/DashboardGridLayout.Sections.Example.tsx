@@ -19,6 +19,7 @@ import { DefaultPalette } from 'office-ui-fabric-react/lib/Styling';
 
 const cardFrameContent = {
   cardTitle: 'Example Card',
+  href: 'https://www.bing.com',
   cardDropDownOptions: [
     {
       key: 'Remove',

@@ -40,13 +40,7 @@ export const ButtonView = (props: IViewComponentProps<IButtonViewProps, IButtonS
       aria-disabled={disabled}
       className={classNames.root}
     >
-      <HorizontalStack
-        className={classNames.stack}
-        renderAs="span"
-        gap={8}
-        verticalAlign="center"
-        horizontalAlign="center"
-      >
+      <HorizontalStack className={classNames.stack} as="span" gap={8} verticalAlign="center" horizontalAlign="center">
         {IconProp && typeof IconProp === 'string' && <Icon className={classNames.icon} iconName={IconProp} />}
         {IconProp &&
           typeof IconProp === 'object' &&

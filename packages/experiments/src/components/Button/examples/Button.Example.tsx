@@ -46,7 +46,7 @@ const teamsButtonVariables: IButtonStyleVariables = {
   baseVariant: {
     baseState: {
       borderRadius: 3,
-      borderWidth: 1,
+      borderWidth: 2,
       iconSize: 16,
       iconWeight: 700,
       textWeight: 400,
@@ -171,7 +171,7 @@ const ButtonSet = (props: { className?: string; customizations?: {}; title: stri
 
           <HorizontalStack gap={buttonGap} verticalAlign="center">
             <Button icon="Share" menu={buttonMenu}>
-              <VerticalStack padding="8px 0" renderAs="span" gap={4} horizontalAlign="left">
+              <VerticalStack padding="8px 0" as="span" gap={4} horizontalAlign="left">
                 <Text>I am a compound multiline button.</Text>
                 <Text variant="caption">I can have a caption.</Text>
               </VerticalStack>
