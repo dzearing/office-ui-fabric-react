@@ -43,11 +43,17 @@ export function getButtonStyles(props: IButtonStyleProps): Partial<IButtonStyles
           backgroundColorHovered: semanticColors.buttonBackgroundHovered,
           backgroundColorPressed: semanticColors.buttonBackgroundPressed,
 
+          iconColor: semanticColors.buttonText,
+          iconColorHovered: semanticColors.buttonTextHovered,
+          iconColorPressed: semanticColors.buttonTextPressed,
+
           color: semanticColors.buttonText,
           colorHovered: semanticColors.buttonTextHovered,
           colorPressed: semanticColors.buttonTextPressed,
 
-          borderColor: semanticColors.buttonBorder // root
+          borderColor: semanticColors.buttonBorder, // root
+          borderColorHovered: semanticColors.buttonBorder,
+          borderColorPressed: semanticColors.buttonBorder
         },
 
         disabled: {
@@ -84,6 +90,10 @@ export function getButtonStyles(props: IButtonStyleProps): Partial<IButtonStyles
           color: semanticColors.primaryButtonText,
           colorHovered: semanticColors.primaryButtonTextHovered,
           colorPressed: semanticColors.primaryButtonTextPressed,
+
+          iconColor: semanticColors.primaryButtonText,
+          iconColorHovered: semanticColors.primaryButtonTextHovered,
+          iconColorPressed: semanticColors.primaryButtonTextPressed,
 
           borderColor: semanticColors.primaryButtonBorder
         },
@@ -188,9 +198,7 @@ export function getButtonStyles(props: IButtonStyleProps): Partial<IButtonStyles
     return {};
   }
 
-  function getButtonStylesFromVariant(
-    variantVariables: { [PState in IButtonStates]: IButtonStyleVariablesTypes }
-  ): Partial<IButtonStyles> {
+  function getButtonStylesFromVariant(variantVariables: { [PState in IButtonStates]: IButtonStyleVariablesTypes }): Partial<IButtonStyles> {
     if (variantVariables) {
       return concatStyleSets(
         getButtonStylesFromState(variantVariables.baseState),

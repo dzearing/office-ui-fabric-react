@@ -9,6 +9,14 @@ describe('memoizeFunction', () => {
     expect(memoizeFunctiondTimesCalled()).toEqual(1);
   });
 
+  it('works on objects', () => {
+    let _timesCalled = 0;
+    let foo = memoizeFunction((obj: { n: number }) => ++_timesCalled);
+
+    expect(foo({ n: 1 })).toEqual(1);
+    expect(foo({ n: 1 })).toEqual(1);
+  });
+
   it('can return a cached result with a 2 arg function', () => {
     let _timesCalled = 0;
     // tslint:disable-next-line:no-any

@@ -1,12 +1,31 @@
 import * as React from 'react';
 import { Button, IButtonStyleVariables } from '../index';
-import { HorizontalStack, Text, VerticalStack } from '@uifabric/experiments';
-import { Customizer, ContextualMenu, IContextualMenuProps, Icon, createTheme } from 'office-ui-fabric-react';
+import { HorizontalStack, Text, VerticalStack, IHorizontalStackProps } from '@uifabric/experiments';
+import {
+  Customizer,
+  ContextualMenu,
+  IContextualMenuProps,
+  Icon,
+  createTheme,
+  Dropdown,
+  ITheme,
+  ISchemeNames,
+  CommandBar,
+  IDropdownOption
+} from 'office-ui-fabric-react';
+import { getNeutralVariant, getSoftVariant, getStrongVariant } from '@uifabric/variants';
+import { IThemedProps } from '@uifabric/experiments/lib/Foundation';
 
 const menuItems = [{ key: 'a', name: 'Item a' }, { key: 'b', name: 'Item b' }];
 const buttonMenu = (props: IContextualMenuProps) => <ContextualMenu {...props} items={menuItems} />;
 
-const wordCustomizations = {
+const DefaultCustomizations = {
+  settings: {
+    theme: createTheme({})
+  }
+};
+
+const WordCustomizations = {
   settings: {
     theme: createTheme({
       palette: {
@@ -42,48 +61,7 @@ const wordCustomizations = {
   }
 };
 
-const teamsButtonVariables: IButtonStyleVariables = {
-  baseVariant: {
-    baseState: {
-      borderRadius: 3,
-      borderWidth: 2,
-      iconSize: 16,
-      iconWeight: 700,
-      textWeight: 400,
-      contentPadding: '4px 32px'
-    },
-    enabled: {
-      backgroundColor: 'transparent',
-      backgroundColorHovered: '#bdbdbd',
-      backgroundColorPressed: '#a7a7a7',
-
-      borderColor: '#bdbdbd',
-      borderColorHovered: '#bdbdbd',
-      borderColorPressed: '#a7a7a7',
-
-      textColor: '#252424',
-      textColorPressed: '#252424',
-      textColorHovered: '#252424',
-
-      iconColor: 'rgba(37,36,36,.75)'
-    },
-    expanded: {
-      borderColor: 'transparent',
-      borderColorHovered: 'transparent',
-      borderColorPressed: 'transparent'
-    }
-  },
-  primary: {
-    enabled: {
-      borderColor: 'transparent',
-      borderColorHovered: 'transparent',
-      borderColorPressed: 'transparent',
-      iconColor: 'white'
-    }
-  }
-};
-
-const teamsCustomizations = {
+const TeamsCustomizations = {
   settings: {
     theme: createTheme({
       palette: {
@@ -111,65 +89,138 @@ const teamsCustomizations = {
         white: '#fff'
       },
       semanticColors: {
-        buttonBorder: 'rgb(237, 235, 233)'
+        buttonBackground: 'transparent',
+        buttonBackgroundHovered: '#bdbdbd',
+        buttonBackgroundPressed: '#a7a7a7',
+
+        buttonText: '#252424',
+        buttonTextPressed: '#252424',
+        buttonTextHovered: '#252424',
+
+        buttonBorder: '#bdbdbd',
+
+        primaryBorder: 'transparent'
       }
     })
   },
 
   scopedSettings: {
-    Button: { styleVariables: teamsButtonVariables }
+    Button: {
+      styleVariables: {
+        baseVariant: {
+          baseState: {
+            borderRadius: 3,
+            borderWidth: 2,
+            iconSize: 16,
+            iconWeight: 700,
+            textWeight: 400,
+            contentPadding: '4px 32px'
+          },
+          enabled: {
+            iconColor: '#252424',
+            borderColorHovered: 'transparent',
+            borderColorPressed: 'transparent'
+          },
+          expanded: {
+            borderColor: 'transparent'
+          }
+        },
+        circular: {
+          baseState: {
+            borderWidth: 1
+          },
+          enabled: {
+            backgroundColorHovered: '#464775',
+            backgroundColorPressed: '#464775',
+
+            textColorHovered: '#fff',
+            textColorPressed: '#fff',
+
+            iconColorHovered: '#fff',
+            iconColorPressed: '#fff'
+          }
+        },
+        primary: {
+          enabled: {
+            // borderColor: 'transparent',
+            // borderColorHovered: 'transparent',
+            // borderColorPressed: 'transparent',
+            iconColor: 'white'
+          }
+        }
+      }
+    }
   }
 };
+
+const _themes = [
+  { title: 'Default styling', customizations: DefaultCustomizations },
+  { title: 'Word styling', customizations: WordCustomizations },
+  { title: 'Teams styling', customizations: TeamsCustomizations }
+];
+
+const _schemes: ISchemeNames[] = ['default', 'strong', 'soft', 'neutral'];
+
+// tslint:disable-next-line:typedef
+_themes.forEach(theme => {
+  _updateSchemes(theme.customizations.settings.theme);
+});
 
 const sectionGap = 32;
 const headingGap = 16;
 const buttonGap = 12;
 
-const ButtonSet = (props: { className?: string; customizations?: {}; title: string }) => (
-  <VerticalStack className={props.className} gap={headingGap}>
-    <Text variant="h3">{props.title}</Text>
-    <div>
-      <Customizer {...props.customizations}>
+const regionStyles = (props: IThemedProps<IHorizontalStackProps>) => ({
+  root: {
+    backgroundColor: props.theme.semanticColors.bodyBackground,
+    color: props.theme.semanticColors.bodyText
+  }
+});
+
+const ButtonStack = (props: { children: JSX.Element[] }) => <HorizontalStack gap={buttonGap}>{props.children}</HorizontalStack>;
+
+const ButtonSet = (props: { scheme: ISchemeNames; className?: string; customizations?: {}; title: string }) => (
+  <Customizer {...props.customizations}>
+    <VerticalStack styles={regionStyles} scheme={props.scheme} className={props.className} gap={headingGap}>
+      <Text variant="h3">
+        {props.title} - {props.scheme}
+      </Text>
+      <div>
         <VerticalStack gap={buttonGap}>
-          <HorizontalStack gap={buttonGap}>
+          <ButtonStack>
             <Button text="Default button" />
             <Button disabled text="Disabled default button" />
             <Button primary text="Primary button" />
             <Button disabled primary text="Primary disabled button" />
-          </HorizontalStack>
-
-          <HorizontalStack gap={buttonGap}>
+          </ButtonStack>
+          <ButtonStack>
             <Button icon="PeopleAdd" circular />
-            <Button icon="Video" circular />
             <Button icon="Phone" circular disabled />
             <Button icon="FontSize" circular primary />
             <Button icon="Attach" circular primary disabled />
-          </HorizontalStack>
-
-          <HorizontalStack gap={buttonGap}>
+          </ButtonStack>
+          <ButtonStack>
             <Button icon="Upload" text="Button with string icon" />
             <Button icon={{ iconName: 'Share' }} text="Button with iconProps" />
             <Button icon={<Icon iconName="Download" />} text="Button with custom icon" />
-          </HorizontalStack>
-
-          <HorizontalStack gap={buttonGap}>
+          </ButtonStack>
+          <ButtonStack>
             <Button>
               <Icon iconName="Upload" />
-              <Text>I am text.</Text>
+              <Text>With custom text/icon</Text>
             </Button>
-            <Button primary disabled>
-              <Text>I am a variant="primary" button with text.</Text>
+            <Button primary>
+              <Text>With custom text/icon right aligned</Text>
               <Icon iconName="Upload" />
             </Button>
-          </HorizontalStack>
-
-          <HorizontalStack gap={buttonGap}>
+          </ButtonStack>
+          <ButtonStack>
             <Button text="Menu button" menu={buttonMenu} />
             <Button disabled text="Menu disabled button" menu={buttonMenu} />
             <Button expanded text="Menu expanded button" />
-          </HorizontalStack>
-
-          <HorizontalStack gap={buttonGap} verticalAlign="center">
+            <Button expanded primary text="Menu expanded primary button" />
+          </ButtonStack>
+          <ButtonStack>
             <Button icon="Share" menu={buttonMenu}>
               <VerticalStack padding="8px 0" as="span" gap={4} horizontalAlign="left">
                 <Text>I am a compound multiline button.</Text>
@@ -178,17 +229,74 @@ const ButtonSet = (props: { className?: string; customizations?: {}; title: stri
             </Button>
             <Button disabled text="Menu disabled button" />
             <Button expanded text="Menu expanded button" />
-          </HorizontalStack>
+          </ButtonStack>
+          <CommandBar items={[{ key: '0', text: 'Button 1', iconProps: { iconName: 'Upload' } }]} />
         </VerticalStack>
-      </Customizer>
-    </div>
-  </VerticalStack>
+      </div>
+    </VerticalStack>
+  </Customizer>
 );
 
-export const ButtonExample = () => (
-  <VerticalStack gap={sectionGap}>
-    <ButtonSet title="Default styling" />
-    <ButtonSet title="Teams theme" customizations={teamsCustomizations} />
-    <ButtonSet title="Word theme" customizations={wordCustomizations} />
-  </VerticalStack>
-);
+export class ButtonExample extends React.Component<{}, { customizations: {}; scheme: ISchemeNames }> {
+  public state = {
+    customizations: _themes[0],
+    scheme: _schemes[0]
+  };
+
+  public render(): JSX.Element {
+    return (
+      <VerticalStack gap={sectionGap}>
+        <ButtonStack>
+          <Dropdown
+            // tslint:disable-next-line:jsx-ban-props
+            style={{ width: 300 }}
+            label="Theme:"
+            defaultSelectedKey={0}
+            // tslint:disable-next-line:no-any
+            options={_themes.map((item: any, index: number) => ({
+              key: index,
+              text: item.title
+            }))}
+            onChange={this._onThemeChange}
+          />
+
+          <Dropdown
+            // tslint:disable-next-line:jsx-ban-props
+            style={{ width: 300 }}
+            label="Scheme:"
+            defaultSelectedKey={0}
+            // tslint:disable-next-line:no-any
+            options={_schemes.map((item: any, index: number) => ({
+              key: index,
+              text: item
+            }))}
+            onChange={this._onSchemeChange}
+          />
+        </ButtonStack>
+        <ButtonSet
+          scheme={this.state.scheme}
+          title={this.state.customizations.title}
+          customizations={this.state.customizations.customizations}
+        />
+      </VerticalStack>
+    );
+  }
+
+  private _onThemeChange = (ev: React.MouseEvent<HTMLDivElement>, value: IDropdownOption) => {
+    // tslint:disable-next-line:no-any
+    this.setState({ customizations: _themes[value.key as any] });
+  };
+
+  private _onSchemeChange = (ev: React.MouseEvent<HTMLDivElement>, value: IDropdownOption) => {
+    // tslint:disable-next-line:no-any
+    this.setState({ scheme: _schemes[value!.key as any] });
+  };
+}
+
+function _updateSchemes(theme: ITheme): void {
+  theme.schemes = {
+    strong: getStrongVariant(theme),
+    soft: getSoftVariant(theme),
+    neutral: getNeutralVariant(theme)
+  };
+}
