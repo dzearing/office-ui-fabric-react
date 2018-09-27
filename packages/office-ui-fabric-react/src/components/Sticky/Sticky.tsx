@@ -250,7 +250,7 @@ export class Sticky extends BaseComponent<IStickyProps, IStickyState> {
         currElem = currElem.offsetParent as HTMLDivElement;
       }
 
-      if (currElem.offsetParent === container) {
+      if (currElem && currElem.offsetParent === container) {
         distance += currElem.offsetTop;
       }
     }
