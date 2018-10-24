@@ -4,6 +4,7 @@ import * as renderer from 'react-test-renderer';
 import { Customizer } from './Customizer';
 import { IStyle, Stylesheet, InjectionMode, IStyleFunctionOrObject } from '@uifabric/merge-styles';
 import { classNamesFunction } from './classNamesFunction';
+import { memoizeFunction } from './memoize';
 
 interface ITestStyles {
   root: IStyle;
@@ -14,6 +15,7 @@ interface ITestProps {
 }
 
 let _lastProps: ITestProps | undefined;
+let _getStylesCount = 0;
 
 const getClassNames = classNamesFunction<{}, ITestStyles>();
 
@@ -29,18 +31,34 @@ class TestBase extends React.Component<ITestProps> {
   }
 }
 
-const TestStyles = (props: ITestProps): ITestStyles => ({
-  root: {
-    background: props.cool ? 'blue' : 'red'
-  }
+const getStyles = (props: ITestProps): ITestStyles => {
+  _getStylesCount++;
+
+  return {
+    root: {
+      background: props.cool ? 'blue' : 'red'
+    }
+  };
+};
+
+const getMemoizedStyles = memoizeFunction((cool?: boolean) => {
+  _getStylesCount++;
+  return {
+    root: {
+      background: cool ? 'blue' : 'red'
+    }
+  };
 });
 
-const Test = styled<ITestProps, {}, ITestStyles>(TestBase, TestStyles, undefined, { scope: 'Test' });
-const TestCached = styled<ITestProps, {}, ITestStyles>(TestBase, TestStyles, undefined, { scope: 'Test' }, true);
+const Test = styled<ITestProps, {}, ITestStyles>(TestBase, getStyles, undefined, { scope: 'Test' });
+const TestCached = styled<ITestProps, {}, ITestStyles>(TestBase, (props: ITestProps) => getMemoizedStyles(props.cool), undefined, {
+  scope: 'Test'
+});
 
 describe('styled', () => {
   beforeEach(() => {
     _lastProps = undefined;
+    _getStylesCount = 0;
     Stylesheet.getInstance().setConfig({
       injectionMode: InjectionMode.none
     });
@@ -113,34 +131,27 @@ describe('styled', () => {
   it('can produce same styles object if cached', () => {
     const component = renderer.create(<TestCached cool />);
     expect(component.toJSON()).toMatchSnapshot();
-    let originStyles = _lastProps!.styles;
+    expect(_getStylesCount).toEqual(1);
 
+    // Calling again does not re-evaluate styles.
     component.update(<TestCached cool />);
     expect(component.toJSON()).toMatchSnapshot();
-    expect(_lastProps!.styles).toBe(originStyles);
-    originStyles = _lastProps!.styles;
+    expect(_getStylesCount).toEqual(1);
 
     // Not passing in "cool" should cause re-evaluation of styles.
     component.update(<TestCached />);
     expect(component.toJSON()).toMatchSnapshot();
-    expect(_lastProps!.styles).toBe(originStyles);
-    expect(typeof _lastProps!.styles).toBe('function');
-    originStyles = _lastProps!.styles;
+    expect(_getStylesCount).toEqual(2);
 
     // Passing the same props in again should skip re-evaluation.
     component.update(<TestCached />);
     expect(component.toJSON()).toMatchSnapshot();
-    expect(_lastProps!.styles).toBe(originStyles);
-    originStyles = _lastProps!.styles;
+    expect(_getStylesCount).toEqual(2);
 
+    // Passing in custom styling should not re-evaluate memoized styles.
     const styles = { root: { color: 'red' } };
     component.update(<TestCached cool styles={styles} />);
     expect(component.toJSON()).toMatchSnapshot();
-    expect(_lastProps!.styles).not.toBe(originStyles);
-    originStyles = _lastProps!.styles;
-
-    component.update(<TestCached styles={styles} />);
-    expect(component.toJSON()).toMatchSnapshot();
-    expect(_lastProps!.styles).toBe(originStyles);
+    expect(_getStylesCount).toEqual(2);
   });
 });

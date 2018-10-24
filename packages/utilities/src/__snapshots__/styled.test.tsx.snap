@@ -92,17 +92,6 @@ exports[`styled can produce same styles object if cached 5`] = `
 />
 `;
 
-exports[`styled can produce same styles object if cached 6`] = `
-<div
-  className=
-
-      {
-        background: red;
-        color: red;
-      }
-/>
-`;
-
 exports[`styled renders base styles (background red) 1`] = `
 <div
   className=
