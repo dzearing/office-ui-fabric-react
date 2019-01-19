@@ -11,6 +11,12 @@ export const AppDefinition: IAppDefinition = {
     {
       links: [
         {
+          component: require<any>('../components/SpinButton/SpinButtonPage').SpinButtonPage,
+          key: 'SpinButton',
+          name: 'SpinButton',
+          url: '#/examples/SpinButton'
+        },
+        {
           component: require<any>('../components/Announced/AnnouncedPage').AnnouncedPage,
           key: 'Announced',
           name: 'Announced',

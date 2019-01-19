@@ -5,6 +5,7 @@ const newComponentName = argv.name;
 const slots = argv.slots;
 const stateless = argv.stateless;
 const fs = require('fs');
+const path = require('path');
 
 // Template Sequences
 const statefulSequence = ['GlobalIndex', 'Styles', 'Index', 'View', 'ViewTest', 'Types', 'Component', 'State', 'StateTest'];
@@ -61,7 +62,7 @@ function createComponentFiles(sequence, stepIndex) {
 
   console.log('Creating ' + outputFiles[step] + '...');
 
-  fs.readFile(templateFolderPath + '/' + mustacheTemplateName, 'utf8', (error, data) => {
+  fs.readFile(path.join(templateFolderPath, mustacheTemplateName), 'utf8', (error, data) => {
     readFileCallback(
       error,
       data,
@@ -101,7 +102,7 @@ function makeComponent(error) {
 
   // TODO: obsolete existing templates and promote "slots" templates upon slots promotion
   if (slots) {
-    templateFolderPath += '/slots';
+    templateFolderPath = path.join(templateFolderPath, 'slots');
   }
 
   if (stateless) {

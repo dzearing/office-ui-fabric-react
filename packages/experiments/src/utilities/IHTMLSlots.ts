@@ -5,3 +5,4 @@ import { ISlotProp } from './ISlots';
 export type IHTMLButtonSlot = ISlotProp<JSX.IntrinsicElements['button']>;
 export type IHTMLDivSlot = ISlotProp<JSX.IntrinsicElements['div']>;
 export type IHTMLSpanSlot = ISlotProp<JSX.IntrinsicElements['span']>;
+export type IHTMLInputSlot = ISlotProp<JSX.IntrinsicElements['input']>;
