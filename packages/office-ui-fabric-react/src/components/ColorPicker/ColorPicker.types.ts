@@ -23,7 +23,7 @@ export interface IColorPickerProps {
   /**
    * Object or CSS-compatible string to describe the color.
    */
-  color: IColor | string;
+  color?: IColor | string;
 
   /**
    * Labels for elements within the ColorPicker. Defaults are provided in English only.

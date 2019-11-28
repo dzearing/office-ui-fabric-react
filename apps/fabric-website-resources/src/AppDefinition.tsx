@@ -483,6 +483,12 @@ export const AppDefinition: IAppDefinition = {
       name: 'Utilities',
       links: [
         {
+          component: require<any>('./components/pages/FabricPage').FabricPage,
+          key: 'Fabric',
+          name: 'Fabric',
+          url: '#/examples/fabric'
+        },
+        {
           component: require<any>('./components/pages/FocusTrapZonePage').FocusTrapZonePage,
           key: 'FocusTrapZone',
           name: 'FocusTrapZone',
