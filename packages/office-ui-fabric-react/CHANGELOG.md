@@ -1,7 +1,42 @@
 # Change Log - office-ui-fabric-react
 
-This log was last generated on Fri, 22 Nov 2019 16:57:54 GMT and should not be manually modified.
+This log was last generated on Thu, 28 Nov 2019 12:32:23 GMT and should not be manually modified.
 
+## 7.66.0
+Thu, 28 Nov 2019 12:32:23 GMT
+
+### Minor changes
+
+- Updated office-ui-fabric-core dependency (v-mare@microsoft.com)
+- Coachmark: Add prop to make beak persistent after opening (mgodbolt@microsoft.com)
+### Patches
+
+- Update Modal onKeyUp to also register in componentDidMount (sareiff@microsoft.com)
+- Update spinbutton check (sareiff@microsoft.com)
+## 7.65.1
+Wed, 27 Nov 2019 12:32:07 GMT
+
+### Patches
+
+- Combobox: Noop if selected item is disabled (mgodbolt@microsoft.com)
+- PeoplePicker: Fix selected + hover Persona text styling. (Humberto.Morimoto@microsoft.com)
+- ComboBox: Fixing options' custom styling not applying to multiselect ComboBoxes. (Humberto.Morimoto@microsoft.com)
+## 7.65.0
+Tue, 26 Nov 2019 12:32:11 GMT
+
+### Minor changes
+
+- Fabric component: adding `dir=rtl` support to affect both the `dir` attribute as well as affecting the styling generated within scope (by creating an rtl-versioned theme and exposing it via `Customizer`.) (dzearing@hotmail.com)
+## 7.64.2
+Mon, 25 Nov 2019 12:31:13 GMT
+
+### Patches
+
+- CommandBar: Removed unnecessary role={'presentation'} from OverflowSet (mgodbolt@microsoft.com)
+- fixing double selection in Calendar month picker (jolore@microsoft.com)
+- CommandBarButton: Fixed hidden CommandBarButton splitbuttonDivider (v-mare@microsoft.com)
+- test (cliff.koh@microsoft.com)
+- Revert label change (rezha@microsoft.com)
 ## 7.64.1
 Fri, 22 Nov 2019 16:57:54 GMT
 
