@@ -1,4 +1,4 @@
-import * as FluentUI from '@fluentui/react';
+import * as FluentUI from '@fluentui/react-experimental';
 import * as _ from 'lodash';
 import * as React from 'react';
 // @ts-ignore

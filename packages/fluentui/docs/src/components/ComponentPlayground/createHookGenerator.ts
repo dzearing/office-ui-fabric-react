@@ -1,4 +1,4 @@
-import * as FluentUI from '@fluentui/react';
+import * as FluentUI from '@fluentui/react-experimental';
 
 import { KnobDefinition, KnobGeneratorOptions, KnobGenerator } from '../../types';
 import * as componentGenerators from './componentGenerators';

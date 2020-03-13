@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "outDir": "lib",
+    "outDir": "dist",
     "target": "es5",
     "module": "commonjs",
     "jsx": "react",
@@ -15,14 +15,12 @@
     "noImplicitAny": true,
     "moduleResolution": "node",
     "preserveConstEnums": true,
-    "lib": ["es5", "dom", "es2015.promise"],
-    "skipLibCheck": true,
-    "typeRoots": ["../../node_modules/@types", "../../typings"],
-    "types": ["jest", "webpack-env", "custom-global"],
+    "lib": ["es5", "dom"],
+    "types": ["jest", "webpack-env"],
     "paths": {
-      "office-ui-fabric-react/lib/*": ["./src/*"],
-      "office-ui-fabric-react": ["./src"]
+      "@uifabric/office-ui-fabric-react/lib/*": ["./src/*"],
+      "@uifabric/office-ui-fabric-react": ["./src"]
     }
   },
-  "include": ["src", "../../typings"]
+  "include": ["src"]
 }

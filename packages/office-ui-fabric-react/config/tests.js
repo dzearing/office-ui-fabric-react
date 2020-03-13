@@ -1,12 +1,15 @@
 /** Jest test setup file. */
 
+const { setIconOptions } = require('office-ui-fabric-react/lib/Styling');
 const { configure } = require('enzyme');
-const { initializeIcons } = require('@uifabric/icons');
 const Adapter = require('enzyme-adapter-react-16');
 
-// Initialize icons.
-initializeIcons('');
+// Suppress icon warnings.
+setIconOptions({
+  disableWarnings: true
+});
 
+// Mock requestAnimationFrame for React 16+.
 global.requestAnimationFrame = callback => {
   setTimeout(callback, 0);
 };

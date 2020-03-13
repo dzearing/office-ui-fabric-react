@@ -1,11 +1,17 @@
-# [Office UI Fabric React](https://dev.microsoft.com/fabric)
+# @uifabric/office-ui-fabric-react
 
-**The React-based front-end framework for building experiences for Office and Office 365.**
+**OfficeUiFabricReact components for [Office UI Fabric React](https://dev.microsoft.com/fabric)**
 
-**Fabric 7** Summary, breaking changes, and more details available in [the wiki](https://github.com/OfficeDev/office-ui-fabric-react/wiki/Fabric-7).
+These are not production-ready components and **should never be used in product**. This space is useful for testing new components whose APIs might change before final release.
 
-Fabric React is a collection of robust React-based components designed to make it simple for you to create consistent web experiences using the Office Design Language.
+To import OfficeUiFabricReact components:
 
-For information about available controls, see the [Fabric website](https://dev.microsoft.com/fabric).
+```js
+import { ComponentName } from '@uifabric/office-ui-fabric-react';
+```
 
-To get started using or contributing to Fabric, see the [full readme](https://github.com/OfficeDev/office-ui-fabric-react/blob/master/README.md).
+Once the OfficeUiFabricReact component graduates to a production release, the component will be available at:
+
+```js
+import { ComponentName } from 'office-ui-fabric-react';
+```
