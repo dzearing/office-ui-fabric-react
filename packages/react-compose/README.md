@@ -11,7 +11,7 @@ _Currently supported only by functional components in `@fluentui/react`._
 To import `compose` and use:
 
 ```js
-import { Button } from '@fluentui/react';
+import { Button } from '@fluentui/react-northstar';
 import { compose } from '@fluentui/react-compose';
 
 const PrimaryButton = compose(Button, {
