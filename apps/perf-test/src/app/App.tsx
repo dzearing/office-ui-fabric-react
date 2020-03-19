@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Dropdown, PrimaryButton, Stack, TextField, Text } from 'office-ui-fabric-react';
+import { Dropdown, PrimaryButton, Stack, TextField, Text } from '@fluentui/react';
 import { Measurer, MeasurerTimings } from './Measurer';
 import { useTimer } from './useTimer';
 import { Scenarios } from './Scenarios';

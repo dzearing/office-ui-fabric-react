@@ -5,7 +5,7 @@ import { mount } from 'enzyme';
 import { IPersonaCoinComponent } from './PersonaCoin.types';
 import { PersonaCoin } from './index';
 import { PersonaTestImages } from '@uifabric/experiments/lib/common/TestImages';
-import { Icon, Image, Text } from 'office-ui-fabric-react';
+import { Icon, Image, Text } from '@fluentui/react';
 import { setRTL } from '../../Utilities';
 
 const testPersonaCoinStyles: IPersonaCoinComponent['styles'] = {

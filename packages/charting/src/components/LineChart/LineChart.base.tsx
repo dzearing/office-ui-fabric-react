@@ -9,7 +9,7 @@ import { classNamesFunction } from 'office-ui-fabric-react/lib/Utilities';
 import { IProcessedStyleSet, mergeStyles } from 'office-ui-fabric-react/lib/Styling';
 import { ILineChartProps, ILineChartStyleProps, ILineChartStyles, ILineChartDataPoint, ILineChartPoints } from './LineChart.types';
 import { Callout, DirectionalHint } from 'office-ui-fabric-react/lib/Callout';
-import { FocusZone, FocusZoneDirection } from 'office-ui-fabric-react';
+import { FocusZone, FocusZoneDirection } from '@fluentui/react';
 
 const getClassNames = classNamesFunction<ILineChartStyleProps, ILineChartStyles>();
 

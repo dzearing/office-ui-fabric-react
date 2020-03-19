@@ -8,7 +8,7 @@ import {
   OverflowSet,
   IButtonStyles,
   DirectionalHint
-} from 'office-ui-fabric-react';
+} from '@fluentui/react';
 
 export interface IOverflowData {
   primary: IContextualMenuItem[];

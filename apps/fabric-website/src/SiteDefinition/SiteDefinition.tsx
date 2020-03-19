@@ -3,7 +3,7 @@ import { ISiteDefinition, LoadingComponent } from '@uifabric/example-app-base/li
 import { ControlsPages, ResourcesPages, StylesPages, GetStartedPages } from './SiteDefinition.pages/index';
 import { Platforms } from '../interfaces/Platforms';
 import { platforms } from './SiteDefinition.platforms';
-import { MessageBarType } from 'office-ui-fabric-react';
+import { MessageBarType } from '@fluentui/react';
 
 export const SiteDefinition: ISiteDefinition<Platforms> = {
   siteTitle: 'Office UI Fabric',

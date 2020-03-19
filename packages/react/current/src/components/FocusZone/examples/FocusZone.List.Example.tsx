@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { KeyCodes, createArray, getRTLSafeKeyCode } from 'office-ui-fabric-react/lib/Utilities';
 import { useConst } from '@uifabric/react-hooks';
-import { TextField } from 'office-ui-fabric-react';
+import { TextField } from '@fluentui/react';
 import { Link } from 'office-ui-fabric-react/lib/Link';
 import { FocusZone, FocusZoneDirection } from 'office-ui-fabric-react/lib/FocusZone';
 import { DetailsRow, IColumn, Selection, SelectionMode } from 'office-ui-fabric-react/lib/DetailsList';

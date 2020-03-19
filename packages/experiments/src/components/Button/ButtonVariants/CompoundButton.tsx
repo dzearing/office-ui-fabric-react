@@ -3,7 +3,7 @@ import * as React from 'react';
 import { composed } from '@uifabric/foundation/lib/next/composed';
 import { IComponent } from '@uifabric/foundation/lib/next/IComponent';
 import { IComponentStyles, IStylesFunction, ITokenFunction } from '@uifabric/foundation';
-import { Text, ITextStyles } from 'office-ui-fabric-react';
+import { Text, ITextStyles } from '@fluentui/react';
 import { parseGap } from 'office-ui-fabric-react/lib/components/Stack/StackUtils';
 import { HighContrastSelector } from '../../../Styling';
 import { useButtonState as state } from '../Button.state';

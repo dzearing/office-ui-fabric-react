@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { css, FocusZone, FocusZoneDirection, Link, IProcessedStyleSet, classNamesFunction, styled } from 'office-ui-fabric-react';
+import { css, FocusZone, FocusZoneDirection, Link, IProcessedStyleSet, classNamesFunction, styled } from '@fluentui/react';
 import { isPageActive, removeAnchorLink, jumpToAnchor } from '../../utilities/index2';
 import { MarkdownHeader } from '../Markdown/index';
 import { ISideRailProps, ISideRailLink, ISideRailStyles, ISideRailStyleProps } from './SideRail.types';

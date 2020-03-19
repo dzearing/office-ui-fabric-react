@@ -1,4 +1,4 @@
-import { ComboBox, Fabric } from 'office-ui-fabric-react';
+import { ComboBox, Fabric } from '@fluentui/react';
 
 class ComboBoxControlledExample extends React.Component<{}, {}> {
   public render(): JSX.Element {

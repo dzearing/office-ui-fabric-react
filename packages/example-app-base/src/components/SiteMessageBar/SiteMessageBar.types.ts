@@ -1,4 +1,4 @@
-import { IStyleFunctionOrObject } from 'office-ui-fabric-react';
+import { IStyleFunctionOrObject } from '@fluentui/react';
 import { IMessageBarStyles, IMessageBarStyleProps } from 'office-ui-fabric-react/lib/MessageBar';
 
 export interface ISiteMessageBarProps {

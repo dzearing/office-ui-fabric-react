@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ExampleCard, IComponentDemoPageProps, ComponentPage, Markdown, PropertiesTableSet } from '@uifabric/example-app-base';
-import { KeytipLayer } from 'office-ui-fabric-react';
+import { KeytipLayer } from '@fluentui/react';
 
 import { ButtonExample } from './examples/Button.Example';
 import { MenuButtonExample } from './MenuButton/examples/MenuButton.Example';

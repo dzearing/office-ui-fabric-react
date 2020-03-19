@@ -9,7 +9,7 @@ import {
   Checkbox,
   ContextualMenu,
   IconButton
-} from 'office-ui-fabric-react';
+} from '@fluentui/react';
 import { FontSizes } from '@uifabric/styling';
 import { getId } from 'office-ui-fabric-react/lib/Utilities';
 

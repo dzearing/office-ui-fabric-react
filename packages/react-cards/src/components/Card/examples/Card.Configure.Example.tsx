@@ -8,7 +8,7 @@ import {
   ICardSectionStyles,
   ICardSectionTokens
 } from '@uifabric/react-cards';
-import { Checkbox, Dropdown, IDropdownOption, Icon, Slider, Stack, IStackTokens, Text, ITextStyles } from 'office-ui-fabric-react';
+import { Checkbox, Dropdown, IDropdownOption, Icon, Slider, Stack, IStackTokens, Text, ITextStyles } from '@fluentui/react';
 
 export type FilledSectionKey = '0' | '1' | '2' | '3';
 

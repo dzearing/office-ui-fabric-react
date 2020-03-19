@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { classNamesFunction, DefaultButton, IStyle, Overlay } from 'office-ui-fabric-react';
+import { classNamesFunction, DefaultButton, IStyle, Overlay } from '@fluentui/react';
 
 interface IOverlayExampleStyles {
   root: IStyle;

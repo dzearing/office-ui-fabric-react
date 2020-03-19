@@ -10,7 +10,7 @@ import {
   ChoiceGroup,
   DefaultButton,
   PersonaCoin
-} from 'office-ui-fabric-react';
+} from '@fluentui/react';
 
 const ToggleStrings = {
   onText: 'On',

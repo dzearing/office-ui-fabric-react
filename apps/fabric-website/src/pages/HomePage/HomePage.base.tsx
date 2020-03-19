@@ -14,7 +14,7 @@ import {
   Stack,
   IRawStyle,
   css
-} from 'office-ui-fabric-react';
+} from '@fluentui/react';
 import { trackEvent, EventNames, getSiteArea, MarkdownHeader } from '@uifabric/example-app-base/lib/index2';
 import { platforms } from '../../SiteDefinition/SiteDefinition.platforms';
 import { AndroidLogo, AppleLogo, WebLogo } from '../../utilities/index';

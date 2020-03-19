@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { PropertiesTableSet } from '../../PropertiesTable/index';
-import { MessageBar } from 'office-ui-fabric-react';
+import { MessageBar } from '@fluentui/react';
 import { IPageSectionPropsWithSectionName } from '../Page.types';
 import * as styles from '../Page.module.scss';
 import { IPageJson } from 'office-ui-fabric-react/lib/common/DocPage.types';

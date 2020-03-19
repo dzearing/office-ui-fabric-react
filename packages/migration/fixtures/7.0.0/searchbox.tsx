@@ -1,4 +1,4 @@
-import { SearchBox } from 'office-ui-fabric-react';
+import { SearchBox } from '@fluentui/react';
 
 class SearchBoxFullSizeExample extends React.Component<{}, {}> {
   public render(): JSX.Element {

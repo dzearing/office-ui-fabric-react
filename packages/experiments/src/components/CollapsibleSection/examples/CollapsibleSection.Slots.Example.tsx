@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Icon, Stack, TooltipHost } from 'office-ui-fabric-react';
+import { Icon, Stack, TooltipHost } from '@fluentui/react';
 import { CollapsibleSection, CollapsibleSectionTitle, ICollapsibleSectionTitleProps } from '@uifabric/experiments/lib/CollapsibleSection';
 
 // TODO: convert this example to use extendComponent

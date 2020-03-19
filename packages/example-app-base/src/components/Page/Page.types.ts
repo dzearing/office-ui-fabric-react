@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { IComponentAs } from 'office-ui-fabric-react';
+import { IComponentAs } from '@fluentui/react';
 import { IExampleCardProps } from '../ExampleCard/index';
 import { ISideRailLink } from '../SideRail/index';
 import { IPageJson } from 'office-ui-fabric-react/lib/common/DocPage.types';

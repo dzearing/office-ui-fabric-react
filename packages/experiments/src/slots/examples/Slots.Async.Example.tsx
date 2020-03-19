@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { CollapsibleSection, ICollapsibleSectionTitleProps, ICollapsibleSectionTitleStylesReturnType } from '@uifabric/experiments';
-import { ITextProps, Label, Spinner } from 'office-ui-fabric-react';
+import { ITextProps, Label, Spinner } from '@fluentui/react';
 import { ISlotRender, IHTMLSlot } from '@uifabric/foundation';
 
 // Mock async data container component

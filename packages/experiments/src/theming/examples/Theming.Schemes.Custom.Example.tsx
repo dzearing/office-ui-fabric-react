@@ -20,7 +20,7 @@ import {
   Stack,
   Toggle,
   Text
-} from 'office-ui-fabric-react';
+} from '@fluentui/react';
 
 // tslint:disable:max-line-length
 import { CollapsibleSectionRecursiveExample } from '@uifabric/experiments/lib/components/CollapsibleSection/examples/CollapsibleSection.Recursive.Example';

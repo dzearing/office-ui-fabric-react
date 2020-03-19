@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { IconGrid } from '../../../components/IconGrid/IconGrid';
-import { Image, Icon, Link } from 'office-ui-fabric-react';
+import { Image, Icon, Link } from '@fluentui/react';
 import { getFileTypeIconProps } from '@uifabric/file-type-icons';
 import { Markdown, MarkdownHeader, IPageSectionProps } from '@uifabric/example-app-base/lib/index2';
 import { IStylesPageProps, StylesAreaPage } from '../StylesAreaPage';

@@ -5,7 +5,7 @@ import {
   ITheme,
   IPeoplePickerItemSelectedStyleProps,
   IPeoplePickerItemSelectedStyles
-} from 'office-ui-fabric-react';
+} from '@fluentui/react';
 import { addVariants } from '@uifabric/variants';
 
 const DarkDefaultPalette: Partial<IPalette> = {

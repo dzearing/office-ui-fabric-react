@@ -18,7 +18,7 @@ import {
   Stack,
   Toggle,
   Text
-} from 'office-ui-fabric-react';
+} from '@fluentui/react';
 import { getNeutralVariant, getSoftVariant, getStrongVariant } from '@uifabric/variants';
 
 // tslint:disable:max-line-length

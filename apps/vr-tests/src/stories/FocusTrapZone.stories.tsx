@@ -2,7 +2,7 @@ import * as React from 'react';
 import Screener from 'screener-storybook/src/screener';
 import { storiesOf } from '@storybook/react';
 import { FabricDecorator } from '../utilities';
-import { Panel, PanelType, Dialog, DialogType } from 'office-ui-fabric-react';
+import { Panel, PanelType, Dialog, DialogType } from '@fluentui/react';
 
 storiesOf('FocusTrapZones', module)
   .addDecorator(FabricDecorator)

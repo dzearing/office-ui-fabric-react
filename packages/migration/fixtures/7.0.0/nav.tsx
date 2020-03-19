@@ -1,7 +1,7 @@
 // prettier-ignore
-import { Nav, INavLink } from 'office-ui-fabric-react';
+import { Nav, INavLink } from '@fluentui/react';
 // prettier-ignore
-import { Nav } from 'office-ui-fabric-react';
+import { Nav } from '@fluentui/react';
 // prettier-ignore
 // tslint:disable-next-line: quotemark
 import { Nav } from "office-ui-fabric-react";
@@ -17,7 +17,7 @@ import {
   isRelativeUrl,
   Nav,
   NavBase
-} from 'office-ui-fabric-react';
+} from '@fluentui/react';
 // prettier-ignore
 import {
   Foo,
@@ -32,7 +32,7 @@ import {
   isRelativeUrl,
   Nav,
   NavBase
-} from 'office-ui-fabric-react';
+} from '@fluentui/react';
 // prettier-ignore
 import {
   INav,

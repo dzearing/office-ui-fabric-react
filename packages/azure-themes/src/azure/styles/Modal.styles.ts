@@ -1,4 +1,4 @@
-import { IModalStyles, IModalStyleProps } from 'office-ui-fabric-react';
+import { IModalStyles, IModalStyleProps } from '@fluentui/react';
 import { Depths } from '../AzureDepths';
 import { FontSizes } from '../AzureType';
 import * as StyleConstants from '../Constants';

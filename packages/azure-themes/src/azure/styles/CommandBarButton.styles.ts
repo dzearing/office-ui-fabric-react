@@ -1,4 +1,4 @@
-import { ITheme } from 'office-ui-fabric-react';
+import { ITheme } from '@fluentui/react';
 import { getFocusStyle } from 'office-ui-fabric-react/lib/Styling';
 import { IButtonStyles } from 'office-ui-fabric-react/lib/Button';
 import { FontSizes } from '../AzureType';

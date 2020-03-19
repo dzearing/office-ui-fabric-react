@@ -3,7 +3,7 @@ import * as React from 'react';
 import Screener from 'screener-storybook/src/screener';
 import { storiesOf } from '@storybook/react';
 import { FabricDecorator } from '../utilities';
-import { ChoiceGroup } from 'office-ui-fabric-react';
+import { ChoiceGroup } from '@fluentui/react';
 import { TestImages } from '@uifabric/example-data';
 
 const options = [
@@ -43,14 +43,14 @@ storiesOf('ChoiceGroup', module)
   .addStory('Root', () =>
     // prettier-ignore
     <ChoiceGroup
-      options={ options }
+      options={options}
       label="Pick one"
     />
   )
   .addStory('Required', () =>
     // prettier-ignore
     <ChoiceGroup
-      options={ options }
+      options={options}
       label="Pick one"
       required
     />

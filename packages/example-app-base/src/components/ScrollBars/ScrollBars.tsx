@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { mergeStyleSets } from 'office-ui-fabric-react';
+import { mergeStyleSets } from '@fluentui/react';
 import { default as CustomScrollBars } from 'react-custom-scrollbars';
 import { IScrollBarsProps } from './ScrollBars.types';
 import { NeutralColors } from '@uifabric/fluent-theme';

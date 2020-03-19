@@ -1,5 +1,5 @@
 import React from 'react';
-import { mergeStyleSets, Stack, Toggle } from 'office-ui-fabric-react';
+import { mergeStyleSets, Stack, Toggle } from '@fluentui/react';
 import { EditorWrapper } from '../components/EditorWrapper';
 import { SUPPORTED_PACKAGES } from '../utilities/index';
 

@@ -1,4 +1,4 @@
-import { IStyle } from 'office-ui-fabric-react';
+import { IStyle } from '@fluentui/react';
 import { IMessageBarStyleProps, IMessageBarStyles, MessageBarType } from 'office-ui-fabric-react/lib/MessageBar';
 import { IExtendedSemanticColors } from '../IExtendedSemanticColors';
 

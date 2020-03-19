@@ -10,7 +10,7 @@ import {
   Modal,
   IDragOptions,
   IconButton
-} from 'office-ui-fabric-react';
+} from '@fluentui/react';
 import { FontSizes } from '@uifabric/styling';
 
 export interface IModalBasicExampleState {

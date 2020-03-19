@@ -7,7 +7,7 @@ import {
   IIconProps,
   ILabelProps,
   IPersonaPresenceProps
-} from 'office-ui-fabric-react';
+} from '@fluentui/react';
 // PersonaPresence is not exported by OUFR, so we have to import it directly.
 import { PersonaPresence as FabricPersonaPresence } from 'office-ui-fabric-react/lib/PersonaPresence';
 import { createFactory, ISlottableComponentType, ISlotFactory } from '../Foundation';

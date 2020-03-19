@@ -1,4 +1,4 @@
-import { createRef, fooBarBaz, IThing } from 'office-ui-fabric-react';
+import { createRef, fooBarBaz, IThing } from '@fluentui/react';
 import * as React from 'react';
 
 class Foo {

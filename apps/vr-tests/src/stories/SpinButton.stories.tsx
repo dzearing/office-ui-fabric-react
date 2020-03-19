@@ -10,7 +10,7 @@ import {
   ISpinButtonProps,
   ISpinButtonStyles,
   ITextFieldStyles
-} from 'office-ui-fabric-react';
+} from '@fluentui/react';
 import { Position } from 'office-ui-fabric-react/lib/utilities/positioning';
 
 const props: ISpinButtonProps = {

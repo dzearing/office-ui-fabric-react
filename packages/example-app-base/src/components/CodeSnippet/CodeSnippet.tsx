@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { IStyleFunctionOrObject, ITheme, IStyle, styled, classNamesFunction, IRawStyle } from 'office-ui-fabric-react';
+import { IStyleFunctionOrObject, ITheme, IStyle, styled, classNamesFunction, IRawStyle } from '@fluentui/react';
 import { NeutralColors } from '@uifabric/fluent-theme';
 import { baseCodeStyle, getStyles } from './CodeSnippet.styles';
 

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link, Icon } from 'office-ui-fabric-react';
+import { Link, Icon } from '@fluentui/react';
 import { PlatformContext, Page, IPageProps, IPageSectionProps, MarkdownHeader } from '@uifabric/example-app-base/lib/index2';
 import { getSubTitle } from '../../../utilities/index';
 import * as styles from './StylesPage.module.scss';

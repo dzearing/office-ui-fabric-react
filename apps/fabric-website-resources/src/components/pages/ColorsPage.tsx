@@ -34,7 +34,7 @@ export interface IColorsPageState {
   colorPickerVisible: boolean;
 }
 
-const codeHeader = "import { loadTheme } from 'office-ui-fabric-react';\n\n";
+const codeHeader = "import { loadTheme } from '@fluentui/react';\n\n";
 const codepenHeader = 'const { loadTheme, DefaultButton, PrimaryButton, Toggle, TooltipHost } = Fabric;\n\n';
 const codepenSamples =
   '\n\nclass Content extends React.Component {\n  public render() {\n    return (<div>' +

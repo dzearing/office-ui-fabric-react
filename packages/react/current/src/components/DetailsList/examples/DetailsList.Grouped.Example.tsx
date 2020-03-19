@@ -11,7 +11,7 @@ import {
   IToggleStyles,
   mergeStyles,
   Toggle
-} from 'office-ui-fabric-react';
+} from '@fluentui/react';
 
 const margin = '0 20px 20px 0';
 const controlWrapperClass = mergeStyles({

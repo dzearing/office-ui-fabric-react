@@ -11,7 +11,7 @@ import {
   IStackTokens,
   IStackProps,
   TextField
-} from 'office-ui-fabric-react';
+} from '@fluentui/react';
 
 export interface IExampleOptions {
   numItems: number;

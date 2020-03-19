@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { MessageBarButton, Link, Stack, StackItem, MessageBar, MessageBarType, ChoiceGroup, IStackProps } from 'office-ui-fabric-react';
+import { MessageBarButton, Link, Stack, StackItem, MessageBar, MessageBarType, ChoiceGroup, IStackProps } from '@fluentui/react';
 
 interface IExampleProps {
   resetChoice?: () => void;

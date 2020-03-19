@@ -12,7 +12,7 @@ import { mergeStyles } from '@uifabric/merge-styles';
 import { Samples } from './Samples/index';
 import { Stack, IStackProps } from 'office-ui-fabric-react/lib/Stack';
 import { ThemeDesignerColorPicker } from './ThemeDesignerColorPicker';
-import { Text } from 'office-ui-fabric-react';
+import { Text } from '@fluentui/react';
 import { ThemeProvider } from 'office-ui-fabric-react/lib/Foundation';
 import { MainPanelWidth } from '../shared/MainPanelStyles';
 

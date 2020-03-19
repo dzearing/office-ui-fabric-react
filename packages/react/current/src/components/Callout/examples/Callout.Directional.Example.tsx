@@ -12,7 +12,7 @@ import {
   FontWeights,
   Link,
   getId
-} from 'office-ui-fabric-react';
+} from '@fluentui/react';
 
 export interface ICalloutDirectionalExampleState {
   isCalloutVisible?: boolean;

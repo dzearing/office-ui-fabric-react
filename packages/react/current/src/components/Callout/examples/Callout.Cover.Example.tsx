@@ -1,14 +1,5 @@
 import * as React from 'react';
-import {
-  DefaultButton,
-  Callout,
-  DirectionalHint,
-  Dropdown,
-  IDropdownOption,
-  getTheme,
-  mergeStyleSets,
-  FontWeights
-} from 'office-ui-fabric-react';
+import { DefaultButton, Callout, DirectionalHint, Dropdown, IDropdownOption, getTheme, mergeStyleSets, FontWeights } from '@fluentui/react';
 
 export interface ICalloutCoverExampleState {
   isCalloutVisible?: boolean;

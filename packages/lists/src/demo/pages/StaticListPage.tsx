@@ -4,7 +4,7 @@ import { ComponentPage, ExampleCard, Markdown } from '@uifabric/example-app-base
 import { StaticListExample } from '../../components/StaticList/examples/StaticList.Example';
 import { StaticOrderedListExample } from '../../components/StaticList/examples/StaticOrderedList.Example';
 import { StaticListTableExample } from '../../components/StaticList/examples/StaticTable.Example';
-import { Toggle } from 'office-ui-fabric-react';
+import { Toggle } from '@fluentui/react';
 
 const StaticListExampleCode = require('!raw-loader!@uifabric/lists/src/components/StaticList/examples/StaticList.Example.tsx') as string;
 const StaticOrderedListExampleCode = require('!raw-loader!@uifabric/lists/src/components/StaticList/examples/StaticOrderedList.Example.tsx') as string;

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Stack, Link, ILinkStyleProps, ILinkStyles, PrimaryButton, ITheme, IStackProps } from 'office-ui-fabric-react';
+import { Stack, Link, ILinkStyleProps, ILinkStyles, PrimaryButton, ITheme, IStackProps } from '@fluentui/react';
 import { Panel, PanelType } from 'office-ui-fabric-react/lib/Panel';
 import { Pivot, PivotItem } from 'office-ui-fabric-react/lib/Pivot';
 import { IThemeRules, ThemeGenerator } from 'office-ui-fabric-react/lib/ThemeGenerator';

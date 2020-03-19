@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { css, Icon, TooltipHost, TooltipDelay, FocusZone, IProcessedStyleSet, classNamesFunction, styled } from 'office-ui-fabric-react';
+import { css, Icon, TooltipHost, TooltipDelay, FocusZone, IProcessedStyleSet, classNamesFunction, styled } from '@fluentui/react';
 import * as colorCheck from 'color-check';
 import { IColorPaletteProps, IColorSwatch, IColorPaletteStyleProps, IColorPaletteStyles, IColorSwatchCode } from './ColorPalette.types';
 import { getStyles } from './ColorPalette.styles';

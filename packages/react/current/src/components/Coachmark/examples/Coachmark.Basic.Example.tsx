@@ -9,7 +9,7 @@ import {
   IDropdownOption,
   IStyle,
   TeachingBubbleContent
-} from 'office-ui-fabric-react';
+} from '@fluentui/react';
 
 export interface ICoachmarkBasicExampleState {
   isCoachmarkVisible?: boolean;

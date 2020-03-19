@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { DefaultButton, Dropdown, IDropdownOption } from 'office-ui-fabric-react';
+import { DefaultButton, Dropdown, IDropdownOption } from '@fluentui/react';
 import { addDays, getDateRangeArray } from 'office-ui-fabric-react/lib/utilities/dateMath/DateMath';
 import { Calendar, ICalendarProps, DateRangeType, DayOfWeek, defaultDayPickerStrings } from '@uifabric/date-time';
 

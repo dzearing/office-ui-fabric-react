@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { PrimaryButton } from 'office-ui-fabric-react';
+import { PrimaryButton } from '@fluentui/react';
 
 const scenario = <PrimaryButton>I am a button</PrimaryButton>;
 

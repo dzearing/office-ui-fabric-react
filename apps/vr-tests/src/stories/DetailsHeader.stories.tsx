@@ -9,7 +9,7 @@ import {
   ColumnActionsMode,
   Selection,
   SelectionMode
-} from 'office-ui-fabric-react';
+} from '@fluentui/react';
 import { DetailsHeader } from 'office-ui-fabric-react/lib/components/DetailsList/DetailsHeader';
 
 const _items: {}[] = [];

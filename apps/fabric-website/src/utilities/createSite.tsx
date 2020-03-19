@@ -3,7 +3,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import * as es6Promise from 'es6-promise';
-import { Fabric, setBaseUrl } from 'office-ui-fabric-react';
+import { Fabric, setBaseUrl } from '@fluentui/react';
 import { initializeIcons } from '@uifabric/icons/lib/index';
 import { INavPage, ISiteDefinition, currentFabricBreakpoint, jumpToAnchor, handleRedirects } from '@uifabric/example-app-base/lib/index2';
 import { Route, Router } from '@uifabric/example-app-base';

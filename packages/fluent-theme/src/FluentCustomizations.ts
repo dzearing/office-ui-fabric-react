@@ -1,6 +1,6 @@
 import { FluentTheme } from './fluent/FluentTheme';
 import { FluentStyles } from './fluent/FluentStyles';
-import { ICustomizations } from 'office-ui-fabric-react';
+import { ICustomizations } from '@fluentui/react';
 import { addVariants } from '@uifabric/variants';
 
 export const FluentCustomizations: ICustomizations = {

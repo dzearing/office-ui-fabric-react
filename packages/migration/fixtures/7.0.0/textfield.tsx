@@ -1,4 +1,4 @@
-import { TextField } from 'office-ui-fabric-react';
+import { TextField } from '@fluentui/react';
 
 class TextFieldExample extends React.Component<{}, {}> {
   public render(): JSX.Element {

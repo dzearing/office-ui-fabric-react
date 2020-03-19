@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Customizer, DefaultButton, PrimaryButton, TextField, Stack, Fabric } from 'office-ui-fabric-react';
+import { Customizer, DefaultButton, PrimaryButton, TextField, Stack, Fabric } from '@fluentui/react';
 import { AzureCustomizationsLight, AzureCustomizationsDark } from '../../index';
 
 const Example = () => (
