@@ -11,8 +11,7 @@ const ActivityItemCompactExampleCode = require('!raw-loader!office-ui-fabric-rea
 export const ActivityItemPageProps: IDocPageProps = {
   title: 'ActivityItem',
   componentName: 'ActivityItem',
-  componentUrl:
-    'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/ActivityItem',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/ActivityItem',
   examples: [
     {
       title: 'Activity Items with Icons',

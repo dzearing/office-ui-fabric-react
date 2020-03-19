@@ -14,7 +14,7 @@ const SeparatorIconExampleCode = require('!raw-loader!office-ui-fabric-react/src
 export const SeparatorPageProps: IDocPageProps = {
   title: 'Separator',
   componentName: 'Separator',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Separator',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Separator',
   examples: [
     {
       title: 'Basic Separator with Text',

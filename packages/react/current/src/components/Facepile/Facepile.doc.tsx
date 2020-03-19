@@ -11,7 +11,7 @@ const FacepileOverflowExampleCode = require('!raw-loader!office-ui-fabric-react/
 export const FacepilePageProps: IDocPageProps = {
   title: 'Facepile',
   componentName: 'Facepile',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Facepile',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Facepile',
   examples: [
     {
       title: 'Facepile with size, presence, and fade in options',

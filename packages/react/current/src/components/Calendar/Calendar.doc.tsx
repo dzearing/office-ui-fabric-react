@@ -13,7 +13,7 @@ const today = new Date(Date.now());
 export const CalendarPageProps: IDocPageProps = {
   title: 'Calendar',
   componentName: 'Calendar',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Calendar',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Calendar',
   examples: [
     {
       title: 'Inline Calendar',

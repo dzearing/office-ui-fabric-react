@@ -7,7 +7,7 @@ const CoachmarkBasicExampleCode = require('!raw-loader!office-ui-fabric-react/sr
 export const CoachmarkPageProps: IDocPageProps = {
   title: 'Coachmark',
   componentName: 'Coachmark',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Coachmark',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Coachmark',
   examples: [
     {
       title: 'Coachmark Basic',

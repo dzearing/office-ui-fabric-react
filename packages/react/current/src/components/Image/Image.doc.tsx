@@ -22,7 +22,7 @@ const ImageMaximizeFrameExampleCode = require('!raw-loader!office-ui-fabric-reac
 export const ImagePageProps: IDocPageProps = {
   title: 'Image',
   componentName: 'Image',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Image',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Image',
   examples: [
     {
       title: 'ImageFit: Not specified',

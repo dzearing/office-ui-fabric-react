@@ -9,7 +9,7 @@ const MessageBarBasicExampleCode = require('!raw-loader!office-ui-fabric-react/s
 export const MessageBarPageProps: IDocPageProps = {
   title: 'MessageBar',
   componentName: 'MessageBar',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/MessageBar',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/MessageBar',
   examples: [
     {
       title: 'Various MessageBar types',

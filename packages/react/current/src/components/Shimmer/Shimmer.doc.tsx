@@ -19,7 +19,7 @@ const ShimmerApplicationExampleCode = require('!raw-loader!office-ui-fabric-reac
 export const ShimmerPageProps: IDocPageProps = {
   title: 'Shimmer',
   componentName: 'ShimmerExample',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Shimmer',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Shimmer',
   examples: [
     {
       title: 'Shimmer with basic elements using the ~shimmerElements~ prop',

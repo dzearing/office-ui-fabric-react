@@ -22,7 +22,7 @@ const PersonaPresenceExampleCode = require('!raw-loader!office-ui-fabric-react/s
 export const PersonaPageProps: IDocPageProps = {
   title: 'Persona',
   componentName: 'Persona',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Persona',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Persona',
   examples: [
     {
       title: 'Persona in various sizes',

@@ -17,7 +17,7 @@ const CommandBarSplitDisabledExampleCode = require('!raw-loader!office-ui-fabric
 export const CommandBarPageProps: IDocPageProps = {
   title: 'CommandBar',
   componentName: 'CommandBar',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/CommandBar',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/CommandBar',
   examples: [
     {
       title: 'CommandBar with overflowing menu items',

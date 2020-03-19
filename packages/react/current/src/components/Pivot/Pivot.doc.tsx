@@ -26,7 +26,7 @@ const PivotNoSelectedKeyExampleCode = require('!raw-loader!office-ui-fabric-reac
 export const PivotPageProps: IDocPageProps = {
   title: 'Pivot',
   componentName: 'Pivot',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Pivot',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Pivot',
   examples: [
     {
       title: 'Default Pivot',

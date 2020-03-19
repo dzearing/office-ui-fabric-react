@@ -14,8 +14,7 @@ const OverflowSetBasicReversedExampleCode = require('!raw-loader!office-ui-fabri
 export const OverflowSetPageProps: IDocPageProps = {
   title: 'OverflowSet',
   componentName: 'OverflowSet',
-  componentUrl:
-    'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/OverflowSet',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/OverflowSet',
   examples: [
     {
       title: 'OverflowSet Basic Example',

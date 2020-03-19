@@ -18,8 +18,7 @@ const ChoiceGroupIconExampleCode = require('!raw-loader!office-ui-fabric-react/s
 export const ChoiceGroupPageProps: IDocPageProps = {
   title: 'ChoiceGroup',
   componentName: 'ChoiceGroup',
-  componentUrl:
-    'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/ChoiceGroup',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/ChoiceGroup',
   examples: [
     {
       title: 'Basic ChoiceGroup',

@@ -8,8 +8,7 @@ const SwatchColorPickerBasicExampleCode = require('!raw-loader!office-ui-fabric-
 export const SwatchColorPickerPageProps: IDocPageProps = {
   title: 'SwatchColorPicker',
   componentName: 'SwatchColorPicker',
-  componentUrl:
-    'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/SwatchColorPicker',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/SwatchColorPicker',
   examples: [
     {
       title: 'SwatchColorPicker',

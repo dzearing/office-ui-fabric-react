@@ -27,7 +27,7 @@ const PanelHandleDismissTargetExampleCode = require('!raw-loader!office-ui-fabri
 export const PanelPageProps: IDocPageProps = {
   title: 'Panel',
   componentName: 'Panel',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Panel',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Panel',
   examples: [
     {
       title: 'Basic',

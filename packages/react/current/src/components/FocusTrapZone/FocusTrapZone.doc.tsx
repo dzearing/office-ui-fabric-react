@@ -23,8 +23,7 @@ const FocusTrapZoneDialogInPanelExampleCode = require('!raw-loader!office-ui-fab
 export const FocusTrapZonePageProps: IDocPageProps = {
   title: 'FocusTrapZone',
   componentName: 'FocusTrapZone',
-  componentUrl:
-    'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/FocusTrapZone',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/FocusTrapZone',
   examples: [
     {
       title: 'Simple box',

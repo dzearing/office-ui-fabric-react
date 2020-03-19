@@ -38,7 +38,7 @@ ReactDOM.render(<MyPage />, document.body.firstChild);
 While it is possible to import all components as named imports from the main module entry point, it is not recommended to do so without using a bundler that supports es6 tree shaking. In other words, if you import the Button component like this:
 
 ```tsx
-import { Button } from 'office-ui-fabric-react';
+import { Button } from '@fluentui/react';
 ```
 
 ...this would work, but then unless you are using a tree-shaking bundler such as Rollup.js or Webpack 2, Webpack will assume you want every module exported from the main entry file to be included in your final bundle, which produces unnecessary large bundles and slows your page load down. Instead you can import the specific paths to trim down your bundle size:

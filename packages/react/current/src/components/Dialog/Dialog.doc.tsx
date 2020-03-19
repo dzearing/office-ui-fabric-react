@@ -16,7 +16,7 @@ const DialogModelessExampleCode = require('!raw-loader!office-ui-fabric-react/sr
 export const DialogPageProps: IDocPageProps = {
   title: 'Dialog',
   componentName: 'Dialog',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Dialog',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Dialog',
   examples: [
     {
       title: 'Default Dialog',

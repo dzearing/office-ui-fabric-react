@@ -11,7 +11,7 @@ const VerticalDividerCustomExampleCode = require('!raw-loader!office-ui-fabric-r
 export const DividerPageProps: IDocPageProps = {
   title: 'Divider',
   componentName: 'Divider',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Divider',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Divider',
   examples: [
     {
       title: 'Vertical Divider',

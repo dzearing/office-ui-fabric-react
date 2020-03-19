@@ -26,7 +26,7 @@ steps:
 
   - script: |
       npm version $(targetNpmVersion)
-    workingDirectory: 'packages/office-ui-fabric-react'
+    workingDirectory: 'packages/react/current'
     displayName: 'Manually set fabric version'
 
   - script: |
@@ -39,10 +39,10 @@ steps:
   - script: |
       npm pack
     displayName: 'Create tarball'
-    workingDirectory: 'packages/office-ui-fabric-react'
+    workingDirectory: 'packages/react/current'
 
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Artifact: oufr'
     inputs:
-      PathtoPublish: 'packages/office-ui-fabric-react/office-ui-fabric-react-$(targetNpmVersion).tgz'
+      PathtoPublish: 'packages/react/current/office-ui-fabric-react-$(targetNpmVersion).tgz'
       ArtifactName: oufr

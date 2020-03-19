@@ -10,7 +10,7 @@ const OverlayDarkExampleCode = require('!raw-loader!office-ui-fabric-react/src/c
 export const OverlayPageProps: IDocPageProps = {
   title: 'Overlay',
   componentName: 'Overlay',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Overlay',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Overlay',
   examples: [
     {
       title: 'Light',

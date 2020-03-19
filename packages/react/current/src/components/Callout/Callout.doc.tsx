@@ -17,7 +17,7 @@ const CalloutCoverExampleCode = require('!raw-loader!office-ui-fabric-react/src/
 export const CalloutPageProps: IDocPageProps = {
   title: 'Callout',
   componentName: 'Callout',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Callout',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Callout',
   examples: [
     {
       title: 'Default Callout',

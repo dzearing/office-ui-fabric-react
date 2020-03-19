@@ -24,7 +24,7 @@ const TextFieldMaskedExampleCode = require('!raw-loader!office-ui-fabric-react/s
 export const TextFieldPageProps: IDocPageProps = {
   title: 'TextField',
   componentName: 'TextField',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/TextField',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/TextField',
   examples: [
     {
       title: 'Basic TextFields',

@@ -19,7 +19,7 @@ const DatePickerBoundedExampleCode = require('!raw-loader!office-ui-fabric-react
 export const DatePickerPageProps: IDocPageProps = {
   title: 'DatePicker',
   componentName: 'DatePicker',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/DatePicker',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/DatePicker',
   examples: [
     {
       title: 'Default DatePicker',

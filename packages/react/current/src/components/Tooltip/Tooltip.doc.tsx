@@ -18,7 +18,7 @@ const TooltipAbsolutePositionExampleCode = require('!raw-loader!office-ui-fabric
 export const TooltipPageProps: IDocPageProps = {
   title: 'Tooltip',
   componentName: 'Tooltip',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Tooltip',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Tooltip',
   examples: [
     {
       title: 'Default Tooltip',

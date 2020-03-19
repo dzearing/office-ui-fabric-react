@@ -16,7 +16,7 @@ const HoverCardEventListenerTargetExampleCode = require('!raw-loader!office-ui-f
 export const HoverCardPageProps: IDocPageProps = {
   title: 'HoverCard',
   componentName: 'HoverCard',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/HoverCard',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/HoverCard',
   examples: [
     {
       title: 'Example 1: Expanding HoverCard wrapping an element',

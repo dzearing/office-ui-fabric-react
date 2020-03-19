@@ -12,7 +12,7 @@ const CheckboxIndeterminateExampleCode = require('!raw-loader!office-ui-fabric-r
 export const CheckboxPageProps: IDocPageProps = {
   title: 'Checkbox',
   componentName: 'Checkbox',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Checkbox',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Checkbox',
   examples: [
     {
       title: 'Basic Checkboxes',

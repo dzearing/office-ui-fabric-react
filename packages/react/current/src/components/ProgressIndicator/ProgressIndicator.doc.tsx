@@ -10,8 +10,7 @@ const ProgressIndicatorIndeterminateExampleCode = require('!raw-loader!office-ui
 export const ProgressIndicatorPageProps: IDocPageProps = {
   title: 'ProgressIndicator',
   componentName: 'ProgressIndicator',
-  componentUrl:
-    'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/ProgressIndicator',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/ProgressIndicator',
   examples: [
     {
       title: 'Default ProgressIndicator',

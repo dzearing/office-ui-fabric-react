@@ -16,8 +16,7 @@ const DocumentCardConversationExampleCode = require('!raw-loader!office-ui-fabri
 export const DocumentCardPageProps: IDocPageProps = {
   title: 'DocumentCard',
   componentName: 'DocumentCard',
-  componentUrl:
-    'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/DocumentCard',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/DocumentCard',
   examples: [
     {
       title: 'Default DocumentCard',

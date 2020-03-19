@@ -10,8 +10,7 @@ const GroupedListCustomExampleCode = require('!raw-loader!office-ui-fabric-react
 export const GroupedListPageProps: IDocPageProps = {
   title: 'GroupedList',
   componentName: 'GroupedList',
-  componentUrl:
-    'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/GroupedList',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/GroupedList',
   examples: [
     {
       title: 'GroupedList basic example',

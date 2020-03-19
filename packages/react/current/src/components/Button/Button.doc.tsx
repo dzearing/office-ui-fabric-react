@@ -38,7 +38,7 @@ export interface IButtonDocPageProps {
 export const ButtonPageProps = (props: IButtonDocPageProps): IDocPageProps => ({
   title: 'Button',
   componentName: 'ButtonExample',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Button',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Button',
   examples: [
     {
       title: 'Default Button',

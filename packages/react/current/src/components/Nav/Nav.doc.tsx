@@ -13,7 +13,7 @@ const NavCustomGroupHeadersExampleCode = require('!raw-loader!office-ui-fabric-r
 export const NavPageProps: IDocPageProps = {
   title: 'Nav',
   componentName: 'Nav',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Nav',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Nav',
   examples: [
     {
       title: 'Basic nav with sample links',

@@ -18,7 +18,7 @@ const DropdownRequiredExampleCode = require('!raw-loader!office-ui-fabric-react/
 export const DropdownPageProps: IDocPageProps = {
   title: 'Dropdown',
   componentName: 'Dropdown',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Dropdown',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Dropdown',
   examples: [
     {
       title: 'Basic Dropdowns',

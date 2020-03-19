@@ -17,7 +17,7 @@ const FocusZoneHorizontalMenuExampleCode = require('!raw-loader!office-ui-fabric
 export const FocusZonePageProps: IDocPageProps = {
   title: 'FocusZone',
   componentName: 'FocusZone',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/FocusZone',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/FocusZone',
   examples: [
     {
       title: 'Non-uniform photos within bidirectional FocusZone',

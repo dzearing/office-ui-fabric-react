@@ -13,5 +13,5 @@ import { ComponentName } from '@uifabric/foundation-scenarios';
 Once the FoundationScenarios component graduates to a production release, the component will be available at:
 
 ```js
-import { ComponentName } from 'office-ui-fabric-react';
+import { ComponentName } from '@fluentui/react';
 ```

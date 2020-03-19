@@ -464,7 +464,7 @@ Fabric uses global registration for its icons which needs a call to an initializ
 - [Icon font generation tool](https://uifabricicons.azurewebsites.net)
 - [Main `initializeIcons` function](https://github.com/OfficeDev/office-ui-fabric-react/blob/master/packages/icons/src/index.ts)
 - [Icon registration utilities](https://github.com/OfficeDev/office-ui-fabric-react/blob/master/packages/styling/src/utilities/icons.ts)
-- [Icon component](https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Icon)
+- [Icon component](https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Icon)
 
 #### Stardust
 

@@ -10,7 +10,7 @@ const RatingButtonControlledExampleCode = require('!raw-loader!office-ui-fabric-
 export const RatingPageProps: IDocPageProps = {
   title: 'Rating',
   componentName: 'Rating',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Rating',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Rating',
   examples: [
     {
       title: 'Rating',

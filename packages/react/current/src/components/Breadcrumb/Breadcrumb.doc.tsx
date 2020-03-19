@@ -12,7 +12,7 @@ const BreadcrumbStaticExampleCode = require('!raw-loader!office-ui-fabric-react/
 export const BreadcrumbPageProps: IDocPageProps = {
   title: 'Breadcrumb',
   componentName: 'Breadcrumb',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Breadcrumb',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Breadcrumb',
   examples: [
     {
       title: 'Breadcrumb rendering options',

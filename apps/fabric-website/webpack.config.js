@@ -43,9 +43,9 @@ module.exports = function(env, argv) {
         alias: {
           '@uifabric/fabric-website/src': path.join(__dirname, 'src'),
           '@uifabric/fabric-website/lib': path.join(__dirname, 'lib'),
-          'office-ui-fabric-react$': path.resolve(__dirname, '../../packages/office-ui-fabric-react/lib'),
-          'office-ui-fabric-react/src': path.resolve(__dirname, '../../packages/office-ui-fabric-react/src'),
-          'office-ui-fabric-react/lib': path.resolve(__dirname, '../../packages/office-ui-fabric-react/lib'),
+          'office-ui-fabric-react$': path.resolve(__dirname, '../../packages/react/current/lib'),
+          'office-ui-fabric-react/src': path.resolve(__dirname, '../../packages/react/current/src'),
+          'office-ui-fabric-react/lib': path.resolve(__dirname, '../../packages/react/current/lib'),
           '@uifabric/api-docs/lib': path.resolve(__dirname, '../../packages/api-docs/lib')
         }
       }

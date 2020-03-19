@@ -10,8 +10,7 @@ const ScrollablePaneDetailsListExampleCode = require('!raw-loader!office-ui-fabr
 export const ScrollablePanePageProps: IDocPageProps = {
   title: 'ScrollablePane',
   componentName: 'ScrollablePane',
-  componentUrl:
-    'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/ScrollablePane',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/ScrollablePane',
   examples: [
     {
       title: 'Default',

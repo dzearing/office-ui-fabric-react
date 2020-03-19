@@ -44,7 +44,7 @@ jobs:
       - task: PublishBuildArtifacts@1
         displayName: 'Publish Artifact office-ui-fabric-react.js from dist folder'
         inputs:
-          PathtoPublish: 'packages/office-ui-fabric-react/dist/office-ui-fabric-react.js'
+          PathtoPublish: 'packages/react/current/dist/office-ui-fabric-react.js'
           ArtifactName: oufrdrop
 
   - job: lightrail

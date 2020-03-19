@@ -5,7 +5,7 @@
 The Azure themes require the following import statements:
 
 ```js
-import { Fabric, Customizer } from 'office-ui-fabric-react';
+import { Fabric, Customizer } from '@fluentui/react';
 import { AzureCustomizationsLight, AzureCustomizationsDark } from '@uifabric/azure-themes';
 ```
 

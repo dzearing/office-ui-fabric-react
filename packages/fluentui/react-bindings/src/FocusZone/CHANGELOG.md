@@ -1,6 +1,6 @@
 ## FocusZone Changelog
 
-This is a list of changes made to this Stardust copy of FocusZone in comparison with the original [Fabric FocusZone @ 0f567e05952c6b50c691df2fb72d100b5e525d9e](https://github.com/OfficeDev/office-ui-fabric-react/blob/0f567e05952c6b50c691df2fb72d100b5e525d9e/packages/office-ui-fabric-react/src/components/FocusZone/FocusZone.tsx).
+This is a list of changes made to this Stardust copy of FocusZone in comparison with the original [Fabric FocusZone @ 0f567e05952c6b50c691df2fb72d100b5e525d9e](https://github.com/OfficeDev/office-ui-fabric-react/blob/0f567e05952c6b50c691df2fb72d100b5e525d9e/packages/react/current/src/components/FocusZone/FocusZone.tsx).
 
 ### Fixes
 - fix(Accessibility): When parking focus needs to be detected, IE11 returns `null` for `activeElement`, causing focus to not be restored. We now check for `null` to ensure the feature works correctly in this environment.
@@ -67,7 +67,7 @@ This is a list of changes made to this Stardust copy of FocusZone in comparison 
 
 ## FocusTrapZone Changelog
 
-This is a list of changes made to the Stardust copy of FocusTrapZone in comparison with the original [Fabric FocusTrapZone @ 0f567e05952c6b50c691df2fb72d100b5e525d9e](https://github.com/OfficeDev/office-ui-fabric-react/blob/0f567e05952c6b50c691df2fb72d100b5e525d9e/packages/office-ui-fabric-react/src/components/FocusTrapZone/FocusTrapZone.tsx).
+This is a list of changes made to the Stardust copy of FocusTrapZone in comparison with the original [Fabric FocusTrapZone @ 0f567e05952c6b50c691df2fb72d100b5e525d9e](https://github.com/OfficeDev/office-ui-fabric-react/blob/0f567e05952c6b50c691df2fb72d100b5e525d9e/packages/react/current/src/components/FocusTrapZone/FocusTrapZone.tsx).
 
 ### BREAKING CHANGES
 - Allow using `firstFocusableSelector` for all type of selectors, not only class names @sophieH29 ([#1732](https://github.com/stardust-ui/react/pull/1732))

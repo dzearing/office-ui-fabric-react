@@ -10,7 +10,7 @@ const SpinnerLabeledExampleCode = require('!raw-loader!office-ui-fabric-react/sr
 export const SpinnerPageProps: IDocPageProps = {
   title: 'Spinner',
   componentName: 'Spinner',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Spinner',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Spinner',
   examples: [
     {
       title: 'Spinner sizes',

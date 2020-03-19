@@ -10,7 +10,7 @@ const PickerCustomResultExampleCode = require('!raw-loader!office-ui-fabric-reac
 export const PickersPageProps: IDocPageProps = {
   title: 'Pickers',
   componentName: 'Pickers',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Pickers',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Pickers',
   examples: [
     {
       title: 'Tag Picker',

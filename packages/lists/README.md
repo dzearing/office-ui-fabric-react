@@ -29,7 +29,7 @@ import { ComponentName } from '@uifabric/lists';
 Once the Lists component graduates to a production release, the component will be available at:
 
 ```js
-import { ComponentName } from 'office-ui-fabric-react';
+import { ComponentName } from '@fluentui/react';
 ```
 
 ## Profiling

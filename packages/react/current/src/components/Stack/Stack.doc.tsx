@@ -73,7 +73,7 @@ const HorizontalStackConfigureExampleCode = require('!raw-loader!office-ui-fabri
 export const StackPageProps: IDocPageProps = {
   title: 'Stack',
   componentName: 'Stack',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Stack',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Stack',
   examples: [
     {
       title: 'Basic Vertical Stack',

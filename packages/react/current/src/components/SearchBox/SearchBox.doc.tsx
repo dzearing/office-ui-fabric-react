@@ -16,7 +16,7 @@ const SearchBoxSmallExampleCode = require('!raw-loader!office-ui-fabric-react/sr
 export const SearchBoxPageProps: IDocPageProps = {
   title: 'SearchBox',
   componentName: 'SearchBox',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/SearchBox',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/SearchBox',
   examples: [
     {
       title: 'Default SearchBox',

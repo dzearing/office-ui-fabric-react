@@ -7,8 +7,7 @@ const ColorPickerBasicExampleCode = require('!raw-loader!office-ui-fabric-react/
 export const ColorPickerPageProps: IDocPageProps = {
   title: 'ColorPicker',
   componentName: 'ColorPicker',
-  componentUrl:
-    'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/ColorPicker',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/ColorPicker',
   examples: [
     {
       title: 'Default ColorPicker',

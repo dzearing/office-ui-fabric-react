@@ -47,8 +47,7 @@ const DetailsListCustomFooterExampleCode = require('!raw-loader!office-ui-fabric
 export const DetailsListPageProps: IDocPageProps = {
   title: 'DetailsList',
   componentName: 'DetailsList',
-  componentUrl:
-    'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/DetailsList',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/DetailsList',
   examples: [
     {
       title: 'DetailsList with 500 documents, sorting, filtering, marquee selection, justified columns',
@@ -67,8 +66,7 @@ function generateProps(example: IExample): IDocPageProps {
   return {
     title: example.title,
     componentName: 'DetailsList',
-    componentUrl:
-      'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/DetailsList',
+    componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/DetailsList',
     examples: [example],
     isHeaderVisible: false,
     isFeedbackVisible: true

@@ -11,8 +11,7 @@ const SelectedPeopleListControlledExampleCode = require('!raw-loader!office-ui-f
 export const SelectedPeopleListPageProps: IDocPageProps = {
   title: 'SelectedPeopleList',
   componentName: 'SelectedPeopleList',
-  componentUrl:
-    'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/SelectedPeopleList',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/SelectedPeopleList',
   examples: [
     {
       title: 'Selected People List (uncontrolled)',

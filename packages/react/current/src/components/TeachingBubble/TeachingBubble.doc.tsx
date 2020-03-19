@@ -19,8 +19,7 @@ const TeachingBubbleMultiStepExampleCode = require('!raw-loader!office-ui-fabric
 export const TeachingBubblePageProps: IDocPageProps = {
   title: 'TeachingBubble',
   componentName: 'TeachingBubble',
-  componentUrl:
-    'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/TeachingBubble',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/TeachingBubble',
   examples: [
     {
       title: 'TeachingBubble Basic',

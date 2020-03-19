@@ -24,7 +24,7 @@ export const AnnouncedPageProps: IDocPageProps = {
 export const AnnouncedQuickActionsPageProps: IDocPageProps = {
   title: 'Quick Actions',
   componentName: 'Quick Actions',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Announced',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Announced',
   examples: [
     {
       title: 'Quick actions',
@@ -41,7 +41,7 @@ export const AnnouncedQuickActionsPageProps: IDocPageProps = {
 export const AnnouncedSearchResultsPageProps: IDocPageProps = {
   title: 'Search Results',
   componentName: 'Search Results',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Announced',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Announced',
   examples: [
     {
       title: 'Search results',
@@ -58,7 +58,7 @@ export const AnnouncedSearchResultsPageProps: IDocPageProps = {
 export const AnnouncedLazyLoadingPageProps: IDocPageProps = {
   title: 'Asynchronous',
   componentName: 'Asynchronous',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Announced',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Announced',
   examples: [
     {
       title: 'Asynchronous',
@@ -75,7 +75,7 @@ export const AnnouncedLazyLoadingPageProps: IDocPageProps = {
 export const AnnouncedBulkOperationsPageProps: IDocPageProps = {
   title: 'Bulk Long Running',
   componentName: 'Bulk Long Running',
-  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/office-ui-fabric-react/src/components/Announced',
+  componentUrl: 'https://github.com/OfficeDev/office-ui-fabric-react/tree/master/packages/react/current/src/components/Announced',
   examples: [
     {
       title: 'Bulk long running',

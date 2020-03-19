@@ -1,7 +1,7 @@
 {
-  "name": "office-ui-fabric-react",
+  "name": "@fluentui/react",
   "version": "7.105.0",
-  "description": "Reusable React components for building experiences for Office 365.",
+  "description": "Reusable React components for building experiences for M365.",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
   "sideEffects": [

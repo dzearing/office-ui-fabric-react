@@ -17,5 +17,5 @@ yarn add office-ui-fabric-react
 ```
 
 ```jsx
-import { PrimaryButton } from 'office-ui-fabric-react';
+import { PrimaryButton } from '@fluentui/react';
 ```
