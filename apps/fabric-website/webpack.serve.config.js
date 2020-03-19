@@ -28,9 +28,9 @@ module.exports = resources.createServeConfig(
         '@uifabric/fabric-website/src': path.join(__dirname, 'src'),
         '@uifabric/fabric-website/lib': path.join(__dirname, 'lib'),
         '@uifabric/example-app-base$': path.resolve(__dirname, '../../packages/example-app-base/src'),
-        'office-ui-fabric-react$': path.resolve(__dirname, '../../packages/react/current/lib'),
-        'office-ui-fabric-react/src': path.resolve(__dirname, '../../packages/react/current/src'),
-        'office-ui-fabric-react/lib': path.resolve(__dirname, '../../packages/react/current/lib'),
+        '@fluentui/react$': path.resolve(__dirname, '../../packages/react/current/lib'),
+        '@fluentui/react/src': path.resolve(__dirname, '../../packages/react/current/src'),
+        '@fluentui/react/lib': path.resolve(__dirname, '../../packages/react/current/lib'),
         'Props.ts.js': 'Props',
         'Example.tsx.js': 'Example'
       }

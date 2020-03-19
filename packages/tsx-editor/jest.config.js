@@ -5,7 +5,7 @@ const config = createConfig({
   setupFiles: [path.resolve(path.join(__dirname, 'config', 'tests.js'))],
 
   moduleNameMapper: {
-    'office-ui-fabric-react/lib/(.*)$': 'office-ui-fabric-react/lib-commonjs/$1',
+    '@fluentui/react/lib/(.*)$': '@fluentui/react/lib-commonjs/$1',
     '@uifabric/monaco-editor/lib/(.*)$': '@uifabric/monaco-editor/lib-commonjs/$1',
     '@uifabric/react-hooks/lib/(.*)$': '@uifabric/react-hooks/lib-commonjs/$1',
     '@uifabric/utilities/lib/(.*)$': '@uifabric/utilities/lib-commonjs/$1',

@@ -41,10 +41,10 @@ function lintImports() {
   const allowedDeepImports = [
     // This is a temporary measure until we figure out what root file these should be exported from.
     // TODO: Ideally these would eventually be removed.
-    'office-ui-fabric-react/lib/components/Keytip/examples/KeytipSetup',
-    'office-ui-fabric-react/lib/utilities/dateMath/DateMath',
-    'office-ui-fabric-react/lib/utilities/keytips/index',
-    'office-ui-fabric-react/lib/utilities/positioning',
+    '@fluentui/react/lib/components/Keytip/examples/KeytipSetup',
+    '@fluentui/react/lib/utilities/dateMath/DateMath',
+    '@fluentui/react/lib/utilities/keytips/index',
+    '@fluentui/react/lib/utilities/positioning',
     '@uifabric/charting/lib/types/IDataPoint',
     '@uifabric/date-time/lib/utilities/dateMath/DateMath',
     '@uifabric/experiments/lib/utilities/scrolling/ScrollContainer',
@@ -277,7 +277,7 @@ function lintImports() {
       }
 
       if (reExportedPackages[pkgName] && !allowedReexportedImports.includes(importPath)) {
-        _addError(importErrors.pathReExported, relativePath, importPath, 'office-ui-fabric-react/lib/' + reExportedPackages[pkgName]);
+        _addError(importErrors.pathReExported, relativePath, importPath, '@fluentui/react/lib/' + reExportedPackages[pkgName]);
       }
 
       if (importMatch[0].startsWith('import * from') && !isScss) {

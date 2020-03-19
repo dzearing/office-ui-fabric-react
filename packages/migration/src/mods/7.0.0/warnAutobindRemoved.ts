@@ -4,7 +4,7 @@ import { mod } from 'riceburn';
 import { ModResult } from 'riceburn/lib/interfaces';
 import { getWarningNote } from '../../util/getMessages';
 
-const packageName = 'office-ui-fabric-react';
+const packageName = '@fluentui/react';
 const importName = 'autobind';
 
 export default migration(getWarningNote('Autobind decorator (@autobind) removed'), (opts: IMigrationOptions): ModResult[] => {

@@ -10,7 +10,7 @@ const resolvePath = (packageName, entryFileName = 'index.js') =>
   path.join(path.dirname(require.resolve(packageName)).replace('lib-commonjs', 'lib'), entryFileName);
 
 // Create entries for all top level fabric imports.
-const Entries = _buildEntries('office-ui-fabric-react');
+const Entries = _buildEntries('@fluentui/react', 'fluent-ui-react');
 
 // Add entry for keyboard-key package.
 Entries['keyboard-key'] = resolvePath('@fluentui/keyboard-key');
@@ -36,7 +36,7 @@ module.exports = Object.keys(Entries).map(
         // plugins: [
         //   {
         //     apply: compiler => {
-        //       compiler.hooks.afterEmit.tap('AfterEmitPlugin', compilation => _copyStats('office-ui-fabric-react'));
+        //       compiler.hooks.afterEmit.tap('AfterEmitPlugin', compilation => _copyStats('@fluentui/react'));
         //     }
         //   }
         // ]
@@ -63,7 +63,7 @@ module.exports = Object.keys(Entries).map(
 /**
  * Build webpack entries based on top level imports available in a package.
  */
-function _buildEntries(packageName) {
+function _buildEntries(packageName, bundleName) {
   const entries = {};
   let packagePath = '';
 
@@ -85,7 +85,7 @@ function _buildEntries(packageName) {
       // Replace commonjs paths with lib paths.
       const entryPath = path.join(packagePath, itemName);
 
-      entries[`${packageName}-${entryName}`] = entryPath;
+      entries[`${bundleName}-${entryName}`] = entryPath;
     }
   });
 

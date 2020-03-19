@@ -18,7 +18,7 @@ module.exports = {
   outputRoot: path.resolve(__dirname, '../lib/pages'),
   fallbackGroup: 'references',
   pageGroups: {
-    'office-ui-fabric-react': [
+    '@fluentui/react': [
       'ActivityItem',
       'Announced',
       'Breadcrumb',

@@ -20,7 +20,7 @@ import { platforms } from '../../SiteDefinition/SiteDefinition.platforms';
 import { AndroidLogo, AppleLogo, WebLogo } from '../../utilities/index';
 import { IHomePageProps, IHomePageStyles, IHomePageStyleProps } from './HomePage.types';
 import { monoFont } from './HomePage.styles';
-const reactPackageData = require<any>('office-ui-fabric-react/package.json');
+const reactPackageData = require<any>('@fluentui/react/package.json');
 
 const getClassNames = classNamesFunction<IHomePageStyleProps, IHomePageStyles>();
 

@@ -16,9 +16,9 @@ module.exports = resources.createServeConfig({
 
   resolve: {
     alias: {
-      'office-ui-fabric-react$': path.resolve(__dirname, '../../packages/react/current/src'),
-      'office-ui-fabric-react/lib': path.resolve(__dirname, '../../packages/react/current/src'),
-      'office-ui-fabric-react/src': path.resolve(__dirname, '../../packages/react/current/src')
+      '@fluentui/react$': path.resolve(__dirname, '../../packages/react/current/src'),
+      '@fluentui/react/lib': path.resolve(__dirname, '../../packages/react/current/src'),
+      '@fluentui/react/src': path.resolve(__dirname, '../../packages/react/current/src')
     }
   }
 });

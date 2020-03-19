@@ -23,9 +23,9 @@ module.exports = resources.createServeConfig({
       '@uifabric/react-cards/src': path.resolve(__dirname, 'src'),
       '@uifabric/react-cards/lib': path.resolve(__dirname, 'src'),
       '@uifabric/react-cards': path.resolve(__dirname, 'src'),
-      'office-ui-fabric-react$': path.resolve(__dirname, '../../packages/react/current/src'),
-      'office-ui-fabric-react/lib': path.resolve(__dirname, '../../packages/react/current/src'),
-      'office-ui-fabric-react/src': path.resolve(__dirname, '../../packages/react/current/src'),
+      '@fluentui/react$': path.resolve(__dirname, '../../packages/react/current/src'),
+      '@fluentui/react/lib': path.resolve(__dirname, '../../packages/react/current/src'),
+      '@fluentui/react/src': path.resolve(__dirname, '../../packages/react/current/src'),
       'Props.ts.js': 'Props',
       'Example.tsx.js': 'Example'
     }

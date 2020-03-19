@@ -25,8 +25,8 @@ const reactImport: IImport = {
 
 describe('_getPackageName', () => {
   it('works with unscoped package name', () => {
-    expect(_getPackageName('office-ui-fabric-react')).toBe('office-ui-fabric-react');
-    expect(_getPackageName('office-ui-fabric-react/lib/foo')).toBe('office-ui-fabric-react');
+    expect(_getPackageName('@fluentui/react')).toBe('@fluentui/react');
+    expect(_getPackageName('@fluentui/react/lib/foo')).toBe('@fluentui/react');
     expect(_getPackageName('foo/bar')).toBe('foo');
   });
 
@@ -424,7 +424,7 @@ export class Foo extends React.Component {}
       'Importing from more than two levels below the package root is not supported by the editor.'
     );
 
-    example = example.replace('office-ui-fabric-react/lib/utilities/baz', '@uifabric/utilities/lib/bar/baz');
+    example = example.replace('@fluentui/react/lib/utilities/baz', '@uifabric/utilities/lib/bar/baz');
     expect(tryParseExample(example, SUPPORTED_PACKAGES)).toBe(
       'Importing from more than two levels below the package root is not supported by the editor.'
     );
@@ -443,8 +443,8 @@ export class Foo extends React.Component {}
         reactImport,
         {
           text: "import { Bar } from '@fluentui/react/lib/Bar';",
-          path: 'office-ui-fabric-react/lib/Bar',
-          packageName: 'office-ui-fabric-react',
+          path: '@fluentui/react/lib/Bar',
+          packageName: '@fluentui/react',
           identifiers: [{ name: 'Bar' }]
         }
       ]
@@ -465,8 +465,8 @@ export class Foo extends React.Component {}
         reactImport,
         {
           text: "import { Bar } from '@fluentui/react/lib/Bar';",
-          path: 'office-ui-fabric-react/lib/Bar',
-          packageName: 'office-ui-fabric-react',
+          path: '@fluentui/react/lib/Bar',
+          packageName: '@fluentui/react',
           identifiers: [{ name: 'Bar' }]
         },
         {

@@ -60,7 +60,7 @@ function fixDocPageTypesPaths() {
   replaceInFile.sync({
     files: path.posix.join(examplesSrc, '**/*'),
     from: /(..\/)+common\/DocPage\.types/,
-    to: 'office-ui-fabric-react/lib/common/DocPage.types'
+    to: '@fluentui/react/lib/common/DocPage.types'
   });
 }
 

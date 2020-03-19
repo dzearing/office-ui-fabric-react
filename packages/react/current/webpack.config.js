@@ -2,7 +2,7 @@ let path = require('path');
 const resources = require('../../scripts/webpack/webpack-resources');
 const ManifestServicePlugin = require('@uifabric/webpack-utils/lib/ManifestServicePlugin');
 
-const BUNDLE_NAME = 'office-ui-fabric-react';
+const BUNDLE_NAME = 'fluent-ui-react';
 const IS_PRODUCTION = process.argv.indexOf('--production') > -1;
 
 let entry = {
@@ -27,9 +27,9 @@ function createConfig(config, onlyProduction) {
 
       resolve: {
         alias: {
-          'office-ui-fabric-react$': path.join(__dirname, 'lib'),
-          'office-ui-fabric-react/src': path.join(__dirname, 'src'),
-          'office-ui-fabric-react/lib': path.join(__dirname, 'lib'),
+          '@fluentui/react$': path.join(__dirname, 'lib'),
+          '@fluentui/react/src': path.join(__dirname, 'src'),
+          '@fluentui/react/lib': path.join(__dirname, 'lib'),
           'Props.ts.js': 'Props',
           'Example.tsx.js': 'Example'
         }
@@ -46,7 +46,7 @@ module.exports = [
     {
       output: {
         libraryTarget: 'var',
-        library: 'Fabric'
+        library: 'FluentUI'
       }
     },
     false
@@ -56,7 +56,7 @@ module.exports = [
       plugins: [new ManifestServicePlugin()],
       output: {
         libraryTarget: 'umd',
-        library: 'Fabric',
+        library: 'FluentUI',
         filename: `${BUNDLE_NAME}.umd.js`
       }
     },

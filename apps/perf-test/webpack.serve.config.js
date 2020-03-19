@@ -14,9 +14,9 @@ module.exports = resources.createServeConfig({
       '@uifabric/experiments/src': path.resolve(__dirname, '../../packages/experiments/src'),
       '@uifabric/experiments/lib': path.resolve(__dirname, '../../packages/experiments/src'),
       '@uifabric/experiments': path.resolve(__dirname, '../../packages/experiments/src'),
-      'office-ui-fabric-react$': path.resolve(__dirname, '../../packages/react/current/src'),
-      'office-ui-fabric-react/lib': path.resolve(__dirname, '../../packages/react/current/src'),
-      'office-ui-fabric-react/src': path.resolve(__dirname, '../../packages/react/current/src')
+      '@fluentui/react$': path.resolve(__dirname, '../../packages/react/current/src'),
+      '@fluentui/react/lib': path.resolve(__dirname, '../../packages/react/current/src'),
+      '@fluentui/react/src': path.resolve(__dirname, '../../packages/react/current/src')
     }
   }
 });

@@ -5,7 +5,7 @@ import { ModResult } from 'riceburn/lib/interfaces';
 import { getModificationNote } from '../../util/getMessages';
 
 const legacyExports = ['createRef'];
-const fromPackage = 'office-ui-fabric-react';
+const fromPackage = '@fluentui/react';
 const toPackage = 'react';
 
 export default migration(

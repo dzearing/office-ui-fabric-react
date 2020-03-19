@@ -4,7 +4,7 @@ import { Nav, INavLink } from '@fluentui/react';
 import { Nav } from '@fluentui/react';
 // prettier-ignore
 // tslint:disable-next-line: quotemark
-import { Nav } from "office-ui-fabric-react";
+import { Nav } from "@fluentui/react";
 // prettier-ignore
 import {
   INav,
