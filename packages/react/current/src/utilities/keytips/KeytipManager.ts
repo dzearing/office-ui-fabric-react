@@ -1,6 +1,6 @@
 import { IKeytipProps } from '../../Keytip';
 import { EventGroup, getId } from '../../Utilities';
-import { KeytipEvents } from '../../utilities/keytips/KeytipConstants';
+import { KeytipEvents } from './KeytipConstants';
 
 export interface IUniqueKeytip {
   uniqueID: string;

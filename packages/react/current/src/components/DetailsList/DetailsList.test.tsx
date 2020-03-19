@@ -10,7 +10,7 @@ import { IDetailsList, IColumn, DetailsListLayoutMode, CheckboxVisibility } from
 import { IDetailsColumnProps } from 'office-ui-fabric-react/lib/components/DetailsList/DetailsColumn';
 import { IDetailsHeaderProps, DetailsHeader } from './DetailsHeader';
 import { EventGroup, IRenderFunction } from '../../Utilities';
-import { IDragDropEvents } from './../../utilities/dragdrop/index';
+import { IDragDropEvents } from '../../utilities/dragdrop/index';
 import { SelectionMode, Selection, SelectionZone } from '../../utilities/selection/index';
 import { getTheme } from '../../Styling';
 

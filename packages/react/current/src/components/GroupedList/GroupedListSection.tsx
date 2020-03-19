@@ -16,7 +16,7 @@ import { GroupShowAll } from './GroupShowAll';
 import { GroupFooter } from './GroupFooter';
 
 import { List } from '../../List';
-import { IDragDropOptions } from './../../utilities/dragdrop/interfaces';
+import { IDragDropOptions } from '../../utilities/dragdrop/interfaces';
 import { IViewport } from '../../utilities/decorators/withViewport';
 import { IListProps } from '../List/index';
 

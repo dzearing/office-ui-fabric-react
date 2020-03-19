@@ -12,7 +12,7 @@ import { DetailsRowCheck } from './DetailsRowCheck';
 import { ITooltipHostProps } from '../../Tooltip';
 import { ISelection, SelectionMode, SELECTION_CHANGE } from '../../utilities/selection/interfaces';
 import { IDragDropOptions, DragDropHelper } from '../../utilities/dragdrop/index';
-import { DetailsColumn, IDetailsColumnProps } from '../../components/DetailsList/DetailsColumn';
+import { DetailsColumn, IDetailsColumnProps } from './DetailsColumn';
 import { SelectAllVisibility, IDropHintDetails, IColumnReorderHeaderProps, IDetailsHeaderState } from './DetailsHeader.types';
 import { IDetailsHeaderStyleProps, IDetailsHeaderStyles, IDetailsHeader } from './DetailsHeader.types';
 

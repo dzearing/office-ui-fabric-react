@@ -8,7 +8,7 @@ import { DetailsRowFields } from './DetailsRowFields';
 import { FocusZone, FocusZoneDirection, IFocusZone } from '../../FocusZone';
 import { SelectionMode, SELECTION_CHANGE } from '../../utilities/selection/interfaces';
 import { CollapseAllVisibility } from '../../GroupedList';
-import { IDragDropOptions } from './../../utilities/dragdrop/interfaces';
+import { IDragDropOptions } from '../../utilities/dragdrop/interfaces';
 import { IDetailsRowBaseProps } from './DetailsRow.types';
 import { IDetailsRowCheckProps } from './DetailsRowCheck.types';
 import { IDetailsRowStyleProps, IDetailsRowStyles } from './DetailsRow.types';

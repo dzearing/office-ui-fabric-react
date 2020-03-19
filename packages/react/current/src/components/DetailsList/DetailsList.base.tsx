@@ -23,13 +23,13 @@ import {
   IDetailsListStyleProps,
   IDetailsGroupRenderProps,
   ColumnDragEndLocation
-} from '../DetailsList/DetailsList.types';
-import { DetailsHeader } from '../DetailsList/DetailsHeader';
-import { IDetailsHeader, SelectAllVisibility, IDetailsHeaderProps, IColumnReorderHeaderProps } from '../DetailsList/DetailsHeader.types';
-import { IDetailsFooterProps } from '../DetailsList/DetailsFooter.types';
-import { DetailsRowBase } from '../DetailsList/DetailsRow.base';
-import { DetailsRow } from '../DetailsList/DetailsRow';
-import { IDetailsRowProps } from '../DetailsList/DetailsRow.types';
+} from './DetailsList.types';
+import { DetailsHeader } from './DetailsHeader';
+import { IDetailsHeader, SelectAllVisibility, IDetailsHeaderProps, IColumnReorderHeaderProps } from './DetailsHeader.types';
+import { IDetailsFooterProps } from './DetailsFooter.types';
+import { DetailsRowBase } from './DetailsRow.base';
+import { DetailsRow } from './DetailsRow';
+import { IDetailsRowProps } from './DetailsRow.types';
 import { IFocusZone, FocusZone, FocusZoneDirection } from '../../FocusZone';
 import { IObjectWithKey, ISelection, Selection, SelectionMode, SelectionZone } from '../../utilities/selection/index';
 

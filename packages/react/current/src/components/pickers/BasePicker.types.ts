@@ -5,7 +5,7 @@ import { ISuggestionModel, ISuggestionsProps } from './Suggestions/Suggestions.t
 import { Autofill } from '../../Autofill';
 import { ICalloutProps } from '../../Callout';
 import { ITheme, IStyle } from '../../Styling';
-import { ISuggestionItemProps } from '../pickers/Suggestions/SuggestionsItem.types';
+import { ISuggestionItemProps } from './Suggestions/SuggestionsItem.types';
 
 /**
  * BasePicker component.
@@ -221,26 +221,26 @@ export interface IBasePickerProps<T> extends React.Props<any> {
  */
 export interface IBasePickerSuggestionsProps<T = any>
   extends Pick<
-    ISuggestionsProps<T>,
-    | 'onRenderNoResultFound'
-    | 'suggestionsHeaderText'
-    | 'mostRecentlyUsedHeaderText'
-    | 'noResultsFoundText'
-    | 'className'
-    | 'suggestionsClassName'
-    | 'suggestionsItemClassName'
-    | 'searchForMoreText'
-    | 'forceResolveText'
-    | 'loadingText'
-    | 'searchingText'
-    | 'resultsFooterFull'
-    | 'resultsFooter'
-    | 'resultsMaximumNumber'
-    | 'showRemoveButtons'
-    | 'suggestionsAvailableAlertText'
-    | 'suggestionsContainerAriaLabel'
-    | 'showForceResolve'
-  > {}
+  ISuggestionsProps<T>,
+  | 'onRenderNoResultFound'
+  | 'suggestionsHeaderText'
+  | 'mostRecentlyUsedHeaderText'
+  | 'noResultsFoundText'
+  | 'className'
+  | 'suggestionsClassName'
+  | 'suggestionsItemClassName'
+  | 'searchForMoreText'
+  | 'forceResolveText'
+  | 'loadingText'
+  | 'searchingText'
+  | 'resultsFooterFull'
+  | 'resultsFooter'
+  | 'resultsMaximumNumber'
+  | 'showRemoveButtons'
+  | 'suggestionsAvailableAlertText'
+  | 'suggestionsContainerAriaLabel'
+  | 'showForceResolve'
+  > { }
 
 /**
  * Validation state of the user's input.

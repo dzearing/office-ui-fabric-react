@@ -2,7 +2,7 @@ import * as React from 'react';
 import { IRefObject, IRenderFunction } from '../../Utilities';
 import { ICalloutProps } from '../../Callout';
 import { IPanelProps } from '../../Panel';
-import { ISelectableOption } from '../../utilities/selectableOption/SelectableOption.types';
+import { ISelectableOption } from './SelectableOption.types';
 
 /**
  * TComponent - Component used for reference properties, such as componentRef
