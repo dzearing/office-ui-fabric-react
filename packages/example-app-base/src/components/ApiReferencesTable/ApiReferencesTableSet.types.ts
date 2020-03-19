@@ -1,4 +1,4 @@
-import { IPageJson, ILinkToken, ApiKind } from 'office-ui-fabric-react/lib/common/DocPage.types';
+import { IPageJson, ILinkToken, ApiKind } from '@fluentui/react/lib/common/DocPage.types';
 
 /**
  * Props for the ApiReferencesTableSet

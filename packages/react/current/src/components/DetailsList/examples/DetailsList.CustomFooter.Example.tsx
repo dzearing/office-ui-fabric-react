@@ -8,7 +8,7 @@ import {
   SelectionMode,
   DetailsRowCheck,
   IDetailsRowBaseProps
-} from 'office-ui-fabric-react/lib/DetailsList';
+} from '@fluentui/react/lib/DetailsList';
 
 export interface IDetailsListCustomFooterExampleItem {
   key: number;

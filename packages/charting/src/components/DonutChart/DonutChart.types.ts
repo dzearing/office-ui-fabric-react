@@ -1,7 +1,7 @@
-import { ITheme, IStyle } from 'office-ui-fabric-react/lib/Styling';
-import { IStyleFunctionOrObject } from 'office-ui-fabric-react/lib/Utilities';
-import { IOverflowSetProps } from 'office-ui-fabric-react/lib/OverflowSet';
-import { IFocusZoneProps } from 'office-ui-fabric-react/lib/FocusZone';
+import { ITheme, IStyle } from '@fluentui/react/lib/Styling';
+import { IStyleFunctionOrObject } from '@fluentui/react/lib/Utilities';
+import { IOverflowSetProps } from '@fluentui/react/lib/OverflowSet';
+import { IFocusZoneProps } from '@fluentui/react/lib/FocusZone';
 
 export interface IDonutChart {}
 import { IChartProps } from './index';

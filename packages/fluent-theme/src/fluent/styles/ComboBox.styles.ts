@@ -1,4 +1,4 @@
-import { IComboBoxStyles, IComboBoxProps } from 'office-ui-fabric-react/lib/ComboBox';
+import { IComboBoxStyles, IComboBoxProps } from '@fluentui/react/lib/ComboBox';
 
 export const ComboBoxStyles = (props: IComboBoxProps): Partial<IComboBoxStyles> => {
   const { theme } = props;

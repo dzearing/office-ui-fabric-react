@@ -1,16 +1,16 @@
 import * as React from 'react';
-import { classNamesFunction } from 'office-ui-fabric-react/lib/Utilities';
-import { IPalette, ISemanticColors, loadTheme } from 'office-ui-fabric-react/lib/Styling';
+import { classNamesFunction } from '@fluentui/react/lib/Utilities';
+import { IPalette, ISemanticColors, loadTheme } from '@fluentui/react/lib/Styling';
 import { DemoPage } from '../DemoPage';
-import { ThemePageProps } from 'office-ui-fabric-react/lib/components/Theme/Theme.doc';
-import { IThemePageStyleProps, IThemePageStyles, IThemePageState } from 'office-ui-fabric-react/lib/components/Theme/ThemePage.types';
-import { defaultPalette, defaultSemanticColors } from 'office-ui-fabric-react/lib/components/Theme/defaultTheme';
-import { getStyles } from 'office-ui-fabric-react/lib/components/Theme/ThemePage.styles';
-import { Callout } from 'office-ui-fabric-react/lib/Callout';
-import { DetailsList, DetailsListLayoutMode } from 'office-ui-fabric-react/lib/DetailsList';
-import { SelectionMode } from 'office-ui-fabric-react/lib/Selection';
-import { ColorPicker } from 'office-ui-fabric-react/lib/ColorPicker';
-import { IColor } from 'office-ui-fabric-react/lib/utilities/color/interfaces';
+import { ThemePageProps } from '@fluentui/react/lib/components/Theme/Theme.doc';
+import { IThemePageStyleProps, IThemePageStyles, IThemePageState } from '@fluentui/react/lib/components/Theme/ThemePage.types';
+import { defaultPalette, defaultSemanticColors } from '@fluentui/react/lib/components/Theme/defaultTheme';
+import { getStyles } from '@fluentui/react/lib/components/Theme/ThemePage.styles';
+import { Callout } from '@fluentui/react/lib/Callout';
+import { DetailsList, DetailsListLayoutMode } from '@fluentui/react/lib/DetailsList';
+import { SelectionMode } from '@fluentui/react/lib/Selection';
+import { ColorPicker } from '@fluentui/react/lib/ColorPicker';
+import { IColor } from '@fluentui/react/lib/utilities/color/interfaces';
 
 const getClassNames = classNamesFunction<IThemePageStyleProps, IThemePageStyles>();
 

@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { TeachingBubble } from 'office-ui-fabric-react/lib/TeachingBubble';
+import { DefaultButton } from '@fluentui/react/lib/Button';
+import { TeachingBubble } from '@fluentui/react/lib/TeachingBubble';
 
 export interface ITeachingBubbleCondensedExampleState {
   isTeachingBubbleVisible?: boolean;

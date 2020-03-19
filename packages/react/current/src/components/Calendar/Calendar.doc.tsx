@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { DateRangeType, DayOfWeek } from '../../Calendar';
-import { IDocPageProps } from 'office-ui-fabric-react/lib/common/DocPage.types';
+import { IDocPageProps } from '@fluentui/react/lib/common/DocPage.types';
 import { CalendarButtonExample } from './examples/Calendar.Button.Example';
 import { CalendarInlineExample } from './examples/Calendar.Inline.Example';
-import { addMonths, addYears, addWeeks, addDays } from 'office-ui-fabric-react/lib/utilities/dateMath/DateMath';
+import { addMonths, addYears, addWeeks, addDays } from '@fluentui/react/lib/utilities/dateMath/DateMath';
 
 const CalendarButtonExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Calendar/examples/Calendar.Button.Example.tsx') as string;
 const CalendarInlineExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Calendar/examples/Calendar.Inline.Example.tsx') as string;

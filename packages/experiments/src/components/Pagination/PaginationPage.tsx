@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ExampleCard, ComponentPage, IComponentDemoPageProps, PropertiesTableSet } from '@uifabric/example-app-base';
-import { Link } from 'office-ui-fabric-react/lib/Link';
+import { Link } from '@fluentui/react/lib/Link';
 import { PaginationButtonsBasicExample } from './examples/Pagination.Buttons.Basic.Example';
 import { PaginationButtonsCustomizationExample } from './examples/Pagination.Buttons.Customization.Example';
 import { PaginationButtonsCustomizationRoundExample } from './examples/Pagination.Buttons.Customization.Round.Example';

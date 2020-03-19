@@ -11,12 +11,12 @@ import {
   Async
 } from '@uifabric/utilities';
 import { Calendar, ICalendar, DayOfWeek } from '../../Calendar';
-import { FirstWeekOfYear } from 'office-ui-fabric-react/lib/utilities/dateValues/DateValues';
-import { Callout } from 'office-ui-fabric-react/lib/Callout';
-import { DirectionalHint } from 'office-ui-fabric-react/lib/common/DirectionalHint';
-import { TextField, ITextField } from 'office-ui-fabric-react/lib/TextField';
-import { compareDates, compareDatePart } from 'office-ui-fabric-react/lib/utilities/dateMath/DateMath';
-import { FocusTrapZone } from 'office-ui-fabric-react/lib/FocusTrapZone';
+import { FirstWeekOfYear } from '@fluentui/react/lib/utilities/dateValues/DateValues';
+import { Callout } from '@fluentui/react/lib/Callout';
+import { DirectionalHint } from '@fluentui/react/lib/common/DirectionalHint';
+import { TextField, ITextField } from '@fluentui/react/lib/TextField';
+import { compareDates, compareDatePart } from '@fluentui/react/lib/utilities/dateMath/DateMath';
+import { FocusTrapZone } from '@fluentui/react/lib/FocusTrapZone';
 
 const getClassNames = classNamesFunction<IDatePickerStyleProps, IDatePickerStyles>();
 

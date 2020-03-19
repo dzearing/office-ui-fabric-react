@@ -2,7 +2,7 @@ import * as React from 'react';
 import { ICalendarMonthProps, ICalendarMonthStyleProps, ICalendarMonthStyles } from './CalendarMonth.types';
 import { CalendarMonthBase } from './CalendarMonth.base';
 import { getStyles } from './CalendarMonth.styles';
-import { styled } from 'office-ui-fabric-react/lib/Utilities';
+import { styled } from '@fluentui/react/lib/Utilities';
 
 /**
  * CalendarMonth description

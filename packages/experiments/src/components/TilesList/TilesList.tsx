@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { ITilesListProps, ITilesGridItem, ITilesGridSegment, TilesGridMode, ITileSize } from './TilesList.types';
-import { List, IPageProps, ScrollToMode } from 'office-ui-fabric-react/lib/List';
-import { FocusZone, FocusZoneDirection } from 'office-ui-fabric-react/lib/FocusZone';
-import { css, IRenderFunction, IRectangle, FocusRects } from 'office-ui-fabric-react/lib/Utilities';
+import { List, IPageProps, ScrollToMode } from '@fluentui/react/lib/List';
+import { FocusZone, FocusZoneDirection } from '@fluentui/react/lib/FocusZone';
+import { css, IRenderFunction, IRectangle, FocusRects } from '@fluentui/react/lib/Utilities';
 import * as TilesListStylesModule from './TilesList.scss';
-import { Shimmer } from 'office-ui-fabric-react/lib/Shimmer';
+import { Shimmer } from '@fluentui/react/lib/Shimmer';
 
 // tslint:disable-next-line:no-any
 const TilesListStyles: any = TilesListStylesModule;

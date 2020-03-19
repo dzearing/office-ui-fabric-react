@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { SpinButton } from 'office-ui-fabric-react/lib/SpinButton';
-import { Stack } from 'office-ui-fabric-react/lib/Stack';
+import { SpinButton } from '@fluentui/react/lib/SpinButton';
+import { Stack } from '@fluentui/react/lib/Stack';
 
 export class SpinButtonBasicExample extends React.Component<any, any> {
   public render(): JSX.Element {

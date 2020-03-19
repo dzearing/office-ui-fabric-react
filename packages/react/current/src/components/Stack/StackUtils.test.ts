@@ -1,5 +1,5 @@
 import { parseGap, parsePadding } from './StackUtils';
-import { loadTheme, getTheme } from 'office-ui-fabric-react/lib/Styling';
+import { loadTheme, getTheme } from '@fluentui/react/lib/Styling';
 
 describe('StackUtils', () => {
   describe('parseGap', () => {

@@ -23,7 +23,7 @@ initializeFileTypeIcons('https://my.cdn.com/path/to/icons/');
 If you are using Fabric React, you can use the `Icon` component and pass in the corresponding icon properties to render a given icon.
 
 ```tsx
-import { Icon } from 'office-ui-fabric-react/lib/Icon';
+import { Icon } from '@fluentui/react/lib/Icon';
 import { getFileTypeIconProps } from '@uifabric/file-type-icons';
 
 <Icon {...getFileTypeIconProps({extension: 'docx', size: 16}) />

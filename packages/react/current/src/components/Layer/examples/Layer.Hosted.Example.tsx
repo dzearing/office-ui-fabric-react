@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Toggle } from 'office-ui-fabric-react/lib/Toggle';
-import { Layer, LayerHost } from 'office-ui-fabric-react/lib/Layer';
-import { AnimationClassNames, mergeStyles } from 'office-ui-fabric-react/lib/Styling';
-import { getId, css } from 'office-ui-fabric-react/lib/Utilities';
-import { IToggleStyles } from 'office-ui-fabric-react/lib/Toggle';
-import { IStyleSet } from 'office-ui-fabric-react/lib/Styling';
+import { Toggle } from '@fluentui/react/lib/Toggle';
+import { Layer, LayerHost } from '@fluentui/react/lib/Layer';
+import { AnimationClassNames, mergeStyles } from '@fluentui/react/lib/Styling';
+import { getId, css } from '@fluentui/react/lib/Utilities';
+import { IToggleStyles } from '@fluentui/react/lib/Toggle';
+import { IStyleSet } from '@fluentui/react/lib/Styling';
 import * as styles from './Layer.Example.scss';
 
 const toggleStyles: Partial<IStyleSet<IToggleStyles>> = {

@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { NavBasicExample } from './examples/Nav.Basic.Example';
-import { IDocPageProps } from 'office-ui-fabric-react/lib/common/DocPage.types';
+import { IDocPageProps } from '@fluentui/react/lib/common/DocPage.types';
 import { NavFabricDemoAppExample } from './examples/Nav.FabricDemoApp.Example';
 import { NavNestedExample } from './examples/Nav.Nested.Example';
 import { NavCustomGroupHeadersExample } from './examples/Nav.CustomGroupHeaders.Example';

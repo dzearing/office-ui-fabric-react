@@ -1,12 +1,12 @@
 import * as React from 'react';
-import { CommandBar } from 'office-ui-fabric-react/lib/CommandBar';
-import { Check } from 'office-ui-fabric-react/lib/Check';
-import { IContextualMenuItem } from 'office-ui-fabric-react/lib/ContextualMenu';
-import { MarqueeSelection } from 'office-ui-fabric-react/lib/MarqueeSelection';
-import { ISelection, Selection, SelectionMode, SelectionZone } from 'office-ui-fabric-react/lib/Selection';
+import { CommandBar } from '@fluentui/react/lib/CommandBar';
+import { Check } from '@fluentui/react/lib/Check';
+import { IContextualMenuItem } from '@fluentui/react/lib/ContextualMenu';
+import { MarqueeSelection } from '@fluentui/react/lib/MarqueeSelection';
+import { ISelection, Selection, SelectionMode, SelectionZone } from '@fluentui/react/lib/Selection';
 import { createListItems, IExampleItem } from '@uifabric/example-data';
-import { mergeStyleSets, IRawStyle } from 'office-ui-fabric-react/lib/Styling';
-import { memoizeFunction } from 'office-ui-fabric-react/lib/Utilities';
+import { mergeStyleSets, IRawStyle } from '@fluentui/react/lib/Styling';
+import { memoizeFunction } from '@fluentui/react/lib/Utilities';
 
 const commonStyles: IRawStyle = {
   display: 'inline-block',

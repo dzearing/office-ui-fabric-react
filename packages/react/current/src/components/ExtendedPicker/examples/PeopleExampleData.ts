@@ -1,7 +1,7 @@
 // If this file is moved or split, the scripts for building codepen examples will likely need to be updated.
 
-import { PersonaPresence } from 'office-ui-fabric-react/lib/Persona';
-import { IExtendedPersonaProps } from 'office-ui-fabric-react/lib/SelectedItemsList';
+import { PersonaPresence } from '@fluentui/react/lib/Persona';
+import { IExtendedPersonaProps } from '@fluentui/react/lib/SelectedItemsList';
 import { TestImages } from '@uifabric/example-data';
 
 // tslint:disable:deprecation

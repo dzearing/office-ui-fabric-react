@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
+import { Dropdown, IDropdownOption } from '@fluentui/react/lib/Dropdown';
 import { DatePicker, DayOfWeek, IDatePickerStrings, mergeStyleSets } from '@fluentui/react';
 
 const DayPickerStrings: IDatePickerStrings = {

@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { ContextualMenuItemType, IContextualMenuProps, IContextualMenuItem } from 'office-ui-fabric-react/lib/ContextualMenu';
+import { DefaultButton } from '@fluentui/react/lib/Button';
+import { ContextualMenuItemType, IContextualMenuProps, IContextualMenuItem } from '@fluentui/react/lib/ContextualMenu';
 
 export const ContextualMenuHeaderExample: React.FunctionComponent = () => {
   return <DefaultButton text="Click for ContextualMenu" menuProps={menuProps} />;

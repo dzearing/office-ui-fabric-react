@@ -3,7 +3,7 @@ import {
   ISuggestionsItemStyles,
   ISuggestionsStyleProps,
   ISuggestionsStyles
-} from 'office-ui-fabric-react/lib/Pickers';
+} from '@fluentui/react/lib/Pickers';
 
 export const SuggestionItemStyles = (props: ISuggestionsItemStyleProps): Partial<ISuggestionsItemStyles> => {
   return {

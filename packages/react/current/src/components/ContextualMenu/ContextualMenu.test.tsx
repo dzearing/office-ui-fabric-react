@@ -11,7 +11,7 @@ import { ContextualMenu } from './ContextualMenu';
 import { canAnyMenuItemsCheck } from './ContextualMenu.base';
 import { IContextualMenuItem, ContextualMenuItemType } from './ContextualMenu.types';
 import { IContextualMenuRenderItem, IContextualMenuItemStyles } from './ContextualMenuItem.types';
-import { DefaultButton, IButton } from 'office-ui-fabric-react/lib/Button';
+import { DefaultButton, IButton } from '@fluentui/react/lib/Button';
 
 describe('ContextualMenu', () => {
   afterEach(() => {

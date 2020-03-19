@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Toggle, IToggleStyles } from 'office-ui-fabric-react/lib/Toggle';
+import { Toggle, IToggleStyles } from '@fluentui/react/lib/Toggle';
 import { ControlsAreaPage, IControlsPageProps } from '../ControlsAreaPage';
 import { ButtonPageProps } from './ButtonPage.doc';
 import { Platforms } from '../../../interfaces/Platforms';

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SearchBox } from 'office-ui-fabric-react/lib/SearchBox';
+import { SearchBox } from '@fluentui/react/lib/SearchBox';
 
 // tslint:disable:jsx-no-lambda
 export class SearchBoxCustomIconExample extends React.Component<any, any> {

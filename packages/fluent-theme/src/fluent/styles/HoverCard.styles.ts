@@ -1,9 +1,4 @@
-import {
-  IExpandingCardStyleProps,
-  IExpandingCardStyles,
-  IPlainCardStyleProps,
-  IPlainCardStyles
-} from 'office-ui-fabric-react/lib/HoverCard';
+import { IExpandingCardStyleProps, IExpandingCardStyles, IPlainCardStyleProps, IPlainCardStyles } from '@fluentui/react/lib/HoverCard';
 
 const commonCardStyles = (props: IExpandingCardStyleProps | IPlainCardStyleProps) => {
   const { theme } = props;

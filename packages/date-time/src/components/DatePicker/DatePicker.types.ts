@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { DayOfWeek, ICalendarProps } from '../../Calendar';
-import { FirstWeekOfYear } from 'office-ui-fabric-react/lib/utilities/dateValues/DateValues';
+import { FirstWeekOfYear } from '@fluentui/react/lib/utilities/dateValues/DateValues';
 import { ICalendarFormatDateCallbacks, ICalendarStrings } from '../Calendar/Calendar.types';
 import { IStyle, ITheme } from '@uifabric/styling';
 import { IRefObject, IBaseProps, IStyleFunctionOrObject, IComponentAs } from '@uifabric/utilities';
-import { ICalloutProps } from 'office-ui-fabric-react/lib/Callout';
-import { ITextFieldProps } from 'office-ui-fabric-react/lib/TextField';
+import { ICalloutProps } from '@fluentui/react/lib/Callout';
+import { ITextFieldProps } from '@fluentui/react/lib/TextField';
 
 /**
  * {@docCategory DatePicker}

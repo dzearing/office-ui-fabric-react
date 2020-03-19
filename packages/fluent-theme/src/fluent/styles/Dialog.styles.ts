@@ -1,9 +1,4 @@
-import {
-  IDialogContentStyleProps,
-  IDialogContentStyles,
-  IDialogFooterStyleProps,
-  IDialogFooterStyles
-} from 'office-ui-fabric-react/lib/Dialog';
+import { IDialogContentStyleProps, IDialogContentStyles, IDialogFooterStyleProps, IDialogFooterStyles } from '@fluentui/react/lib/Dialog';
 import { FontWeights } from '@uifabric/styling';
 import { FontSizes } from '../FluentType';
 

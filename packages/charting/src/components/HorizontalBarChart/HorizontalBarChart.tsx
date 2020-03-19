@@ -1,4 +1,4 @@
-import { styled } from 'office-ui-fabric-react/lib/Utilities';
+import { styled } from '@fluentui/react/lib/Utilities';
 import { IHorizontalBarChartProps, IHorizontalBarChartStyleProps, IHorizontalBarChartStyles } from './HorizontalBarChart.types';
 import { HorizontalBarChartBase } from './HorizontalBarChart.base';
 import { getHorizontalBarChartStyles } from './HorizontalBarChart.styles';

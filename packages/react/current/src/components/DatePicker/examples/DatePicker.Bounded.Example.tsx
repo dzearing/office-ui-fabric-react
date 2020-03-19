@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { DatePicker, DayOfWeek, IDatePickerStrings } from 'office-ui-fabric-react/lib/DatePicker';
-import { addMonths, addYears } from 'office-ui-fabric-react/lib/utilities/dateMath/DateMath';
-import { mergeStyleSets } from 'office-ui-fabric-react/lib/Styling';
+import { DatePicker, DayOfWeek, IDatePickerStrings } from '@fluentui/react/lib/DatePicker';
+import { addMonths, addYears } from '@fluentui/react/lib/utilities/dateMath/DateMath';
+import { mergeStyleSets } from '@fluentui/react/lib/Styling';
 
 const today: Date = new Date(Date.now());
 const minDate: Date = addMonths(today, -1);

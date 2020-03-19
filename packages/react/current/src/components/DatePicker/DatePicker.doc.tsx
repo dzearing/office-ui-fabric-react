@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { DatePickerBasicExample } from './examples/DatePicker.Basic.Example';
 import { DatePickerDisabledExample } from './examples/DatePicker.Disabled.Example';
-import { IDocPageProps } from 'office-ui-fabric-react/lib/common/DocPage.types';
+import { IDocPageProps } from '@fluentui/react/lib/common/DocPage.types';
 import { DatePickerWeekNumbersExample } from './examples/DatePicker.WeekNumbers.Example';
 import { DatePickerRequiredExample } from './examples/DatePicker.Required.Example';
 import { DatePickerInputExample } from './examples/DatePicker.Input.Example';

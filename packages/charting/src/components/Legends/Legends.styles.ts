@@ -1,5 +1,5 @@
 import { ILegendsStyles, ILegendStyleProps } from './Legends.types';
-import { HighContrastSelector, getFocusStyle, IGetFocusStylesOptions } from 'office-ui-fabric-react/lib/Styling';
+import { HighContrastSelector, getFocusStyle, IGetFocusStylesOptions } from '@fluentui/react/lib/Styling';
 
 export const getStyles = (props: ILegendStyleProps): ILegendsStyles => {
   const { className, theme } = props;

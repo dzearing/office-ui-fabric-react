@@ -1,6 +1,6 @@
 import { ICalendarDayGridStyleProps, ICalendarDayGridStyles } from './CalendarDayGrid.types';
 import { FontSizes, FontWeights, getFocusStyle, getGlobalClassNames, AnimationStyles, IRawStyle, keyframes } from '@uifabric/styling';
-import { DateRangeType } from 'office-ui-fabric-react/lib/utilities/dateValues/DateValues';
+import { DateRangeType } from '@fluentui/react/lib/utilities/dateValues/DateValues';
 import { AnimationDirection } from '../Calendar/Calendar.types';
 
 const GlobalClassNames = {

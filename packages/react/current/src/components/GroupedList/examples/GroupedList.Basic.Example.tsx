@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { GroupedList, IGroup } from 'office-ui-fabric-react/lib/GroupedList';
-import { IColumn, DetailsRow } from 'office-ui-fabric-react/lib/DetailsList';
-import { FocusZone } from 'office-ui-fabric-react/lib/FocusZone';
-import { Selection, SelectionMode, SelectionZone } from 'office-ui-fabric-react/lib/Selection';
-import { Toggle } from 'office-ui-fabric-react/lib/Toggle';
+import { GroupedList, IGroup } from '@fluentui/react/lib/GroupedList';
+import { IColumn, DetailsRow } from '@fluentui/react/lib/DetailsList';
+import { FocusZone } from '@fluentui/react/lib/FocusZone';
+import { Selection, SelectionMode, SelectionZone } from '@fluentui/react/lib/Selection';
+import { Toggle } from '@fluentui/react/lib/Toggle';
 
 import { createListItems, createGroups, IExampleItem } from '@uifabric/example-data';
 

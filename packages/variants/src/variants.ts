@@ -1,4 +1,4 @@
-import { IPalette, ISemanticColors, ITheme, IPartialTheme, createTheme } from 'office-ui-fabric-react/lib/Styling';
+import { IPalette, ISemanticColors, ITheme, IPartialTheme, createTheme } from '@fluentui/react/lib/Styling';
 import { VariantThemeType } from './variantThemeType';
 
 function makeThemeFromPartials(

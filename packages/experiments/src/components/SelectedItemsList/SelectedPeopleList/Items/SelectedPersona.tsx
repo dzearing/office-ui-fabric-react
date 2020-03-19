@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { getId, styled, classNamesFunction, IStyleFunctionOrObject, css } from 'office-ui-fabric-react/lib/Utilities';
-import { Persona, PersonaSize, IPersonaProps } from 'office-ui-fabric-react/lib/Persona';
+import { getId, styled, classNamesFunction, IStyleFunctionOrObject, css } from '@fluentui/react/lib/Utilities';
+import { Persona, PersonaSize, IPersonaProps } from '@fluentui/react/lib/Persona';
 import { ISelectedItemProps } from '../../SelectedItemsList.types';
 import { getStyles } from './SelectedPersona.styles';
 import { ISelectedPersonaStyles, ISelectedPersonaStyleProps } from './SelectedPersona.types';
-import { ITheme, IProcessedStyleSet } from 'office-ui-fabric-react/lib/Styling';
-import { IconButton } from 'office-ui-fabric-react/lib/Button';
+import { ITheme, IProcessedStyleSet } from '@fluentui/react/lib/Styling';
+import { IconButton } from '@fluentui/react/lib/Button';
 
 const getClassNames = classNamesFunction<ISelectedPersonaStyleProps, ISelectedPersonaStyles>();
 

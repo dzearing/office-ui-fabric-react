@@ -1,15 +1,10 @@
 import * as React from 'react';
 import { useConstCallback } from '@uifabric/react-hooks';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { Checkbox, ICheckboxStyles } from 'office-ui-fabric-react/lib/Checkbox';
-import {
-  ContextualMenuItemType,
-  DirectionalHint,
-  IContextualMenuProps,
-  IContextualMenuItem
-} from 'office-ui-fabric-react/lib/ContextualMenu';
-import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
-import { getRTL } from 'office-ui-fabric-react/lib/Utilities';
+import { DefaultButton } from '@fluentui/react/lib/Button';
+import { Checkbox, ICheckboxStyles } from '@fluentui/react/lib/Checkbox';
+import { ContextualMenuItemType, DirectionalHint, IContextualMenuProps, IContextualMenuItem } from '@fluentui/react/lib/ContextualMenu';
+import { Dropdown, IDropdownOption } from '@fluentui/react/lib/Dropdown';
+import { getRTL } from '@fluentui/react/lib/Utilities';
 import './ContextualMenuExample.scss';
 
 const DIRECTION_OPTIONS = [

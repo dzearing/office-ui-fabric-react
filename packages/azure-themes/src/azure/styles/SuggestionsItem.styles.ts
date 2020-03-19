@@ -1,4 +1,4 @@
-import { ISuggestionItemProps, ISuggestionsItemStyles, ITagPickerProps } from 'office-ui-fabric-react/lib/Pickers';
+import { ISuggestionItemProps, ISuggestionsItemStyles, ITagPickerProps } from '@fluentui/react/lib/Pickers';
 import { FontSizes } from '../AzureType';
 
 export const SuggestionItemStyles = (props: ISuggestionItemProps<ITagPickerProps>): Partial<ISuggestionsItemStyles> => {

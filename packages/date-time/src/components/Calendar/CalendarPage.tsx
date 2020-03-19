@@ -3,7 +3,7 @@ import { ExampleCard, ComponentPage, PropertiesTableSet, Markdown } from '@uifab
 import { DateRangeType, DayOfWeek } from './Calendar.types';
 import { CalendarButtonExample } from './examples/Calendar.Button.Example';
 import { CalendarInlineExample } from './examples/Calendar.Inline.Example';
-import { addMonths, addYears, addDays } from 'office-ui-fabric-react/lib/utilities/dateMath/DateMath';
+import { addMonths, addYears, addDays } from '@fluentui/react/lib/utilities/dateMath/DateMath';
 import { IProcessedStyleSet } from '@uifabric/styling';
 import { ICalendarDayGridStyles } from '@uifabric/date-time';
 

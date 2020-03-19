@@ -1,12 +1,7 @@
 import * as React from 'react';
-import {
-  ContextualMenuItemType,
-  DirectionalHint,
-  IContextualMenuProps,
-  IContextualMenuItem
-} from 'office-ui-fabric-react/lib/ContextualMenu';
-import { DefaultButton, IconButton } from 'office-ui-fabric-react/lib/Button';
-import { FocusZoneDirection } from 'office-ui-fabric-react/lib/FocusZone';
+import { ContextualMenuItemType, DirectionalHint, IContextualMenuProps, IContextualMenuItem } from '@fluentui/react/lib/ContextualMenu';
+import { DefaultButton, IconButton } from '@fluentui/react/lib/Button';
+import { FocusZoneDirection } from '@fluentui/react/lib/FocusZone';
 import './ContextualMenuExample.scss';
 
 export const ContextualMenuCustomizationWithNoWrapExample: React.FunctionComponent = () => {

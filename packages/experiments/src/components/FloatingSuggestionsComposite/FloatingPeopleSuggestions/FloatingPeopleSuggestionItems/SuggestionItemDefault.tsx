@@ -2,8 +2,8 @@
 import * as React from 'react';
 /* tslint:enable */
 import { css, classNamesFunction } from '../../../../Utilities';
-import { Persona, PersonaSize, IPersonaProps, PersonaPresence } from 'office-ui-fabric-react/lib/Persona';
-import { ISuggestionItemProps } from 'office-ui-fabric-react/lib/Pickers';
+import { Persona, PersonaSize, IPersonaProps, PersonaPresence } from '@fluentui/react/lib/Persona';
+import { ISuggestionItemProps } from '@fluentui/react/lib/Pickers';
 import { getStyles, ISuggestionItemDefaultStylesProps, ISuggestionItemDefaultStyles } from './SuggestionItemDefault.styles';
 
 export const SuggestionItemNormal: (persona: IPersonaProps) => JSX.Element = (

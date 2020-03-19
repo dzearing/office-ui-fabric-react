@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { useConst, useConstCallback } from '@uifabric/react-hooks';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { Callout } from 'office-ui-fabric-react/lib/Callout';
+import { DefaultButton } from '@fluentui/react/lib/Button';
+import { Callout } from '@fluentui/react/lib/Callout';
 import {
   ContextualMenuItemType,
   IContextualMenuProps,
   IContextualMenuItem,
   IContextualMenuItemProps
-} from 'office-ui-fabric-react/lib/ContextualMenu';
-import { Icon } from 'office-ui-fabric-react/lib/Icon';
+} from '@fluentui/react/lib/ContextualMenu';
+import { Icon } from '@fluentui/react/lib/Icon';
 import * as stylesImport from './ContextualMenuExample.scss';
 
 // tslint:disable-next-line:no-any

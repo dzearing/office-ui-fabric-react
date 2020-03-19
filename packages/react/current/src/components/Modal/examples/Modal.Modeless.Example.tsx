@@ -11,7 +11,7 @@ import {
   IconButton
 } from '@fluentui/react';
 import { FontSizes } from '@uifabric/styling';
-import { getId } from 'office-ui-fabric-react/lib/Utilities';
+import { getId } from '@fluentui/react/lib/Utilities';
 
 export interface IModalModelessExampleState {
   showModal: boolean;

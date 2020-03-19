@@ -1,6 +1,6 @@
 import { ITheme } from '@fluentui/react';
-import { getFocusStyle } from 'office-ui-fabric-react/lib/Styling';
-import { IButtonStyles } from 'office-ui-fabric-react/lib/Button';
+import { getFocusStyle } from '@fluentui/react/lib/Styling';
+import { IButtonStyles } from '@fluentui/react/lib/Button';
 import { FontSizes } from '../AzureType';
 
 export const CommandBarButtonStyles = (theme: ITheme): Partial<IButtonStyles> => {

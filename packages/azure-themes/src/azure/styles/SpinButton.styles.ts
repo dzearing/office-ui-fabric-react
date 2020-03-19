@@ -1,4 +1,4 @@
-import { ISpinButtonStyles } from 'office-ui-fabric-react/lib/SpinButton';
+import { ISpinButtonStyles } from '@fluentui/react/lib/SpinButton';
 import { ITheme } from '@fluentui/react';
 import { FontSizes } from '../AzureType';
 

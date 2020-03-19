@@ -1,13 +1,13 @@
 import * as React from 'react';
-import { classNamesFunction } from 'office-ui-fabric-react/lib/Utilities';
+import { classNamesFunction } from '@fluentui/react/lib/Utilities';
 import { IDonutChartProps, IDonutChartStyleProps, IDonutChartStyles } from './DonutChart.types';
 import { Pie } from './Pie/Pie';
 import { ILegend, Legends } from '../Legends/index';
 import * as scale from 'd3-scale';
-import { IProcessedStyleSet, IPalette } from 'office-ui-fabric-react/lib/Styling';
+import { IProcessedStyleSet, IPalette } from '@fluentui/react/lib/Styling';
 import { IChartDataPoint, IChartProps } from './index';
-import { Callout, DirectionalHint } from 'office-ui-fabric-react/lib/Callout';
-import { FocusZone, FocusZoneDirection } from 'office-ui-fabric-react/lib/FocusZone';
+import { Callout, DirectionalHint } from '@fluentui/react/lib/Callout';
+import { FocusZone, FocusZoneDirection } from '@fluentui/react/lib/FocusZone';
 
 const getClassNames = classNamesFunction<IDonutChartStyleProps, IDonutChartStyles>();
 

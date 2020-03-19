@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { classNamesFunction } from 'office-ui-fabric-react/lib/Utilities';
-import { IProcessedStyleSet, IPalette } from 'office-ui-fabric-react/lib/Styling';
+import { classNamesFunction } from '@fluentui/react/lib/Utilities';
+import { IProcessedStyleSet, IPalette } from '@fluentui/react/lib/Styling';
 import { ILegend, Legends } from '../Legends/index';
 import {
   IChartDataPoint,
@@ -9,8 +9,8 @@ import {
   IMultiStackedBarChartStyles,
   IMultiStackedBarChartStyleProps
 } from './index';
-import { Callout, DirectionalHint } from 'office-ui-fabric-react/lib/Callout';
-import { FocusZone, FocusZoneDirection } from 'office-ui-fabric-react/lib/FocusZone';
+import { Callout, DirectionalHint } from '@fluentui/react/lib/Callout';
+import { FocusZone, FocusZoneDirection } from '@fluentui/react/lib/FocusZone';
 
 const getClassNames = classNamesFunction<IMultiStackedBarChartStyleProps, IMultiStackedBarChartStyles>();
 

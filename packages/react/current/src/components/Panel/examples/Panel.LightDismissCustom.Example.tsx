@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { DefaultButton, PrimaryButton } from 'office-ui-fabric-react/lib/Button';
-import { Dialog, DialogFooter, DialogType } from 'office-ui-fabric-react/lib/Dialog';
-import { Panel } from 'office-ui-fabric-react/lib/Panel';
+import { DefaultButton, PrimaryButton } from '@fluentui/react/lib/Button';
+import { Dialog, DialogFooter, DialogType } from '@fluentui/react/lib/Dialog';
+import { Panel } from '@fluentui/react/lib/Panel';
 import { useConstCallback } from '@uifabric/react-hooks';
 
 const explanation = 'If this panel is closed using light dismiss (clicking outside the panel), a confirmation dialog will appear.';

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Dropdown, DropdownMenuItemType, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
+import { Dropdown, DropdownMenuItemType, IDropdownOption } from '@fluentui/react/lib/Dropdown';
 
 export interface IDropdownControlledMultiExampleState {
   selectedItems: string[];

@@ -82,7 +82,7 @@ The library includes ES2015 module entry points under the `lib` folder (use `lib
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
+import { PrimaryButton } from '@fluentui/react/lib/Button';
 
 ReactDOM.render(<PrimaryButton>I am a button.</PrimaryButton>, document.getElementById('root'));
 ```
@@ -100,7 +100,7 @@ Fabric React supports all evergreen browsers, with IE 11 as the min-bar version 
 All components can render in LTR or RTL, depending on the `dir` attribute set on the `html` element (`dir="rtl"` will flip the direction of everything). You can also use the `setRTL` API if you don't have control over the `html` element's rendering. Example:
 
 ```tsx
-import { setRTL } from 'office-ui-fabric-react/lib/Utilities';
+import { setRTL } from '@fluentui/react/lib/Utilities';
 
 setRTL(true);
 ```

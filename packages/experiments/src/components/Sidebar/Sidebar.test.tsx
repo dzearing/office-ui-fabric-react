@@ -4,7 +4,7 @@
 
 import * as Enzyme from 'enzyme';
 import { getTheme } from '@fluentui/react';
-import { CommandBarButton } from 'office-ui-fabric-react/lib/Button';
+import { CommandBarButton } from '@fluentui/react/lib/Button';
 import * as React from 'react';
 import { ISidebar, ISidebarProps, Sidebar, SidebarButton } from './index';
 

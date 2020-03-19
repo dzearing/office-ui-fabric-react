@@ -6,7 +6,7 @@ To use themes, an application must call `loadTheme()` immediately at app startup
 Here is an example:
 
 ```tsx
-import { loadTheme } from 'office-ui-fabric-react/lib/Styling';
+import { loadTheme } from '@fluentui/react/lib/Styling';
 
 loadTheme({
   palette: {

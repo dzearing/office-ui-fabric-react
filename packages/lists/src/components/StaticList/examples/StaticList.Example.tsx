@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StaticList } from '@uifabric/lists';
-import { mergeStyles } from 'office-ui-fabric-react/lib/Styling';
+import { mergeStyles } from '@fluentui/react/lib/Styling';
 
 function generateItems(count: number): number[] {
   const itemsArray: number[] = [];

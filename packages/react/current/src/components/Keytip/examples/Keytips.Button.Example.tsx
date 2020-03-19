@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { DefaultButton, CompoundButton } from 'office-ui-fabric-react/lib/Button';
-import { keytipMap } from 'office-ui-fabric-react/lib/components/Keytip/examples/KeytipSetup';
-import { Toggle } from 'office-ui-fabric-react/lib/Toggle';
-import { IStackTokens, Stack } from 'office-ui-fabric-react/lib/Stack';
+import { DefaultButton, CompoundButton } from '@fluentui/react/lib/Button';
+import { keytipMap } from '@fluentui/react/lib/components/Keytip/examples/KeytipSetup';
+import { Toggle } from '@fluentui/react/lib/Toggle';
+import { IStackTokens, Stack } from '@fluentui/react/lib/Stack';
 
 export interface IKeytipsButtonExampleState {
   btnDisabled: boolean;

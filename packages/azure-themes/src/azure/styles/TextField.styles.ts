@@ -1,4 +1,4 @@
-import { ITextFieldStyleProps, ITextFieldStyles } from 'office-ui-fabric-react/lib/TextField';
+import { ITextFieldStyleProps, ITextFieldStyles } from '@fluentui/react/lib/TextField';
 import { FontSizes } from '../AzureType';
 import * as StyleConstants from '../Constants';
 

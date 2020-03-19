@@ -9,9 +9,9 @@ import {
   ICalendarYearStyleProps,
   ICalendarYearStyles
 } from './CalendarYear.types';
-import { KeyCodes, getRTL, classNamesFunction, css, format, initializeComponentRef } from 'office-ui-fabric-react/lib/Utilities';
-import { FocusZone } from 'office-ui-fabric-react/lib/FocusZone';
-import { Icon } from 'office-ui-fabric-react/lib/Icon';
+import { KeyCodes, getRTL, classNamesFunction, css, format, initializeComponentRef } from '@fluentui/react/lib/Utilities';
+import { FocusZone } from '@fluentui/react/lib/FocusZone';
+import { Icon } from '@fluentui/react/lib/Icon';
 import { ICalendarIconStrings } from '../Calendar.types';
 
 const getClassNames = classNamesFunction<ICalendarYearStyleProps, ICalendarYearStyles>();

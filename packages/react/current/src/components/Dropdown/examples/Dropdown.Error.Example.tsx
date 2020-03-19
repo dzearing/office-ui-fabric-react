@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Dropdown } from 'office-ui-fabric-react/lib/Dropdown';
-import { IStackTokens, Stack } from 'office-ui-fabric-react/lib/Stack';
-import { Toggle } from 'office-ui-fabric-react/lib/Toggle';
+import { Dropdown } from '@fluentui/react/lib/Dropdown';
+import { IStackTokens, Stack } from '@fluentui/react/lib/Stack';
+import { Toggle } from '@fluentui/react/lib/Toggle';
 
 export interface IDropdownErrorExampleState {
   showError: boolean;

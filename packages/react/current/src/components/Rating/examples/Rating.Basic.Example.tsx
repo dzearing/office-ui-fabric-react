@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Rating, RatingSize } from 'office-ui-fabric-react/lib/Rating';
-import { getTheme, createTheme, ITheme } from 'office-ui-fabric-react/lib/Styling';
+import { Rating, RatingSize } from '@fluentui/react/lib/Rating';
+import { getTheme, createTheme, ITheme } from '@fluentui/react/lib/Styling';
 
 export class RatingBasicExample extends React.Component<
   {},

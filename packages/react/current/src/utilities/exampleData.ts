@@ -4,7 +4,7 @@
 
 // tslint:disable:deprecation
 
-import { IGroup } from 'office-ui-fabric-react/lib/DetailsList';
+import { IGroup } from '@fluentui/react/lib/DetailsList';
 
 const LOREM_IPSUM = (
   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ' +

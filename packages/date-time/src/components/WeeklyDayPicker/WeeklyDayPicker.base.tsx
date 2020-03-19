@@ -14,7 +14,7 @@ import {
 import { CalendarDayGrid } from '../CalendarDayGrid/CalendarDayGrid';
 import { ICalendarDayGrid } from '../CalendarDayGrid/CalendarDayGrid.types';
 import { compareDatePart, getStartDateOfWeek, addDays, addMonths, compareDates } from '../../utilities/dateMath/DateMath';
-import { Icon } from 'office-ui-fabric-react/lib/Icon';
+import { Icon } from '@fluentui/react/lib/Icon';
 
 const getClassNames = classNamesFunction<IWeeklyDayPickerStyleProps, IWeeklyDayPickerStyles>();
 

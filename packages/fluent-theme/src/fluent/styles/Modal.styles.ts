@@ -1,4 +1,4 @@
-import { IModalStyles, IModalProps } from 'office-ui-fabric-react/lib/Modal';
+import { IModalStyles, IModalProps } from '@fluentui/react/lib/Modal';
 
 export const ModalStyles = (props: IModalProps): Partial<IModalStyles> => {
   const { theme } = props;

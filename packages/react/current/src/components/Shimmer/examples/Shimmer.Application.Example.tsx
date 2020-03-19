@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Async } from 'office-ui-fabric-react/lib/Utilities';
+import { Async } from '@fluentui/react/lib/Utilities';
 import { createListItems, IExampleItem } from '@uifabric/example-data';
-import { IColumn, buildColumns, SelectionMode, Toggle } from 'office-ui-fabric-react/lib/index';
-import { ShimmeredDetailsList } from 'office-ui-fabric-react/lib/ShimmeredDetailsList';
+import { IColumn, buildColumns, SelectionMode, Toggle } from '@fluentui/react/lib/index';
+import { ShimmeredDetailsList } from '@fluentui/react/lib/ShimmeredDetailsList';
 
 const fileIcons: { name: string }[] = [
   { name: 'accdb' },

@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Dialog, DialogType, DialogFooter } from 'office-ui-fabric-react/lib/Dialog';
-import { PrimaryButton, DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { getId } from 'office-ui-fabric-react/lib/Utilities';
-import { hiddenContentStyle, mergeStyles } from 'office-ui-fabric-react/lib/Styling';
-import { Checkbox } from 'office-ui-fabric-react/lib/Checkbox';
-import { ContextualMenu } from 'office-ui-fabric-react/lib/ContextualMenu';
+import { Dialog, DialogType, DialogFooter } from '@fluentui/react/lib/Dialog';
+import { PrimaryButton, DefaultButton } from '@fluentui/react/lib/Button';
+import { getId } from '@fluentui/react/lib/Utilities';
+import { hiddenContentStyle, mergeStyles } from '@fluentui/react/lib/Styling';
+import { Checkbox } from '@fluentui/react/lib/Checkbox';
+import { ContextualMenu } from '@fluentui/react/lib/ContextualMenu';
 
 const screenReaderOnly = mergeStyles(hiddenContentStyle);
 

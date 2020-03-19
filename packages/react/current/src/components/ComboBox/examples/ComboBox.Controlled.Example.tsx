@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { ComboBox, IComboBoxOption, IComboBox, SelectableOptionMenuItemType, Fabric, mergeStyles } from 'office-ui-fabric-react/lib/index';
+import { ComboBox, IComboBoxOption, IComboBox, SelectableOptionMenuItemType, Fabric, mergeStyles } from '@fluentui/react/lib/index';
 
 const INITIAL_OPTIONS: IComboBoxOption[] = [
   { key: 'Header1', text: 'First heading', itemType: SelectableOptionMenuItemType.Header },

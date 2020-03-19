@@ -5,10 +5,10 @@ import { Calendar, ICalendarStrings } from '../../Calendar';
 import { DatePicker } from './DatePicker';
 import { DatePickerBase, IDatePickerState } from './DatePicker.base';
 import { IDatePickerStrings, IDatePickerProps } from './DatePicker.types';
-import { FirstWeekOfYear } from 'office-ui-fabric-react/lib/utilities/dateValues/DateValues';
+import { FirstWeekOfYear } from '@fluentui/react/lib/utilities/dateValues/DateValues';
 import { shallow, mount, ReactWrapper } from 'enzyme';
 import { resetIds } from '@uifabric/utilities';
-import { Callout } from 'office-ui-fabric-react/lib/Callout';
+import { Callout } from '@fluentui/react/lib/Callout';
 
 describe('DatePicker', () => {
   beforeEach(() => {

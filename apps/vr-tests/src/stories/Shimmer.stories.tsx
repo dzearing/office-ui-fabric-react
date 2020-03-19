@@ -4,7 +4,7 @@ import Screener from 'screener-storybook/src/screener';
 import { storiesOf } from '@storybook/react';
 import { FabricDecorator } from '../utilities';
 import { Shimmer, ShimmerElementType as ElemType, ShimmerElementsGroup } from '@fluentui/react';
-import { mergeStyles } from 'office-ui-fabric-react/lib/Styling';
+import { mergeStyles } from '@fluentui/react/lib/Styling';
 
 const wrapperClassName = mergeStyles({
   width: 400,

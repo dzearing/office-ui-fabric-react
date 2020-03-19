@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Selection } from 'office-ui-fabric-react/lib/Selection';
+import { Selection } from '@fluentui/react/lib/Selection';
 
 import { ISelectedItemsList, ISelectedItemsListProps, BaseSelectedItem } from './SelectedItemsList.types';
 import { copyToClipboard } from './utils/copyToClipboard';

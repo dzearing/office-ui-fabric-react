@@ -1,4 +1,4 @@
-import { ILabelStyleProps, ILabelStyles } from 'office-ui-fabric-react/lib/Label';
+import { ILabelStyleProps, ILabelStyles } from '@fluentui/react/lib/Label';
 import { FontSizes } from '../AzureType';
 import { IExtendedSemanticColors } from '../IExtendedSemanticColors';
 

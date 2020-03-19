@@ -1,4 +1,4 @@
-import { ISearchBoxStyleProps, ISearchBoxStyles } from 'office-ui-fabric-react/lib/SearchBox';
+import { ISearchBoxStyleProps, ISearchBoxStyles } from '@fluentui/react/lib/SearchBox';
 
 export const SearchBoxStyles = (props: ISearchBoxStyleProps): Partial<ISearchBoxStyles> => {
   const { theme } = props;

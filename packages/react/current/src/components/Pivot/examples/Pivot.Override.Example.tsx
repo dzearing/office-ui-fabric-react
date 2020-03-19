@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Label } from 'office-ui-fabric-react/lib/Label';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { Pivot, PivotItem } from 'office-ui-fabric-react/lib/Pivot';
+import { Label } from '@fluentui/react/lib/Label';
+import { DefaultButton } from '@fluentui/react/lib/Button';
+import { Pivot, PivotItem } from '@fluentui/react/lib/Pivot';
 
 export class PivotOverrideExample extends React.Component<any, any> {
   constructor(props: any) {

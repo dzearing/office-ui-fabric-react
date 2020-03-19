@@ -1,5 +1,5 @@
-import { getFocusStyle, HighContrastSelector } from 'office-ui-fabric-react/lib/Styling';
-import { IButtonStyles, IButtonProps } from 'office-ui-fabric-react/lib/Button';
+import { getFocusStyle, HighContrastSelector } from '@fluentui/react/lib/Styling';
+import { IButtonStyles, IButtonProps } from '@fluentui/react/lib/Button';
 
 export const CompoundButtonStyles = (props: IButtonProps): Partial<IButtonStyles> => {
   const { theme } = props;

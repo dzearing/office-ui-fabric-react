@@ -1,12 +1,12 @@
 import * as React from 'react';
-import { TextField, ITextFieldProps } from 'office-ui-fabric-react/lib/TextField';
-import { DefaultButton, IconButton } from 'office-ui-fabric-react/lib/Button';
-import { Icon } from 'office-ui-fabric-react/lib/Icon';
-import { Callout } from 'office-ui-fabric-react/lib/Callout';
-import { IStackTokens, Stack } from 'office-ui-fabric-react/lib/Stack';
-import { Text } from 'office-ui-fabric-react/lib/Text';
-import { getId, IRenderFunction } from 'office-ui-fabric-react/lib/Utilities';
-import { getTheme, FontWeights } from 'office-ui-fabric-react/lib/Styling';
+import { TextField, ITextFieldProps } from '@fluentui/react/lib/TextField';
+import { DefaultButton, IconButton } from '@fluentui/react/lib/Button';
+import { Icon } from '@fluentui/react/lib/Icon';
+import { Callout } from '@fluentui/react/lib/Callout';
+import { IStackTokens, Stack } from '@fluentui/react/lib/Stack';
+import { Text } from '@fluentui/react/lib/Text';
+import { getId, IRenderFunction } from '@fluentui/react/lib/Utilities';
+import { getTheme, FontWeights } from '@fluentui/react/lib/Styling';
 
 export interface ITextFieldCustomRenderExampleState {
   isCalloutVisible: boolean;

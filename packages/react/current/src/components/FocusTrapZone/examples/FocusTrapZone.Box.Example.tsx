@@ -1,12 +1,12 @@
 import * as React from 'react';
 
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { FocusTrapZone } from 'office-ui-fabric-react/lib/FocusTrapZone';
-import { Link } from 'office-ui-fabric-react/lib/Link';
-import { Stack } from 'office-ui-fabric-react/lib/Stack';
-import { Text } from 'office-ui-fabric-react/lib/Text';
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
-import { Toggle, IToggle } from 'office-ui-fabric-react/lib/Toggle';
+import { DefaultButton } from '@fluentui/react/lib/Button';
+import { FocusTrapZone } from '@fluentui/react/lib/FocusTrapZone';
+import { Link } from '@fluentui/react/lib/Link';
+import { Stack } from '@fluentui/react/lib/Stack';
+import { Text } from '@fluentui/react/lib/Text';
+import { TextField } from '@fluentui/react/lib/TextField';
+import { Toggle, IToggle } from '@fluentui/react/lib/Toggle';
 
 export interface IFocusTrapZoneBoxExampleState {
   useTrapZone: boolean;

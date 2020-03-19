@@ -7,8 +7,8 @@ import {
   DocumentCardImage,
   IDocumentCardStyles,
   IDocumentCardActivityPerson
-} from 'office-ui-fabric-react/lib/DocumentCard';
-import { ImageFit } from 'office-ui-fabric-react/lib/Image';
+} from '@fluentui/react/lib/DocumentCard';
+import { ImageFit } from '@fluentui/react/lib/Image';
 import { TestImages } from '@uifabric/example-data';
 
 const people: IDocumentCardActivityPerson[] = [

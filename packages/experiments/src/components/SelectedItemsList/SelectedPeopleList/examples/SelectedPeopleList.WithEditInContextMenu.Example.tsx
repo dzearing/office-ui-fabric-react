@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
-import { Selection } from 'office-ui-fabric-react/lib/Selection';
-import { IPersonaProps } from 'office-ui-fabric-react/lib/Persona';
+import { PrimaryButton } from '@fluentui/react/lib/Button';
+import { Selection } from '@fluentui/react/lib/Selection';
+import { IPersonaProps } from '@fluentui/react/lib/Persona';
 import { people } from '@uifabric/example-data';
 import {
   SelectedPeopleList,

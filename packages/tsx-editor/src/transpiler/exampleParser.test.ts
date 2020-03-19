@@ -404,7 +404,7 @@ export class Foo extends React.Component {}
   it('detects default imports', () => {
     let example = `
 import * as React from 'react';
-import Bar from 'office-ui-fabric-react/lib/Bar';
+import Bar from '@fluentui/react/lib/Bar';
 export class Foo extends React.Component {}
 `;
     expect(tryParseExample(example, SUPPORTED_PACKAGES)).toBe('Default imports are not supported by the editor.');
@@ -416,8 +416,8 @@ export class Foo extends React.Component {}
   it('detects deep imports', () => {
     let example = `
 import * as React from 'react';
-import { Bar } from 'office-ui-fabric-react/lib/Bar';
-import { baz } from 'office-ui-fabric-react/lib/utilities/baz';
+import { Bar } from '@fluentui/react/lib/Bar';
+import { baz } from '@fluentui/react/lib/utilities/baz';
 export class Foo extends React.Component {}
 `;
     expect(tryParseExample(example, SUPPORTED_PACKAGES)).toBe(
@@ -433,7 +433,7 @@ export class Foo extends React.Component {}
   it('returns right result for valid example!', () => {
     const example = `
 import * as React from 'react';
-import { Bar } from 'office-ui-fabric-react/lib/Bar';
+import { Bar } from '@fluentui/react/lib/Bar';
 export class Foo extends React.Component {}
 `;
     expect(tryParseExample(example, SUPPORTED_PACKAGES)).toEqual({
@@ -442,7 +442,7 @@ export class Foo extends React.Component {}
       imports: [
         reactImport,
         {
-          text: "import { Bar } from 'office-ui-fabric-react/lib/Bar';",
+          text: "import { Bar } from '@fluentui/react/lib/Bar';",
           path: 'office-ui-fabric-react/lib/Bar',
           packageName: 'office-ui-fabric-react',
           identifiers: [{ name: 'Bar' }]
@@ -454,7 +454,7 @@ export class Foo extends React.Component {}
   it('returns right result including example data', () => {
     const example = `
 import * as React from 'react';
-import { Bar } from 'office-ui-fabric-react/lib/Bar';
+import { Bar } from '@fluentui/react/lib/Bar';
 import { createListItems } from '@uifabric/example-data';
 export class Foo extends React.Component {}
 `;
@@ -464,7 +464,7 @@ export class Foo extends React.Component {}
       imports: [
         reactImport,
         {
-          text: "import { Bar } from 'office-ui-fabric-react/lib/Bar';",
+          text: "import { Bar } from '@fluentui/react/lib/Bar';",
           path: 'office-ui-fabric-react/lib/Bar',
           packageName: 'office-ui-fabric-react',
           identifiers: [{ name: 'Bar' }]

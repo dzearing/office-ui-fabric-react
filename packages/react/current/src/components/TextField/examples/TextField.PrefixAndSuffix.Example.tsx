@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
-import { Stack, IStackProps } from 'office-ui-fabric-react/lib/Stack';
+import { TextField } from '@fluentui/react/lib/TextField';
+import { Stack, IStackProps } from '@fluentui/react/lib/Stack';
 
 export const TextFieldPrefixAndSuffixExample: React.FunctionComponent = () => {
   const columnProps: Partial<IStackProps> = {

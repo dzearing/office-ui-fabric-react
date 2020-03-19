@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { Announced } from 'office-ui-fabric-react/lib/Announced';
-import { TagPicker, ITag } from 'office-ui-fabric-react/lib/Pickers';
-import { Text } from 'office-ui-fabric-react/lib/Text';
-import { IStackTokens, Stack } from 'office-ui-fabric-react/lib/Stack';
-import { Async } from 'office-ui-fabric-react/lib/Utilities';
+import { Announced } from '@fluentui/react/lib/Announced';
+import { TagPicker, ITag } from '@fluentui/react/lib/Pickers';
+import { Text } from '@fluentui/react/lib/Text';
+import { IStackTokens, Stack } from '@fluentui/react/lib/Stack';
+import { Async } from '@fluentui/react/lib/Utilities';
 
 const _testTags: ITag[] = [
   'black',

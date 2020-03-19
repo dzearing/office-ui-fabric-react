@@ -5,10 +5,10 @@ import { scaleLinear as d3ScaleLinear, scaleTime as d3ScaleTime } from 'd3-scale
 import { select as d3Select } from 'd3-selection';
 import * as d3TimeFormat from 'd3-time-format';
 import { ILegend, Legends } from '../Legends/index';
-import { classNamesFunction } from 'office-ui-fabric-react/lib/Utilities';
-import { IProcessedStyleSet, mergeStyles } from 'office-ui-fabric-react/lib/Styling';
+import { classNamesFunction } from '@fluentui/react/lib/Utilities';
+import { IProcessedStyleSet, mergeStyles } from '@fluentui/react/lib/Styling';
 import { ILineChartProps, ILineChartStyleProps, ILineChartStyles, ILineChartDataPoint, ILineChartPoints } from './LineChart.types';
-import { Callout, DirectionalHint } from 'office-ui-fabric-react/lib/Callout';
+import { Callout, DirectionalHint } from '@fluentui/react/lib/Callout';
 import { FocusZone, FocusZoneDirection } from '@fluentui/react';
 
 const getClassNames = classNamesFunction<ILineChartStyleProps, ILineChartStyles>();

@@ -1,13 +1,13 @@
 import * as React from 'react';
-import { Announced } from 'office-ui-fabric-react/lib/Announced';
-import { Link } from 'office-ui-fabric-react/lib/Link';
-import { DetailsList, IDragDropEvents } from 'office-ui-fabric-react/lib/DetailsList';
-import { Selection } from 'office-ui-fabric-react/lib/Selection';
-import { MarqueeSelection } from 'office-ui-fabric-react/lib/MarqueeSelection';
-import { IColumn } from 'office-ui-fabric-react/lib/DetailsList';
-import { Text } from 'office-ui-fabric-react/lib/Text';
-import { IStackTokens, Stack } from 'office-ui-fabric-react/lib/Stack';
-import { mergeStyles, getTheme } from 'office-ui-fabric-react/lib/Styling';
+import { Announced } from '@fluentui/react/lib/Announced';
+import { Link } from '@fluentui/react/lib/Link';
+import { DetailsList, IDragDropEvents } from '@fluentui/react/lib/DetailsList';
+import { Selection } from '@fluentui/react/lib/Selection';
+import { MarqueeSelection } from '@fluentui/react/lib/MarqueeSelection';
+import { IColumn } from '@fluentui/react/lib/DetailsList';
+import { Text } from '@fluentui/react/lib/Text';
+import { IStackTokens, Stack } from '@fluentui/react/lib/Stack';
+import { mergeStyles, getTheme } from '@fluentui/react/lib/Styling';
 
 const _items: IFileExampleItem[] = [];
 

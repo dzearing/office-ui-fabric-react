@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Rating } from 'office-ui-fabric-react/lib/Rating';
-import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
+import { Rating } from '@fluentui/react/lib/Rating';
+import { PrimaryButton } from '@fluentui/react/lib/Button';
 
 export class RatingButtonControlledExample extends React.Component<
   {},

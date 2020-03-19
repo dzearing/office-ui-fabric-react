@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { AccessibilityDetailsList } from './AccessibilityDetailsList';
 import { FabricSlots, IThemeRules } from '@fluentui/react';
-import { getContrastRatio } from 'office-ui-fabric-react/lib/utilities/color/shades';
-import { IColor } from 'office-ui-fabric-react/lib/utilities/color/interfaces';
+import { getContrastRatio } from '@fluentui/react/lib/utilities/color/shades';
+import { IColor } from '@fluentui/react/lib/utilities/color/interfaces';
 import { MainPanelInnerContent } from '../shared/MainPanelStyles';
-import { ITheme } from 'office-ui-fabric-react/lib/Styling';
+import { ITheme } from '@fluentui/react/lib/Styling';
 import { TitleText } from '../shared/Typography';
 
 export interface IAccessibilityCheckerProps {

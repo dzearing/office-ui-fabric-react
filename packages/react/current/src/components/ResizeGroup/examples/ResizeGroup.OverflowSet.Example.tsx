@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { CommandBarButton } from 'office-ui-fabric-react/lib/Button';
-import { ResizeGroup } from 'office-ui-fabric-react/lib/ResizeGroup';
-import { OverflowSet } from 'office-ui-fabric-react/lib/OverflowSet';
-import { Checkbox } from 'office-ui-fabric-react/lib/Checkbox';
-import { IContextualMenuItem } from 'office-ui-fabric-react/lib/ContextualMenu';
-import { Dropdown, IDropdownOption } from 'office-ui-fabric-react/lib/Dropdown';
+import { CommandBarButton } from '@fluentui/react/lib/Button';
+import { ResizeGroup } from '@fluentui/react/lib/ResizeGroup';
+import { OverflowSet } from '@fluentui/react/lib/OverflowSet';
+import { Checkbox } from '@fluentui/react/lib/Checkbox';
+import { IContextualMenuItem } from '@fluentui/react/lib/ContextualMenu';
+import { Dropdown, IDropdownOption } from '@fluentui/react/lib/Dropdown';
 import { mergeStyleSets } from '@fluentui/react';
 
 const styles = mergeStyleSets({

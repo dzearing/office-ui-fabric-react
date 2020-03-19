@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { TextField, MaskedTextField } from 'office-ui-fabric-react/lib/TextField';
-import { Stack, IStackProps } from 'office-ui-fabric-react/lib/Stack';
+import { TextField, MaskedTextField } from '@fluentui/react/lib/TextField';
+import { Stack, IStackProps } from '@fluentui/react/lib/Stack';
 
 export const TextFieldBasicExample: React.FunctionComponent = () => {
   // TextFields don't have to be inside Stacks, we're just using Stacks for layout

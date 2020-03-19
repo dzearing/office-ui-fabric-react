@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { SearchBox } from 'office-ui-fabric-react/lib/SearchBox';
-import { Stack } from 'office-ui-fabric-react/lib/Stack';
+import { SearchBox } from '@fluentui/react/lib/SearchBox';
+import { Stack } from '@fluentui/react/lib/Stack';
 
 // tslint:disable:jsx-no-lambda
 export class SearchBoxDisabledExample extends React.Component<any, any> {

@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { CommandButton } from 'office-ui-fabric-react/lib/Button';
-import { IStyleFunction, classNamesFunction, styled } from 'office-ui-fabric-react/lib/Utilities';
+import { CommandButton } from '@fluentui/react/lib/Button';
+import { IStyleFunction, classNamesFunction, styled } from '@fluentui/react/lib/Utilities';
 import { ICodepenProps, ICodepenStyleProps, ICodepenStyles } from './CodepenComponent.types';
 
 /** ID to render the example into */

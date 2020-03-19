@@ -21,8 +21,8 @@ The library includes commonjs entry points under the lib folder. To use a contro
 ```tsx
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { Fabric } from '@fluentui/react/lib/Fabric';
+import { DefaultButton } from '@fluentui/react/lib/Button';
 
 const MyPage = () => (
   <Fabric>
@@ -44,9 +44,9 @@ import { Button } from '@fluentui/react';
 ...this would work, but then unless you are using a tree-shaking bundler such as Rollup.js or Webpack 2, Webpack will assume you want every module exported from the main entry file to be included in your final bundle, which produces unnecessary large bundles and slows your page load down. Instead you can import the specific paths to trim down your bundle size:
 
 ```tsx
-import { Button } from 'office-ui-fabric-react/lib/Button';
-import { Dropdown } from 'office-ui-fabric-react/lib/Dropdown';
-import { List } from 'office-ui-fabric-react/lib/List';
+import { Button } from '@fluentui/react/lib/Button';
+import { Dropdown } from '@fluentui/react/lib/Dropdown';
+import { List } from '@fluentui/react/lib/List';
 ```
 
 ## Using an AMD bundler like r.js

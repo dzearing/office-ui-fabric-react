@@ -1,14 +1,14 @@
 import * as React from 'react';
-import { CommandBar, ICommandBarItemProps } from 'office-ui-fabric-react/lib/CommandBar';
-import { CommandBarButton, IButtonProps } from 'office-ui-fabric-react/lib/Button';
-import { DirectionalHint } from 'office-ui-fabric-react/lib/Callout';
+import { CommandBar, ICommandBarItemProps } from '@fluentui/react/lib/CommandBar';
+import { CommandBarButton, IButtonProps } from '@fluentui/react/lib/Button';
+import { DirectionalHint } from '@fluentui/react/lib/Callout';
 import {
   IContextualMenuItemProps,
   ContextualMenuItem,
   IContextualMenuItemStyles,
   IContextualMenuStyles
-} from 'office-ui-fabric-react/lib/ContextualMenu';
-import { getTheme } from 'office-ui-fabric-react/lib/Styling';
+} from '@fluentui/react/lib/ContextualMenu';
+import { getTheme } from '@fluentui/react/lib/Styling';
 
 const theme = getTheme();
 // Styles for both command bar and overflow/menu items

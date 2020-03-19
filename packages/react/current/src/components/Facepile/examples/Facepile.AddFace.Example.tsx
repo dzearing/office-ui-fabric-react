@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Facepile, IFacepileProps, OverflowButtonType } from 'office-ui-fabric-react/lib/Facepile';
+import { Facepile, IFacepileProps, OverflowButtonType } from '@fluentui/react/lib/Facepile';
 import { facepilePersonas } from '@uifabric/example-data';
 
 export interface IFacepileAddFaceExampleState {

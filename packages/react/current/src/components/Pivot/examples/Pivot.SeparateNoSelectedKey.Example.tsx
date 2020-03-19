@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Pivot, PivotItem } from 'office-ui-fabric-react/lib/Pivot';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { Pivot, PivotItem } from '@fluentui/react/lib/Pivot';
+import { DefaultButton } from '@fluentui/react/lib/Button';
 
 export class PivotSeparateNoSelectedKeyExample extends React.Component<any, any> {
   public state = { selectedKey: 'Settings' };

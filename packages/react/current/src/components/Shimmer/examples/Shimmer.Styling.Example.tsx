@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Shimmer, IShimmerStyleProps, IShimmerStyles, ShimmerElementsGroup, ShimmerElementType } from 'office-ui-fabric-react/lib/Shimmer';
-import { mergeStyleSets, ITheme, createTheme } from 'office-ui-fabric-react/lib/Styling';
-import { Customizer } from 'office-ui-fabric-react/lib/Utilities';
+import { Shimmer, IShimmerStyleProps, IShimmerStyles, ShimmerElementsGroup, ShimmerElementType } from '@fluentui/react/lib/Shimmer';
+import { mergeStyleSets, ITheme, createTheme } from '@fluentui/react/lib/Styling';
+import { Customizer } from '@fluentui/react/lib/Utilities';
 
 // Custom theme passed to Customizer
 const customThemeForShimmer: ITheme = createTheme({

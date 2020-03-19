@@ -27,7 +27,7 @@ This will make ALL icons in the collection available, but will download them on 
 If you are using Fabric React, you can use the `Icon` component and pass in the corresponding iconName property to render a given icon.
 
 ```tsx
-import { Icon } from 'office-ui-fabric-react/lib/Icon';
+import { Icon } from '@fluentui/react/lib/Icon';
 
 <Icon iconName="Snow" />;
 ```

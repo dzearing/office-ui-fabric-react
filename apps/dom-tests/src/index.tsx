@@ -3,8 +3,8 @@ require('es6-promise/auto');
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Router, Route, IRouteProps } from '@uifabric/example-app-base';
-import { setBaseUrl } from 'office-ui-fabric-react/lib/Utilities';
-import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
+import { setBaseUrl } from '@fluentui/react/lib/Utilities';
+import { Fabric } from '@fluentui/react/lib/Fabric';
 
 setBaseUrl('./dist/');
 

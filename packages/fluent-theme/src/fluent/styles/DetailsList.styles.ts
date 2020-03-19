@@ -1,5 +1,5 @@
-import { ICheckStyleProps, ICheckStyles } from 'office-ui-fabric-react/lib/Check';
-import { IDetailsRowStyleProps, IDetailsRowStyles, DetailsRowGlobalClassNames } from 'office-ui-fabric-react/lib/DetailsList';
+import { ICheckStyleProps, ICheckStyles } from '@fluentui/react/lib/Check';
+import { IDetailsRowStyleProps, IDetailsRowStyles, DetailsRowGlobalClassNames } from '@fluentui/react/lib/DetailsList';
 import { FontWeights, getGlobalClassNames } from '@uifabric/styling';
 
 export const CheckStyles = (props: ICheckStyleProps): Partial<ICheckStyles> => {

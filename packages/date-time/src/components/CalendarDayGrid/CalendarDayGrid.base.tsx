@@ -11,7 +11,7 @@ import {
   findIndex,
   initializeComponentRef
 } from '@uifabric/utilities';
-import { FocusZone } from 'office-ui-fabric-react/lib/FocusZone';
+import { FocusZone } from '@fluentui/react/lib/FocusZone';
 import {
   addDays,
   addWeeks,
@@ -20,7 +20,7 @@ import {
   getDateRangeArray,
   isInDateRangeArray,
   getWeekNumbersInMonth
-} from 'office-ui-fabric-react/lib/utilities/dateMath/DateMath';
+} from '@fluentui/react/lib/utilities/dateMath/DateMath';
 import { ICalendarDayGridProps, ICalendarDayGridStyleProps, ICalendarDayGridStyles } from './CalendarDayGrid.types';
 import { IProcessedStyleSet } from '@uifabric/styling';
 import { DateRangeType, DayOfWeek } from '../Calendar/Calendar.types';

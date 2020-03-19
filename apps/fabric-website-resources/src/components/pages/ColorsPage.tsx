@@ -1,11 +1,11 @@
 import * as React from 'react';
 import './ColorsPage.global.scss';
 
-import { Async } from 'office-ui-fabric-react/lib/Utilities';
-import { loadTheme } from 'office-ui-fabric-react/lib/Styling';
+import { Async } from '@fluentui/react/lib/Utilities';
+import { loadTheme } from '@fluentui/react/lib/Styling';
 import { CodepenComponent } from '@uifabric/example-app-base';
-import { IColor } from 'office-ui-fabric-react/lib/utilities/color/interfaces';
-import { getContrastRatio, isDark } from 'office-ui-fabric-react/lib/utilities/color/shades';
+import { IColor } from '@fluentui/react/lib/utilities/color/interfaces';
+import { getContrastRatio, isDark } from '@fluentui/react/lib/utilities/color/shades';
 
 import {
   ThemeGenerator,
@@ -14,18 +14,18 @@ import {
   FabricSlots,
   IThemeSlotRule,
   IThemeRules
-} from 'office-ui-fabric-react/lib/ThemeGenerator';
+} from '@fluentui/react/lib/ThemeGenerator';
 
-import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
-import { Callout } from 'office-ui-fabric-react/lib/Callout';
-import { ColorPicker } from 'office-ui-fabric-react/lib/ColorPicker';
+import { PrimaryButton } from '@fluentui/react/lib/Button';
+import { Callout } from '@fluentui/react/lib/Callout';
+import { ColorPicker } from '@fluentui/react/lib/ColorPicker';
 
-import { ChoiceGroup } from 'office-ui-fabric-react/lib/ChoiceGroup';
-import { Pivot, PivotItem } from 'office-ui-fabric-react/lib/Pivot';
-import { TeachingBubbleBasicExample } from 'office-ui-fabric-react/lib/components/TeachingBubble/examples/TeachingBubble.Basic.Example';
-import { TextFieldBasicExample } from 'office-ui-fabric-react/lib/components/TextField/examples/TextField.Basic.Example';
-import { ToggleBasicExample } from 'office-ui-fabric-react/lib/components/Toggle/examples/Toggle.Basic.Example';
-import { ProgressIndicatorBasicExample } from 'office-ui-fabric-react/lib/components/ProgressIndicator/examples/ProgressIndicator.Basic.Example';
+import { ChoiceGroup } from '@fluentui/react/lib/ChoiceGroup';
+import { Pivot, PivotItem } from '@fluentui/react/lib/Pivot';
+import { TeachingBubbleBasicExample } from '@fluentui/react/lib/components/TeachingBubble/examples/TeachingBubble.Basic.Example';
+import { TextFieldBasicExample } from '@fluentui/react/lib/components/TextField/examples/TextField.Basic.Example';
+import { ToggleBasicExample } from '@fluentui/react/lib/components/Toggle/examples/Toggle.Basic.Example';
+import { ProgressIndicatorBasicExample } from '@fluentui/react/lib/components/ProgressIndicator/examples/ProgressIndicator.Basic.Example';
 
 export interface IColorsPageState {
   themeRules: IThemeRules;

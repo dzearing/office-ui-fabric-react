@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { IComboBoxOption, VirtualizedComboBox, Fabric } from 'office-ui-fabric-react/lib/index';
+import { IComboBoxOption, VirtualizedComboBox, Fabric } from '@fluentui/react/lib/index';
 
 // tslint:disable:jsx-no-lambda
 export class ComboBoxVirtualizedExample extends React.Component<{}, {}> {

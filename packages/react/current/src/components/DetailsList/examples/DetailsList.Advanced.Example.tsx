@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { Link } from 'office-ui-fabric-react/lib/Link';
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
-import { CommandBar } from 'office-ui-fabric-react/lib/CommandBar';
-import { Announced } from 'office-ui-fabric-react/lib/Announced';
-import { IContextualMenuProps, IContextualMenuItem, DirectionalHint, ContextualMenu } from 'office-ui-fabric-react/lib/ContextualMenu';
+import { Link } from '@fluentui/react/lib/Link';
+import { TextField } from '@fluentui/react/lib/TextField';
+import { CommandBar } from '@fluentui/react/lib/CommandBar';
+import { Announced } from '@fluentui/react/lib/Announced';
+import { IContextualMenuProps, IContextualMenuItem, DirectionalHint, ContextualMenu } from '@fluentui/react/lib/ContextualMenu';
 import {
   CheckboxVisibility,
   ColumnActionsMode,
@@ -16,10 +16,10 @@ import {
   SelectionMode,
   buildColumns,
   IDetailsColumnProps
-} from 'office-ui-fabric-react/lib/DetailsList';
+} from '@fluentui/react/lib/DetailsList';
 import { createListItems, isGroupable, IExampleItem } from '@uifabric/example-data';
-import { memoizeFunction } from 'office-ui-fabric-react/lib/Utilities';
-import { getTheme, mergeStyleSets } from 'office-ui-fabric-react/lib/Styling';
+import { memoizeFunction } from '@fluentui/react/lib/Utilities';
+import { getTheme, mergeStyleSets } from '@fluentui/react/lib/Styling';
 
 const theme = getTheme();
 const headerDividerClass = 'DetailsListAdvancedExample-divider';

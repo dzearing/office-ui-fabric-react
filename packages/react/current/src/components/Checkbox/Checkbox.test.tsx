@@ -3,7 +3,7 @@ import * as renderer from 'react-test-renderer';
 import { mount, ReactWrapper } from 'enzyme';
 
 import { Checkbox } from './Checkbox';
-import { IRefObject } from 'office-ui-fabric-react/lib/Utilities';
+import { IRefObject } from '@fluentui/react/lib/Utilities';
 import { ICheckbox } from './Checkbox.types';
 
 let checkbox: ICheckbox | undefined;

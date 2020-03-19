@@ -10,7 +10,7 @@ import {
   Selection,
   SelectionMode
 } from '@fluentui/react';
-import { DetailsHeader } from 'office-ui-fabric-react/lib/components/DetailsList/DetailsHeader';
+import { DetailsHeader } from '@fluentui/react/lib/components/DetailsList/DetailsHeader';
 
 const _items: {}[] = [];
 const _selection = new Selection();

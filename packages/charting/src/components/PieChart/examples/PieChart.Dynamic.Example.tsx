@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { PieChart, IPieChartProps } from '@uifabric/charting/lib/PieChart';
-import { DefaultPalette } from 'office-ui-fabric-react/lib/Styling';
+import { DefaultPalette } from '@fluentui/react/lib/Styling';
 import { IDataPoint } from '@uifabric/charting/lib/types/IDataPoint';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { DefaultButton } from '@fluentui/react/lib/Button';
 
 export interface IExampleState {
   dynamicData: IDataPoint[];

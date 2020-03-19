@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import { Label } from 'office-ui-fabric-react/lib/Label';
-import { TextField } from 'office-ui-fabric-react/lib/TextField';
-import { getId } from 'office-ui-fabric-react/lib/Utilities';
+import { Label } from '@fluentui/react/lib/Label';
+import { TextField } from '@fluentui/react/lib/TextField';
+import { getId } from '@fluentui/react/lib/Utilities';
 
 export const LabelBasicExample = () => {
   // Use getId() to ensure that the ID is unique on the page.

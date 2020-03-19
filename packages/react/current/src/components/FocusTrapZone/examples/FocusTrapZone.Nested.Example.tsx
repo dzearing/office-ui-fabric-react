@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { FocusTrapZone } from 'office-ui-fabric-react/lib/FocusTrapZone';
-import { Stack } from 'office-ui-fabric-react/lib/Stack';
-import { Toggle } from 'office-ui-fabric-react/lib/Toggle';
+import { DefaultButton } from '@fluentui/react/lib/Button';
+import { FocusTrapZone } from '@fluentui/react/lib/FocusTrapZone';
+import { Stack } from '@fluentui/react/lib/Stack';
+import { Toggle } from '@fluentui/react/lib/Toggle';
 
 interface IFocusTrapComponentProps {
   zoneNumber: number;

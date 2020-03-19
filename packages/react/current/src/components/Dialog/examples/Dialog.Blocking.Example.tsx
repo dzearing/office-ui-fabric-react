@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Dialog, DialogType, DialogFooter } from 'office-ui-fabric-react/lib/Dialog';
-import { PrimaryButton, DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { ContextualMenu } from 'office-ui-fabric-react/lib/ContextualMenu';
-import { SpinButton } from 'office-ui-fabric-react/lib/SpinButton';
-import { Checkbox } from 'office-ui-fabric-react/lib/Checkbox';
-import { ComboBox, IComboBoxOption, SelectableOptionMenuItemType } from 'office-ui-fabric-react/lib/index';
+import { Dialog, DialogType, DialogFooter } from '@fluentui/react/lib/Dialog';
+import { PrimaryButton, DefaultButton } from '@fluentui/react/lib/Button';
+import { ContextualMenu } from '@fluentui/react/lib/ContextualMenu';
+import { SpinButton } from '@fluentui/react/lib/SpinButton';
+import { Checkbox } from '@fluentui/react/lib/Checkbox';
+import { ComboBox, IComboBoxOption, SelectableOptionMenuItemType } from '@fluentui/react/lib/index';
 
 export interface IDialogBlockingExampleState {
   hideDialog: boolean;

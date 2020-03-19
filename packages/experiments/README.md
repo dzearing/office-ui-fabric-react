@@ -13,7 +13,7 @@ import { ComponentName } from '@uifabric/experiments/lib/ComponentName';
 Once the experimental component graduates to a production release, the component will be available at:
 
 ```js
-import { ComponentName } from 'office-ui-fabric-react/lib/ComponentName';
+import { ComponentName } from '@fluentui/react/lib/ComponentName';
 ```
 
 ### Testing locally

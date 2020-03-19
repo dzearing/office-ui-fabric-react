@@ -1,7 +1,7 @@
-import { Customizer, getId } from 'office-ui-fabric-react/lib/Utilities';
-import { Toggle } from 'office-ui-fabric-react/lib/Toggle';
-import { LayerHost } from 'office-ui-fabric-react/lib/Layer';
-import { Panel } from 'office-ui-fabric-react/lib/Panel';
+import { Customizer, getId } from '@fluentui/react/lib/Utilities';
+import { Toggle } from '@fluentui/react/lib/Toggle';
+import { LayerHost } from '@fluentui/react/lib/Layer';
+import { Panel } from '@fluentui/react/lib/Panel';
 import * as React from 'react';
 
 export interface ILayerCustomizedExampleState {

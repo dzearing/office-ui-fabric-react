@@ -1,4 +1,4 @@
-import { IBaseProps, IRefObject, IStyleFunctionOrObject } from 'office-ui-fabric-react/lib/Utilities';
+import { IBaseProps, IRefObject, IStyleFunctionOrObject } from '@fluentui/react/lib/Utilities';
 import { ICalendarStrings, ICalendarIconStrings, ICalendarFormatDateCallbacks, AnimationDirection } from '../Calendar.types';
 import { ITheme } from '@uifabric/styling';
 import { ICalendarPickerStyleProps, ICalendarPickerStyles } from '../CalendarPicker/CalendarPicker.types';

@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Pivot, PivotItem, PivotLinkFormat, PivotLinkSize, IPivotItemProps } from 'office-ui-fabric-react/lib/Pivot';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { Label } from 'office-ui-fabric-react/lib/Label';
+import { Pivot, PivotItem, PivotLinkFormat, PivotLinkSize, IPivotItemProps } from '@fluentui/react/lib/Pivot';
+import { DefaultButton } from '@fluentui/react/lib/Button';
+import { Label } from '@fluentui/react/lib/Label';
 
 export interface IPivotOnChangeExampleState {
   shouldShowFirstPivotItem: boolean;

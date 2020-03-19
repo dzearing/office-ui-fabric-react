@@ -4,7 +4,7 @@ import * as React from 'react';
 import { SelectedItemsList } from '../SelectedItemsList';
 import { SelectedPersona } from './Items/SelectedPersona';
 import { ISelectedItemsListProps, ISelectedItemsList, BaseSelectedItem } from '../SelectedItemsList.types';
-import { IPersonaProps } from 'office-ui-fabric-react/lib/Persona';
+import { IPersonaProps } from '@fluentui/react/lib/Persona';
 
 type PartiallyOptional<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>> & Pick<Partial<T>, keyof T>;
 export type ISelectedPeopleListProps<TPersona> = PartiallyOptional<ISelectedItemsListProps<TPersona>, 'onRenderItem'>;

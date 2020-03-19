@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { ColorPicker, Toggle, getColorFromString, IColor, IColorPickerStyles, updateA } from 'office-ui-fabric-react/lib/index';
-import { mergeStyleSets } from 'office-ui-fabric-react/lib/Styling';
+import { ColorPicker, Toggle, getColorFromString, IColor, IColorPickerStyles, updateA } from '@fluentui/react/lib/index';
+import { mergeStyleSets } from '@fluentui/react/lib/Styling';
 
 const classNames = mergeStyleSets({
   wrapper: { display: 'flex' },

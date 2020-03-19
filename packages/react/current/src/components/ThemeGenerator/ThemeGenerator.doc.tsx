@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { loadTheme } from 'office-ui-fabric-react/lib/Styling';
-import { IColor } from 'office-ui-fabric-react/lib/utilities/color/interfaces';
-import { getContrastRatio, isDark } from 'office-ui-fabric-react/lib/utilities/color/shades';
+import { loadTheme } from '@fluentui/react/lib/Styling';
+import { IColor } from '@fluentui/react/lib/utilities/color/interfaces';
+import { getContrastRatio, isDark } from '@fluentui/react/lib/utilities/color/shades';
 
 import {
   ThemeGenerator,
@@ -10,12 +10,12 @@ import {
   FabricSlots,
   IThemeSlotRule,
   IThemeRules
-} from 'office-ui-fabric-react/lib/ThemeGenerator';
+} from '@fluentui/react/lib/ThemeGenerator';
 
-import { Callout } from 'office-ui-fabric-react/lib/Callout';
-import { ColorPicker } from 'office-ui-fabric-react/lib/ColorPicker';
+import { Callout } from '@fluentui/react/lib/Callout';
+import { ColorPicker } from '@fluentui/react/lib/ColorPicker';
 
-import { ChoiceGroup } from 'office-ui-fabric-react/lib/ChoiceGroup';
+import { ChoiceGroup } from '@fluentui/react/lib/ChoiceGroup';
 import { TeachingBubbleBasicExample } from '../TeachingBubble/examples/TeachingBubble.Basic.Example';
 import { TextFieldBasicExample } from '../TextField/examples/TextField.Basic.Example';
 import { ToggleBasicExample } from '../Toggle/examples/Toggle.Basic.Example';

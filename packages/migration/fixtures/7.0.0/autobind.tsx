@@ -1,6 +1,6 @@
 import { Foo } from 'bar';
 
-import { IBaseProps, autobind } from 'office-ui-fabric-react/lib/Utilities';
+import { IBaseProps, autobind } from '@fluentui/react/lib/Utilities';
 
 class Foo {
   @autobind

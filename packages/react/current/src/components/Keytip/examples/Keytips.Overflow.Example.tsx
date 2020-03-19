@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { keytipMap } from 'office-ui-fabric-react/lib/components/Keytip/examples/KeytipSetup';
-import { IOverflowSetItemProps, OverflowSet } from 'office-ui-fabric-react/lib/OverflowSet';
-import { CommandBarButton, DefaultButton } from 'office-ui-fabric-react/lib/Button';
+import { keytipMap } from '@fluentui/react/lib/components/Keytip/examples/KeytipSetup';
+import { IOverflowSetItemProps, OverflowSet } from '@fluentui/react/lib/OverflowSet';
+import { CommandBarButton, DefaultButton } from '@fluentui/react/lib/Button';
 
 export interface IKeytipsOverflowExampleState {
   items: IOverflowSetItemProps[];

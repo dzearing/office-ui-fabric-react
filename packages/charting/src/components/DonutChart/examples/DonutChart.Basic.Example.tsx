@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { DonutChart, IDonutChartProps, IChartProps, IChartDataPoint } from '@uifabric/charting';
-import { DefaultPalette } from 'office-ui-fabric-react/lib/Styling';
+import { DefaultPalette } from '@fluentui/react/lib/Styling';
 
 export class DonutChartBasicExample extends React.Component<IDonutChartProps, {}> {
   constructor(props: IDonutChartProps) {

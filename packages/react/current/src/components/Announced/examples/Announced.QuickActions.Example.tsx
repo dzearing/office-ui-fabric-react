@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Announced } from 'office-ui-fabric-react/lib/Announced';
+import { Announced } from '@fluentui/react/lib/Announced';
 import {
   DetailsList,
   DetailsListLayoutMode,
@@ -8,12 +8,12 @@ import {
   IDetailsList,
   IDetailsRowProps,
   DetailsRow
-} from 'office-ui-fabric-react/lib/DetailsList';
-import { Async } from 'office-ui-fabric-react/lib/Utilities';
-import { MarqueeSelection } from 'office-ui-fabric-react/lib/MarqueeSelection';
-import { IconButton, PrimaryButton } from 'office-ui-fabric-react/lib/Button';
-import { Dialog, DialogFooter } from 'office-ui-fabric-react/lib/Dialog';
-import { TextField, ITextField } from 'office-ui-fabric-react/lib/TextField';
+} from '@fluentui/react/lib/DetailsList';
+import { Async } from '@fluentui/react/lib/Utilities';
+import { MarqueeSelection } from '@fluentui/react/lib/MarqueeSelection';
+import { IconButton, PrimaryButton } from '@fluentui/react/lib/Button';
+import { Dialog, DialogFooter } from '@fluentui/react/lib/Dialog';
+import { TextField, ITextField } from '@fluentui/react/lib/TextField';
 
 const _items: IAnnouncedQuickActionsExampleItem[] = [];
 

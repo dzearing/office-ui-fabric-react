@@ -1,6 +1,6 @@
 import { IStyle, ITheme } from '../../../Styling';
 import { IRefObject, IStyleFunctionOrObject } from '../../../Utilities';
-import { ISuggestionModel } from 'office-ui-fabric-react/lib/Pickers';
+import { ISuggestionModel } from '@fluentui/react/lib/Pickers';
 
 /** SuggestionItem component. */
 export interface ISuggestionsItem {}

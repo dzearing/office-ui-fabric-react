@@ -1,1 +1,1 @@
-export * from 'office-ui-fabric-react/lib/utilities/dateValues/DateValues';
+export * from '@fluentui/react/lib/utilities/dateValues/DateValues';

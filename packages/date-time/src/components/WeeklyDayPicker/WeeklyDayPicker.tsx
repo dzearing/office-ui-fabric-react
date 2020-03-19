@@ -2,7 +2,7 @@ import * as React from 'react';
 import { IWeeklyDayPickerProps, IWeeklyDayPickerStyleProps, IWeeklyDayPickerStyles } from './WeeklyDayPicker.types';
 import { WeeklyDayPickerBase } from './WeeklyDayPicker.base';
 import { styles } from './WeeklyDayPicker.styles';
-import { styled } from 'office-ui-fabric-react/lib/Utilities';
+import { styled } from '@fluentui/react/lib/Utilities';
 
 /**
  * WeeklyDayPicker description

@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { DetailsColumn } from 'office-ui-fabric-react/lib/components/DetailsList/DetailsColumn';
-import { IColumn, ColumnActionsMode, IDetailsHeaderProps } from 'office-ui-fabric-react/lib/components/DetailsList/DetailsList.types';
+import { DetailsColumn } from '@fluentui/react/lib/components/DetailsList/DetailsColumn';
+import { IColumn, ColumnActionsMode, IDetailsHeaderProps } from '@fluentui/react/lib/components/DetailsList/DetailsList.types';
 import { mount } from 'enzyme';
-import { DetailsList } from 'office-ui-fabric-react/lib/components/DetailsList/DetailsList';
+import { DetailsList } from '@fluentui/react/lib/components/DetailsList/DetailsList';
 import { IRenderFunction } from '@uifabric/utilities';
-import { ITooltipHostProps, TooltipHost } from 'office-ui-fabric-react/lib/Tooltip';
+import { ITooltipHostProps, TooltipHost } from '@fluentui/react/lib/Tooltip';
 
 let mockOnColumnClick: jest.Mock<{}>;
 let baseColumn: IColumn;

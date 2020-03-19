@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { getId } from 'office-ui-fabric-react/lib/Utilities';
+import { getId } from '@fluentui/react/lib/Utilities';
 import {
   getTheme,
   mergeStyleSets,

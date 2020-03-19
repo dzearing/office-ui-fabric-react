@@ -1,9 +1,9 @@
 import * as React from 'react';
 import * as styles from './Layer.Example.scss';
-import { AnimationClassNames } from 'office-ui-fabric-react/lib/Styling';
-import { css, Async } from 'office-ui-fabric-react/lib/Utilities';
-import { Layer } from 'office-ui-fabric-react/lib/Layer';
-import { Toggle } from 'office-ui-fabric-react/lib/Toggle';
+import { AnimationClassNames } from '@fluentui/react/lib/Styling';
+import { css, Async } from '@fluentui/react/lib/Utilities';
+import { Layer } from '@fluentui/react/lib/Layer';
+import { Toggle } from '@fluentui/react/lib/Toggle';
 
 interface ILayerBasicExampleContext {
   message?: string;

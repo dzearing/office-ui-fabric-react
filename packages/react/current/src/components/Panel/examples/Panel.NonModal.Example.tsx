@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { DefaultButton } from 'office-ui-fabric-react/lib/Button';
-import { Panel } from 'office-ui-fabric-react/lib/Panel';
+import { DefaultButton } from '@fluentui/react/lib/Button';
+import { Panel } from '@fluentui/react/lib/Panel';
 import { useConstCallback } from '@uifabric/react-hooks';
 
 const explanation = "This panel is non-modal: even when it's open, it allows interacting with content outside the panel.";

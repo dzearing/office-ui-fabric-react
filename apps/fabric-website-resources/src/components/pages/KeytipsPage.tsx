@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { KeytipLayer } from 'office-ui-fabric-react/lib/KeytipLayer';
+import { KeytipLayer } from '@fluentui/react/lib/KeytipLayer';
 
 import { DemoPage } from '../DemoPage';
 
-import { KeytipsPageProps } from 'office-ui-fabric-react/lib/components/Keytip/Keytips.doc';
+import { KeytipsPageProps } from '@fluentui/react/lib/components/Keytip/Keytips.doc';
 
 export const KeytipsPage = (props: { isHeaderVisible: boolean }) => (
   <div>

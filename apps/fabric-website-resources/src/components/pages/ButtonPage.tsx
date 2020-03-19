@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { ButtonPageProps } from 'office-ui-fabric-react/lib/components/Button/Button.doc';
+import { ButtonPageProps } from '@fluentui/react/lib/components/Button/Button.doc';
 import { DemoPage } from '../DemoPage';
-import { Toggle, IToggleStyles } from 'office-ui-fabric-react/lib/Toggle';
+import { Toggle, IToggleStyles } from '@fluentui/react/lib/Toggle';
 
 const toggleStyles: Partial<IToggleStyles> = {
   root: { margin: '10px 0' }

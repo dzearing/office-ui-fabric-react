@@ -1,6 +1,6 @@
-import { DefaultButton, PrimaryButton } from 'office-ui-fabric-react/lib/Button';
-import { Dialog, DialogFooter, DialogType } from 'office-ui-fabric-react/lib/Dialog';
-import { Panel, PanelType } from 'office-ui-fabric-react/lib/Panel';
+import { DefaultButton, PrimaryButton } from '@fluentui/react/lib/Button';
+import { Dialog, DialogFooter, DialogType } from '@fluentui/react/lib/Dialog';
+import { Panel, PanelType } from '@fluentui/react/lib/Panel';
 import * as React from 'react';
 
 export interface ILayerNestedLayersExampleState {

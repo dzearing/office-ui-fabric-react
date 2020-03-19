@@ -1,4 +1,4 @@
-import { DayOfWeek, FirstWeekOfYear, DateRangeType } from 'office-ui-fabric-react/lib/utilities/dateValues/DateValues';
+import { DayOfWeek, FirstWeekOfYear, DateRangeType } from '@fluentui/react/lib/utilities/dateValues/DateValues';
 import { IRefObject, IBaseProps, IStyleFunctionOrObject } from '@uifabric/utilities';
 import { IStyle, ITheme } from '@uifabric/styling';
 import { ICalendarDayProps, ICalendarDayGridStyles } from './CalendarDay/CalendarDay.types';

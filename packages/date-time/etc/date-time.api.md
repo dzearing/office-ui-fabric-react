@@ -4,21 +4,21 @@
 
 ```ts
 
-import { DateRangeType } from 'office-ui-fabric-react/lib/utilities/dateValues/DateValues';
-import { DayOfWeek } from 'office-ui-fabric-react/lib/utilities/dateValues/DateValues';
-import { FirstWeekOfYear } from 'office-ui-fabric-react/lib/utilities/dateValues/DateValues';
+import { DateRangeType } from '@fluentui/react/lib/utilities/dateValues/DateValues';
+import { DayOfWeek } from '@fluentui/react/lib/utilities/dateValues/DateValues';
+import { FirstWeekOfYear } from '@fluentui/react/lib/utilities/dateValues/DateValues';
 import { IBaseProps } from '@uifabric/utilities';
-import { IBaseProps as IBaseProps_2 } from 'office-ui-fabric-react/lib/Utilities';
+import { IBaseProps as IBaseProps_2 } from '@fluentui/react/lib/Utilities';
 import { ICalendarStrings as ICalendarStrings_2 } from '@uifabric/date-time';
-import { ICalloutProps } from 'office-ui-fabric-react/lib/Callout';
+import { ICalloutProps } from '@fluentui/react/lib/Callout';
 import { IComponentAs } from '@uifabric/utilities';
 import { IProcessedStyleSet } from '@uifabric/styling';
 import { IRefObject } from '@uifabric/utilities';
-import { IRefObject as IRefObject_2 } from 'office-ui-fabric-react/lib/Utilities';
+import { IRefObject as IRefObject_2 } from '@fluentui/react/lib/Utilities';
 import { IStyle } from '@uifabric/styling';
 import { IStyleFunctionOrObject } from '@uifabric/utilities';
-import { IStyleFunctionOrObject as IStyleFunctionOrObject_2 } from 'office-ui-fabric-react/lib/Utilities';
-import { ITextFieldProps } from 'office-ui-fabric-react/lib/TextField';
+import { IStyleFunctionOrObject as IStyleFunctionOrObject_2 } from '@fluentui/react/lib/Utilities';
+import { ITextFieldProps } from '@fluentui/react/lib/TextField';
 import { ITheme } from '@uifabric/styling';
 import * as React from 'react';
 

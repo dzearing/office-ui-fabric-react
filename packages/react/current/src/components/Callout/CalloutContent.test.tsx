@@ -4,7 +4,7 @@ import * as React from 'react';
 
 import { CalloutContentBase } from './CalloutContent.base';
 import { mount } from 'enzyme';
-import { Rectangle } from 'office-ui-fabric-react/lib/utilities/positioning';
+import { Rectangle } from '@fluentui/react/lib/utilities/positioning';
 
 describe('CalloutContentBase', () => {
   it('Ensure callout content updates when needed', () => {

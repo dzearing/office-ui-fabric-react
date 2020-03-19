@@ -1,5 +1,5 @@
-import { IDropdownStyleProps, IDropdownStyles } from 'office-ui-fabric-react/lib/Dropdown';
-import { RectangleEdge } from 'office-ui-fabric-react/lib/utilities/positioning';
+import { IDropdownStyleProps, IDropdownStyles } from '@fluentui/react/lib/Dropdown';
+import { RectangleEdge } from '@fluentui/react/lib/utilities/positioning';
 import { IStyle } from '@uifabric/styling';
 
 export const DropdownStyles = (props: IDropdownStyleProps): Partial<IDropdownStyles> => {

@@ -2,9 +2,9 @@ import * as React from 'react';
 import { initializeComponentRef, KeyCodes, css, getId, getRTL, getRTLSafeKeyCode, warnMutuallyExclusive } from '../../Utilities';
 import { ISliderProps, ISlider, ISliderStyleProps, ISliderStyles, ISliderMarks } from './Slider.types';
 import { classNamesFunction, getNativeProps, divProperties } from '../../Utilities';
-import { Label } from 'office-ui-fabric-react/lib/Label';
-import { TooltipHost } from 'office-ui-fabric-react/lib/Tooltip';
-import { DirectionalHint } from 'office-ui-fabric-react/lib/common/DirectionalHint';
+import { Label } from '@fluentui/react/lib/Label';
+import { TooltipHost } from '@fluentui/react/lib/Tooltip';
+import { DirectionalHint } from '@fluentui/react/lib/common/DirectionalHint';
 import { Async, EventGroup, FocusRects } from '@uifabric/utilities';
 export interface ISliderState {
   value?: number;

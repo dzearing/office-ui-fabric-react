@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Markdown } from '@uifabric/example-app-base';
-import { mergeStyleSets, DefaultPalette } from 'office-ui-fabric-react/lib/Styling';
+import { mergeStyleSets, DefaultPalette } from '@fluentui/react/lib/Styling';
 
 const classNames = mergeStyleSets({
   root: {

@@ -11,13 +11,13 @@ import {
   DocumentCardLocation,
   DocumentCardPreview,
   DocumentCardTitle
-} from 'office-ui-fabric-react/lib/DocumentCard';
-import { ImageFit } from 'office-ui-fabric-react/lib/Image';
-import { Persona, PersonaSize } from 'office-ui-fabric-react/lib/Persona';
-import { Checkbox } from 'office-ui-fabric-react/lib/Checkbox';
-import { IBasePickerProps, BasePickerListBelow, IPickerItemProps, ISuggestionItemProps } from 'office-ui-fabric-react/lib/Pickers';
-import { IButtonProps } from 'office-ui-fabric-react/lib/Button';
-import { mergeStyles } from 'office-ui-fabric-react/lib/Styling';
+} from '@fluentui/react/lib/DocumentCard';
+import { ImageFit } from '@fluentui/react/lib/Image';
+import { Persona, PersonaSize } from '@fluentui/react/lib/Persona';
+import { Checkbox } from '@fluentui/react/lib/Checkbox';
+import { IBasePickerProps, BasePickerListBelow, IPickerItemProps, ISuggestionItemProps } from '@fluentui/react/lib/Pickers';
+import { IButtonProps } from '@fluentui/react/lib/Button';
+import { mergeStyles } from '@fluentui/react/lib/Styling';
 
 export interface IPeoplePickerExampleState {
   contextualMenuVisible?: boolean;

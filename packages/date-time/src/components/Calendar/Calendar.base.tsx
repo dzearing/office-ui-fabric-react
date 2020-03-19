@@ -8,7 +8,7 @@ import {
   ICalendarStyleProps,
   ICalendarStyles
 } from './Calendar.types';
-import { DayOfWeek, FirstWeekOfYear, DateRangeType } from 'office-ui-fabric-react/lib/utilities/dateValues/DateValues';
+import { DayOfWeek, FirstWeekOfYear, DateRangeType } from '@fluentui/react/lib/utilities/dateValues/DateValues';
 import { CalendarDay } from './CalendarDay/CalendarDay';
 import { CalendarMonth } from './CalendarMonth/CalendarMonth';
 import { ICalendarDay } from './CalendarDay/CalendarDay.types';
@@ -16,7 +16,7 @@ import { ICalendarMonth } from './CalendarMonth/CalendarMonth.types';
 import { css, KeyCodes, classNamesFunction, focusAsync, format, initializeComponentRef, FocusRects } from '@uifabric/utilities';
 import { IProcessedStyleSet } from '@uifabric/styling';
 import { DayPickerStrings } from './defaults';
-import { addMonths, addYears } from 'office-ui-fabric-react/lib/utilities/dateMath/DateMath';
+import { addMonths, addYears } from '@fluentui/react/lib/utilities/dateMath/DateMath';
 
 const getClassNames = classNamesFunction<ICalendarStyleProps, ICalendarStyles>();
 

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Pivot, PivotItem } from 'office-ui-fabric-react/lib/Pivot';
+import { Pivot, PivotItem } from '@fluentui/react/lib/Pivot';
 
 export class PivotSeparateExample extends React.Component<any, any> {
   public state = { selectedKey: 'rectangleRed' };

@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
-import { IPersona } from 'office-ui-fabric-react/lib/Persona';
-import { Selection } from 'office-ui-fabric-react/lib/Selection';
-import { Toggle } from 'office-ui-fabric-react/lib/Toggle';
+import { PrimaryButton } from '@fluentui/react/lib/Button';
+import { IPersona } from '@fluentui/react/lib/Persona';
+import { Selection } from '@fluentui/react/lib/Selection';
+import { Toggle } from '@fluentui/react/lib/Toggle';
 import { people } from '@uifabric/example-data';
 import { SelectedPeopleList, ISelectedPeopleList } from '@uifabric/experiments/lib/SelectedItemsList';
 

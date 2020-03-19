@@ -1,14 +1,14 @@
 import * as React from 'react';
 
-import { PrimaryButton } from 'office-ui-fabric-react/lib/Button';
+import { PrimaryButton } from '@fluentui/react/lib/Button';
 import {
   IExtendedPersonaProps,
   SelectedPeopleList,
   ISelectedPeopleItemProps,
   ExtendedSelectedItem
-} from 'office-ui-fabric-react/lib/SelectedItemsList';
-import { Selection } from 'office-ui-fabric-react/lib/Selection';
-import { Stack } from 'office-ui-fabric-react/lib/Stack';
+} from '@fluentui/react/lib/SelectedItemsList';
+import { Selection } from '@fluentui/react/lib/Selection';
+import { Stack } from '@fluentui/react/lib/Stack';
 import { people, groupOne, groupTwo } from '@uifabric/example-data';
 
 export interface ISelectedPeopleListBasicExampleState {

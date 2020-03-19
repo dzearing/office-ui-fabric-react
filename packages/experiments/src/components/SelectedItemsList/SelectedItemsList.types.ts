@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { IPickerItemProps, ISuggestionModel, ValidationState } from 'office-ui-fabric-react/lib/Pickers';
-import { Selection } from 'office-ui-fabric-react/lib/Selection';
-import { IRefObject } from 'office-ui-fabric-react/lib/Utilities';
+import { IPickerItemProps, ISuggestionModel, ValidationState } from '@fluentui/react/lib/Pickers';
+import { Selection } from '@fluentui/react/lib/Selection';
+import { IRefObject } from '@fluentui/react/lib/Utilities';
 
 export interface ISelectedItemsList<T> {
   /**

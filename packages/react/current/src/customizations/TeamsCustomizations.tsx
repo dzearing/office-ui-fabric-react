@@ -6,7 +6,7 @@ import { IButtonStyles } from '../Button';
  * To consume a customization set, use the Customizer component and wrap your app:
  *
  *   import { Customizer } from '@fluentui/react';
- *   import { TeamsCustomizations } from 'office-ui-fabric-react/lib/customizations/TeamsCustomizations';
+ *   import { TeamsCustomizations } from '@fluentui/react/lib/customizations/TeamsCustomizations';
  *
  *     <Customizer {...TeamsCustomizations}>
  *       <App />

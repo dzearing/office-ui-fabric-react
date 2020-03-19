@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { HoverCard, IPlainCardProps, HoverCardType, DirectionalHint } from 'office-ui-fabric-react/lib/HoverCard';
-import { Fabric } from 'office-ui-fabric-react/lib/Fabric';
-import { mergeStyleSets } from 'office-ui-fabric-react/lib/Styling';
+import { HoverCard, IPlainCardProps, HoverCardType, DirectionalHint } from '@fluentui/react/lib/HoverCard';
+import { Fabric } from '@fluentui/react/lib/Fabric';
+import { mergeStyleSets } from '@fluentui/react/lib/Styling';
 import { IconButton } from '@fluentui/react';
 
 const classNames = mergeStyleSets({
