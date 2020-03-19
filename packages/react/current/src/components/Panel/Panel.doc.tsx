@@ -12,17 +12,17 @@ import { PanelLightDismissCustomExample } from './examples/Panel.LightDismissCus
 import { PanelNonModalExample } from './examples/Panel.NonModal.Example';
 import { PanelSizesExample } from './examples/Panel.Sizes.Example';
 
-const PanelBasicExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Panel/examples/Panel.Basic.Example.tsx') as string;
-const PanelSizesExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Panel/examples/Panel.Sizes.Example.tsx') as string;
-const PanelConfirmDismissExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Panel/examples/Panel.ConfirmDismiss.Example.tsx') as string;
-const PanelControlledExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Panel/examples/Panel.Controlled.Example.tsx') as string;
-const PanelHiddenOnDismissExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Panel/examples/Panel.HiddenOnDismiss.Example.tsx') as string;
-const PanelLightDismissExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Panel/examples/Panel.LightDismiss.Example.tsx') as string;
-const PanelLightDismissCustomExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Panel/examples/Panel.LightDismissCustom.Example.tsx') as string;
-const PanelNonModalExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Panel/examples/Panel.NonModal.Example.tsx') as string;
-const PanelFooterExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Panel/examples/Panel.Footer.Example.tsx') as string;
-const PanelNavigationExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Panel/examples/Panel.Navigation.Example.tsx') as string;
-const PanelHandleDismissTargetExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Panel/examples/Panel.HandleDismissTarget.Example.tsx') as string;
+const PanelBasicExampleCode = require('!raw-loader!@fluentui/react/src/components/Panel/examples/Panel.Basic.Example.tsx') as string;
+const PanelSizesExampleCode = require('!raw-loader!@fluentui/react/src/components/Panel/examples/Panel.Sizes.Example.tsx') as string;
+const PanelConfirmDismissExampleCode = require('!raw-loader!@fluentui/react/src/components/Panel/examples/Panel.ConfirmDismiss.Example.tsx') as string;
+const PanelControlledExampleCode = require('!raw-loader!@fluentui/react/src/components/Panel/examples/Panel.Controlled.Example.tsx') as string;
+const PanelHiddenOnDismissExampleCode = require('!raw-loader!@fluentui/react/src/components/Panel/examples/Panel.HiddenOnDismiss.Example.tsx') as string;
+const PanelLightDismissExampleCode = require('!raw-loader!@fluentui/react/src/components/Panel/examples/Panel.LightDismiss.Example.tsx') as string;
+const PanelLightDismissCustomExampleCode = require('!raw-loader!@fluentui/react/src/components/Panel/examples/Panel.LightDismissCustom.Example.tsx') as string;
+const PanelNonModalExampleCode = require('!raw-loader!@fluentui/react/src/components/Panel/examples/Panel.NonModal.Example.tsx') as string;
+const PanelFooterExampleCode = require('!raw-loader!@fluentui/react/src/components/Panel/examples/Panel.Footer.Example.tsx') as string;
+const PanelNavigationExampleCode = require('!raw-loader!@fluentui/react/src/components/Panel/examples/Panel.Navigation.Example.tsx') as string;
+const PanelHandleDismissTargetExampleCode = require('!raw-loader!@fluentui/react/src/components/Panel/examples/Panel.HandleDismissTarget.Example.tsx') as string;
 
 export const PanelPageProps: IDocPageProps = {
   title: 'Panel',
@@ -85,10 +85,10 @@ export const PanelPageProps: IDocPageProps = {
       view: <PanelHandleDismissTargetExample />
     }
   ],
-  overview: require<string>('!raw-loader!office-ui-fabric-react/src/components/Panel/docs/PanelOverview.md'),
+  overview: require<string>('!raw-loader!@fluentui/react/src/components/Panel/docs/PanelOverview.md'),
   bestPractices: '',
-  dos: require<string>('!raw-loader!office-ui-fabric-react/src/components/Panel/docs/PanelDos.md'),
-  donts: require<string>('!raw-loader!office-ui-fabric-react/src/components/Panel/docs/PanelDonts.md'),
+  dos: require<string>('!raw-loader!@fluentui/react/src/components/Panel/docs/PanelDos.md'),
+  donts: require<string>('!raw-loader!@fluentui/react/src/components/Panel/docs/PanelDonts.md'),
   isHeaderVisible: true,
   isFeedbackVisible: true,
   allowNativeProps: true

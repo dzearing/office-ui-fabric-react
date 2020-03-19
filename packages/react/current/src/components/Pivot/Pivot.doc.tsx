@@ -12,16 +12,16 @@ import { PivotOverrideExample } from './examples/Pivot.Override.Example';
 import { PivotSeparateExample } from './examples/Pivot.Separate.Example';
 import { PivotSeparateNoSelectedKeyExample } from './examples/Pivot.SeparateNoSelectedKey.Example';
 
-const PivotRemoveExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Pivot/examples/Pivot.Remove.Example.tsx') as string;
-const PivotBasicExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Pivot/examples/Pivot.Basic.Example.tsx') as string;
-const PivotLargeExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Pivot/examples/Pivot.Large.Example.tsx') as string;
-const PivotTabsExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Pivot/examples/Pivot.Tabs.Example.tsx') as string;
-const PivotTabsLargeExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Pivot/examples/Pivot.TabsLarge.Example.tsx') as string;
-const PivotOnChangeExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Pivot/examples/Pivot.OnChange.Example.tsx') as string;
-const PivotIconCountExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Pivot/examples/Pivot.IconCount.Example.tsx') as string;
-const PivotOverrideExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Pivot/examples/Pivot.Override.Example.tsx') as string;
-const PivotSeparateExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Pivot/examples/Pivot.Separate.Example.tsx') as string;
-const PivotNoSelectedKeyExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Pivot/examples/Pivot.SeparateNoSelectedKey.Example.tsx') as string;
+const PivotRemoveExampleCode = require('!raw-loader!@fluentui/react/src/components/Pivot/examples/Pivot.Remove.Example.tsx') as string;
+const PivotBasicExampleCode = require('!raw-loader!@fluentui/react/src/components/Pivot/examples/Pivot.Basic.Example.tsx') as string;
+const PivotLargeExampleCode = require('!raw-loader!@fluentui/react/src/components/Pivot/examples/Pivot.Large.Example.tsx') as string;
+const PivotTabsExampleCode = require('!raw-loader!@fluentui/react/src/components/Pivot/examples/Pivot.Tabs.Example.tsx') as string;
+const PivotTabsLargeExampleCode = require('!raw-loader!@fluentui/react/src/components/Pivot/examples/Pivot.TabsLarge.Example.tsx') as string;
+const PivotOnChangeExampleCode = require('!raw-loader!@fluentui/react/src/components/Pivot/examples/Pivot.OnChange.Example.tsx') as string;
+const PivotIconCountExampleCode = require('!raw-loader!@fluentui/react/src/components/Pivot/examples/Pivot.IconCount.Example.tsx') as string;
+const PivotOverrideExampleCode = require('!raw-loader!@fluentui/react/src/components/Pivot/examples/Pivot.Override.Example.tsx') as string;
+const PivotSeparateExampleCode = require('!raw-loader!@fluentui/react/src/components/Pivot/examples/Pivot.Separate.Example.tsx') as string;
+const PivotNoSelectedKeyExampleCode = require('!raw-loader!@fluentui/react/src/components/Pivot/examples/Pivot.SeparateNoSelectedKey.Example.tsx') as string;
 
 export const PivotPageProps: IDocPageProps = {
   title: 'Pivot',
@@ -79,10 +79,10 @@ export const PivotPageProps: IDocPageProps = {
       view: <PivotSeparateNoSelectedKeyExample />
     }
   ],
-  overview: require<string>('!raw-loader!office-ui-fabric-react/src/components/Pivot/docs/PivotOverview.md'),
+  overview: require<string>('!raw-loader!@fluentui/react/src/components/Pivot/docs/PivotOverview.md'),
   bestPractices: '',
-  dos: require<string>('!raw-loader!office-ui-fabric-react/src/components/Pivot/docs/PivotDos.md'),
-  donts: require<string>('!raw-loader!office-ui-fabric-react/src/components/Pivot/docs/PivotDonts.md'),
+  dos: require<string>('!raw-loader!@fluentui/react/src/components/Pivot/docs/PivotDos.md'),
+  donts: require<string>('!raw-loader!@fluentui/react/src/components/Pivot/docs/PivotDonts.md'),
   isHeaderVisible: true,
   isFeedbackVisible: true,
   allowNativePropsForComponentName: 'PivotItem',

@@ -4,9 +4,9 @@ import { VerticalDividerBasicExample } from './examples/VerticalDivider.Basic.Ex
 import { IDocPageProps } from '../../common/DocPage.types';
 import { VerticalDividerCustomExample } from './examples/VerticalDivider.Custom.Example';
 
-const VerticalDividerBasicExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Divider/examples/VerticalDivider.Basic.Example.tsx') as string;
+const VerticalDividerBasicExampleCode = require('!raw-loader!@fluentui/react/src/components/Divider/examples/VerticalDivider.Basic.Example.tsx') as string;
 
-const VerticalDividerCustomExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Divider/examples/VerticalDivider.Custom.Example.tsx') as string;
+const VerticalDividerCustomExampleCode = require('!raw-loader!@fluentui/react/src/components/Divider/examples/VerticalDivider.Custom.Example.tsx') as string;
 
 export const DividerPageProps: IDocPageProps = {
   title: 'Divider',
@@ -24,10 +24,10 @@ export const DividerPageProps: IDocPageProps = {
       view: <VerticalDividerCustomExample />
     }
   ],
-  overview: require<string>('!raw-loader!office-ui-fabric-react/src/components/Divider/docs/DividerOverview.md'),
-  bestPractices: require<string>('!raw-loader!office-ui-fabric-react/src/components/Divider/docs/DividerBestPractices.md'),
-  dos: require<string>('!raw-loader!office-ui-fabric-react/src/components/Divider/docs/DividerDos.md'),
-  donts: require<string>('!raw-loader!office-ui-fabric-react/src/components/Divider/docs/DividerDonts.md'),
+  overview: require<string>('!raw-loader!@fluentui/react/src/components/Divider/docs/DividerOverview.md'),
+  bestPractices: require<string>('!raw-loader!@fluentui/react/src/components/Divider/docs/DividerBestPractices.md'),
+  dos: require<string>('!raw-loader!@fluentui/react/src/components/Divider/docs/DividerDos.md'),
+  donts: require<string>('!raw-loader!@fluentui/react/src/components/Divider/docs/DividerDonts.md'),
   isHeaderVisible: true,
   isFeedbackVisible: true
 };

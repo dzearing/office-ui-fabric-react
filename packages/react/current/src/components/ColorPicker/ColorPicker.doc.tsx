@@ -3,7 +3,7 @@ import { ColorPickerBasicExample } from './examples/ColorPicker.Basic.Example';
 
 import { IDocPageProps } from '../../common/DocPage.types';
 
-const ColorPickerBasicExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/ColorPicker/examples/ColorPicker.Basic.Example.tsx') as string;
+const ColorPickerBasicExampleCode = require('!raw-loader!@fluentui/react/src/components/ColorPicker/examples/ColorPicker.Basic.Example.tsx') as string;
 export const ColorPickerPageProps: IDocPageProps = {
   title: 'ColorPicker',
   componentName: 'ColorPicker',
@@ -15,7 +15,7 @@ export const ColorPickerPageProps: IDocPageProps = {
       view: <ColorPickerBasicExample />
     }
   ],
-  overview: require<string>('!raw-loader!office-ui-fabric-react/src/components/ColorPicker/docs/ColorPickerOverview.md'),
+  overview: require<string>('!raw-loader!@fluentui/react/src/components/ColorPicker/docs/ColorPickerOverview.md'),
   bestPractices: '',
   dos: '',
   donts: '',

@@ -5,8 +5,8 @@ import { CalendarButtonExample } from './examples/Calendar.Button.Example';
 import { CalendarInlineExample } from './examples/Calendar.Inline.Example';
 import { addMonths, addYears, addWeeks, addDays } from '@fluentui/react/lib/utilities/dateMath/DateMath';
 
-const CalendarButtonExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Calendar/examples/Calendar.Button.Example.tsx') as string;
-const CalendarInlineExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Calendar/examples/Calendar.Inline.Example.tsx') as string;
+const CalendarButtonExampleCode = require('!raw-loader!@fluentui/react/src/components/Calendar/examples/Calendar.Button.Example.tsx') as string;
+const CalendarInlineExampleCode = require('!raw-loader!@fluentui/react/src/components/Calendar/examples/Calendar.Inline.Example.tsx') as string;
 
 const today = new Date(Date.now());
 
@@ -231,10 +231,10 @@ export const CalendarPageProps: IDocPageProps = {
       )
     }
   ],
-  overview: require<string>('!raw-loader!office-ui-fabric-react/src/components/Calendar/docs/CalendarOverview.md'),
+  overview: require<string>('!raw-loader!@fluentui/react/src/components/Calendar/docs/CalendarOverview.md'),
   bestPractices: '',
-  dos: require<string>('!raw-loader!office-ui-fabric-react/src/components/Calendar/docs/CalendarDos.md'),
-  donts: require<string>('!raw-loader!office-ui-fabric-react/src/components/Calendar/docs/CalendarDonts.md'),
+  dos: require<string>('!raw-loader!@fluentui/react/src/components/Calendar/docs/CalendarDos.md'),
+  donts: require<string>('!raw-loader!@fluentui/react/src/components/Calendar/docs/CalendarDonts.md'),
   isHeaderVisible: true,
   isFeedbackVisible: true
 };

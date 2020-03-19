@@ -3,7 +3,7 @@ import { FloatingPeoplePickerTypesExample } from './examples/FloatingPeoplePicke
 
 import { IDocPageProps } from '../../../common/DocPage.types';
 
-const FloatingPeoplePickerBasicExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/FloatingPicker/PeoplePicker/examples/FloatingPeoplePicker.Basic.Example.tsx') as string;
+const FloatingPeoplePickerBasicExampleCode = require('!raw-loader!@fluentui/react/src/components/FloatingPicker/PeoplePicker/examples/FloatingPeoplePicker.Basic.Example.tsx') as string;
 
 export const FloatingPeoplePickerPageProps: IDocPageProps = {
   title: 'FloatingPeoplePicker',
@@ -17,17 +17,13 @@ export const FloatingPeoplePickerPageProps: IDocPageProps = {
       view: <FloatingPeoplePickerTypesExample />
     }
   ],
-  propertiesTablesSources: [
-    require<string>('!raw-loader!office-ui-fabric-react/src/components/FloatingPicker/BaseFloatingPicker.types.ts')
-  ],
-  overview: require<
-    string
-  >('!raw-loader!office-ui-fabric-react/src/components/FloatingPicker/PeoplePicker/docs/FloatingPeoplePickerOverview.md'),
+  propertiesTablesSources: [require<string>('!raw-loader!@fluentui/react/src/components/FloatingPicker/BaseFloatingPicker.types.ts')],
+  overview: require<string>('!raw-loader!@fluentui/react/src/components/FloatingPicker/PeoplePicker/docs/FloatingPeoplePickerOverview.md'),
   bestPractices: require<
     string
-  >('!raw-loader!office-ui-fabric-react/src/components/FloatingPicker/PeoplePicker/docs/FloatingPeoplePickerBestPractices.md'),
-  dos: require<string>('!raw-loader!office-ui-fabric-react/src/components/FloatingPicker/PeoplePicker/docs/FloatingPeoplePickerDos.md'),
-  donts: require<string>('!raw-loader!office-ui-fabric-react/src/components/FloatingPicker/PeoplePicker/docs/FloatingPeoplePickerDonts.md'),
+  >('!raw-loader!@fluentui/react/src/components/FloatingPicker/PeoplePicker/docs/FloatingPeoplePickerBestPractices.md'),
+  dos: require<string>('!raw-loader!@fluentui/react/src/components/FloatingPicker/PeoplePicker/docs/FloatingPeoplePickerDos.md'),
+  donts: require<string>('!raw-loader!@fluentui/react/src/components/FloatingPicker/PeoplePicker/docs/FloatingPeoplePickerDonts.md'),
   isHeaderVisible: true,
   isFeedbackVisible: true
 };

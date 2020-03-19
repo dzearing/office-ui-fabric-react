@@ -11,15 +11,15 @@ import { TextFieldPrefixAndSuffixExample } from './examples/TextField.PrefixAndS
 import { TextFieldStyledExample } from './examples/TextField.Styled.Example';
 import { TextFieldMaskedExample } from './examples/TextField.Masked.Example';
 
-const TextFieldBasicExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/TextField/examples/TextField.Basic.Example.tsx') as string;
-const TextFieldBorderlessExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/TextField/examples/TextField.Borderless.Example.tsx') as string;
-const TextFieldCustomRenderExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/TextField/examples/TextField.CustomRender.Example.tsx') as string;
-const TextFieldErrorMessageExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/TextField/examples/TextField.ErrorMessage.Example.tsx') as string;
-const TextFieldMultilineExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/TextField/examples/TextField.Multiline.Example.tsx') as string;
-const TextFieldControlledExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/TextField/examples/TextField.Controlled.Example.tsx') as string;
-const TextFieldPrefixAndSuffixExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/TextField/examples/TextField.PrefixAndSuffix.Example.tsx') as string;
-const TextFieldStyledExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/TextField/examples/TextField.Styled.Example.tsx') as string;
-const TextFieldMaskedExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/TextField/examples/TextField.Masked.Example.tsx') as string;
+const TextFieldBasicExampleCode = require('!raw-loader!@fluentui/react/src/components/TextField/examples/TextField.Basic.Example.tsx') as string;
+const TextFieldBorderlessExampleCode = require('!raw-loader!@fluentui/react/src/components/TextField/examples/TextField.Borderless.Example.tsx') as string;
+const TextFieldCustomRenderExampleCode = require('!raw-loader!@fluentui/react/src/components/TextField/examples/TextField.CustomRender.Example.tsx') as string;
+const TextFieldErrorMessageExampleCode = require('!raw-loader!@fluentui/react/src/components/TextField/examples/TextField.ErrorMessage.Example.tsx') as string;
+const TextFieldMultilineExampleCode = require('!raw-loader!@fluentui/react/src/components/TextField/examples/TextField.Multiline.Example.tsx') as string;
+const TextFieldControlledExampleCode = require('!raw-loader!@fluentui/react/src/components/TextField/examples/TextField.Controlled.Example.tsx') as string;
+const TextFieldPrefixAndSuffixExampleCode = require('!raw-loader!@fluentui/react/src/components/TextField/examples/TextField.PrefixAndSuffix.Example.tsx') as string;
+const TextFieldStyledExampleCode = require('!raw-loader!@fluentui/react/src/components/TextField/examples/TextField.Styled.Example.tsx') as string;
+const TextFieldMaskedExampleCode = require('!raw-loader!@fluentui/react/src/components/TextField/examples/TextField.Masked.Example.tsx') as string;
 
 export const TextFieldPageProps: IDocPageProps = {
   title: 'TextField',
@@ -72,10 +72,10 @@ export const TextFieldPageProps: IDocPageProps = {
       view: <TextFieldStyledExample />
     }
   ],
-  overview: require<string>('!raw-loader!office-ui-fabric-react/src/components/TextField/docs/TextFieldOverview.md'),
+  overview: require<string>('!raw-loader!@fluentui/react/src/components/TextField/docs/TextFieldOverview.md'),
   bestPractices: '',
-  dos: require<string>('!raw-loader!office-ui-fabric-react/src/components/TextField/docs/TextFieldDos.md'),
-  donts: require<string>('!raw-loader!office-ui-fabric-react/src/components/TextField/docs/TextFieldDonts.md'),
+  dos: require<string>('!raw-loader!@fluentui/react/src/components/TextField/docs/TextFieldDos.md'),
+  donts: require<string>('!raw-loader!@fluentui/react/src/components/TextField/docs/TextFieldDonts.md'),
   isHeaderVisible: false,
   isFeedbackVisible: true,
   allowNativeProps: true,

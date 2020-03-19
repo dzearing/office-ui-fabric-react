@@ -7,11 +7,11 @@ import { HoverCardTargetExample } from './examples/HoverCard.Target.Example';
 import { HoverCardInstantDismissExample } from './examples/HoverCard.InstantDismiss.Example';
 import { HoverCardEventListenerTargetExample } from './examples/HoverCard.EventListenerTarget.Example';
 
-const HoverCardBasicExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/HoverCard/examples/HoverCard.Basic.Example.tsx') as string;
-const HoverCardTargetExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/HoverCard/examples/HoverCard.Target.Example.tsx') as string;
-const HoverCardPlainCardExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/HoverCard/examples/HoverCard.PlainCard.Example.tsx') as string;
-const HoverCardInstantDismissExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/HoverCard/examples/HoverCard.InstantDismiss.Example.tsx') as string;
-const HoverCardEventListenerTargetExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/HoverCard/examples/HoverCard.EventListenerTarget.Example.tsx') as string;
+const HoverCardBasicExampleCode = require('!raw-loader!@fluentui/react/src/components/HoverCard/examples/HoverCard.Basic.Example.tsx') as string;
+const HoverCardTargetExampleCode = require('!raw-loader!@fluentui/react/src/components/HoverCard/examples/HoverCard.Target.Example.tsx') as string;
+const HoverCardPlainCardExampleCode = require('!raw-loader!@fluentui/react/src/components/HoverCard/examples/HoverCard.PlainCard.Example.tsx') as string;
+const HoverCardInstantDismissExampleCode = require('!raw-loader!@fluentui/react/src/components/HoverCard/examples/HoverCard.InstantDismiss.Example.tsx') as string;
+const HoverCardEventListenerTargetExampleCode = require('!raw-loader!@fluentui/react/src/components/HoverCard/examples/HoverCard.EventListenerTarget.Example.tsx') as string;
 
 export const HoverCardPageProps: IDocPageProps = {
   title: 'HoverCard',
@@ -44,10 +44,10 @@ export const HoverCardPageProps: IDocPageProps = {
       view: <HoverCardEventListenerTargetExample />
     }
   ],
-  overview: require<string>('!raw-loader!office-ui-fabric-react/src/components/HoverCard/docs/HoverCardOverview.md'),
+  overview: require<string>('!raw-loader!@fluentui/react/src/components/HoverCard/docs/HoverCardOverview.md'),
   bestPractices: '',
-  dos: require<string>('!raw-loader!office-ui-fabric-react/src/components/HoverCard/docs/HoverCardDos.md'),
-  donts: require<string>('!raw-loader!office-ui-fabric-react/src/components/HoverCard/docs/HoverCardDonts.md'),
+  dos: require<string>('!raw-loader!@fluentui/react/src/components/HoverCard/docs/HoverCardDos.md'),
+  donts: require<string>('!raw-loader!@fluentui/react/src/components/HoverCard/docs/HoverCardDonts.md'),
   isHeaderVisible: true,
   isFeedbackVisible: true,
   allowNativeProps: true

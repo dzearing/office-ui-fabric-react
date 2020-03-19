@@ -7,11 +7,11 @@ import { DialogBlockingExample } from './examples/Dialog.Blocking.Example';
 import { DialogTopOffsetFixedExample } from './examples/Dialog.TopOffsetFixed.Example';
 import { DialogModelessExample } from './examples/Dialog.Modeless.Example';
 
-const DialogBasicExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Dialog/examples/Dialog.Basic.Example.tsx') as string;
-const DialogLargeHeaderExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Dialog/examples/Dialog.LargeHeader.Example.tsx') as string;
-const DialogBlockingExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Dialog/examples/Dialog.Blocking.Example.tsx') as string;
-const DialogTopOffsetFixedExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Dialog/examples/Dialog.TopOffsetFixed.Example.tsx') as string;
-const DialogModelessExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Dialog/examples/Dialog.Modeless.Example.tsx') as string;
+const DialogBasicExampleCode = require('!raw-loader!@fluentui/react/src/components/Dialog/examples/Dialog.Basic.Example.tsx') as string;
+const DialogLargeHeaderExampleCode = require('!raw-loader!@fluentui/react/src/components/Dialog/examples/Dialog.LargeHeader.Example.tsx') as string;
+const DialogBlockingExampleCode = require('!raw-loader!@fluentui/react/src/components/Dialog/examples/Dialog.Blocking.Example.tsx') as string;
+const DialogTopOffsetFixedExampleCode = require('!raw-loader!@fluentui/react/src/components/Dialog/examples/Dialog.TopOffsetFixed.Example.tsx') as string;
+const DialogModelessExampleCode = require('!raw-loader!@fluentui/react/src/components/Dialog/examples/Dialog.Modeless.Example.tsx') as string;
 
 export const DialogPageProps: IDocPageProps = {
   title: 'Dialog',
@@ -69,10 +69,10 @@ export const DialogPageProps: IDocPageProps = {
       view: <DialogModelessExample />
     }
   ],
-  overview: require<string>('!raw-loader!office-ui-fabric-react/src/components/Dialog/docs/DialogOverview.md'),
+  overview: require<string>('!raw-loader!@fluentui/react/src/components/Dialog/docs/DialogOverview.md'),
   bestPractices: '',
-  dos: require<string>('!raw-loader!office-ui-fabric-react/src/components/Dialog/docs/DialogDos.md'),
-  donts: require<string>('!raw-loader!office-ui-fabric-react/src/components/Dialog/docs/DialogDonts.md'),
+  dos: require<string>('!raw-loader!@fluentui/react/src/components/Dialog/docs/DialogDos.md'),
+  donts: require<string>('!raw-loader!@fluentui/react/src/components/Dialog/docs/DialogDonts.md'),
   isHeaderVisible: true,
   isFeedbackVisible: true
 };

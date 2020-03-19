@@ -4,8 +4,8 @@ import { PickerCustomResultExample } from './examples/Picker.CustomResult.Exampl
 import { IDocPageProps } from '../../common/DocPage.types';
 import { TagPickerBasicExample } from './examples/TagPicker.Basic.Example';
 
-const TagPickerExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/pickers/examples/TagPicker.Basic.Example.tsx') as string;
-const PickerCustomResultExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/pickers/examples/Picker.CustomResult.Example.tsx') as string;
+const TagPickerExampleCode = require('!raw-loader!@fluentui/react/src/components/pickers/examples/TagPicker.Basic.Example.tsx') as string;
+const PickerCustomResultExampleCode = require('!raw-loader!@fluentui/react/src/components/pickers/examples/Picker.CustomResult.Example.tsx') as string;
 
 export const PickersPageProps: IDocPageProps = {
   title: 'Pickers',
@@ -23,7 +23,7 @@ export const PickersPageProps: IDocPageProps = {
       view: <PickerCustomResultExample />
     }
   ],
-  overview: require<string>('!raw-loader!office-ui-fabric-react/src/components/pickers/docs/PickersOverview.md'),
+  overview: require<string>('!raw-loader!@fluentui/react/src/components/pickers/docs/PickersOverview.md'),
   isHeaderVisible: true,
   isFeedbackVisible: true
 };

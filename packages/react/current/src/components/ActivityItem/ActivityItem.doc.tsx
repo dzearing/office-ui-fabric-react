@@ -4,9 +4,9 @@ import { ActivityItemBasicExample } from './examples/ActivityItem.Basic.Example'
 import { ActivityItemPersonaExample } from './examples/ActivityItem.Persona.Example';
 import { ActivityItemCompactExample } from './examples/ActivityItem.Compact.Example';
 
-const ActivityItemBasicExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/ActivityItem/examples/ActivityItem.Basic.Example.tsx') as string;
-const ActivityItemPersonaExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/ActivityItem/examples/ActivityItem.Persona.Example.tsx') as string;
-const ActivityItemCompactExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/ActivityItem/examples/ActivityItem.Compact.Example.tsx') as string;
+const ActivityItemBasicExampleCode = require('!raw-loader!@fluentui/react/src/components/ActivityItem/examples/ActivityItem.Basic.Example.tsx') as string;
+const ActivityItemPersonaExampleCode = require('!raw-loader!@fluentui/react/src/components/ActivityItem/examples/ActivityItem.Persona.Example.tsx') as string;
+const ActivityItemCompactExampleCode = require('!raw-loader!@fluentui/react/src/components/ActivityItem/examples/ActivityItem.Compact.Example.tsx') as string;
 
 export const ActivityItemPageProps: IDocPageProps = {
   title: 'ActivityItem',
@@ -29,10 +29,10 @@ export const ActivityItemPageProps: IDocPageProps = {
       view: <ActivityItemCompactExample />
     }
   ],
-  overview: require<string>('!raw-loader!office-ui-fabric-react/src/components/ActivityItem/docs/ActivityItemOverview.md'),
+  overview: require<string>('!raw-loader!@fluentui/react/src/components/ActivityItem/docs/ActivityItemOverview.md'),
   bestPractices: '',
-  dos: require<string>('!raw-loader!office-ui-fabric-react/src/components/ActivityItem/docs/ActivityItemDos.md'),
-  donts: require<string>('!raw-loader!office-ui-fabric-react/src/components/ActivityItem/docs/ActivityItemDonts.md'),
+  dos: require<string>('!raw-loader!@fluentui/react/src/components/ActivityItem/docs/ActivityItemDos.md'),
+  donts: require<string>('!raw-loader!@fluentui/react/src/components/ActivityItem/docs/ActivityItemDonts.md'),
   isHeaderVisible: true,
   isFeedbackVisible: true
 };

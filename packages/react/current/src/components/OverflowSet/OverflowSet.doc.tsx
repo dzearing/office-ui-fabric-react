@@ -6,10 +6,10 @@ import { OverflowSetBasicExample } from './examples/OverflowSet.Basic.Example';
 import { OverflowSetVerticalExample } from './examples/OverflowSet.Vertical.Example';
 import { OverflowSetBasicReversedExample } from './examples/OverflowSet.BasicReversed.Example';
 
-const OverflowSetCustomExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/OverflowSet/examples/OverflowSet.Custom.Example.tsx') as string;
-const OverflowSetBasicExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/OverflowSet/examples/OverflowSet.Basic.Example.tsx') as string;
-const OverflowSetVerticalExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/OverflowSet/examples/OverflowSet.Vertical.Example.tsx') as string;
-const OverflowSetBasicReversedExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/OverflowSet/examples/OverflowSet.BasicReversed.Example.tsx') as string;
+const OverflowSetCustomExampleCode = require('!raw-loader!@fluentui/react/src/components/OverflowSet/examples/OverflowSet.Custom.Example.tsx') as string;
+const OverflowSetBasicExampleCode = require('!raw-loader!@fluentui/react/src/components/OverflowSet/examples/OverflowSet.Basic.Example.tsx') as string;
+const OverflowSetVerticalExampleCode = require('!raw-loader!@fluentui/react/src/components/OverflowSet/examples/OverflowSet.Vertical.Example.tsx') as string;
+const OverflowSetBasicReversedExampleCode = require('!raw-loader!@fluentui/react/src/components/OverflowSet/examples/OverflowSet.BasicReversed.Example.tsx') as string;
 
 export const OverflowSetPageProps: IDocPageProps = {
   title: 'OverflowSet',
@@ -37,7 +37,7 @@ export const OverflowSetPageProps: IDocPageProps = {
       view: <OverflowSetBasicReversedExample />
     }
   ],
-  overview: require<string>('!raw-loader!office-ui-fabric-react/src/components/OverflowSet/docs/OverflowSetOverview.md'),
+  overview: require<string>('!raw-loader!@fluentui/react/src/components/OverflowSet/docs/OverflowSetOverview.md'),
   bestPractices: '',
   dos: '',
   donts: '',

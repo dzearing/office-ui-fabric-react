@@ -4,8 +4,8 @@ import { ModalModelessExample } from './examples/Modal.Modeless.Example';
 
 import { IDocPageProps } from '../../common/DocPage.types';
 
-const ModalBasicExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Modal/examples/Modal.Basic.Example.tsx') as string;
-const ModalModelessExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Modal/examples/Modal.Modeless.Example.tsx') as string;
+const ModalBasicExampleCode = require('!raw-loader!@fluentui/react/src/components/Modal/examples/Modal.Basic.Example.tsx') as string;
+const ModalModelessExampleCode = require('!raw-loader!@fluentui/react/src/components/Modal/examples/Modal.Modeless.Example.tsx') as string;
 
 export const ModalPageProps: IDocPageProps = {
   title: 'Modal',
@@ -23,11 +23,11 @@ export const ModalPageProps: IDocPageProps = {
       view: <ModalModelessExample />
     }
   ],
-  overview: require<string>('!raw-loader!office-ui-fabric-react/src/components/Modal/docs/ModalOverview.md'),
+  overview: require<string>('!raw-loader!@fluentui/react/src/components/Modal/docs/ModalOverview.md'),
   bestPractices: '',
-  dos: require<string>('!raw-loader!office-ui-fabric-react/src/components/Modal/docs/ModalDos.md'),
-  accessibility: require<string>('!raw-loader!office-ui-fabric-react/src/components/Modal/docs/ModalA11y.md'),
-  donts: require<string>('!raw-loader!office-ui-fabric-react/src/components/Modal/docs/ModalDonts.md'),
+  dos: require<string>('!raw-loader!@fluentui/react/src/components/Modal/docs/ModalDos.md'),
+  accessibility: require<string>('!raw-loader!@fluentui/react/src/components/Modal/docs/ModalA11y.md'),
+  donts: require<string>('!raw-loader!@fluentui/react/src/components/Modal/docs/ModalDonts.md'),
   isHeaderVisible: true,
   isFeedbackVisible: true
 };

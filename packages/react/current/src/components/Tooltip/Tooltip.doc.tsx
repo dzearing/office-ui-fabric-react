@@ -8,12 +8,12 @@ import { TooltipInteractiveExample } from './examples/Tooltip.Interactive.Exampl
 import { TooltipOverflowExample } from './examples/Tooltip.Overflow.Example';
 import { TooltipAbsolutePositionExample } from './examples/Tooltip.AbsolutePosition.Example';
 
-const TooltipBasicExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Tooltip/examples/Tooltip.Basic.Example.tsx') as string;
-const TooltipDisplayExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Tooltip/examples/Tooltip.Display.Example.tsx') as string;
-const TooltipCustomExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Tooltip/examples/Tooltip.Custom.Example.tsx') as string;
-const TooltipInteractiveExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Tooltip/examples/Tooltip.Interactive.Example.tsx') as string;
-const TooltipOverflowExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Tooltip/examples/Tooltip.Overflow.Example.tsx') as string;
-const TooltipAbsolutePositionExampleCode = require('!raw-loader!office-ui-fabric-react/src/components/Tooltip/examples/Tooltip.AbsolutePosition.Example.tsx') as string;
+const TooltipBasicExampleCode = require('!raw-loader!@fluentui/react/src/components/Tooltip/examples/Tooltip.Basic.Example.tsx') as string;
+const TooltipDisplayExampleCode = require('!raw-loader!@fluentui/react/src/components/Tooltip/examples/Tooltip.Display.Example.tsx') as string;
+const TooltipCustomExampleCode = require('!raw-loader!@fluentui/react/src/components/Tooltip/examples/Tooltip.Custom.Example.tsx') as string;
+const TooltipInteractiveExampleCode = require('!raw-loader!@fluentui/react/src/components/Tooltip/examples/Tooltip.Interactive.Example.tsx') as string;
+const TooltipOverflowExampleCode = require('!raw-loader!@fluentui/react/src/components/Tooltip/examples/Tooltip.Overflow.Example.tsx') as string;
+const TooltipAbsolutePositionExampleCode = require('!raw-loader!@fluentui/react/src/components/Tooltip/examples/Tooltip.AbsolutePosition.Example.tsx') as string;
 
 export const TooltipPageProps: IDocPageProps = {
   title: 'Tooltip',
@@ -51,7 +51,7 @@ export const TooltipPageProps: IDocPageProps = {
       view: <TooltipAbsolutePositionExample />
     }
   ],
-  overview: require<string>('!raw-loader!office-ui-fabric-react/src/components/Tooltip/docs/TooltipOverview.md'),
+  overview: require<string>('!raw-loader!@fluentui/react/src/components/Tooltip/docs/TooltipOverview.md'),
   isHeaderVisible: true,
   isFeedbackVisible: true,
   allowNativeProps: true
