@@ -13,6 +13,7 @@ import {
 } from '@fluentui/styles';
 import { ComponentSlotClasses, RendererParam, ResolveStylesOptions } from './types';
 import * as _ from 'lodash';
+import { mergeStyles } from '@uifabric/merge-styles';
 
 export type ResolveStylesResult = {
   resolvedStyles: ComponentSlotStylesResolved;
@@ -130,7 +131,7 @@ const resolveStyles = (
   };
 
   const renderStyles = renderStylesInput || ((style: ICSSInJSStyle) => renderer.renderRule(() => style, felaParam));
-
+  //  const renderStyles = mergeStyles(processStyles(style))
   const resolvedStyles: Record<string, ICSSInJSStyle> = {};
   const resolvedStylesDebug: Record<string, { styles: Object }[]> = {};
   const classes: Record<string, string> = {};
@@ -235,7 +236,7 @@ const resolveStyles = (
         const styleObj = resolvedStyles[slotName];
 
         if (renderStyles && styleObj) {
-          classes[lazyEvaluationKey] = renderStyles(styleObj);
+          classes[lazyEvaluationKey] = mergeStyles(styleObj as any); // renderStyles(styleObj);
 
           if (cacheEnabled && theme) {
             classesCache.set(theme, {

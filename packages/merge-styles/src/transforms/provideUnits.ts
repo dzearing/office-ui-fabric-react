@@ -1,6 +1,7 @@
 const NON_PIXEL_NUMBER_PROPS = [
   'column-count',
   'font-weight',
+  'line-height',
   'flex',
   'flex-grow',
   'flex-shrink',
