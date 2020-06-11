@@ -1,0 +1,53 @@
+.root {
+  display: inline-flex;
+  position: relative;
+  align-items: stretch;
+  vertical-align: center;
+  box-sizing: border-box;
+  text-align: left;
+  border: 1px solid rgb(96, 94, 92);
+  background: var(--input-backgroundColor, white);
+  color: rgb(37, 36, 35);
+  border-radius: 2px;
+  height: 32px;
+  padding: 1px;
+  overflow: hidden;
+  font-family: 'Segoe UI', 'Segoe UI Web (West European)', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto,
+    'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  &._fluid {
+    width: 100%;
+  }
+
+  &._focused::after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid black;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px white inset;
+  }
+}
+
+.input {
+  border: none;
+  padding: 0px 4px;
+  outline: none;
+  // font-family: inherit;
+  flex-grow: 1;
+}
+
+.startAdornments,
+.endAdornments {
+  flex-shrink: 0;
+  display: inline-flex;
+  height: 100%;
+  align-items: stretch;
+  vertical-align: middle;
+}

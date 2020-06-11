@@ -8,10 +8,15 @@ export interface ISvgIconStyleProps {
 
 /** Class names used in themeable and non-themeable Icon components */
 export const classes = mergeStyleSets({
-  root: {},
+  root: {
+    display: 'inline-block',
+    height: '100%',
+    boxSizing: 'border-box',
+    lineHeight: '1',
+  },
   svg: {
     height: '100%',
-    width: '100%',
+    width: 'auto',
     fill: 'currentColor',
   },
 });
