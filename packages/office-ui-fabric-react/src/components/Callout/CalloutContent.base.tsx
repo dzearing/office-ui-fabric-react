@@ -49,8 +49,8 @@ const OFF_SCREEN_STYLE = { opacity: 0, filter: 'opacity(0)' };
 // role and role description go hand-in-hand. Both would be included by spreading getNativeProps for a basic element
 // This constant array can be used to filter these out of native props spread on callout root and apply them together on
 // calloutMain (the Popup component within the callout)
-const ARIA_ROLE_ATTRIBUTES = ['role', 'aria-roledescription'];
-
+const ARIA_ROLE_ATTRIBUTES = { role: 1, 'aria-roledescription': 1 };
+const ARIA_ROLE_ATTRIBUTES_ARRAY = Object.keys(ARIA_ROLE_ATTRIBUTES);
 export interface ICalloutState {
   positions?: ICalloutPositionedInfo;
   slideDirectionalClassName?: string;
@@ -238,7 +238,7 @@ export class CalloutContentBase extends React.Component<ICalloutProps, ICalloutS
     const content = (
       <div ref={this._hostElement} className={this._classNames.container} style={visibilityStyle}>
         <div
-          {...getNativeProps(this.props, divProperties, ARIA_ROLE_ATTRIBUTES)}
+          {...getNativeProps(this.props, divProperties, ARIA_ROLE_ATTRIBUTES_ARRAY)}
           className={css(this._classNames.root, positions && positions.targetEdge && ANIMATIONS[positions.targetEdge!])}
           style={positions ? positions.elementPosition : OFF_SCREEN_STYLE}
           // Safari and Firefox on Mac OS requires this to back-stop click events so focus remains in the Callout.

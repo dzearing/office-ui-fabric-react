@@ -599,7 +599,7 @@ export class BaseButton extends React.Component<IBaseButtonProps, IBaseButtonSta
       keytipProps = this._getMemoizedMenuButtonKeytipProps(keytipProps);
     }
 
-    const containerProps = getNativeProps<React.HTMLAttributes<HTMLSpanElement>>(buttonProps, [], ['disabled']);
+    const containerProps = getNativeProps<React.HTMLAttributes<HTMLSpanElement>>(buttonProps, {}, ['disabled']);
 
     // Add additional props to apply on primary action button
     if (primaryActionButtonProps) {
