@@ -102,7 +102,14 @@ export function compose2<TProps, TState = TProps>(
   const Component = React.forwardRef<HTMLElement, TProps>((props, ref) =>
     composeOptions.render!(
       applyHooks(
-        mergeObjects({ ref }, composeOptions.defaultProps, simplifyShorthand(props, composeOptions.shorthandPropNames)),
+        mergeObjects(
+          // target: initial props
+          { ref },
+          // default props
+          composeOptions.defaultProps,
+          // user props with simplified shorthand
+          simplifyShorthand(props, composeOptions.shorthandPropNames),
+        ),
         composeOptions,
       ),
       composeOptions,

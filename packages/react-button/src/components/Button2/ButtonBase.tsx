@@ -1,45 +1,57 @@
 import * as React from 'react';
-import { ButtonProps, ButtonState } from './Button.types';
-import { compose2, ComposeOptions2 } from '@fluentui/react-compose';
-import { useButton } from './useButton';
-import { GenericDictionary } from '../../utils/tempTypes';
+import { ButtonProps, ButtonState, ButtonOptions } from './Button.types';
+import { compose2, ComposeOptions2, GenericDictionary } from '@fluentui/react-compose';
 import { getNativeElementProps } from '@uifabric/utilities';
+import { useButtonBehavior } from './useButtonBehavior';
 
 const nullRender = () => null;
-const getSlots = (state: GenericDictionary, slotNames: string[]) => {
+
+const getSlots = (state: GenericDictionary, slotNames: string[] | undefined) => {
   const slots: GenericDictionary = {
     root: state.as || nullRender,
   };
+  const nativeProps: GenericDictionary = {
+    root: getNativeElementProps(state.as, state),
+  };
 
-  for (const name of slotNames) {
-    slots[name] = (state[name].children && state[name]?.as) || nullRender;
+  for (const name of slotNames!) {
+    const slot: GenericDictionary = state[name];
+
+    slots[name] = (slot.children && slot.as) || nullRender;
+
+    if (slots[name] !== nullRender) {
+      nativeProps[name] = getNativeElementProps(slot.as, slot);
+    }
   }
 
-  return slots;
+  return { slots, nativeProps };
 };
 
 export const ButtonBase = compose2<ButtonProps, ButtonState>(
-  (state: ButtonState) => {
-    const { icon, iconPosition, iconOnly, children } = state;
-    const slots = getSlots(state, ['icon', 'children']);
-
-    const rootProps = getNativeElementProps(state.as, state);
-    const iconProps = getNativeElementProps(slots.icon, icon);
-    const childrenProps = getNativeElementProps(slots.children, children);
+  (state: ButtonState, options: ButtonOptions) => {
+    const { iconPosition, iconOnly } = state;
+    const { slots, nativeProps } = getSlots(state, options.shorthandPropNames);
+    const { root, icon, children } = nativeProps;
 
     return (
-      <slots.root {...rootProps}>
-        {icon && iconPosition !== 'after' && <slots.icon {...iconProps} />}
-        {!iconOnly && <slots.children {...childrenProps} />}
-        {icon && iconPosition === 'after' && <slots.icon {...iconProps} />}
+      <slots.root {...root}>
+        {iconPosition !== 'after' && <slots.icon {...icon} />}
+        {!iconOnly && <slots.children {...children} />}
+        {iconPosition === 'after' && <slots.icon {...icon} />}
       </slots.root>
     );
   },
   {
     displayName: 'ButtonBase2',
-    useHooks: [useButton],
+
+    useHooks: [
+      // useNativeProps, // state, options = state.nativeProps.root
+      // Provide correct aria attributes and event handlers
+      useButtonBehavior,
+    ],
 
     shorthandPropNames: ['icon', 'loader', 'children'],
+
     defaultProps: {
       as: 'button',
       icon: { as: 'span' },

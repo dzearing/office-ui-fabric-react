@@ -33,10 +33,10 @@ export const ThemeProvider = React.forwardRef<HTMLDivElement, ThemeProviderProps
     const fullTheme = React.useMemo<Theme>(() => mergeThemes(parentTheme, theme), [parentTheme, theme]);
 
     // Generate the inline style object only when merged theme mutates.
-    const inlineStyle = React.useMemo<React.CSSProperties>(
-      () => tokensToStyleObject(fullTheme.tokens, undefined, { ...style }),
-      [fullTheme, style],
-    );
+    // const inlineStyle = React.useMemo<React.CSSProperties>(
+    //   () => tokensToStyleObject(fullTheme.tokens, undefined, { ...style }),
+    //   [fullTheme, style],
+    // );
 
     const rootClass = cx(className, classes.root) || undefined;
 
@@ -47,7 +47,7 @@ export const ThemeProvider = React.forwardRef<HTMLDivElement, ThemeProviderProps
     // tslint:disable:jsx-ban-props
     return (
       <ThemeContext.Provider value={fullTheme}>
-        <div {...rest} ref={ref} className={rootClass} style={inlineStyle} />
+        <div {...rest} ref={ref} className={rootClass} />
       </ThemeContext.Provider>
     );
     // tslint:enable:jsx-ban-props
