@@ -7,11 +7,8 @@ import * as React from 'react';
 export type ComponentClasses<TClasses, TState> = Partial<TClasses> | ((state: TState) => Partial<TClasses>);
 
 export interface ComponentProps {
-  // Removing these props:
-  // design - use style or className instead
-
   as?: React.ElementType;
-
+  ref?: React.Ref<HTMLElement>;
   className?: string;
 }
 

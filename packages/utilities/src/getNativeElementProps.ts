@@ -56,7 +56,7 @@ const nativeElementMap: Record<string, Record<string, number>> = {
  */
 // tslint:disable-next-line:no-any
 export function getNativeElementProps<TAttributes extends React.HTMLAttributes<any>>(
-  tagName: keyof React.ReactHTML,
+  tagName: keyof JSX.IntrinsicElements,
   props: {},
   excludedPropNames?: string[],
 ): TAttributes {

@@ -419,18 +419,21 @@ export function getNativeProps<T extends Record<string, any>>(
   const isArray = Array.isArray(allowedPropNames);
   // tslint:disable-next-line:no-any
   const result: Record<string, any> = {};
-  const keys = Object.keys(props);
 
-  for (const key of keys) {
-    const isNativeProp =
-      (!isArray && (allowedPropNames as Record<string, number>)[key]) ||
-      (isArray && (allowedPropNames as string[]).indexOf(key) >= 0) ||
-      key.indexOf('data-') === 0 ||
-      key.indexOf('aria-') === 0;
+  if (props) {
+    const keys = Object.keys(props);
 
-    if (isNativeProp && (!excludedPropNames || excludedPropNames?.indexOf(key) === -1)) {
-      // tslint:disable-next-line:no-any
-      result[key] = props![key] as any;
+    for (const key of keys) {
+      const isNativeProp =
+        (!isArray && (allowedPropNames as Record<string, number>)[key]) ||
+        (isArray && (allowedPropNames as string[]).indexOf(key) >= 0) ||
+        key.indexOf('data-') === 0 ||
+        key.indexOf('aria-') === 0;
+
+      if (isNativeProp && (!excludedPropNames || excludedPropNames?.indexOf(key) === -1)) {
+        // tslint:disable-next-line:no-any
+        result[key] = props![key] as any;
+      }
     }
   }
 
