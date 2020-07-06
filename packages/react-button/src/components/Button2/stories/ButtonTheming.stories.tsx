@@ -93,7 +93,7 @@ const ExampleBox = ({ title, theme }: { title: string; theme: Theme }) => (
   </ThemeProvider>
 );
 
-export const ThemeExample = () => {
+export const Button2ThemeExample = () => {
   const [color, setColor] = React.useState<string>('#f00');
   const { lightTheme, darkTheme } = getThemes(color);
   const onColorChange = React.useCallback((ev: never, newColor: IColor) => setColor(newColor.str), []);

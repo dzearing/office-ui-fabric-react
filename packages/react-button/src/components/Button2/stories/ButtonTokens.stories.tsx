@@ -107,10 +107,8 @@ export const Button2Tokens = () => (
   <ThemeProvider theme={productTheme}>
     <Stack>
       <Text>A button can be colored using theme variants.</Text>
-      <Stack>
-        <Button icon="O" variant="github">
-          Github: Open issue
-        </Button>
+      <Stack variant="github">
+        <Button icon="O">Github: Open issue</Button>
         <Button variant="amazon">Amazon: Proceed to checkout</Button>
 
         <Button variant="netflix">Netflix: Sign In</Button>

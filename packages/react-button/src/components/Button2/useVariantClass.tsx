@@ -17,6 +17,7 @@ export const useVariantClass = (props: { variant?: string; className?: string })
       const variantClassName = mergeStyles(styleObject as IStyle);
 
       props.className = `${className || ''} ${variantClassName}`;
+      delete props.variant;
     }
   }
 };

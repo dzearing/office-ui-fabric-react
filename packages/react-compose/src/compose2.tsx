@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { getNativeElementProps } from '@uifabric/utilities';
+import { css, getNativeElementProps } from '@uifabric/utilities';
 import { GenericDictionary } from './types';
 
 const OPTIONS_NAME = '__options';
@@ -54,6 +54,10 @@ const mergeObjects = (target: GenericDictionary, ...propSets: (GenericDictionary
             target[propName] = propValue;
           } else {
             mergeObjects(target[propName], propValue);
+          }
+        } else if (propName === 'className') {
+          if (propValue) {
+            target[propName] = css(target[propName], propValue);
           }
         } else {
           target[propName] = propValue;
