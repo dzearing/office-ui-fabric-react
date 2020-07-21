@@ -1,23 +1,23 @@
 import * as React from 'react';
 import { Stack } from './Stack';
 import { Text } from './Text';
-import { Button } from '../Button';
-import { ButtonProps } from '../Button.types';
+import { Button2 } from '../Button';
+import { Button2Props } from '../Button.types';
 
-const ButtonVariants = (props: ButtonProps) => (
+const ButtonVariants = (props: Button2Props) => (
   <Stack horizontal>
-    <Button icon="X" {...props}>
+    <Button2 icon={<div>X</div>} {...props}>
       Hello, world
-    </Button>
-    <Button primary icon="X" {...props}>
+    </Button2>
+    <Button2 primary icon="X" {...props}>
       Hello, world
-    </Button>
-    <Button disabled icon="X" {...props}>
+    </Button2>
+    <Button2 disabled icon="X" {...props}>
       Hello, world
-    </Button>
-    <Button primary disabled icon="X" {...props}>
+    </Button2>
+    <Button2 primary disabled icon="X" {...props}>
       Hello, world
-    </Button>
+    </Button2>
   </Stack>
 );
 
@@ -31,18 +31,18 @@ export const Button2Css = () => (
 
     <Text>A button can fill the width of its container using the `fluid` prop.</Text>
     <Stack horizontal>
-      <Button fluid icon="X">
+      <Button2 fluid icon="X">
         Hello, world
-      </Button>
-      <Button fluid primary icon="X">
+      </Button2>
+      <Button2 fluid primary icon="X">
         Hello, world
-      </Button>
-      <Button fluid disabled icon="X">
+      </Button2>
+      <Button2 fluid disabled icon="X">
         Hello, world
-      </Button>
-      <Button fluid primary disabled icon="X">
+      </Button2>
+      <Button2 fluid primary disabled icon="X">
         Hello, world
-      </Button>
+      </Button2>
     </Stack>
 
     <Text>A button can contain only an icon using the `iconOnly` prop.</Text>

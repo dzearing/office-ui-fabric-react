@@ -1,11 +1,13 @@
-import { compose2, createUseClasses } from '@fluentui/react-compose';
+import { createUseClasses } from '@fluentui/react-compose';
 import { ButtonBase } from './ButtonBase';
 import * as classes from './Button.scss';
-import { useVariantClass } from './useVariantClass';
+import { makeVariants } from './useVariantClass';
 import { useFocusRects } from '@uifabric/utilities';
 import { useInlineTokens } from './useInlineTokens';
+import { buttonVariants } from './ButtonVariants';
+import { Button2State } from './Button.types';
 
-export const Button = compose2(ButtonBase, {
+export const Button2 = ButtonBase.extend({
   displayName: 'Button2',
 
   useHooks: [
@@ -13,13 +15,14 @@ export const Button = compose2(ButtonBase, {
     createUseClasses(classes),
 
     // apply focus classnames to root when appropriate
-    props => useFocusRects(props.ref),
+    // tslint:disable-next-line:no-any
+    (state: Button2State) => useFocusRects(state.ref as any),
+
+    // apply variant token sets
+    makeVariants('--button', buttonVariants),
 
     // apply inline tokens
     useInlineTokens,
-
-    // apply variants
-    useVariantClass,
   ],
 });
 
@@ -46,3 +49,6 @@ export const Button = compose2(ButtonBase, {
 // <TP theme={{ createTheme(createRibbonTheme({...})) }}>
 //   <Ribbon/>
 // </TP>
+
+// Option D (preferred):
+// Encapsulate variants logic in a hook

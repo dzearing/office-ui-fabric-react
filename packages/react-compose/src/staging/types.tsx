@@ -1,0 +1,54 @@
+export const OPTIONS_NAME = '__options';
+
+/**
+ * Generic name to any dictionary.
+ */
+// tslint:disable-next-line:no-any
+export type GenericDictionary = Record<string, any>;
+
+export type ComposedComponent2<TProps, TState> = React.ForwardRefExoticComponent<TProps> & {
+  [OPTIONS_NAME]: ComposeOptions<TProps, TState>;
+  extend: <TNewProps = TProps, TNewState = TState>(
+    options: ComposeOptions<TNewProps, TNewState>,
+  ) => ComposedComponent2<TNewProps, TNewState>;
+};
+
+export type ComposeRenderFunction2<TProps, TState> = (
+  state: TState,
+  options: ComposeOptions<TProps, TState>,
+) => JSX.Element;
+
+export type ComposeInput<TProps, TState> = ComposedComponent2<TProps, TState> | ComposeRenderFunction2<TProps, TState>;
+
+export type ComposeHook<TProps, TState> = (props: GenericDictionary, options: ComposeOptions<TProps, TState>) => void;
+
+export type ComposeOptions<TProps, TState> = {
+  displayName?: string;
+
+  /**
+   * Default props to layer user props on before doing the deep merge.
+   */
+  defaultProps?: Partial<TProps>;
+
+  /**
+   * Defines the initial state to use. Defaults to user props. This provides a hook for the user to alter incoming
+   * user input before applying the deep merge, shorthand simplifications, and applying attached hooks.
+   */
+  initialState?: (props: TProps) => Partial<TState>;
+
+  /**
+   * Hooks to be executed. Each hook can directly manipulate the state object.
+   */
+  useHooks?: ComposeHook<TProps, TState>[];
+
+  /**
+   * Shorthand props which should be simplified prior to merging. Shorthand should always be in object notation,
+   * rather than literals, JSX, etc, before merging.
+   */
+  shorthandPropNames?: string[];
+
+  /**
+   * The render function to apply. This can be provided via options in component recomposition scenarios.
+   */
+  render?: ComposeRenderFunction2<TProps, TState>;
+};

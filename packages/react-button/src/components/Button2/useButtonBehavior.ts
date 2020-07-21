@@ -1,14 +1,15 @@
-import { ButtonState } from './Button.types';
+import * as React from 'react';
+import { Button2State } from './Button.types';
 
-export const useButtonBehavior = (state: ButtonState) => {
-  if (state.as !== 'button') {
-    state.role = 'button';
-    state.tabIndex = 0;
+export const useButtonBehavior = (draftState: Button2State) => {
+  if (draftState.as !== 'button') {
+    draftState.role = 'button';
+    draftState.tabIndex = 0;
 
-    if (state.as !== 'a') {
-      const { onKeyDown, onClick } = state;
+    if (draftState.as !== 'a') {
+      const { onKeyDown, onClick } = draftState;
 
-      state.onKeyDown = ev => {
+      draftState.onKeyDown = React.useCallback(ev => {
         if (onKeyDown) {
           onKeyDown(ev);
         }
@@ -17,9 +18,9 @@ export const useButtonBehavior = (state: ButtonState) => {
           // tslint:disable-next-line:no-any
           onClick(ev as any);
         }
-      };
+      }, []);
     }
   }
 
-  state['aria-disabled'] = state.disabled || state.loading;
+  draftState['aria-disabled'] = draftState.disabled || draftState.loading;
 };

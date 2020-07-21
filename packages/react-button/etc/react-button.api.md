@@ -15,21 +15,15 @@ import { SlotProps } from '@fluentui/react-compose';
 export const Button: import("@fluentui/react-compose").ComponentWithAs<"button", ButtonProps>;
 
 // @public (undocumented)
-export const ButtonBase: import("@fluentui/react-compose").ComponentWithAs<"button", ButtonProps>;
-
-// Warning: (ae-forgotten-export) The symbol "ComposeStandardStatics" needs to be exported by the entry point index.d.ts
-//
-// @public (undocumented)
-export interface ButtonOptions extends ComposeOptions<ButtonProps, ButtonSlots, ButtonSlotProps, ComposeStandardStatics> {
-}
+export const Button2: import("@fluentui/react-compose").ComposedComponent2<import("./Button.types").Button2Props, Button2State>;
 
 // Warning: (ae-forgotten-export) The symbol "ComponentProps" needs to be exported by the entry point index.d.ts
 //
 // @public (undocumented)
-export interface ButtonProps extends ComponentProps, React.HTMLAttributes<HTMLButtonElement> {
+export interface Button2Props extends ComponentProps, React.HTMLAttributes<HTMLButtonElement> {
     circular?: boolean;
-    componentRef?: React.RefObject<ButtonRef>;
-    content?: ShorthandValue<{}>;
+    // Warning: (ae-forgotten-export) The symbol "ButtonRef" needs to be exported by the entry point index.d.ts
+    componentRef?: React.RefObject<ButtonRef_2>;
     disabled?: boolean;
     fluid?: boolean;
     // Warning: (ae-forgotten-export) The symbol "ShorthandValue" needs to be exported by the entry point index.d.ts
@@ -41,8 +35,47 @@ export interface ButtonProps extends ComponentProps, React.HTMLAttributes<HTMLBu
     loading?: boolean;
     primary?: boolean;
     secondary?: boolean;
-    size?: SizeValue;
+    // Warning: (ae-forgotten-export) The symbol "SizeValue" needs to be exported by the entry point index.d.ts
+    size?: SizeValue_2;
     // Warning: (ae-forgotten-export) The symbol "RecursivePartial" needs to be exported by the entry point index.d.ts
+    // Warning: (ae-forgotten-export) The symbol "ButtonTokens" needs to be exported by the entry point index.d.ts
+    tokens?: RecursivePartial<ButtonTokens_2>;
+    variant?: string;
+}
+
+// @public (undocumented)
+export interface Button2State extends Button2Props {
+    // (undocumented)
+    buttonRef?: React.Ref<HTMLButtonElement>;
+    // (undocumented)
+    ref?: React.Ref<HTMLButtonElement>;
+}
+
+// @public (undocumented)
+export const ButtonBase: import("@fluentui/react-compose").ComponentWithAs<"button", ButtonProps>;
+
+// Warning: (ae-forgotten-export) The symbol "ComposeStandardStatics" needs to be exported by the entry point index.d.ts
+//
+// @public (undocumented)
+export interface ButtonOptions extends ComposeOptions<ButtonProps, ButtonSlots, ButtonSlotProps, ComposeStandardStatics> {
+}
+
+// @public (undocumented)
+export interface ButtonProps extends ComponentProps, React.HTMLAttributes<HTMLButtonElement> {
+    circular?: boolean;
+    componentRef?: React.RefObject<ButtonRef>;
+    content?: ShorthandValue<{}>;
+    disabled?: boolean;
+    fluid?: boolean;
+    icon?: ShorthandValue<{}>;
+    iconOnly?: boolean;
+    iconPosition?: 'before' | 'after';
+    inverted?: boolean;
+    loader?: ShorthandValue<{}>;
+    loading?: boolean;
+    primary?: boolean;
+    secondary?: boolean;
+    size?: SizeValue;
     tokens?: RecursivePartial<ButtonTokens>;
 }
 
@@ -101,6 +134,9 @@ export type ButtonTokens = ColorPlateSet & {
         transform: string;
     };
 };
+
+// @public (undocumented)
+export const makeVariants: (prefix: string, variants: Record<string, any>) => (state: Record<string, any>) => void;
 
 // @public (undocumented)
 export type SizeValue = 'smallest' | 'smaller' | 'small' | 'medium' | 'large' | 'larger' | 'largest';

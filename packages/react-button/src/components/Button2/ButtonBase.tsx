@@ -1,34 +1,10 @@
 import * as React from 'react';
-import { ButtonProps, ButtonState, ButtonOptions } from './Button.types';
-import { compose2, ComposeOptions2, GenericDictionary } from '@fluentui/react-compose';
-import { getNativeElementProps } from '@uifabric/utilities';
+import { Button2Props, Button2State, Button2Options } from './Button.types';
+import { compose, getSlots } from '@fluentui/react-compose/lib/staging';
 import { useButtonBehavior } from './useButtonBehavior';
 
-const nullRender = () => null;
-
-const getSlots = (state: GenericDictionary, slotNames: string[] | undefined) => {
-  const slots: GenericDictionary = {
-    root: state.as || nullRender,
-  };
-  const nativeProps: GenericDictionary = {
-    root: getNativeElementProps(state.as, state),
-  };
-
-  for (const name of slotNames!) {
-    const slot: GenericDictionary = state[name];
-
-    slots[name] = (slot.children && slot.as) || nullRender;
-
-    if (slots[name] !== nullRender) {
-      nativeProps[name] = getNativeElementProps(slot.as, slot);
-    }
-  }
-
-  return { slots, nativeProps };
-};
-
-export const ButtonBase = compose2<ButtonProps, ButtonState>(
-  (state: ButtonState, options: ButtonOptions) => {
+export const ButtonBase = compose<Button2Props, Button2State>(
+  (state: Button2State, options: Button2Options) => {
     const { iconPosition, iconOnly } = state;
     const { slots, nativeProps } = getSlots(state, options.shorthandPropNames);
     const { root, icon, children } = nativeProps;
@@ -58,5 +34,5 @@ export const ButtonBase = compose2<ButtonProps, ButtonState>(
       children: { as: 'span' },
       loader: { as: 'span' },
     },
-  } as ComposeOptions2<ButtonProps, ButtonState>, // ???
+  }, // as ComposeOptions<Button2Props, Button2State>, // ???
 );

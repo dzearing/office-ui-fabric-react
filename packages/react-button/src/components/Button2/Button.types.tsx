@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ComponentProps, ShorthandValue, RecursivePartial } from '../../utils/tempTypes';
-import { BaseSlots, ComposeOptions2, SlotProps } from '@fluentui/react-compose';
+import { ComposeOptions } from '@fluentui/react-compose/lib/staging';
 import { ColorPlateSet } from '@fluentui/react-theme-provider';
 
 export type SizeValue = 'smallest' | 'smaller' | 'small' | 'medium' | 'large' | 'larger' | 'largest';
@@ -15,7 +15,7 @@ export interface ButtonRef {
   focus: () => void;
 }
 
-export interface ButtonProps extends ComponentProps, React.HTMLAttributes<HTMLButtonElement> {
+export interface Button2Props extends ComponentProps, React.HTMLAttributes<HTMLButtonElement> {
   /**
    * Access the imperative API of the Button.
    */
@@ -86,25 +86,18 @@ export interface ButtonProps extends ComponentProps, React.HTMLAttributes<HTMLBu
   variant?: string;
 }
 
-export interface ButtonState extends ButtonProps {
-  buttonRef?: React.RefObject<HTMLButtonElement>;
+export interface Button2State extends Button2Props {
+  ref?: React.Ref<HTMLButtonElement>;
+  buttonRef?: React.Ref<HTMLButtonElement>;
 }
 
-export type ButtonOptions = ComposeOptions2<ButtonProps, ButtonState>;
-
-export interface ButtonSlots extends BaseSlots {
-  icon: React.ElementType;
-  content: React.ElementType;
-  loader: React.ElementType;
-}
-
-export type ButtonSlotProps = SlotProps<ButtonSlots, ButtonProps, React.ButtonHTMLAttributes<HTMLButtonElement>>;
+export type Button2Options = ComposeOptions<Button2Props, Button2State>;
 
 export type ButtonTokens = ColorPlateSet & {
   /* sizing */
   padding: string;
   margin: string;
-  height: string;
+  minHeight: string;
   minWidth: string;
   maxWidth: string;
   contentGap: string;
@@ -133,5 +126,15 @@ export type ButtonTokens = ColorPlateSet & {
 
   pressed: {
     transform: string;
+    transition: string;
+  };
+
+  hovered: {
+    boxShadow: string;
+  };
+
+  disabled: {
+    boxShadow: string;
+    opacity: string;
   };
 };

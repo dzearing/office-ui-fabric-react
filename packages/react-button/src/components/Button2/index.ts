@@ -1,3 +1,5 @@
 export * from './Button.types';
 export * from './ButtonBase';
-export { Button as Button2 } from './Button';
+export * from './Button';
+export * from './useVariantClass';
+export * from './makeButtonVariants';

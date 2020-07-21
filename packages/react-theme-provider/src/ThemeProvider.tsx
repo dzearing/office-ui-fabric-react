@@ -1,7 +1,6 @@
 import * as React from 'react';
 import cx from 'classnames';
 import { useStylesheet } from '@fluentui/react-stylesheets';
-import { tokensToStyleObject } from './tokensToStyleObject';
 import { ThemeContext } from './ThemeContext';
 import { PartialTheme, Theme } from './types';
 import { mergeThemes } from './mergeThemes';
