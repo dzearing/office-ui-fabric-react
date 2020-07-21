@@ -87,8 +87,8 @@ const ExampleBox = ({ title, theme }: { title: string; theme: Theme }) => (
   <ThemeProvider theme={theme} style={{ padding: 20 }}>
     <Stack>
       <Text>{title}</Text>
-      <Button icon={<UploadIcon />} content="I am a button" />
-      <Button primary content="I am a primary button" />
+      <Button icon={<UploadIcon />}>I am a button</Button>
+      <Button primary>I am a primary button</Button>
     </Stack>
   </ThemeProvider>
 );

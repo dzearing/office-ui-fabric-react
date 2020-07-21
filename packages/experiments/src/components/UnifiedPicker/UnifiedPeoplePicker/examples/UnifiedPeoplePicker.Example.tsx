@@ -64,8 +64,7 @@ export const UnifiedPeoplePickerExample = (): JSX.Element => {
     item: IFloatingSuggestionItemProps<IPersonaProps>,
   ) => {
     _markSuggestionSelected(item);
-    peopleSelectedItems.push(item.item);
-    setPeopleSelectedItems(peopleSelectedItems);
+    setPeopleSelectedItems(prevPeopleSelectedItems => [...prevPeopleSelectedItems, item.item]);
   };
 
   const _onSuggestionRemoved = (
@@ -105,19 +104,21 @@ export const UnifiedPeoplePickerExample = (): JSX.Element => {
   const _onPaste = (pastedValue: string, selectedItemsList: IPersonaProps[]): void => {
     // Find the suggestion corresponding to the specific text name
     // and update the selectedItemsList to re-render everything.
-    const finalList: IPersonaProps[] = [];
+    const newList: IPersonaProps[] = [];
     if (pastedValue !== null) {
-      pastedValue.split(',').map(textValue => {
+      pastedValue.split(',').forEach(textValue => {
         if (textValue) {
-          people.map(suggestionItem => {
+          people.forEach(suggestionItem => {
             if (suggestionItem.text === textValue) {
-              finalList.push(suggestionItem);
+              selectedItemsList.push(suggestionItem);
+              newList.push(suggestionItem);
             }
           });
         }
       });
     }
-    setPeopleSelectedItems(selectedItemsList.concat(finalList));
+
+    setPeopleSelectedItems(prevPeopleSelectedItems => [...prevPeopleSelectedItems, ...newList]);
   };
 
   const _onItemsRemoved = (itemsToRemove: IPersonaProps[]): void => {
@@ -160,8 +161,8 @@ export const UnifiedPeoplePickerExample = (): JSX.Element => {
   } as IFloatingPeopleSuggestionsProps;
 
   const selectedPeopleListProps = {
-    removeButtonAriaLabel: 'Remove',
     selectedItems: [...peopleSelectedItems],
+    removeButtonAriaLabel: 'Remove',
     onItemsRemoved: _onItemsRemoved,
     getItemCopyText: _getItemsCopyText,
   } as ISelectedPeopleListProps<IPersonaProps>;
@@ -171,7 +172,9 @@ export const UnifiedPeoplePickerExample = (): JSX.Element => {
       <UnifiedPeoplePicker
         selectedItemsListProps={selectedPeopleListProps}
         floatingSuggestionProps={floatingPeoplePickerProps}
+        // eslint-disable-next-line react/jsx-no-bind
         onInputChange={_onInputChange}
+        // eslint-disable-next-line react/jsx-no-bind
         onPaste={_onPaste}
       />
     </>

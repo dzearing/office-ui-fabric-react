@@ -1,8 +1,73 @@
 # Change Log - @fluentui/react-next
 
-This log was last generated on Mon, 29 Jun 2020 12:36:08 GMT and should not be manually modified.
+This log was last generated on Mon, 20 Jul 2020 12:44:29 GMT and should not be manually modified.
 
 <!-- Start content -->
+
+## [8.0.0-alpha.64](https://github.com/microsoft/fluentui/tree/@fluentui/react-next_v8.0.0-alpha.64)
+
+Mon, 20 Jul 2020 12:44:29 GMT 
+[Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-next_v8.0.0-alpha.63..@fluentui/react-next_v8.0.0-alpha.64)
+
+### Changes
+
+- Move useRefEffect hook to the react-hooks package. ([PR #14054](https://github.com/microsoft/fluentui/pull/14054) by behowell@microsoft.com)
+
+## [8.0.0-alpha.63](https://github.com/microsoft/fluentui/tree/@fluentui/react-next_v8.0.0-alpha.63)
+
+Sat, 18 Jul 2020 00:04:51 GMT 
+[Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-next_v8.0.0-alpha.61..@fluentui/react-next_v8.0.0-alpha.63)
+
+### Changes
+
+- Copying Modal to react-next, in preparation for converting to function component. ([PR #13234](https://github.com/microsoft/fluentui/pull/13234) by czearing@outlook.com)
+
+## [8.0.0-alpha.61](https://github.com/microsoft/fluentui/tree/@fluentui/react-next_v8.0.0-alpha.61)
+
+Thu, 16 Jul 2020 21:33:40 GMT 
+[Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-next_v8.0.0-alpha.60..@fluentui/react-next_v8.0.0-alpha.61)
+
+### Changes
+
+- SpinButton: Updating to a function component within react-next. ([PR #12955](https://github.com/microsoft/fluentui/pull/12955) by czearing@outlook.com)
+
+## [8.0.0-alpha.59](https://github.com/microsoft/fluentui/tree/@fluentui/react-next_v8.0.0-alpha.59)
+
+Mon, 13 Jul 2020 23:14:39 GMT 
+[Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-next_v8.0.0-alpha.57..@fluentui/react-next_v8.0.0-alpha.59)
+
+### Changes
+
+- Pivot: Implementing overflow by moving tabs into a menu when they don't fit onscreen. ([PR #13631](https://github.com/microsoft/fluentui/pull/13631) by behowell@microsoft.com)
+- Remove KeytipData for Checkbox, Toggle, and Link. ([PR #13742](https://github.com/microsoft/fluentui/pull/13742) by xgao@microsoft.com)
+- Replace tslint with eslint ([PR #13944](https://github.com/microsoft/fluentui/pull/13944) by elcraig@microsoft.com)
+
+## [8.0.0-alpha.57](https://github.com/microsoft/fluentui/tree/@fluentui/react-next_v8.0.0-alpha.57)
+
+Thu, 09 Jul 2020 21:59:04 GMT 
+[Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-next_v8.0.0-alpha.55..@fluentui/react-next_v8.0.0-alpha.57)
+
+### Changes
+
+- Change react-next to export Calendar/DatePicker from date-time package ([PR #13904](https://github.com/microsoft/fluentui/pull/13904) by miclo@microsoft.com)
+
+## [8.0.0-alpha.53](https://github.com/microsoft/fluentui/tree/@fluentui/react-next_v8.0.0-alpha.53)
+
+Thu, 02 Jul 2020 12:42:11 GMT 
+[Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-next_v8.0.0-alpha.52..@fluentui/react-next_v8.0.0-alpha.53)
+
+### Changes
+
+- Adding pre-copy.json step. ([PR #13873](https://github.com/microsoft/fluentui/pull/13873) by humbertomakotomorimoto@gmail.com)
+
+## [8.0.0-alpha.52](https://github.com/microsoft/fluentui/tree/@fluentui/react-next_v8.0.0-alpha.52)
+
+Wed, 01 Jul 2020 12:35:23 GMT 
+[Compare changes](https://github.com/microsoft/fluentui/compare/@fluentui/react-next_v8.0.0-alpha.50..@fluentui/react-next_v8.0.0-alpha.52)
+
+### Changes
+
+- High contrast in Edge Chromium: fix TextField. ([PR #13844](https://github.com/microsoft/fluentui/pull/13844) by xgao@microsoft.com)
 
 ## [8.0.0-alpha.50](https://github.com/microsoft/fluentui/tree/@fluentui/react-next_v8.0.0-alpha.50)
 

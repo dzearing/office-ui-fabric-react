@@ -20,14 +20,14 @@ describe('Button', () => {
     componentPath: path.join(__dirname, 'Button.tsx'),
     Component: Button,
     displayName: 'Button',
-    disabledTests: ['has-docblock'],
+    disabledTests: ['has-docblock', 'as-renders-html', 'as-passes-as-value', 'as-renders-react-class', 'as-renders-fc'],
   });
 
   /**
    * Note: see more visual regression tests for Button in /apps/vr-tests.
    */
   it('renders a default state', () => {
-    const component = renderer.create(<Button content="Default button" />);
+    const component = renderer.create(<Button>Default button</Button>);
     const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
@@ -36,7 +36,11 @@ describe('Button', () => {
     const rootRef = React.createRef<HTMLButtonElement>();
     const componentRef = React.createRef<ButtonRef>();
 
-    wrapper = mount(<Button ref={rootRef} componentRef={componentRef} content="Focus me" />);
+    wrapper = mount(
+      <Button ref={rootRef} componentRef={componentRef}>
+        Focus me
+      </Button>,
+    );
 
     expect(typeof rootRef.current).toEqual('object');
     expect(document.activeElement).not.toEqual(rootRef.current);
