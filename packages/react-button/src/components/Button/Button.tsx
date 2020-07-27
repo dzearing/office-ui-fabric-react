@@ -20,7 +20,7 @@ export const Button = ButtonBase.extend({
     // tslint:disable-next-line:no-any
     (state: ButtonState) => useFocusRects(state.ref as any),
 
-    // apply variant token sets
+    // apply default variant token values
     makeVariants('Button', '--button', buttonVariants),
 
     // apply inline tokens

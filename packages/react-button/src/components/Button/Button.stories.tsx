@@ -211,31 +211,5 @@ export const ButtonInlineTokens = () => (
       <Button tokens={spotifyPrimaryButtonTokens}>Spotify: GET PREMIUM</Button>
       <Button tokens={spotifySecondaryButtonTokens}>Spotify: LEARN MORE</Button>
     </Stack>
-    <Text>A tokenized button can be customized for any size or padding.</Text>
-    <Stack horizontal>
-      <Button
-        icon="O"
-        tokens={{
-          minHeight: '24px',
-          fontSize: '12px',
-          iconSize: '40px',
-          padding: '0 8px',
-          contentGap: '4px',
-        }}
-      >
-        I'm a small button with a large icon
-      </Button>
-      <Button
-        icon="O"
-        tokens={{
-          minHeight: '70px',
-          fontSize: '24px',
-          iconSize: '12px',
-          padding: '0 40px',
-        }}
-      >
-        I'm a large button with a small icon
-      </Button>
-    </Stack>
   </Stack>
 );

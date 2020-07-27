@@ -61,10 +61,13 @@ export const makeVariants = (componentName: string, prefix: string, defaultVaria
     let className = variantToClassName[key];
 
     if (!className) {
-      const tokens = variantObjects.reduce((p, c) => Object.assign(p, tokensToStyleObject(c, prefix)), {
-        displayName: key,
+      const tokens = variantObjects.map(obj => {
+        if (typeof obj === 'object') {
+          return tokensToStyleObject(obj, prefix);
+        }
+        return obj;
       });
-      className = variantToClassName[key] = mergeStyles(tokens as IStyle);
+      className = variantToClassName[key] = mergeStyles(tokens as IStyle[]);
     }
 
     state.className = `${state.className || ''} ${className}`;
