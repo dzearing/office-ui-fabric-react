@@ -1,7 +1,7 @@
 import { RecursivePartial } from '@fluentui/react-theme-provider';
-import { ButtonTokens } from './Button.types';
+import { ButtonTokenSet } from './Button.types';
 
-export const createButtonTheme = (variantName: string, theme: RecursivePartial<ButtonTokens>) => {
+export const createButtonTheme = (variantName: string, theme: RecursivePartial<ButtonTokenSet>) => {
   return {
     tokens: {
       [variantName]: {

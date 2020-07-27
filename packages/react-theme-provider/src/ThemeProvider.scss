@@ -4,12 +4,12 @@
  * refer to token values, can be applied.
  */
 .root {
-  background: var(--body-background);
-  color: var(--body-contentColor);
-  font-family: var(--body-fontFamily);
-  font-weight: var(--body-fontWeight);
-  font-size: var(--body-fontSize);
-  line-height: var(--body-fontLineHeight);
+  background: var(--color-body-background);
+  color: var(--color-body-contentColor);
+  font-family: var(--color-body-fontFamily);
+  font-weight: var(--color-body-fontWeight);
+  font-size: var(--fonts-body-fontSize);
+  line-height: var(--fonts-body-fontLineHeight);
 
   > * {
     box-sizing: border-box;

@@ -1,51 +1,36 @@
 import * as React from 'react';
-import { compose, mergeProps } from '@fluentui/react-compose';
+import { compose, getSlots } from '@fluentui/react-compose/lib/staging';
 import { useMergedRefs } from '@uifabric/react-hooks';
-import { ButtonProps, ButtonSlots, ButtonSlotProps } from './Button.types';
+import { ButtonProps, ButtonState, ButtonOptions } from './Button.types';
 import { useButton } from './useButton';
 
-export const ButtonBase = compose<'button', ButtonProps, ButtonProps, {}, {}>(
-  (props, ref, options) => {
-    const { state } = options;
-    const { slots, slotProps } = mergeProps<ButtonProps, ButtonProps, ButtonSlots, ButtonSlotProps>(state, options);
-
-    const { buttonRef, children, icon, iconOnly, iconPosition, loading } = state;
+export const ButtonBase = compose<ButtonProps>(
+  (state: ButtonState, options: ButtonOptions) => {
+    const { slots, nativeProps } = getSlots(state, options.shorthandPropNames);
+    const { root, loader, icon, children } = nativeProps;
+    const { ref, buttonRef, iconOnly, iconPosition, loading } = state;
 
     return (
-      <slots.root ref={useMergedRefs(ref, buttonRef)} {...slotProps.root}>
-        {loading && <slots.loader {...slotProps.loader} />}
-        {icon && iconPosition !== 'after' && <slots.icon {...slotProps.icon} />}
-        {!iconOnly && children && <span>{children}</span>}
-        {icon && iconPosition === 'after' && <slots.icon {...slotProps.icon} />}
+      <slots.root {...root} ref={useMergedRefs(ref, buttonRef)}>
+        {loading && <slots.loader {...loader} />}
+        {icon && iconPosition !== 'after' && <slots.icon {...icon} />}
+        {!iconOnly && children && <slots.children {...children} />}
+        {icon && iconPosition === 'after' && <slots.icon {...icon} />}
       </slots.root>
     );
   },
   {
     displayName: 'ButtonBase',
-    handledProps: [
-      'buttonRef',
-      'componentRef',
-      'circular',
-      'fluid',
-      'iconOnly',
-      'iconPosition',
-      'inverted',
-      'loader',
-      'loading',
-      'primary',
-      'secondary',
-      'size',
-      'tokens',
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    ] as any,
-    slots: {
-      icon: 'span',
-      loader: 'span',
+
+    useHooks: [useButton],
+
+    shorthandPropNames: ['icon', 'loader', 'children'],
+
+    defaultProps: {
+      as: 'button',
+      icon: { as: 'span' },
+      children: { as: 'span' },
+      loader: { as: 'span' },
     },
-    state: useButton,
   },
 );
-
-ButtonBase.defaultProps = {
-  as: 'button',
-};

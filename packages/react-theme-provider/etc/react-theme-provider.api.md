@@ -6,11 +6,8 @@
 
 import * as React from 'react';
 
-// @public (undocumented)
-export type ColorPlateSet = ColorTokens & ColorTokenStates;
-
 // @public
-export type ColorTokens = Partial<{
+export type ColorTokens = {
     background: string;
     contentColor: string;
     subTextColor: string;
@@ -20,17 +17,20 @@ export type ColorTokens = Partial<{
     dividerColor: string;
     focusColor: string;
     focusInnerColor: string;
-}>;
+};
+
+// @public (undocumented)
+export type ColorTokenSet = ColorTokens & ColorTokenStates;
 
 // @public
-export type ColorTokenStates = Partial<{
+export type ColorTokenStates = {
     hovered: ColorTokens;
     pressed: ColorTokens;
     disabled: ColorTokens;
     checked: ColorTokens;
     checkedHovered: ColorTokens;
     checkedPressed: ColorTokens;
-}>;
+};
 
 // @public (undocumented)
 export type FontTokens = Partial<{
@@ -38,9 +38,6 @@ export type FontTokens = Partial<{
     fontSize: string;
     fontWeight: string;
 }>;
-
-// @public (undocumented)
-export const getStyleFromPropsAndOptions: <TProps extends StyleProps<import("./types").ColorPlateSet>, TOptions extends StyleOptions<TProps>>(props: TProps, options: TOptions, prefix?: string | undefined) => import("react").CSSProperties;
 
 // @public
 export const mergeThemes: (...themes: (Theme | PartialTheme | undefined)[]) => Theme;
@@ -54,28 +51,18 @@ export type RecursivePartial<T> = {
     [P in keyof T]?: T[P] extends (infer U)[] ? RecursivePartial<U>[] : T[P] extends object ? RecursivePartial<T[P]> : T[P];
 };
 
-// @public (undocumented)
-export interface StyleOptions<TProps> {
-    // (undocumented)
-    slotProps: ((props: TProps) => Record<string, object>)[];
-}
-
-// @public
-export interface StyleProps<TTokens extends ColorPlateSet = ColorPlateSet> {
-    // (undocumented)
-    style?: React.CSSProperties;
-    // (undocumented)
-    tokens?: TTokens;
-}
-
 // @public
 export interface Theme {
+    // (undocumented)
+    components: Record<string, any>;
     // (undocumented)
     stylesheets: string[];
     // (undocumented)
     tokens: {
-        body: ColorPlateSet & TokenSetType;
-        [key: string]: TokenSetType;
+        color: {
+            body: ColorTokenSet;
+            [key: string]: ColorTokenSet;
+        };
     };
 }
 
@@ -88,16 +75,14 @@ export interface ThemeProviderProps extends React.HTMLAttributes<HTMLDivElement>
 }
 
 // @public
-export type TokenSetType = string | {
-    [key: string]: TokenSetType | undefined;
-};
+export interface TokenSet extends Record<string, TokenSetInternal> {
+}
 
 // @public (undocumented)
-export const tokensToStyleObject: (tokens?: {
-    [key: string]: string | {
-        [key: string]: string | any | undefined;
-    } | undefined;
-} | undefined, prefix?: string | undefined, style?: {
+export type TokenSetInternal = string | TokenSet | undefined;
+
+// @public (undocumented)
+export const tokensToStyleObject: (tokens?: TokenSet | undefined, prefix?: string | undefined, style?: {
     [key: string]: string | number | undefined;
 }) => import("react").CSSProperties;
 

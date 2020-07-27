@@ -1,9 +1,7 @@
-import * as React from 'react';
-
 /**
  * A baseline set of color plates.
  */
-export type ColorTokens = Partial<{
+export type ColorTokens = {
   background: string;
   contentColor: string;
   subTextColor: string;
@@ -13,7 +11,7 @@ export type ColorTokens = Partial<{
   dividerColor: string;
   focusColor: string;
   focusInnerColor: string;
-}>;
+};
 
 /**
  * A set of states for each color plate to use.
@@ -35,14 +33,16 @@ export type ColorTokens = Partial<{
  * compatible with other platforms reusing token names, we have decided to snap
  * to "pressed".
  */
-export type ColorTokenStates = Partial<{
+export type ColorTokenStates = {
   hovered: ColorTokens;
   pressed: ColorTokens;
   disabled: ColorTokens;
   checked: ColorTokens;
   checkedHovered: ColorTokens;
   checkedPressed: ColorTokens;
-}>;
+};
+
+export type ColorTokenSet = ColorTokens & ColorTokenStates;
 
 export type FontTokens = Partial<{
   fontFamily: string;
@@ -50,12 +50,12 @@ export type FontTokens = Partial<{
   fontWeight: string;
 }>;
 
-export type ColorPlateSet = ColorTokens & ColorTokenStates;
+export type TokenSetInternal = string | TokenSet | undefined;
 
 /**
  * A token set can provide a single string or object, mapping additional sub-parts of a token set.
  */
-export type TokenSetType = string | { [key: string]: TokenSetType | undefined };
+export interface TokenSet extends Record<string, TokenSetInternal> {}
 
 /**
  * Recursive partial type.
@@ -73,27 +73,28 @@ export type RecursivePartial<T> = {
  */
 export interface Theme {
   tokens: {
-    body: ColorPlateSet & TokenSetType;
-    [key: string]: TokenSetType;
+    color: {
+      body: ColorTokenSet;
+      // brand: ColorTokenSet;
+      // neutral: ColorTokenSet;
+      // danger: ColorTokenSet;
+      // info: ColorTokenSet;
+      // warning: ColorTokenSet;
+
+      [key: string]: ColorTokenSet;
+    };
+
+    // font: {
+    //   body: FontTokens;
+    // }
   };
 
   stylesheets: string[];
+
+  components: Record<string, any>;
 }
 
 /**
  * A partial theme, provided by the customer. The internal `createTheme` helper will fill in the rest.
  */
 export interface PartialTheme extends RecursivePartial<Theme> {}
-
-/**
- * Typing containing the definition for the `style` and `tokens` props that will be extended for the calculation of the
- * style prop.
- */
-export interface StyleProps<TTokens extends ColorPlateSet = ColorPlateSet> {
-  style?: React.CSSProperties;
-  tokens?: TTokens;
-}
-
-export interface StyleOptions<TProps> {
-  slotProps: ((props: TProps) => Record<string, object>)[];
-}

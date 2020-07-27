@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { BaseSlots, ComponentProps, SlotProp, SlotProps } from '@fluentui/react-compose';
-import { ColorPlateSet } from '@fluentui/react-theme-provider';
+import { ComponentProps, ComposeOptions, ShorthandProps } from '@fluentui/react-compose/lib/staging';
+import { ColorTokenSet, TokenSet } from '@fluentui/react-theme-provider';
 import { RecursivePartial } from '../../utils/tempTypes';
 
 export type SizeValue = 'smallest' | 'smaller' | 'small' | 'medium' | 'large' | 'larger' | 'largest';
@@ -22,15 +22,18 @@ export interface ButtonProps extends ComponentProps, React.HTMLAttributes<HTMLBu
   componentRef?: React.RefObject<ButtonRef>;
 
   /**
-   * Shorthand icon. A shorthand prop can be a literal, object,
-   * JSX, or function which takes render options.
+   * Shorthand icon. A shorthand prop can be a literal, object, or
+   * JSX. The `children` prop of the object can be a render function,
+   * taking in the original slot component and props.
    */
-  icon?: SlotProp<React.HTMLAttributes<HTMLSpanElement>>;
+  icon?: ShorthandProps;
 
   /**
    * Shorthand loader content within the button.
    */
-  loader?: SlotProp<React.HTMLAttributes<HTMLSpanElement>>;
+  loader?: ShorthandProps;
+
+  children?: ShorthandProps;
 
   /** A button can appear circular. */
   circular?: boolean;
@@ -80,27 +83,23 @@ export interface ButtonProps extends ComponentProps, React.HTMLAttributes<HTMLBu
   /** A button can be formatted to show only text in order to indicate a less-pronounced action. */
   // text?: boolean;
 
-  tokens?: RecursivePartial<ButtonTokens>;
+  tokens?: RecursivePartial<ButtonTokenSet>;
 }
 
 export interface ButtonState extends ButtonProps {
   buttonRef?: React.RefObject<HTMLButtonElement>;
 }
 
-export interface ButtonSlots extends BaseSlots {
-  icon: React.ElementType;
-  loader: React.ElementType;
-}
+export type ButtonOptions = ComposeOptions<ButtonProps, ButtonState>;
 
-export type ButtonSlotProps = SlotProps<ButtonSlots, ButtonProps, React.ButtonHTMLAttributes<HTMLButtonElement>>;
-
-export type ButtonTokens = ColorPlateSet & {
+export type ButtonTokenSet = ColorTokenSet & {
   /* sizing */
   padding: string;
   margin: string;
   height: string;
   minWidth: string;
   maxWidth: string;
+  minHeight: string;
   contentGap: string;
   iconSize: string;
   borderRadius: string;
@@ -127,5 +126,6 @@ export type ButtonTokens = ColorPlateSet & {
 
   pressed: {
     transform: string;
+    transition: string;
   };
 };

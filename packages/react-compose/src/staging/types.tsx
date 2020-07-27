@@ -52,3 +52,28 @@ export type ComposeOptions<TProps, TState> = {
    */
   render?: ComposeRenderFunction2<TProps, TState>;
 };
+
+export interface ComponentProps extends GenericDictionary {
+  as?: React.ElementType;
+  ref?: React.Ref<HTMLElement>;
+  className?: string;
+}
+
+//
+// Slot Prop / Shorthand types
+//
+
+export type ShorthandRenderFunction<TProps> = (Component: React.ElementType<TProps>, props: TProps) => React.ReactNode;
+
+export type ShorthandProps<TProps extends ComponentProps = {}> =
+  | React.ReactChild
+  | React.ReactNodeArray
+  | React.ReactPortal
+  | boolean
+  | number
+  | null
+  | undefined
+  | (TProps &
+      ComponentProps & {
+        children?: TProps['children'] | ShorthandRenderFunction<TProps>;
+      });

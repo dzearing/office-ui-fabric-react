@@ -4,28 +4,44 @@ import { PartialTheme } from './types';
 
 const lightTheme: PartialTheme = {
   tokens: {
-    body: {
-      background: 'white',
-      contentColor: 'black',
-      fontFamily: 'Segoe UI',
+    color: {
+      body: {
+        background: 'white',
+        contentColor: 'black',
+      },
     },
   },
 };
 
 const darkTheme: PartialTheme = {
   tokens: {
-    body: {
-      background: 'black',
-      contentColor: 'white',
+    color: {
+      body: {
+        background: 'white',
+        contentColor: 'black',
+      },
     },
   },
 };
 
 const themeWithStylesheets: PartialTheme = {
-  stylesheets: ['.foo { font-family: var(--body-customFont); }'],
+  stylesheets: [
+    `
+    .foo {
+      background: var(--color-custom-background);
+      color: var(--color-custom-contentColor);
+    }
+  `,
+  ],
   tokens: {
-    body: {
-      customFont: 'Courier New',
+    color: {
+      custom: {
+        background: 'purple',
+      },
+      body: {
+        background: 'white',
+        contentColor: 'black',
+      },
     },
   },
 };
@@ -46,7 +62,7 @@ export const NestedTheming = () => {
 
 export const TestStylesheets = () => (
   <ThemeProvider className="foo" theme={themeWithStylesheets}>
-    <span>I am courier new.</span>
+    <span>I am a custom color set.</span>
   </ThemeProvider>
 );
 

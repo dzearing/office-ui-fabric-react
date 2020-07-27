@@ -1,9 +1,7 @@
-import { TokenSetType } from './types';
+import { TokenSet } from './types';
 
 export const tokensToStyleObject = (
-  tokens?: {
-    [key: string]: TokenSetType | undefined;
-  },
+  tokens?: TokenSet,
   prefix?: string,
   style: {
     [key: string]: string | number | undefined;
@@ -15,7 +13,7 @@ export const tokensToStyleObject = (
       const varValue = tokens[name];
 
       if (varValue && typeof varValue === 'object') {
-        tokensToStyleObject(varValue as { [key: string]: TokenSetType }, varName, style);
+        tokensToStyleObject(varValue as TokenSet, varName, style);
       } else {
         style[varName] = varValue;
       }

@@ -11,13 +11,19 @@ describe('mergeThemes', () => {
       mergeThemes(
         {
           tokens: {
-            body: {
-              fill: 'blue',
-              text: 'white',
+            color: {
+              body: {
+                background: 'blue',
+                contentColor: 'white',
+              },
             },
           },
         },
-        { tokens: { body: { fill: 'red' } } },
+        {
+          tokens: {
+            color: { body: { background: 'red' } },
+          },
+        },
       ),
     ).toMatchSnapshot();
   });

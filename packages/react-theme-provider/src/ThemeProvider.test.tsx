@@ -9,18 +9,22 @@ import { mergeThemes } from './mergeThemes';
 const lightTheme = mergeThemes({
   stylesheets: [],
   tokens: {
-    body: {
-      background: 'white',
-      contentColor: 'black',
+    color: {
+      body: {
+        background: 'white',
+        contentColor: 'black',
+      },
     },
   },
 });
 
 const darkTheme = mergeThemes({
   tokens: {
-    body: {
-      background: 'black',
-      contentColor: 'white',
+    color: {
+      body: {
+        background: 'black',
+        contentColor: 'white',
+      },
     },
   },
 });

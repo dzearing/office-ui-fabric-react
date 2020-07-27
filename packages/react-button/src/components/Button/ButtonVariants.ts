@@ -1,7 +1,7 @@
-import { ButtonTokens } from './Button.types';
+import { ButtonTokenSet } from './Button.types';
 import { RecursivePartial } from '../../utils/tempTypes';
 
-export const buttonVariants: Record<string, RecursivePartial<ButtonTokens>> = {
+export const buttonVariants: Record<string, RecursivePartial<ButtonTokenSet>> = {
   base: {
     // Should these be their own variants?
     size: {
@@ -21,7 +21,7 @@ export const buttonVariants: Record<string, RecursivePartial<ButtonTokens>> = {
     width: 'auto',
     maxWidth: '280px',
 
-    minHeight: 'var(-size-regular)',
+    minHeight: '32px', // var(--button-size-regular)',
 
     contentGap: '10px',
     iconSize: '16px',
@@ -60,9 +60,9 @@ export const buttonVariants: Record<string, RecursivePartial<ButtonTokens>> = {
     },
 
     disabled: {
-      boxShadow: 'none',
+      // boxShadow: 'none',
       background: 'rgb(237, 235, 233)',
-      borderColor: 'var(--button-disabled-background)',
+      borderColor: 'transparent',
       contentColor: 'rgb(200, 198, 196)',
       iconColor: 'var(--button-disabled-contentColor)',
     },
@@ -83,30 +83,23 @@ export const buttonVariants: Record<string, RecursivePartial<ButtonTokens>> = {
   },
 
   primary: {
-    background: 'rgb(98, 100, 167)',
+    background: 'var(--color-brand-background, rgb(98, 100, 167))',
     borderColor: 'transparent',
     contentColor: 'white',
     iconColor: 'inherit',
 
     hovered: {
-      background: 'rgb(88, 90, 150)',
-      borderColor: 'var(--accent-borderColor)',
-      contentColor: 'var(--accent-contentColor)',
-      iconColor: 'var(--accent-icon)',
+      background: 'var(--color-brand-hovered-background, rgb(88, 90, 150))',
+      borderColor: 'var(--color-brand-hovered-borderColor)',
+      contentColor: 'var(--color-brand-hovered-contentColor)',
+      iconColor: 'var(--color-brand-icon)',
     },
 
     pressed: {
       background: 'rgb(70, 71, 117)',
-      borderColor: 'var(--accent-borderColor)',
-      contentColor: 'var(--accent-contentColor)',
-      iconColor: 'var(--accent-iconColor)',
-    },
-
-    disabled: {
-      background: 'rgb(237, 235, 233)',
-      borderColor: 'var(--accent-disabled-background)',
-      contentColor: 'rgb(200, 198, 196)',
-      iconColor: 'var(--accent-disabled-contentColor)',
+      borderColor: 'var(--color-brand-borderColor)',
+      contentColor: 'var(--color-brand-contentColor)',
+      iconColor: 'var(--color-brand-iconColor)',
     },
   },
 };
