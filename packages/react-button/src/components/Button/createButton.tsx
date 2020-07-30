@@ -1,8 +1,11 @@
 import * as React from 'react';
-import { createDraftState, getSlots, simplifyShorthand } from '@fluentui/react-compose/lib/staging';
+import { mergeProps, getSlots, simplifyShorthand } from '@fluentui/react-compose/lib/staging';
 import { ButtonProps, ButtonState } from './Button.types';
 import { useButton } from './useButton';
 
+/**
+ * Consts listing which props are shorthand props.
+ */
 export const buttonShorthandProps = ['icon', 'loader', 'children'];
 
 /**
@@ -27,7 +30,7 @@ export const renderButton = (state: ButtonState) => {
  * Given user props, returns state and render function for a Button.
  */
 export const createButton = (props: ButtonProps, ref: React.Ref<HTMLElement>, defaultProps?: ButtonProps) => {
-  const state = createDraftState(
+  const state = mergeProps(
     {
       ref,
       as: props.href ? 'a' : 'button',

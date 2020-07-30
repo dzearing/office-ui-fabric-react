@@ -7,7 +7,7 @@ export const createToggleButton = (
   ref: React.Ref<HTMLElement>,
   defaultProps?: ToggleButtonProps,
 ) => {
-  const buttonDefinition = createButton(props, ref);
+  const buttonDefinition = createButton(props, ref, defaultProps);
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useChecked(buttonDefinition.state as ToggleButtonProps);

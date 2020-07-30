@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { getSlots, simplifyShorthand, createDraftState } from '@fluentui/react-compose/lib/staging';
+import { getSlots, simplifyShorthand, mergeProps } from '@fluentui/react-compose/lib/staging';
 import { MenuButtonProps, MenuButtonState } from './MenuButton.types';
 import { useButton } from '../Button/useButton';
 import { useExpanded } from './useExpanded';
@@ -35,7 +35,7 @@ export const createMenuButton = (
   ref: React.Ref<HTMLElement>,
   defaultProps?: MenuButtonProps,
 ) => {
-  const state = createDraftState(
+  const state = mergeProps(
     {
       ref,
       as: props.href ? 'a' : 'button',

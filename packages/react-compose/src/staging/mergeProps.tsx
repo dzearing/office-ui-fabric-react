@@ -7,7 +7,7 @@ import { GenericDictionary } from './types';
  * @param target
  * @param propSets
  */
-export const createDraftState = (target: GenericDictionary, ...propSets: (GenericDictionary | undefined)[]) => {
+export const mergeProps = (target: GenericDictionary, ...propSets: (GenericDictionary | undefined)[]) => {
   for (const props of propSets) {
     if (props) {
       for (const propName of Object.keys(props)) {
@@ -26,7 +26,7 @@ export const createDraftState = (target: GenericDictionary, ...propSets: (Generi
               target[propName] = propValue;
             } else {
               // else merge.
-              createDraftState(target[propName], propValue);
+              mergeProps(target[propName], propValue);
             }
           }
         } else if (propName === 'className') {
