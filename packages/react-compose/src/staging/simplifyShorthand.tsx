@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { GenericDictionary } from './types';
+
 export const simplifyShorthand = (props: GenericDictionary, shorthandPropNames?: string[]) => {
   let newProps = props;
 

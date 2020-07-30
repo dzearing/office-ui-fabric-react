@@ -45,9 +45,9 @@ export type ColorTokenStates = {
 export type ColorTokenSet = ColorTokens & ColorTokenStates;
 
 export type FontTokens = Partial<{
-  fontFamily: string;
-  fontSize: string;
-  fontWeight: string;
+  family: string;
+  size: string;
+  weight: string;
 }>;
 
 export type TokenSetInternal = string | TokenSet | undefined;
@@ -73,7 +73,7 @@ export type RecursivePartial<T> = {
  */
 export interface Theme {
   tokens: {
-    color: {
+    colors: {
       body: ColorTokenSet;
       // brand: ColorTokenSet;
       // neutral: ColorTokenSet;
@@ -83,15 +83,32 @@ export interface Theme {
 
       [key: string]: ColorTokenSet;
     };
-
-    // font: {
-    //   body: FontTokens;
-    // }
+    fonts: {
+      body: FontTokens;
+      header1: FontTokens;
+      header2: FontTokens;
+      header3: FontTokens;
+      header4: FontTokens;
+      header5: FontTokens;
+      header6: FontTokens;
+      code: FontTokens;
+    };
   };
+
+  // --colors-body-text
+  // --colors-body-textColor
+  // --colors-body-foreground (what about header, subtext, icon, link color)
+  // --color-body-icon
+  // --color-body-border
+  // --color-brand-border
+  // --color-neutral-border
+  // --font-body-family
+  // --font-body-size
+  // --font-body-weight
 
   stylesheets: string[];
 
-  components: Record<string, any>;
+  components: Record<string, unknown>;
 }
 
 /**

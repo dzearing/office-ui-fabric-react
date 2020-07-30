@@ -3,22 +3,22 @@ export const OPTIONS_NAME = '__options';
 /**
  * Generic name to any dictionary.
  */
-// tslint:disable-next-line:no-any
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type GenericDictionary = Record<string, any>;
 
-export type ComposedComponent2<TProps, TState> = React.ForwardRefExoticComponent<TProps> & {
+export type ComposedComponent<TProps, TState> = React.ForwardRefExoticComponent<TProps> & {
   [OPTIONS_NAME]: ComposeOptions<TProps, TState>;
   extend: <TNewProps = TProps, TNewState = TState>(
     options: ComposeOptions<TNewProps, TNewState>,
-  ) => ComposedComponent2<TNewProps, TNewState>;
+  ) => ComposedComponent<TNewProps, TNewState>;
 };
 
-export type ComposeRenderFunction2<TProps, TState> = (
+export type ComposeRenderFunction<TProps, TState> = (
   state: TState,
   options: ComposeOptions<TProps, TState>,
 ) => JSX.Element;
 
-export type ComposeInput<TProps, TState> = ComposedComponent2<TProps, TState> | ComposeRenderFunction2<TProps, TState>;
+export type ComposeInput<TProps, TState> = ComposedComponent<TProps, TState> | ComposeRenderFunction<TProps, TState>;
 
 export type ComposeHook<TProps, TState> = (props: GenericDictionary, options: ComposeOptions<TProps, TState>) => void;
 
@@ -50,12 +50,13 @@ export type ComposeOptions<TProps, TState> = {
   /**
    * The render function to apply. This can be provided via options in component recomposition scenarios.
    */
-  render?: ComposeRenderFunction2<TProps, TState>;
+  render?: ComposeRenderFunction<TProps, TState>;
 };
 
 export interface ComponentProps extends GenericDictionary {
   as?: React.ElementType;
-  ref?: React.Ref<HTMLElement>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  ref?: React.Ref<any>;
   className?: string;
 }
 

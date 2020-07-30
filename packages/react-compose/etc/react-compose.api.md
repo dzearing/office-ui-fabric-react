@@ -92,9 +92,6 @@ export type ComposeRenderFunction<TElementType extends React.ElementType = 'div'
 // @public
 export const createClassResolver: (classes: Record<string, string>) => (state: Record<string, any>) => Record<string, string>;
 
-// @public (undocumented)
-export const createUseClasses: (classes: Record<string, string>) => (state: Record<string, any>) => void;
-
 // @public
 export type GenericDictionary = Record<string, any>;
 
@@ -107,6 +104,9 @@ export type Input<TElementType extends React.ElementType = 'div', TProps = {}> =
 export type InputComposeComponent<TProps = {}> = React.FunctionComponent<TProps> & {
     fluentComposeConfig?: Required<ComposePreparedOptions>;
 };
+
+// @public (undocumented)
+export const makeClasses: (classes: Record<string, string>) => (state: Record<string, any>) => void;
 
 // @public
 export function mergeProps<TProps, TState = TProps, TSlots = GenericDictionary, TSlotProps = {

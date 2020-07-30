@@ -1,4 +1,4 @@
 export * from './Button.types';
-export * from './ButtonBase';
+export * from './createButton';
 export * from './Button';
 export * from './useButton';

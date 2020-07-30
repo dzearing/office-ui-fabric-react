@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { ComposeOptions, ComposedComponent2, ComposeInput, OPTIONS_NAME } from './types';
+import { ComposeOptions, ComposedComponent, ComposeInput, OPTIONS_NAME } from './types';
 import { mergeComposeOptions } from './mergeComposeOptions';
-import { mergeObjects } from './mergeObjects';
+import { createDraftState } from './createDraftState';
 import { applyHooks } from './applyHooks';
 import { simplifyShorthand } from './simplifyShorthand';
 
@@ -11,11 +11,11 @@ export function compose<TProps, TState = TProps>(
 ) {
   const composeOptions = mergeComposeOptions(render, options);
 
-  const Result: ComposedComponent2<TProps, TState> = React.forwardRef<HTMLElement, TProps>(
+  const Result: ComposedComponent<TProps, TState> = React.forwardRef<HTMLElement, TProps>(
     (props: TProps, ref: React.Ref<HTMLElement>) =>
       composeOptions.render!(
         applyHooks(
-          mergeObjects(
+          createDraftState(
             // target: initial props
             { ref },
 
@@ -32,17 +32,17 @@ export function compose<TProps, TState = TProps>(
         ),
         composeOptions,
       ),
-  ) as ComposedComponent2<TProps, TState>;
+  ) as ComposedComponent<TProps, TState>;
 
   Result.displayName = composeOptions.displayName;
   Result[OPTIONS_NAME] = composeOptions;
 
   Result.extend = <TNewProps, TNewState = TNewProps>(extendOptions: ComposeOptions<TNewProps, TNewState>) =>
     compose<TNewProps, TNewState>(
-      // tslint:disable-next-line:no-any
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       Result as any,
       extendOptions,
-    ) as ComposedComponent2<TNewProps, TNewState>;
+    ) as ComposedComponent<TNewProps, TNewState>;
 
   return Result;
 }

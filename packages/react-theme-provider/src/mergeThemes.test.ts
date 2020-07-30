@@ -11,7 +11,7 @@ describe('mergeThemes', () => {
       mergeThemes(
         {
           tokens: {
-            color: {
+            colors: {
               body: {
                 background: 'blue',
                 contentColor: 'white',
@@ -21,7 +21,7 @@ describe('mergeThemes', () => {
         },
         {
           tokens: {
-            color: { body: { background: 'red' } },
+            colors: { body: { background: 'red' } },
           },
         },
       ),

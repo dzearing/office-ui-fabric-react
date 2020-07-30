@@ -1,4 +1,3 @@
 export * from './MenuButton.types';
-export * from './MenuButtonBase';
+export * from './createMenuButton';
 export * from './MenuButton';
-export * from './useMenuButton';

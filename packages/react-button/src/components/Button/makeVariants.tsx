@@ -63,7 +63,11 @@ export const makeVariants = (componentName: string, prefix: string, defaultVaria
     if (!className) {
       const tokens = variantObjects.map(obj => {
         if (typeof obj === 'object') {
-          return tokensToStyleObject(obj, prefix);
+          const newObj = tokensToStyleObject(obj, prefix);
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          (newObj as any).displayName = key;
+
+          return newObj;
         }
         return obj;
       });

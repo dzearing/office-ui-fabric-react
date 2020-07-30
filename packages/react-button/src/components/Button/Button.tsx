@@ -1,29 +1,32 @@
-import { createUseClasses } from '@fluentui/react-compose';
+import * as React from 'react';
+import { createButton } from './createButton';
+import { ButtonProps } from './Button.types';
 import { useFocusRects } from '@uifabric/utilities';
-
-import { ButtonBase } from './ButtonBase';
-import * as classes from './Button.scss';
-import { ButtonState } from './Button.types';
-
+import { makeClasses } from '@fluentui/react-compose';
 import { makeVariants } from './makeVariants';
 import { useInlineTokens } from './useInlineTokens';
 import { buttonVariants } from './ButtonVariants';
+import * as classes from './Button.scss';
 
-export const Button = ButtonBase.extend({
-  displayName: 'Button',
+// Create a hook to resolve classnames.
+export const useButtonClasses = makeClasses(classes);
 
-  useHooks: [
-    // apply stylesheet classes
-    createUseClasses(classes),
+// Create a hook to resolve variants.
+export const useButtonVariants = makeVariants('Button', '--button', buttonVariants);
 
-    // apply focus classnames to root when appropriate
-    // tslint:disable-next-line:no-any
-    (state: ButtonState) => useFocusRects(state.ref as any),
+/**
+ * Define a styled Button, using the `createButton` factory.
+ */
+export const Button = React.forwardRef<HTMLElement, ButtonProps>((props, ref) => {
+  const { render, state } = createButton(props, ref);
 
-    // apply default variant token values
-    makeVariants('Button', '--button', buttonVariants),
+  // style stuff
+  useButtonClasses(state);
+  useButtonVariants(state);
+  useFocusRects(state.ref);
+  useInlineTokens(state);
 
-    // apply inline tokens
-    useInlineTokens,
-  ],
+  return render(state);
 });
+
+Button.displayName = 'Button';

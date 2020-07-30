@@ -4,10 +4,13 @@ import { PartialTheme } from './types';
 
 const lightTheme: PartialTheme = {
   tokens: {
-    color: {
+    colors: {
       body: {
         background: 'white',
         contentColor: 'black',
+      },
+      inverted: {
+        background: 'black',
       },
     },
   },
@@ -15,7 +18,7 @@ const lightTheme: PartialTheme = {
 
 const darkTheme: PartialTheme = {
   tokens: {
-    color: {
+    colors: {
       body: {
         background: 'white',
         contentColor: 'black',
@@ -28,13 +31,13 @@ const themeWithStylesheets: PartialTheme = {
   stylesheets: [
     `
     .foo {
-      background: var(--color-custom-background);
-      color: var(--color-custom-contentColor);
+      background: var(--colors-custom-background);
+      color: var(--colors-custom-contentColor);
     }
   `,
   ],
   tokens: {
-    color: {
+    colors: {
       custom: {
         background: 'purple',
       },

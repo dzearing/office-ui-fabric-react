@@ -7,24 +7,28 @@ export const getSlots = (state: GenericDictionary, slotNames: string[] | undefin
   const slots: GenericDictionary = {
     root: state.as || nullRender,
   };
-  const nativeProps: GenericDictionary = {
+  const slotProps: GenericDictionary = {
     root: getNativeElementProps(state.as, state),
   };
 
   for (const name of slotNames!) {
     const slotDefinition = state[name];
+    const { as: slotAs, children, ...rest } = slotDefinition;
 
-    const slot = (slots[name] = slotDefinition.as && slotDefinition.children ? slotDefinition.as : nullRender);
+    const slot = (slots[name] = slotAs || slotDefinition.children ? slotAs : nullRender);
 
     if (slots[name] !== nullRender) {
-      const nativeElementProps = (nativeProps[name] = getNativeElementProps(slot, slotDefinition));
+      slotProps[name] =
+        typeof slot === 'string'
+          ? getNativeElementProps(slot as keyof JSX.IntrinsicElements, slotDefinition)
+          : { ...rest, children };
 
-      if (typeof nativeElementProps.children === 'function') {
+      if (children === 'function') {
+        slotProps[name].children = children(slots[name], rest);
         slots[name] = React.Fragment;
-        nativeElementProps.children = nativeElementProps.children(slots[name], nativeElementProps);
       }
     }
   }
 
-  return { slots, nativeProps };
+  return { slots, slotProps };
 };

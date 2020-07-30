@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Button } from './Button';
 import { ButtonProps } from './Button.types';
 import * as classes from './Button.stories.scss';
-import { mergeThemes, ThemeProvider } from '@fluentui/react-theme-provider';
 
 /**
  * Temporary Stack until there's one in its own package.

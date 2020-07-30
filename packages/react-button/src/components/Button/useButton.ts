@@ -1,13 +1,15 @@
 import * as React from 'react';
-import { getStyleFromPropsAndOptions } from '@fluentui/react-theme-provider';
 import { ButtonState } from './Button.types';
-
+import { useMergedRefs } from '@uifabric/react-hooks';
 /**
  * The useButton hook processes the Button draft state.
  * @param draftState - Button draft state to mutate.
  */
 export const useButton = (draftState: ButtonState) => {
   const buttonRef = (draftState.buttonRef = React.useRef<HTMLButtonElement | null>(null));
+
+  // Ensure we can use a ref.
+  draftState.ref = useMergedRefs(draftState.ref, buttonRef);
 
   // Define the componentRef contract.
   React.useImperativeHandle(draftState.componentRef, () => ({
@@ -24,16 +26,16 @@ export const useButton = (draftState: ButtonState) => {
 
       draftState['data-isFocusable'] = true;
 
-      draftState.onKeyDown = React.useCallback(ev => {
+      draftState.onKeyDown = ev => {
         if (onKeyDown) {
           onKeyDown(ev);
         }
 
         if (!ev.defaultPrevented && onClick && (ev.which === 20 || ev.which === 13)) {
-          // tslint:disable-next-line:no-any
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           onClick(ev as any);
         }
-      }, []);
+      };
     }
   }
 
