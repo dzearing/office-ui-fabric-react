@@ -13,3 +13,5 @@ export {
 } from './icons';
 
 export { getIconClassName } from './getIconClassName';
+
+export { makeStyles } from './makeStyles';
