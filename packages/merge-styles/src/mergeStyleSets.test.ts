@@ -164,6 +164,24 @@ describe('mergeStyleSets', () => {
     _stylesheet.setConfig({ namespace: undefined });
   });
 
+  it('can merge nested classes', () => {
+    const styleSet1 = mergeStyleSets({
+      classA: {
+        background: 'red',
+      },
+      classB: {
+        background: 'blue',
+        '&.classA': {
+          background: 'green',
+        },
+      },
+    });
+
+    expect(_stylesheet.getRules()).toEqual(
+      '.classA-0{background:red;}.classB-1{background:blue;}.classB-1.classA-0{background:green;}',
+    );
+  });
+
   describe('typings tests', () => {
     interface ISubComponentStyles extends IStyleSet<ISubComponentStyles> {
       root: IStyle;
