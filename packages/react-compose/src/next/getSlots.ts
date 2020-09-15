@@ -23,6 +23,12 @@ export const getSlots = (state: GenericDictionary, slotNames?: string[] | undefi
   const slots: GenericDictionary = {
     root: state.as || 'div',
   };
+
+  // If the "as" value is JSX, extract type and props.
+  if (typeof slotAs === 'object' && slotAs.type && slotAs.props) {
+    slotAs = slotAs.type;
+  }
+
   const slotProps: GenericDictionary = {
     root: typeof state.as === 'string' ? getNativeElementProps(state.as, state) : omit(state, ['as']),
   };
@@ -30,7 +36,9 @@ export const getSlots = (state: GenericDictionary, slotNames?: string[] | undefi
   if (slotNames) {
     for (const name of slotNames) {
       const slotDefinition = state[name] || {};
-      const { as: slotAs = 'span', children } = slotDefinition;
+      let { as: slotAs = 'span' } = slotDefinition;
+      const { children } = slotDefinition;
+
       const isSlotPrimitive = typeof slotAs === 'string';
       const isSlotEmpty = isSlotPrimitive && slotDefinition.children === undefined;
 

@@ -19,6 +19,13 @@ describe('getSlots', () => {
     });
   });
 
+  it('returns root slot as a div with an id attribute', () => {
+    expect(getSlots({ as: <div id="123" /> })).toEqual({
+      slots: { root: 'div' },
+      slotProps: { id: '123' },
+    });
+  });
+
   it('omits props which are not valid for the element rendered', () => {
     expect(getSlots({ as: 'button', id: 'id', href: 'href' })).toEqual({
       slots: { root: 'button' },
