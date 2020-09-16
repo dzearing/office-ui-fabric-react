@@ -7,7 +7,7 @@ describe('getSlots', () => {
 
   it('returns div for root if the as prop is not provided', () => {
     expect(getSlots({})).toEqual({
-      slots: { root: 'div' },
+      slots: { root: 'span' },
       slotProps: { root: {} },
     });
   });
@@ -20,9 +20,9 @@ describe('getSlots', () => {
   });
 
   it('returns root slot as a div with an id attribute', () => {
-    expect(getSlots({ as: <div id="123" /> })).toEqual({
+    expect(getSlots({ id: '123', as: <div id="456" /> })).toEqual({
       slots: { root: 'div' },
-      slotProps: { id: '123' },
+      slotProps: { root: { id: '456' } },
     });
   });
 

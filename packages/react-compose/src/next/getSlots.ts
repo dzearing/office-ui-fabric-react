@@ -1,7 +1,9 @@
 import * as React from 'react';
-import { getNativeElementProps, omit } from '@uifabric/utilities';
+import { getNativeElementProps, omit, assign } from '@uifabric/utilities';
 import { GenericDictionary } from './types';
 import { nullRender } from './nullRender';
+
+const DEFAULT_SLOT_TYPE = 'span';
 
 /**
  * Given the state and an array of slot names, will break out `slots` and `slotProps`
@@ -20,23 +22,27 @@ import { nullRender } from './nullRender';
  * @returns An object containing the `slots` map and `slotProps` map.
  */
 export const getSlots = (state: GenericDictionary, slotNames?: string[] | undefined) => {
-  const slots: GenericDictionary = {
-    root: state.as || 'div',
-  };
+  let { as: rootAs = DEFAULT_SLOT_TYPE } = state;
+  let rootProps = omit(state, ['as']);
 
-  // If the "as" value is JSX, extract type and props.
-  if (typeof slotAs === 'object' && slotAs.type && slotAs.props) {
-    slotAs = slotAs.type;
+  // Handle the "as" prop as JSX.
+  if (typeof rootAs === 'object' && rootAs.type) {
+    rootProps = assign(rootProps, rootAs.props);
+    rootAs = rootAs.type;
   }
 
+  const slots: GenericDictionary = {
+    root: rootAs,
+  };
+
   const slotProps: GenericDictionary = {
-    root: typeof state.as === 'string' ? getNativeElementProps(state.as, state) : omit(state, ['as']),
+    root: typeof rootAs === 'string' ? getNativeElementProps(rootAs, rootProps) : rootProps,
   };
 
   if (slotNames) {
     for (const name of slotNames) {
       const slotDefinition = state[name] || {};
-      let { as: slotAs = 'span' } = slotDefinition;
+      const { as: slotAs = 'span' } = slotDefinition;
       const { children } = slotDefinition;
 
       const isSlotPrimitive = typeof slotAs === 'string';
