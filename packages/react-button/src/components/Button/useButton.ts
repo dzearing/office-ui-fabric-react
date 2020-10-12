@@ -9,10 +9,13 @@ import { renderButton } from './renderButton';
  */
 export const buttonShorthandProps = ['icon', 'loader', 'content'];
 
+/**
+ * Create a mergeProps helper which deep merges shorthand props.
+ */
 const mergeProps = makeMergeProps({ deepMerge: buttonShorthandProps });
 
 /**
- * Given user props, returns state and render function for a Button.
+ * Given user props, creates a state object for a Button.
  */
 export const useButton = (props: ButtonProps, ref: React.Ref<HTMLElement>, defaultProps?: ButtonProps) => {
   // Ensure that the `ref` prop can be used by other things (like useFocusRects) to refer to the root.
@@ -31,7 +34,33 @@ export const useButton = (props: ButtonProps, ref: React.Ref<HTMLElement>, defau
     resolveShorthandProps(props, buttonShorthandProps),
   );
 
-  useButtonState(state);
+  // Update the button's tab-index, keyboard handling, and aria attributes.
+  if (state.as !== 'button') {
+    state.role = 'button';
 
-  return { state, render: renderButton };
+    if (state.as !== 'a') {
+      const { onKeyDown, onClick } = state;
+
+      state['data-isFocusable'] = true;
+      state.tabIndex = 0;
+
+      state.onKeyDown = (ev: React.KeyboardEvent<HTMLElement>) => {
+        if (onKeyDown) {
+          onKeyDown(ev);
+        }
+
+        if (!ev.defaultPrevented && onClick && (ev.which === 20 || ev.which === 13)) {
+          // Translate the keydown enter/space to a click.
+          ev.preventDefault();
+          ev.stopPropagation();
+
+          (ev.target as HTMLElement).click();
+        }
+      };
+    }
+  }
+
+  state.disabled = state['aria-disabled'] = state.disabled || state.loading;
+
+  return state;
 };
