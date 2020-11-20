@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { getCode, ArrowDownKey } from '@fluentui/keyboard-key';
-import { useControllableValue, useMergedRefs } from '@uifabric/react-hooks';
+import { useControllableValue, useMergedRefs } from '@fluentui/react-hooks';
 import { MenuContext, MinimalMenuProps } from '@fluentui/react-shared-contexts';
 import { MenuButtonState } from './MenuButton.types';
 

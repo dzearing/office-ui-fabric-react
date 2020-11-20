@@ -1,9 +1,8 @@
 import * as React from 'react';
-import { ChevronDownIcon } from '@fluentui/react-icons';
+import { ChevronDownIcon } from '@fluentui/react-icons-mdl2';
 import { useInlineTokens } from '@fluentui/react-theme-provider';
 import { useMenuButton } from './useMenuButton';
 import { MenuButtonProps } from './MenuButton.types';
-import { useButtonClasses } from '../Button/index';
 import { useMenuButtonClasses } from './useMenuButtonClasses';
 import { renderMenuButton } from './renderMenuButton';
 
@@ -16,9 +15,9 @@ export const MenuButton = React.forwardRef<HTMLElement, MenuButtonProps>((props,
     menuIcon: { as: ChevronDownIcon },
   });
 
-  useButtonClasses(state);
   useMenuButtonClasses(state);
 
+  // TODO remove any
   /**
    * Type 'MenuButtonState' has no properties in common with type '{
    *  style?: CSSProperties | undefined; tokens?: string | { [key: string]: any; }
